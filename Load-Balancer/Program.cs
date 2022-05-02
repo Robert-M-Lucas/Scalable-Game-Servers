@@ -1,4 +1,5 @@
-﻿namespace LoadBalancer;
+namespace LoadBalancer;
+
 using System;
 
 public static class Program{
