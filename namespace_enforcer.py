@@ -23,5 +23,5 @@ with open(path, "r") as f:
         exit(0)
 
 with open(path, "w") as f:
-    f.write(namespace_text + " " + namespace + ";\r\n" + data)
+    f.write(namespace_text + " " + namespace + ";\n" + data)
 print("Done")

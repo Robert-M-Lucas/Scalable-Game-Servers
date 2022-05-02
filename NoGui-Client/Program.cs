@@ -8,6 +8,9 @@ public static class Program{
     public static string MatchmakerIP = "";
     public static int MatchmakerPort = -1;
 
+    public static string Version = "";
+
+    public static string ClientName = "";
 
     public static void Main(string[] args){
         if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
@@ -22,6 +25,7 @@ public static class Program{
             if (config.Addresses.Matchmaker is null) {throw new NullReferenceException();}
             if (config.Addresses.Matchmaker.IP is null) {throw new NullReferenceException();}
             if (config.Addresses.Matchmaker.Port is null) {throw new NullReferenceException();}
+            if (config.Version is null) {throw new NullReferenceException();}
 
             LoadBalancerIP = config.Addresses.LoadBalancer.IP;
             LoadBalancerPort = (int) config.Addresses.LoadBalancer.Port;
@@ -29,11 +33,17 @@ public static class Program{
             MatchmakerIP = config.Addresses.Matchmaker.IP;
             MatchmakerPort = (int) config.Addresses.Matchmaker.Port;
 
+            Version = config.Version;
+
         }
-        catch (NullReferenceException) { Console.WriteLine("Null reference exception, probable incorrect formatting of config.json"); return; }
+        catch (NullReferenceException n) { Console.WriteLine("Null reference exception, probable incorrect formatting of config.json"); Console.WriteLine(n); return; }
         catch (Exception e) { Console.WriteLine("Unhandled exception: " + e); Console.WriteLine("Probable incorrect formatting of config.json"); return; }
         
         int choice = ConsoleInputUtil.ChooseOption(new string[] {"Connect", "Quit"}, true);
         if (choice == 1) { return; }
+
+        Console.Write("Enter name: "); ClientName = StringExtentions.DeNullString(Console.ReadLine());
+
+        NetworkController.Start();
     }
 }

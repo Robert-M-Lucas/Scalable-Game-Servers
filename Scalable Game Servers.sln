@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matchmaker", "Matchmaker\Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server-Spooler", "Server-Spooler\Server-Spooler.csproj", "{AE5E3A6E-5F80-4DD9-98DB-0834B433FF33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedTwo", "SharedTwo\SharedTwo.csproj", "{C76C0E3E-DE06-4622-A623-C314AEC7971A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoGui-Client", "NoGui-Client\NoGui-Client.csproj", "{39D8BDA1-C860-47B3-9ABB-638D6F9BBA3E}"
 EndProject
 Global

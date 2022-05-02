@@ -21,6 +21,7 @@ public class ConfigBalancer{
 }
 
 public class ConfigObj{
+    public string? Version { get; set; }
     public ConfigAddresses? Addresses { get; set; }
     public ConfigBalancer? LoadBalancer { get; set; }
     public ConfigBalancer? Matchmaker { get; set; }

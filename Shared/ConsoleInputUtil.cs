@@ -1,4 +1,4 @@
-namespace NoGuiClient;
+namespace Shared;
 
 using Shared;
 

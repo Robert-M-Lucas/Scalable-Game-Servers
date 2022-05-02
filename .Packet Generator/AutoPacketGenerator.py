@@ -6,13 +6,15 @@ import time
 
 paths = [
     ["C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Game-Server\\Packets.txt", 
-     "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Game-Server\\Packets"],
+     "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Shared\\Packets\\Game-Server"],
     ["C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Load-Balancer\\Packets.txt",
-     "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Load-Balancer\\Packets"],
+     "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Shared\\Packets\\Load-Balancer"],
     ["C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Lobby-Server\\Packets.txt",
-     "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Lobby-Server\\Packets"],
+     "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Shared\\Packets\\Lobby-Server"],
     ["C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Matchmaker\\Packets.txt",
-     "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Matchmaker\\Packets"]
+     "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Shared\\Packets\\Matchmaker"],
+    ["C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\NoGui-Client\\Packets.txt",
+     "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Shared\\Packets\\NoGui-Client"]
 ]
 
 start_time = time.time()
@@ -54,7 +56,8 @@ for p in paths:
 
         filename = f"{uid}_{packet_name}Packet.cs"
 
-        data = f"""using System;
+        data = f"""namespace Shared;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
@@ -67,7 +70,6 @@ public class {packet_name}Packet {{
             data += "    public " + i[1] + " " + splitted[0] + ";" + "\n"
 
         data += f"""    public {packet_name}Packet(Packet packet){{
-        RID = packet.RID;
 """
 
         for j, i in enumerate(attributes[2:]):
@@ -111,7 +113,7 @@ public class {packet_name}Packet {{
             else:
                 data += f"        contents.Add(BitConverter.GetBytes(_{splitted[0]}));\n"
 
-        data += """        return PacketBuilder.Build(UID, contents, _RID);
+        data += """        return PacketManager.Build(UID, contents);
     }
 }"""
 

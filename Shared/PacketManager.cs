@@ -23,14 +23,12 @@ public class PacketDecodeError : Exception
 public struct Packet
 {
     public int UID;
-    public int RID;
     public int From;
     public List<byte[]> contents;
 
-    public Packet(int _UID, int _RID, List<byte[]> _contents, int from = -1)
+    public Packet(int _UID, List<byte[]> _contents, int from = -1)
     {
         UID = _UID;
-        RID = _RID;
         contents = _contents;
         From = from;
     }
@@ -46,15 +44,12 @@ public class PacketMissingAttributeException : Exception
     { }
 }
 
-//UIDLEN 16 bit & RIDLEN 24 bit
-//UID, RID, Data
 public static class PacketManager
 {
     private static Encoding encoder = new UTF8Encoding();
 
     public const int PacketLenLen = 4;
     public const int UIDLen = 4;
-    public const int RIDLen = 4;
     public const int DataLenLen = 4;
 
     /*
@@ -76,8 +71,6 @@ public static class PacketManager
             int cursor = PacketLenLen;
             ArrayExtentions.Merge(buffer, BitConverter.GetBytes(UID), cursor);
             cursor += UIDLen;
-            ArrayExtentions.Merge(buffer, BitConverter.GetBytes(RID), cursor);
-            cursor += RIDLen;
 
             foreach (byte[] c in contents)
             {
@@ -108,8 +101,6 @@ public static class PacketManager
         int cursor = 4;
         int UID = BitConverter.ToInt32(ArrayExtentions.Slice(data, cursor, cursor + UIDLen));
         cursor += UIDLen;
-        int RID = BitConverter.ToInt32(ArrayExtentions.Slice(data, cursor, cursor + RIDLen));
-        cursor += RIDLen;
 
         List<byte[]> contents = new List<byte[]>();
         while (cursor < data.Length)
@@ -126,6 +117,6 @@ public static class PacketManager
             contents.Add(content);
         }
 
-        return new Packet(UID, RID, contents, from);
+        return new Packet(UID, contents, from);
     }
 }
