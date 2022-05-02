@@ -1,0 +1,10 @@
+{
+    "filewatcher.commands": [
+        {
+            "match": "Packets.txt",
+            "isAsync": true,
+            "cmd": "C:/Users/rober/AppData/Local/Programs/Python/Python310/python.exe \"C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\.Packet Generator\\AutoPacketGenerator.py\"",
+            "event": "onFileChange"
+        }
+    ],
+}
