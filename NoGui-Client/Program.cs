@@ -33,15 +33,7 @@ public static class Program{
         catch (NullReferenceException) { Console.WriteLine("Null reference exception, probable incorrect formatting of config.json"); return; }
         catch (Exception e) { Console.WriteLine("Unhandled exception: " + e); Console.WriteLine("Probable incorrect formatting of config.json"); return; }
         
-        while (true){
-            
-            string choice = ConsoleInputUtil.ChooseOption(new string[] {"Connect", "Quit"});
-            if (choice == "1"){
-                break;
-            }
-            else if (choice == "2"){
-                return;
-            }
-        }
+        int choice = ConsoleInputUtil.ChooseOption(new string[] {"Connect", "Quit"}, true);
+        if (choice == 1) { return; }
     }
 }

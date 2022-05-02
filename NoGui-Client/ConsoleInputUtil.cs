@@ -1,28 +1,35 @@
 namespace NoGuiClient;
 
+using Shared;
+
 public static class ConsoleInputUtil{
     public static void WaitForEnter() {
         Console.ReadLine();
     }
 
-    public static string ChooseOption(string[] options) {
-        for (int i = 0; i < options.Length; i++){
-            Console.WriteLine(i + ". " + options[i]);
-        }
+    public static int ChooseOption(string[] options, bool enforce = false) {
+        int ret = -1;
+        while (true) {
+            for (int i = 0; i < options.Length; i++){
+                Console.WriteLine(i+1 + ". " + options[i]);
+            }
+            Console.Write("Input: ");
+            string _return = StringExtentions.DeNullString(Console.ReadLine());
 
-        string? _return = Console.ReadLine();
-        if (_return is null){
-            return "";
+            if (int.TryParse(_return, out ret)) {  
+                if (ret > 0 && ret <= options.Length) { ret -= 1; enforce = false; }
+            }
+
+            if (!enforce) { break; }
         }
-        else{
-            return (string) _return;
-        }
+        return ret;
     }
 
     public static void ChooseOptionAsync(string[] options, Action<string> action) {
         for (int i = 0; i < options.Length; i++){
             Console.WriteLine(i + ". " + options[i]);
         }
+        Console.Write("Input: ");
 
         new Thread(() => WaitForReadLine(action)).Start();
     }
