@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uLCnEmNxLi2zR9jGL0gHk9ZPf4Batv2fC6boReEBlwGus8AWyQI5IDy/BD5ZkXrjTVBGVuDhja9TyHivupD4XA==",
+  "dgSpecHash": "YiHrxnfh0QT/oW4k55cdIFZ3GycT5Zhn+xRUujOWMp5XIjmCrgIgTl1h1tv2r83JTobmrgd/CXGQp0XchJxnxA==",
   "success": true,
   "projectFilePath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Game-Server\\Game-Server.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\rober\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

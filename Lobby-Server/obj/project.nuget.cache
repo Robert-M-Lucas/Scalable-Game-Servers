@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BefV1qp19xEBfsdiO0t3XbBuYWJiKQTLlX96RmfxvTmnFNA+95e0dpk86XPxH0Ivs+lRf8xhpS7OGKqxHhlpuw==",
+  "dgSpecHash": "5TjC1i5yCSAaRolX4sc3HL+HnSTXEk0l9RjcosQXDcML9B0uIWTqD76W2nI41B35V5boo55jU6ZXfmoGR3/Nog==",
   "success": true,
   "projectFilePath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Lobby-Server\\Lobby-Server.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\rober\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

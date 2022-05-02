@@ -13,3 +13,6 @@ C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Matchmaker\ob
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Matchmaker\obj\Debug\net6.0\Matchmaker.pdb
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Matchmaker\obj\Debug\net6.0\Matchmaker.genruntimeconfig.cache
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Matchmaker\obj\Debug\net6.0\ref\Matchmaker.dll
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Matchmaker\bin\Debug\net6.0\Shared.dll
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Matchmaker\bin\Debug\net6.0\Shared.pdb
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Matchmaker\obj\Debug\net6.0\Matchmaker.csproj.CopyComplete

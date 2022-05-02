@@ -13,5 +13,6 @@ C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\Load-Balancer.pdb
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\Load-Balancer.genruntimeconfig.cache
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\ref\Load-Balancer.dll
-C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\Load-Balancer.csproj.CopyComplete
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\bin\Debug\net6.0\Shared.dll
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\bin\Debug\net6.0\Shared.pdb

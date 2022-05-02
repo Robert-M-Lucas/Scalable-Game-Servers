@@ -1,3 +1,19 @@
 {
-    
+    "Addresses": {
+        "Load_Balancer": {"IP": "127.0.0.1", "Port": 8108},
+        "Matchmaker": {"IP": "127.0.0.1", "Port": 9109}
+    },
+
+    "Load_Balancer": {
+        "MinEmptyServers": 2,
+        "MaxEmptyServers": 5,
+        "MaxQueueLen": 100
+    },
+
+    "Matchmaker": {
+        "MinEmptyServers": 2,
+        "MaxEmptyServers": 5,
+        "MaxQueueLen": 100
+    }
 }
+    
