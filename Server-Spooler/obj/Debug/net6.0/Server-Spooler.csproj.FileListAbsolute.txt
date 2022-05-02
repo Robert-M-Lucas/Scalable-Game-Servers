@@ -1,0 +1,15 @@
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\bin\Debug\net6.0\Server-Spooler.exe
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\bin\Debug\net6.0\Server-Spooler.deps.json
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\bin\Debug\net6.0\Server-Spooler.runtimeconfig.json
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\bin\Debug\net6.0\Server-Spooler.dll
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\bin\Debug\net6.0\Server-Spooler.pdb
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\obj\Debug\net6.0\Server-Spooler.csproj.AssemblyReference.cache
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\obj\Debug\net6.0\Server-Spooler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\obj\Debug\net6.0\Server-Spooler.AssemblyInfoInputs.cache
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\obj\Debug\net6.0\Server-Spooler.AssemblyInfo.cs
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\obj\Debug\net6.0\Server-Spooler.csproj.CoreCompileInputs.cache
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\obj\Debug\net6.0\Server-Spooler.dll
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\obj\Debug\net6.0\refint\Server-Spooler.dll
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\obj\Debug\net6.0\Server-Spooler.pdb
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\obj\Debug\net6.0\Server-Spooler.genruntimeconfig.cache
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Server-Spooler\obj\Debug\net6.0\ref\Server-Spooler.dll

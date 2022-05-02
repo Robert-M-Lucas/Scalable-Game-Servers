@@ -1,0 +1,15 @@
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\bin\Debug\net6.0\Load-Balancer.exe
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\bin\Debug\net6.0\Load-Balancer.deps.json
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\bin\Debug\net6.0\Load-Balancer.runtimeconfig.json
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\bin\Debug\net6.0\Load-Balancer.dll
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\bin\Debug\net6.0\Load-Balancer.pdb
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\Load-Balancer.csproj.AssemblyReference.cache
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\Load-Balancer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\Load-Balancer.AssemblyInfoInputs.cache
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\Load-Balancer.AssemblyInfo.cs
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\Load-Balancer.csproj.CoreCompileInputs.cache
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\Load-Balancer.dll
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\refint\Load-Balancer.dll
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\Load-Balancer.pdb
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\Load-Balancer.genruntimeconfig.cache
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Load-Balancer\obj\Debug\net6.0\ref\Load-Balancer.dll
