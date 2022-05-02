@@ -1,6 +1,7 @@
 namespace Shared;
 
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 
 public class ConfigTextAddress{
@@ -9,7 +10,7 @@ public class ConfigTextAddress{
 }
 
 public class ConfigAddresses{
-    public ConfigTextAddress? Load_Balancer { get; set; }
+    public ConfigTextAddress? LoadBalancer { get; set; }
     public ConfigTextAddress? Matchmaker { get; set; }
 }
 
@@ -21,7 +22,7 @@ public class ConfigBalancer{
 
 public class ConfigObj{
     public ConfigAddresses? Addresses { get; set; }
-    public ConfigBalancer? Load_Balancer { get; set; }
+    public ConfigBalancer? LoadBalancer { get; set; }
     public ConfigBalancer? Matchmaker { get; set; }
 }
 
