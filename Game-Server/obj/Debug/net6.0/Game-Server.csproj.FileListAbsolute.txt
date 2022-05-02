@@ -13,3 +13,5 @@ C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Game-Server\o
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Game-Server\obj\Debug\net6.0\Game-Server.pdb
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Game-Server\obj\Debug\net6.0\Game-Server.genruntimeconfig.cache
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Game-Server\obj\Debug\net6.0\ref\Game-Server.dll
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Game-Server\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Game-Server\obj\Debug\net6.0\Game-Server.csproj.CopyComplete
