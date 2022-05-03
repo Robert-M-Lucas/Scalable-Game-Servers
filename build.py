@@ -13,13 +13,13 @@ for f in folders[:-1]:
 
 subprocess.call(["dotnet", "build", f"{folders[-1]}"])
 
-cont = False
-while not cont:
-    cont = True
-    for d in done:
-        if d.poll() is None:
-            cont = False
-            break
+# cont = False
+# while not cont:
+#     cont = True
+#     for d in done:
+#         if d.poll() is None:
+#             cont = False
+#             break
 
 for f in folders:
     copy_tree(f + "\\bin\\Debug\\net6.0", ".Build\\" + f)
@@ -27,4 +27,5 @@ for f in folders:
     # shutil.copy(f + "\\bin\\Debug\\net6.0\\" + f + ".exe", ".Build")
     # shutil.copy(f + "\\bin\\Debug\\net6.0\\" + f + ".dll", ".Build")
     # shutil.copy(f + "\\bin\\Debug\\net6.0\\" + f + ".runtimeconfig.json", ".Build")
+    
 print(f"Completed in {round(time.time() - start, 2)}s")
