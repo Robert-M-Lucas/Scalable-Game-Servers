@@ -3,7 +3,8 @@
 
     "Addresses": {
         "LoadBalancer": {"IP": "127.0.0.1", "Port": 8108},
-        "Matchmaker": {"IP": "127.0.0.1", "Port": 9109}
+        "Matchmaker": {"IP": "127.0.0.1", "Port": 9109},
+        "ServerSpooler": {"IP": "127.0.0.1", "Port": 7107}
     },
 
     "LoadBalancer": {

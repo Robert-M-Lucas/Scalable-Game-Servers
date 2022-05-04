@@ -12,6 +12,7 @@ public class ConfigTextAddress{
 public class ConfigAddresses{
     public ConfigTextAddress? LoadBalancer { get; set; }
     public ConfigTextAddress? Matchmaker { get; set; }
+    public ConfigTextAddress? ServerSpooler { get; set; }
 }
 
 public class ConfigBalancer{

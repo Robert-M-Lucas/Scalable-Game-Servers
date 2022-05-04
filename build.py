@@ -9,7 +9,7 @@ folders = ["Shared", "Game-Server", "Load-Balancer", "Lobby-Server", "Matchmaker
 
 done = []
 for f in folders[:-1]:
-    done.append(subprocess.Popen(["dotnet", "build", f]))
+    done.append(subprocess.call(["dotnet", "build", f]))
 
 subprocess.call(["dotnet", "build", f"{folders[-1]}"])
 
