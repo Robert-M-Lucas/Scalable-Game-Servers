@@ -44,7 +44,6 @@ public class Listener{
         while (s.ElapsedMilliseconds < Program.MaxServerConnectTime * 1000){
             if (!t.IsAlive) { break; }
             Thread.Sleep(100);
-            Console.WriteLine($"{s.ElapsedMilliseconds}/{Program.MaxServerConnectTime * 1000}");
         }
         
         if (t.IsAlive) { t.Interrupt(); throw new ServerConnectTimeoutException(); }

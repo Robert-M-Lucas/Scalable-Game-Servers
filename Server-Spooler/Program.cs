@@ -41,7 +41,6 @@ public static class Program{
         // Same for matchmaker
 
         Console.WriteLine("Press Ctrl-C to exit");
-
         /*
         while (!exit){
 
