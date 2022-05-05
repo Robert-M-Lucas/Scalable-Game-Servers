@@ -4,10 +4,21 @@ using System.Net;
 using System.Net.Sockets;
 using System.Diagnostics;
 
-public static class Listener{
-    public static Socket? LoadBalancerSocket;
+public class ServerConnectTimeoutException : Exception
+{
+    public ServerConnectTimeoutException() { }
 
-    public static Socket AcceptClient(){
+    public ServerConnectTimeoutException(string message) : base(message) { }
+
+    public ServerConnectTimeoutException(string message, Exception inner) : base(message, inner) { }
+}
+
+public class Listener{
+    public Socket? LoadBalancerSocket;
+
+    public Socket? TempSocket;
+
+    public Socket AcceptClient(){
         IPAddress ipAddress = IPAddress.Any;
 
         IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Program.ServerSpoolerPort);
@@ -20,16 +31,34 @@ public static class Listener{
 
         listener.Bind(localEndPoint);
         listener.Listen(1);
+
         Stopwatch s = new Stopwatch();
         s.Start();
         Console.WriteLine("Accepting connection");
-        // while (s.ElapsedMilliseconds < Program.MaxServerConnectTime * 1000){
-        //     if (listener.)
-        // }
-        Socket Handler = listener.Accept();
+
+        Thread t = new Thread(() => {
+            TempSocket = listener.Accept();
+        });
+        t.Start();
+
+        while (s.ElapsedMilliseconds < Program.MaxServerConnectTime * 1000){
+            if (!t.IsAlive) { break; }
+            Thread.Sleep(100);
+            Console.WriteLine($"{s.ElapsedMilliseconds}/{Program.MaxServerConnectTime * 1000}");
+        }
         
+        if (t.IsAlive) { t.Interrupt(); throw new ServerConnectTimeoutException(); }
+
+        t.Join();
+
         Console.WriteLine("Connection established");
-        
-        return Handler;
+
+        if (TempSocket is null) { throw new NullReferenceException(); }
+
+        return TempSocket;
+    }
+
+    public void Exit() {
+
     }
 }

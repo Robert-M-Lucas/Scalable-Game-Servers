@@ -4,8 +4,10 @@ using Shared;
 using System.Net;
 
 public static class Program{
-    public static string ServerSpoolerIP = "";
     public static int ServerSpoolerPort = -1;
+    public static int LoadBalancerPort = -1;
+
+    public static string Version = "";
 
     public static string config_path = "";
 
@@ -13,36 +15,38 @@ public static class Program{
 
     public static bool exit = false;
 
+    public static Listener listener = new Listener();
+
     public static void Main(string[] args){
         if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
         config_path = args[0];
-        try { // Do all config handling in here
-            ConfigObj? config = Config.GetConfig(config_path);
-            if (config is null) {throw new NullReferenceException();}
-            if (config.Addresses is null) {throw new NullReferenceException();}
-            if (config.Addresses.ServerSpooler is null) {throw new NullReferenceException();}
-            if (config.Addresses.ServerSpooler.IP is null) {throw new NullReferenceException();}
-            if (config.Addresses.ServerSpooler.Port is null) {throw new NullReferenceException();}
-
-            ServerSpoolerIP = config.Addresses.ServerSpooler.IP;
-            ServerSpoolerPort = (int) config.Addresses.ServerSpooler.Port;
+        
+        try { 
+            ConfigObj config = Config.GetConfig(config_path); 
+            ServerSpoolerPort = config.ServerSpoolerPort;
+            LoadBalancerPort = config.LoadBalancerPort;
+            Version = config.Version;
         }
-        catch (NullReferenceException n) { Console.WriteLine("Null reference exception, probable incorrect formatting of config.json"); Console.WriteLine(n); return; }
-        catch (Exception e) { Console.WriteLine("Unhandled exception: " + e); Console.WriteLine("Probable incorrect formatting of config.json"); return; }
+        catch (BadConfigFormatException) { Console.WriteLine("Incorrect formatting of config.json"); Exit(); }
+        
+        
 
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
 
         Console.WriteLine("Starting load balancer");
         ServerStarter.StartLoadBalancer();
         Console.WriteLine("Waiting for load balancer response");
-        Listener.LoadBalancerSocket = Listener.AcceptClient();
+        try { listener.LoadBalancerSocket = listener.AcceptClient(); }
+        catch (ServerConnectTimeoutException) { Console.WriteLine("Load balancer didn't connect in required time, exitting"); Exit(); return; }
         // Same for matchmaker
 
         Console.WriteLine("Press Ctrl-C to exit");
 
+        /*
         while (!exit){
 
         }
+        */
     }
 
     static void exitHandler(object? sender, ConsoleCancelEventArgs args)
@@ -50,5 +54,23 @@ public static class Program{
         Console.WriteLine("Escape key pressed");
         args.Cancel = true;
         exit = true;
+        Exit();
+    }
+
+    public static void Exit() {
+        Console.WriteLine("Shutting down network");
+        if (!(listener is null)) {
+            listener.Exit();
+        }
+
+        Thread.Sleep(100);
+
+        Console.WriteLine("Terminating processes");
+
+        ServerStarter.Exit();
+
+        Console.WriteLine("Exiting");
+
+        Environment.Exit(0);
     }
 }

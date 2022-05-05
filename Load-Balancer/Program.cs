@@ -4,7 +4,6 @@ using System;
 using Shared;
 
 public static class Program{
-    public static string IP = "";
     public static int Port = -1;
 
     public static string SpoolerIP = "";
@@ -14,27 +13,12 @@ public static class Program{
     public static int MaxQueueLen = 0;
 
     public static void Main(string[] args){
-        if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
+        if (args.Length < 4) { Console.WriteLine("Args must be: [Version] [Server Spooler IP] [Server Spooler Port] [Load Balancer Port]"); return; }
 
-        try { // Do all config handling in here
-            ConfigObj? config = Config.GetConfig(args[0]);
-            if (config is null) {throw new NullReferenceException();}
-            if (config.Addresses is null) {throw new NullReferenceException();}
-            if (config.Addresses.LoadBalancer is null) {throw new NullReferenceException();}
-            if (config.Addresses.LoadBalancer.IP is null) {throw new NullReferenceException();}
-            if (config.Addresses.LoadBalancer.Port is null) {throw new NullReferenceException();}
-            if (config.Version is null) {throw new NullReferenceException();}
-            if (config.LoadBalancer is null) {throw new NullReferenceException();}
-            if (config.LoadBalancer.MaxQueueLen is null) {throw new NullReferenceException();}
-
-            IP = config.Addresses.LoadBalancer.IP;
-            Port = (int) config.Addresses.LoadBalancer.Port;
-            Version =  config.Version;
-            MaxQueueLen = (int) config.LoadBalancer.MaxQueueLen;
-
-        }
-        catch (NullReferenceException) { Console.WriteLine("Null reference exception, probable incorrect formatting of config.json"); return; }
-        catch (Exception e) { Console.WriteLine("Unhandled exception: " + e); Console.WriteLine("Probable incorrect formatting of config.json"); return; }
+        Version = args[0];
+        SpoolerIP = args[1];
+        if (!int.TryParse(args[2], out SpoolerPort)) { Console.WriteLine("Spooler port incorrectly formatted"); return; }
+        if (!int.TryParse(args[3], out Port)) { Console.WriteLine("Port incorrectly formatted"); return; }
 
         new Server().Start();
     }

@@ -2,7 +2,12 @@ namespace ServerSpooler;
 
 using System.Diagnostics;
 
+// Load balancer args:
+// [Server Spooler IP] [Server Spooler Port] [Load Balancer Port]
+
 public static class ServerStarter{
+    public static Process? LoadBalancer;
+
     public static void StartLoadBalancer() {
         // Code for starting load balancer would go here
         // Console.WriteLine(".Build\\Load-Balancer\\Load-Balancer.exe \"" + Program.config_path + "\"");
@@ -14,8 +19,12 @@ public static class ServerStarter{
         startInfo.UseShellExecute = true;
         startInfo.FileName = ".Build\\Load-Balancer\\Load-Balancer.exe";
         startInfo.WindowStyle = ProcessWindowStyle.Normal;
-        startInfo.Arguments = "\"" + Program.config_path + "\"";
+        startInfo.Arguments = $"\"{Program.Version}\" {"127.0.0.1"} {Program.ServerSpoolerPort} {Program.LoadBalancerPort}";
 
-        Process.Start(startInfo);
+        LoadBalancer = Process.Start(startInfo);
+    }
+
+    public static void Exit() {
+        if (!(LoadBalancer is null)) { Console.WriteLine("Killing load balancer"); LoadBalancer.Kill(); }
     }
 }

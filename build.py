@@ -5,7 +5,7 @@ import subprocess
 import time
 
 start = time.time()
-folders = ["Shared", "Game-Server", "Load-Balancer", "Lobby-Server", "Matchmaker", "Server-Spooler", "NoGui-Client"]
+folders = ["Shared", "Server-Spooler", "Game-Server", "Load-Balancer", "Lobby-Server", "Matchmaker", "NoGui-Client"]
 
 done = []
 for f in folders[:-1]:

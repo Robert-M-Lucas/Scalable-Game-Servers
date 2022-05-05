@@ -1,21 +1,13 @@
 {
     "Version": "1.0",
 
-    "Addresses": {
-        "LoadBalancer": {"IP": "127.0.0.1", "Port": 8108},
-        "Matchmaker": {"IP": "127.0.0.1", "Port": 9109},
-        "ServerSpooler": {"IP": "127.0.0.1", "Port": 7107}
-    },
+    "ServerSpoolerPort": 5105,
+    "MatchmakerPort": 6106,
+    "LoadBalancerPort": 7107,
 
-    "LoadBalancer": {
-        "MinEmptyServers": 2,
-        "MaxEmptyServers": 5,
-        "MaxQueueLen": 100
-    },
+    "MaxEmptyLobbies": 10,
+    "MinEmptyLobbies": 2,
 
-    "Matchmaker": {
-        "MinEmptyServers": 2,
-        "MaxEmptyServers": 5,
-        "MaxQueueLen": 100
-    }
+    "MaxEmptyGameServers": 15,
+    "MinEmptyGameServers": 7
 }
