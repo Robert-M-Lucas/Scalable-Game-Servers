@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5TjC1i5yCSAaRolX4sc3HL+HnSTXEk0l9RjcosQXDcML9B0uIWTqD76W2nI41B35V5boo55jU6ZXfmoGR3/Nog==",
+  "dgSpecHash": "L6yMKRwAgIpzICj13WiJkhyKwDcQnk7ozhephpvrxVD4Z5aslA+IXl0MKXR7WkbsCTbNn5roSM0uRhKCWj+/AA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Lobby-Server\\Lobby-Server.csproj",
+  "projectFilePath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Lobby-Server\\Lobby-Server.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

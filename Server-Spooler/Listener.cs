@@ -13,12 +13,12 @@ public class ServerConnectTimeoutException : Exception
     public ServerConnectTimeoutException(string message, Exception inner) : base(message, inner) { }
 }
 
-public class Listener{
-    public Socket? LoadBalancerSocket;
+public static class Listener{
+    public static Socket? LoadBalancerSocket;
 
-    public Socket? TempSocket;
+    public static Socket? TempSocket;
 
-    public Socket AcceptClient(){
+    public static Socket AcceptClient(){
         IPAddress ipAddress = IPAddress.Any;
 
         IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Program.ServerSpoolerPort);
@@ -57,7 +57,7 @@ public class Listener{
         return TempSocket;
     }
 
-    public void Exit() {
+    public static void Exit() {
 
     }
 }

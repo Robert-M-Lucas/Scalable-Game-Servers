@@ -3,13 +3,13 @@
         {
             "match": "Packets.txt",
             "isAsync": true,
-            "cmd": "C:/Users/rober/AppData/Local/Programs/Python/Python310/python.exe \"C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\.Packet Generator\\AutoPacketGenerator.py\"",
+            "cmd": "python.exe \"${workspaceRoot}\\.Packet Generator\\AutoPacketGenerator.py\"",
             "event": "onFileChange"
         },
         {
             "match": ".cs$",
             "isAsync": true,
-            "cmd": "C:/Users/rober/AppData/Local/Programs/Python/Python310/python.exe \"C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\namespace_enforcer.py\" ${file}",
+            "cmd": "python.exe \"${workspaceRoot}\\namespace_enforcer.py\" ${file}",
             "event": "onFileChange"
         },
     ],

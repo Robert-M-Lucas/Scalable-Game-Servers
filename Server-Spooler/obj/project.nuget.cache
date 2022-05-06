@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kAmaYZbDe6++nrEGn1nw04wZDEIYGkPf0IW5rw6c2m8MmPn33Gby5Ic2bX0vi0RDysFwX4CK00dkHHxj11tnXw==",
+  "dgSpecHash": "DYnMEtqWjI53n2HmeCghbZ/iMriNVWGFw7NCYiDgGD+e9LUZnJshW0V3v6Ee6mT03Rn2L+5OpuqB5mXa/wbHKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Server-Spooler\\Server-Spooler.csproj",
+  "projectFilePath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Server-Spooler\\Server-Spooler.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

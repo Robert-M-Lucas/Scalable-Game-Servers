@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Server-Spooler\\Server-Spooler.csproj": {}
+    "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Server-Spooler\\Server-Spooler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Server-Spooler\\Server-Spooler.csproj": {
+    "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Server-Spooler\\Server-Spooler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Server-Spooler\\Server-Spooler.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Server-Spooler\\Server-Spooler.csproj",
         "projectName": "Server-Spooler",
-        "projectPath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Server-Spooler\\Server-Spooler.csproj",
+        "projectPath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Server-Spooler\\Server-Spooler.csproj",
         "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Server-Spooler\\obj\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Server-Spooler\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Shared\\Shared.csproj"
+              "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Shared\\Shared.csproj"
               }
             }
           }
@@ -66,21 +62,17 @@
         }
       }
     },
-    "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Shared\\Shared.csproj": {
+    "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Shared\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -38,6 +38,8 @@ public static class Program{
             return;
         }
 
+        Console.ReadLine();
+
         // new Server().Start();
     }
 }

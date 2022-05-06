@@ -13,9 +13,9 @@ public static class Program{
 
     public const int MaxServerConnectTime = 20;
 
-    public static bool exit = false;
+    public static List<Tuple<ByteIP, uint>> LobbyServers = new List<Tuple<ByteIP, uint>>();
 
-    public static Listener listener = new Listener();
+    public static bool exit = false;
 
     public static void Main(string[] args){
         if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
@@ -36,11 +36,12 @@ public static class Program{
         Console.WriteLine("Starting load balancer");
         ServerStarter.StartLoadBalancer();
         Console.WriteLine("Waiting for load balancer response");
-        try { listener.LoadBalancerSocket = listener.AcceptClient(); }
+        try { Listener.LoadBalancerSocket = Listener.AcceptClient(); }
         catch (ServerConnectTimeoutException) { Console.WriteLine("Load balancer didn't connect in required time, exitting"); Exit(); return; }
         // Same for matchmaker
 
         Console.WriteLine("Press Ctrl-C to exit");
+        Console.ReadLine();
         /*
         while (!exit){
 
@@ -58,10 +59,7 @@ public static class Program{
 
     public static void Exit() {
         Console.WriteLine("Shutting down network");
-        if (!(listener is null)) {
-            listener.Exit();
-        }
-
+        Listener.Exit();
         Thread.Sleep(100);
 
         Console.WriteLine("Terminating processes");
