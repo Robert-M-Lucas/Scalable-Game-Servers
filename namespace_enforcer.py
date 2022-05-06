@@ -12,7 +12,7 @@ for e in exclude:
 split_path = path.split("\\")
 print(split_path)
 
-namespace = split_path[split_path.index("Scalable Game Servers")+1].replace("-", "")
+namespace = split_path[split_path.index("Scalable-Game-Servers")+1].replace("-", "")
 
 namespace_text = f"namespace"
 

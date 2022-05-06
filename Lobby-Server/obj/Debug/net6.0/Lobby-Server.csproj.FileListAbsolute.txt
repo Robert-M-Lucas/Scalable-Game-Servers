@@ -16,3 +16,21 @@ C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Lobby-Server\
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Lobby-Server\obj\Debug\net6.0\Lobby-Server.csproj.CopyComplete
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Lobby-Server\bin\Debug\net6.0\Shared.dll
 C:\Users\rober\Documents\Mixed Code Projects\Scalable Game Servers\Lobby-Server\bin\Debug\net6.0\Shared.pdb
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\bin\Debug\net6.0\Lobby-Server.exe
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\bin\Debug\net6.0\Lobby-Server.deps.json
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\bin\Debug\net6.0\Lobby-Server.runtimeconfig.json
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\bin\Debug\net6.0\Lobby-Server.dll
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\bin\Debug\net6.0\Lobby-Server.pdb
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\bin\Debug\net6.0\Shared.dll
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\bin\Debug\net6.0\Shared.pdb
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\obj\Debug\net6.0\Lobby-Server.csproj.AssemblyReference.cache
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\obj\Debug\net6.0\Lobby-Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\obj\Debug\net6.0\Lobby-Server.AssemblyInfoInputs.cache
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\obj\Debug\net6.0\Lobby-Server.AssemblyInfo.cs
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\obj\Debug\net6.0\Lobby-Server.csproj.CoreCompileInputs.cache
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\obj\Debug\net6.0\Lobby-Server.csproj.CopyComplete
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\obj\Debug\net6.0\Lobby-Server.dll
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\obj\Debug\net6.0\refint\Lobby-Server.dll
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\obj\Debug\net6.0\Lobby-Server.pdb
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\obj\Debug\net6.0\Lobby-Server.genruntimeconfig.cache
+C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Lobby-Server\obj\Debug\net6.0\ref\Lobby-Server.dll

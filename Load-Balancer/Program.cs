@@ -16,6 +16,8 @@ public static class Program{
 
     public static Socket? SpoolerSocket;
 
+    public static SpoolerInterface? spoolerInterface;
+
     public static void Main(string[] args){
         if (args.Length < 4) { Console.WriteLine("Args must be: [Version] [Server Spooler IP] [Server Spooler Port] [Load Balancer Port]"); return; }
 
@@ -24,19 +26,16 @@ public static class Program{
         if (!int.TryParse(args[2], out SpoolerPort)) { Console.WriteLine("Spooler port incorrectly formatted"); return; }
         if (!int.TryParse(args[3], out Port)) { Console.WriteLine("Port incorrectly formatted"); return; }
 
-        IPAddress HostIpA = IPAddress.Parse(SpoolerIP);
-        IPEndPoint RemoteEP = new IPEndPoint(HostIpA, SpoolerPort);
-
-        SpoolerSocket = new Socket(HostIpA.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-
         try {
-            SpoolerSocket.Connect(RemoteEP);
+            spoolerInterface = new SpoolerInterface(SpoolerIP, SpoolerPort);
         }
-        catch (SocketException se) {
+        catch (Exception e) {
             Console.WriteLine("Error connecting to spooler");
-            Console.WriteLine(se);
+            Console.WriteLine(e);
             return;
         }
+
+        Console.ReadLine();
 
         // new Server().Start();
     }

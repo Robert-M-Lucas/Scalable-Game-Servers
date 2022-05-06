@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6FvQDaPm062LNJL8OnoAnCbcJ5/zubGIHPPrf09blSiUFlk3Tlv/vMirvr65CD5zkQwK+MnOzlpVUwn16cI0rQ==",
+  "dgSpecHash": "N3KC1SI3bJC0XSuzNZh8nIxAWQgrhr4vsTmbF8TOGdXLufsXtR9IQEf08WsguSkmnosMN9QzCJL27PnIerrM0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable Game Servers\\Matchmaker\\Matchmaker.csproj",
+  "projectFilePath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Matchmaker\\Matchmaker.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
