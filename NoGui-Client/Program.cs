@@ -13,12 +13,12 @@ public static class Program{
     public static string ClientName = "";
 
     public static void Main(string[] args){
-        if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
+        //if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
 
         LoadBalancerIP = "127.0.0.1";
 
         try { 
-            ConfigObj config = Config.GetConfig(args[0]); 
+            ConfigObj config = Config.GetConfig("config.json"); 
             LoadBalancerPort = config.LoadBalancerPort;
         }
         catch (BadConfigFormatException) { Console.WriteLine("Incorrect formatting of config.json"); return; }

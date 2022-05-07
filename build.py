@@ -21,8 +21,11 @@ subprocess.call(["dotnet", "build", f"{folders[-1]}"])
 #             cont = False
 #             break
 
+print("Copying files")
 for f in folders:
     copy_tree(f + "\\bin\\Debug\\net6.0", ".Build\\" + f)
+
+    shutil.copy("config.json", ".Build\\" + f + "\\config.json")
 
     # shutil.copy(f + "\\bin\\Debug\\net6.0\\" + f + ".exe", ".Build")
     # shutil.copy(f + "\\bin\\Debug\\net6.0\\" + f + ".dll", ".Build")

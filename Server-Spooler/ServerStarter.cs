@@ -19,7 +19,7 @@ public static class ServerStarter{
         startInfo.UseShellExecute = true;
         startInfo.FileName = ".Build\\Load-Balancer\\Load-Balancer.exe";
         startInfo.WindowStyle = ProcessWindowStyle.Normal;
-        startInfo.Arguments = $"\"{Program.Version}\" {"127.0.0.1"} {Program.ServerSpoolerPort} {Program.LoadBalancerPort}";
+        startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {Program.config.LoadBalancerPort} {Program.config.MaxLobbyFill} {Program.config.MaxQueueLen}";
 
         LoadBalancer = Process.Start(startInfo);
     }

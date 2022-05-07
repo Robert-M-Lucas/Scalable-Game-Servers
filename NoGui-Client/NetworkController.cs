@@ -5,9 +5,7 @@ using Shared;
 public static class NetworkController{
     public static void Start(){
         ConnectToLoadBalancer();
-    }
-
-    
+    }    
 
     public static void ConnectToLoadBalancer() {
         Console.WriteLine("Connecting to load balancer");

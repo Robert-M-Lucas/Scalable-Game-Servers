@@ -25,4 +25,25 @@ public class ByteIP {
 
         return byteIP;
     }
+
+    public static ByteIP BytesToIP(byte[] bytes) {
+        ByteIP byteIP = new ByteIP();
+        
+        byteIP.IP = ArrayExtentions.Slice(bytes, 0, 4);
+        byteIP.Port = ArrayExtentions.Slice(bytes, 4, 6);
+
+        byteIP.iPort = ((uint) byteIP.Port[0]) + ((uint) (byteIP.Port[1]<<8));
+
+        for (int i = 0; i < 4; i++){
+            byteIP.strIP += ((uint) bytes[i]);
+            if (i == 3) { break; }
+            byteIP.strIP += ".";
+        }
+
+        return byteIP;
+    }
+
+    public override string ToString() {
+        return $"{strIP}:{iPort}";
+    }
 }

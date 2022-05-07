@@ -55,15 +55,16 @@ public class Server {
     //     
     // }
 
-    void TransferClient(ByteIP ip){
+    public void TransferClient(ByteIP ip){
         Socket? socket;
-        if (!Players.TryDequeue(out socket)) { return; }
+        if (!Players.TryDequeue(out socket)) { Console.WriteLine("Failed to dequeue"); return; }
         byte[] to_send = new byte[7];
         to_send[0] = (byte) (uint) 1;
         ArrayExtentions.Merge(to_send, ip.IP, 1);
         ArrayExtentions.Merge(to_send, ip.Port, 5);
         socket.Send(to_send);
         Console.WriteLine($"Player sent to {ip.strIP}:{ip.iPort}");
+        socket.Shutdown(SocketShutdown.Both);
     }
 
     ~Server(){Stop();}

@@ -21,7 +21,7 @@ public static class Listener{
     public static Socket AcceptClient(){
         IPAddress ipAddress = IPAddress.Any;
 
-        IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Program.ServerSpoolerPort);
+        IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Program.config.ServerSpoolerPort);
 
         Socket listener = new Socket(
                 ipAddress.AddressFamily,

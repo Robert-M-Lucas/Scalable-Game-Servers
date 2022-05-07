@@ -9,12 +9,8 @@ public static class Program {
     public const int GracefulShutdownTime = 1000;
     # endregion
 
-    # region config
-    public static int ServerSpoolerPort = -1;
-    public static int LoadBalancerPort = -1;
-    public static string Version = "";
+    public static ConfigObj config;
     public static string config_path = "";
-    # endregion
 
 
     public static List<Tuple<ByteIP, uint>> LobbyServers = new List<Tuple<ByteIP, uint>>();
@@ -26,14 +22,12 @@ public static class Program {
         // Example lobby server
         LobbyServers.Add(new Tuple<ByteIP, uint>(ByteIP.StringToIP("210.222.111.001", 8108), 201));
 
-        if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
-        config_path = args[0];
+        // if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
+        // config_path = args[0];
+        config_path = "config.json";
         
         try { 
-            ConfigObj config = Config.GetConfig(config_path); 
-            ServerSpoolerPort = config.ServerSpoolerPort;
-            LoadBalancerPort = config.LoadBalancerPort;
-            Version = config.Version;
+            config = Config.GetConfig(config_path);
         }
         catch (BadConfigFormatException) { Console.WriteLine("Incorrect formatting of config.json"); Exit(); }
         
