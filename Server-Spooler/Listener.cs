@@ -41,9 +41,9 @@ public static class Listener{
         });
         t.Start();
 
-        while (s.ElapsedMilliseconds < Program.MaxServerConnectTime * 1000){
+        while (s.ElapsedMilliseconds < Program.MaxServerConnectTime){
             if (!t.IsAlive) { break; }
-            Thread.Sleep(100);
+            Thread.Sleep(10);
         }
         
         if (t.IsAlive) { t.Interrupt(); throw new ServerConnectTimeoutException(); }

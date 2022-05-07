@@ -6,8 +6,8 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Collections.Concurrent;
 
-public class Server{
-    public Socket[] Players = new Socket[Program.MaxQueueLen];
+public class Server {
+    public ConcurrentQueue<Socket> Players = new ConcurrentQueue<Socket>();
 
     public Thread AcceptClientThread;
 
@@ -16,10 +16,8 @@ public class Server{
     }
 
     public void Start() {
-        Console.WriteLine("Load Balancer start, press enter to stop");
+        Console.WriteLine("Load Balancer server start");
         AcceptClientThread.Start();
-        Console.ReadLine();
-        Stop();
     }
 
     public void AcceptClients(){
@@ -29,108 +27,43 @@ public class Server{
 
         IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Program.Port);
 
-        try
-        {
-            Socket listener = new Socket(
-                ipAddress.AddressFamily,
-                SocketType.Stream,
-                ProtocolType.Tcp
-            );
+        Socket listener = new Socket(
+                    ipAddress.AddressFamily,
+                    SocketType.Stream,
+                    ProtocolType.Tcp
+                );
 
             listener.Bind(localEndPoint);
-
             listener.Listen(100);
 
-            while (true)
-            {
-                Console.WriteLine("Waiting for a connection...");
-                Socket Handler = listener.Accept();
-                Console.WriteLine("Client connecting");
-
-                // Incoming data from the client.
-                byte[] rec_bytes = new byte[1024];
-                int total_rec = 0;
-
-                while (total_rec < 4)
-                {
-                    byte[] partial_bytes = new byte[1024];
-                    int bytesRec = Handler.Receive(rec_bytes);
-
-                    total_rec += bytesRec;
-
-                    // string _out2 = "";
-                    // for (int i = 0; i < rec_bytes.Length; i++){
-                    //     _out2 += rec_bytes[i].ToString() + ":";
-                    // }
-                    // Debug.Log(_out2);
-
-                    Tuple<byte[], int> cleared = ArrayExtentions.ClearEmpty(rec_bytes);
-                    rec_bytes = cleared.Item1;
-                    total_rec -= cleared.Item2;
-
-                    ArrayExtentions.Merge(
-                        rec_bytes,
-                        ArrayExtentions.Slice(partial_bytes, 0, bytesRec),
-                        total_rec
-                    );
-                }
-
-                int packet_len = PacketManager.GetPacketLength(
-                    ArrayExtentions.Slice(rec_bytes, 0, 4)
-                );
-
-                while (total_rec < packet_len)
-                {
-                    byte[] partial_bytes = new byte[1024];
-                    int bytesRec = Handler.Receive(partial_bytes);
-
-                    total_rec += bytesRec;
-                    ArrayExtentions.Merge(
-                        rec_bytes,
-                        ArrayExtentions.Slice(partial_bytes, 0, bytesRec),
-                        total_rec
-                    );
-                }
-
-                ClientConnectRequestPacket initPacket = new ClientConnectRequestPacket(
-                    PacketManager.Decode(ArrayExtentions.Slice(rec_bytes, 0, packet_len))
-                );
-
-                // Version mismatch
-                if (initPacket.Version != Program.Version)
-                {
-                    Handler.Shutdown(SocketShutdown.Both);
-                    continue;
-                }
-
-                AddPlayer(Handler);
+        while (!Program.exit) {
+            Console.WriteLine("Waiting for client to connect");
+            Socket TempSocket = listener.Accept();
+            uint queue_len = (uint) Players.Count;
+            if (queue_len >= Program.MaxQueueLen){
+                TempSocket.Send(new byte[] {(byte) 3}); // Connection reject
+                Console.WriteLine("Connection rejected, queue full");
+                continue;
             }
-        }
-        catch (ThreadInterruptedException) { Console.WriteLine("Accept thread terminating"); }
-        catch (Exception e)
-        {
-            Console.WriteLine("Accept thread error");
-            Console.WriteLine(e);
+            TempSocket.Send(new byte[] {(byte) 0, (byte) queue_len, (byte) (queue_len>>8)}); // Sending queue pos
+            Players.Enqueue(TempSocket);
+            Console.WriteLine($"Client connected, queue len: {Players.Count}");
         }
     }
 
-    void AddPlayer(Socket player){
-        for (int i = 0; i < Players.Length; i++){
-            if (Players[i] is null){
-                Players[i] = player;
-                return;
-            }
-        }
+    // void UpdateClients(){
+    //     
+    // }
 
-        player.Shutdown(SocketShutdown.Both);
-    }
-
-    void UpdateClients(){
-
-    }
-
-    void TransferClients(){
-
+    void TransferClient(ByteIP ip){
+        Socket? socket;
+        if (!Players.TryDequeue(out socket)) { return; }
+        byte[] to_send = new byte[7];
+        to_send[0] = (byte) (uint) 1;
+        ArrayExtentions.Merge(to_send, ip.IP, 1);
+        ArrayExtentions.Merge(to_send, ip.Port, 5);
+        socket.Send(to_send);
+        Console.WriteLine($"Player sent to {ip.strIP}:{ip.iPort}");
     }
 
     ~Server(){Stop();}

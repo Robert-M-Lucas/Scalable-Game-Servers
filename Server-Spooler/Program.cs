@@ -4,20 +4,26 @@ using Shared;
 using System.Net;
 
 public static class Program {
+    # region Constants
+    public const int MaxServerConnectTime = 20000;
+    public const int GracefulShutdownTime = 1000;
+    # endregion
+
+    # region config
     public static int ServerSpoolerPort = -1;
     public static int LoadBalancerPort = -1;
-
     public static string Version = "";
-
     public static string config_path = "";
+    # endregion
 
-    public const int MaxServerConnectTime = 20;
 
     public static List<Tuple<ByteIP, uint>> LobbyServers = new List<Tuple<ByteIP, uint>>();
+    public static List<Tuple<ByteIP, uint>> GameServers = new List<Tuple<ByteIP, uint>>();
 
     public static bool exit = false;
 
     public static void Main(string[] args){
+        // Example lobby server
         LobbyServers.Add(new Tuple<ByteIP, uint>(ByteIP.StringToIP("210.222.111.001", 8108), 201));
 
         if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
@@ -31,8 +37,6 @@ public static class Program {
         }
         catch (BadConfigFormatException) { Console.WriteLine("Incorrect formatting of config.json"); Exit(); }
         
-        
-
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
 
         Timer t = new Timer();
@@ -76,7 +80,7 @@ public static class Program {
         Listener.Exit();
 
         Console.WriteLine("Giving time for graceful shutdown");
-        Thread.Sleep(1000);
+        Thread.Sleep(GracefulShutdownTime);
 
         Console.WriteLine("Terminating processes");
 
