@@ -55,6 +55,7 @@ public static class Program{
             if (server.Players.Count > 0) {
                 Tuple<ByteIP, uint>[] LobbyServersCopy = new Tuple<ByteIP, uint>[LobbyServers.Count];
                 LobbyServers.CopyTo(LobbyServersCopy);
+                Console.WriteLine(LobbyServersCopy.Length);
 
                 int best_lobby_server = -1;
                 for (int i = 0; i < LobbyServersCopy.Length; i++){

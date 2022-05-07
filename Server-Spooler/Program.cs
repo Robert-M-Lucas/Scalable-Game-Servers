@@ -18,9 +18,9 @@ public static class Program {
 
     public static bool exit = false;
 
-    public static void Main(string[] args){
+    public static void Main(string[] args) {
         // Example lobby server
-        LobbyServers.Add(new Tuple<ByteIP, uint>(ByteIP.StringToIP("210.222.111.001", 8108), 201));
+        LobbyServers.Add(new Tuple<ByteIP, uint>(ByteIP.StringToIP("210.222.111.1", 8108), 79));
 
         // if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
         // config_path = args[0];

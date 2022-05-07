@@ -2,7 +2,7 @@ namespace NoGuiClient;
 
 using Shared;
 
-public static class Program{
+public static class Program {
     public static string LoadBalancerIP = "";
     public static int LoadBalancerPort = -1;
     public static string MatchmakerIP = "";
@@ -12,7 +12,7 @@ public static class Program{
 
     public static string ClientName = "";
 
-    public static void Main(string[] args){
+    public static void Main(string[] args) {
         //if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
 
         LoadBalancerIP = "127.0.0.1";
@@ -29,5 +29,7 @@ public static class Program{
         Console.Write("Enter name: "); ClientName = StringExtentions.DeNullString(Console.ReadLine());
 
         NetworkController.Start();
+
+        Console.ReadLine();
     }
 }
