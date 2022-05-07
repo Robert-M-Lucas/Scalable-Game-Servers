@@ -9,7 +9,7 @@ public class SpoolerInterface
     Socket SpoolerSocket;
 
     byte[] buffer = new byte[1024];
-    byte[] long_buffer = new byte[1024];
+    int buffer_cursor = 0;
 
     public SpoolerInterface(string SpoolerIP, int SpoolerPort){
         IPAddress HostIpA = IPAddress.Parse(SpoolerIP);
@@ -18,6 +18,7 @@ public class SpoolerInterface
         SpoolerSocket = new Socket(HostIpA.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
         SpoolerSocket.Connect(RemoteEP);
+        Console.WriteLine("Starting Spooler receive");
         SpoolerSocket.BeginReceive(buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), null);
     }
 
@@ -25,54 +26,28 @@ public class SpoolerInterface
     {
         String content = String.Empty;
 
-        int bytesRead = SpoolerSocket.EndReceive(ar);
+        buffer_cursor += SpoolerSocket.EndReceive(ar);
 
-        if (bytesRead > 0)
-        {
-            ArrayExtentions.Merge(
-                CurrentPlayer.long_buffer,
-                CurrentPlayer.buffer,
-                CurrentPlayer.long_buffer_size
-            );
-            CurrentPlayer.long_buffer_size += bytesRead;
-
-            ReprocessBuffer:
-
-            if (
-                CurrentPlayer.current_packet_length == -1
-                && CurrentPlayer.long_buffer_size >= PacketBuilder.PacketLenLen
-            )
-            {
-                CurrentPlayer.current_packet_length = PacketBuilder.GetPacketLength(
-                    CurrentPlayer.long_buffer
-                );
-            }
-
-            if (CurrentPlayer.current_packet_length != -1
-                && long_buffer_size >= CurrentPlayer.current_packet_length)
-            {
-                ArrayExtentions.Slice(long_buffer, 0, current_packet_length);
-
-                byte[] new_buffer = new byte[1024];
-                ArrayExtentions.Merge(
-                    new_buffer,
-                    ArrayExtentions.Slice(
-                        long_buffer,
-                        current_packet_length,
-                        1024
-                    ),
-                    0
-                );
-                long_buffer = new_buffer;
-                long_buffer_size -= current_packet_length;
-                current_packet_length = -1;
-                if (long_buffer_size > 0)
-                {
-                    goto ReprocessBuffer;
+        if (buffer_cursor >= 2) {
+            uint packet_len = (uint) buffer[0] + (uint) (buffer[1]<<8);
+            Console.WriteLine($"Recieving packet from Spooler of len {packet_len}");
+            if (buffer_cursor >= packet_len){
+                Console.WriteLine("Handle packet");
+                for (int i = 0; i < buffer_cursor; i++) {
+                    Console.Write((uint) buffer[i]); Console.Write(";");
                 }
+                Console.WriteLine();
+                buffer_cursor = 0;
+                buffer = new byte[1024];
+
+                uint num = 20321;
+                SpoolerSocket.Send(new byte[] {(byte) num, (byte) (num>>8)});
+            }
+            else {
+                Console.WriteLine($"{buffer_cursor}/{packet_len} received");
             }
         }
-        SpoolerSocket.BeginReceive(buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), null); // Listen again
-    }   
+        SpoolerSocket.BeginReceive(buffer, buffer_cursor, 1024, 0, new AsyncCallback(ReadCallback), null);
+    }
 }
 

@@ -21,8 +21,8 @@ public static class Transciever {
             cursor += 1;
         }
 
-        buffer[0] = (byte) (cursor-4);
-        buffer[1] = (byte) ((cursor-4)>>8);
+        buffer[0] = (byte) (cursor);
+        buffer[1] = (byte) ((cursor)>>8);
 
         if (Listener.LoadBalancerSocket is null) {throw new NullReferenceException(); }
         Listener.LoadBalancerSocket.Send(ArrayExtentions.Slice(buffer, 0, (int) cursor));
@@ -31,6 +31,6 @@ public static class Transciever {
         byte[] recv = new byte[2];
         Listener.LoadBalancerSocket.Receive(recv);
 
-        Console.WriteLine($"Load balancer queue len = {((int) recv[0]) + (((int) recv[1]) * 256)}");
+        Console.WriteLine($"Load balancer queue len = {((uint) recv[0]) + ((uint) (recv[1]<<8))}");
     }
 }

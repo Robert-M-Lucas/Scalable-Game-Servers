@@ -18,6 +18,8 @@ public static class Program {
     public static bool exit = false;
 
     public static void Main(string[] args){
+        LobbyServers.Add(new Tuple<ByteIP, uint>(ByteIP.StringToIP("210.222.111.001", 8108), 201));
+
         if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
         config_path = args[0];
         
@@ -46,15 +48,20 @@ public static class Program {
 
 
         Console.WriteLine("Press Ctrl-C to exit");
-        while (!exit){
-            t.Reset();
-            Console.WriteLine("Communicating with Load Balancer");
-            Transciever.LoadBalancerTranscieve();
-            Console.WriteLine($"Done in {t.GetMsAndReset()}ms");
-            Thread.Sleep(1000);
-        }
 
-        Console.ReadLine();
+        try {
+            while (!exit){
+                t.Reset();
+                Console.WriteLine("Communicating with Load Balancer");
+                Transciever.LoadBalancerTranscieve();
+                Console.WriteLine($"Done in {t.GetMsAndReset()}ms");
+                Thread.Sleep(1000);
+            }
+        }
+        catch (Exception e) {
+            Console.WriteLine(e);
+            Exit();
+        }
     }
 
     static void exitHandler(object? sender, ConsoleCancelEventArgs args) {
@@ -69,7 +76,7 @@ public static class Program {
         Listener.Exit();
 
         Console.WriteLine("Giving time for graceful shutdown");
-        Thread.Sleep(200);
+        Thread.Sleep(1000);
 
         Console.WriteLine("Terminating processes");
 
