@@ -5,8 +5,10 @@ import subprocess
 import time
 
 start = time.time()
+
 folders = ["Shared", "Server-Spooler", "Load-Balancer", "Game-Server", "Lobby-Server", "Matchmaker", "NoGui-Client"]
 
+"""
 done = []
 for f in folders[:-1]:
     done.append(subprocess.call(["dotnet", "build", f]))
@@ -20,6 +22,8 @@ subprocess.call(["dotnet", "build", f"{folders[-1]}"])
 #         if d.poll() is None:
 #             cont = False
 #             break
+"""
+subprocess.call(["dotnet", "build", "."])
 
 print("Copying files")
 for f in folders:

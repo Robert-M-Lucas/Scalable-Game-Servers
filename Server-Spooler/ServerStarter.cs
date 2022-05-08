@@ -1,12 +1,30 @@
 namespace ServerSpooler;
 
+using Shared;
+using System.Net;
+using System.Net.Sockets;
 using System.Diagnostics;
 
 // Load balancer args:
 // [Server Spooler IP] [Server Spooler Port] [Load Balancer Port]
 
-public static class ServerStarter{
+public class LobbyData {
+    public ByteIP ip;
+    public int UID;
+    public Process process;
+    public Socket? socket;
+
+    public LobbyData(int uid, ByteIP _ip, Process _process) {
+        UID = uid;
+        ip = _ip;
+        process = _process;
+    }
+}
+
+public static class ServerStarter {
     public static Process? LoadBalancer;
+
+    public static List<LobbyData> LobbyServers = new List<LobbyData>();
 
     public static void StartLoadBalancer() {
         // Code for starting load balancer would go here
@@ -24,7 +42,16 @@ public static class ServerStarter{
         LoadBalancer = Process.Start(startInfo);
     }
 
+    public static void StartLobby() {
+
+    }
+
     public static void Exit() {
         if (!(LoadBalancer is null)) { Console.WriteLine("Killing load balancer"); LoadBalancer.Kill(); }
+        Console.WriteLine("Killing lobby servers");
+        foreach (LobbyData lb in LobbyServers) {
+            if (!(lb.socket is null)) { lb.socket.Shutdown(SocketShutdown.Both); }
+            lb.process.Kill();
+        }
     }
 }

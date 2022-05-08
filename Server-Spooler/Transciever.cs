@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Sockets;
 
 public static class Transciever {
-    public static void LoadBalancerTranscieve(){
+    public static void LoadBalancerTranscieve() {
         const int PacketLenLen = 2;
         // 2bytes [Packet Len] byte.byte.byte.byte:2bytes [IP] byte [Player count]
         // All bytes unsigned
