@@ -2,6 +2,7 @@ namespace ServerSpooler;
 
 using Shared;
 using System.Net;
+using System.Diagnostics;
 
 public static class Program {
     # region Constants
@@ -13,14 +14,24 @@ public static class Program {
     public static string config_path = "";
 
 
-    public static List<Tuple<ByteIP, uint>> LobbyServers = new List<Tuple<ByteIP, uint>>();
+    public static List<LobbyData> LobbyServers = new List<LobbyData>();
     public static List<Tuple<ByteIP, uint>> GameServers = new List<Tuple<ByteIP, uint>>();
+
+    public static uint LoadBalancerQueueLen = 0;
 
     public static bool exit = false;
 
+    # region ResponseTimes
+    
+    public static long LoadBalancerResponseTime = 0;
+    public static long AllLobbiesResponseTime = 0;
+    public static long MatchmakerResponseTime = 0;
+
+    # endregion
+
     public static void Main(string[] args) {
         // Example lobby server
-        LobbyServers.Add(new Tuple<ByteIP, uint>(ByteIP.StringToIP("210.222.111.1", 8108), 79));
+        // LobbyServers.Add(new LobbyData(0, ByteIP.StringToIP("127.0.0.1", 123), new Process()));
 
         // if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
         // config_path = args[0];
@@ -42,17 +53,43 @@ public static class Program {
         try { Listener.LoadBalancerSocket = Listener.AcceptClient(); }
         catch (ServerConnectTimeoutException) { Console.WriteLine("Load balancer didn't connect in required time, exitting"); Exit(); return; }
         Console.WriteLine($"Connected in {t.GetMsAndReset()}ms");
-        // Same for matchmaker
+        // TODO: Same for matchmaker
 
 
         Console.WriteLine("Press Ctrl-C to exit");
 
         try {
-            while (!exit){
+            while (!exit) {
                 t.Reset();
                 Console.WriteLine("Communicating with Load Balancer");
                 Transciever.LoadBalancerTranscieve();
-                Console.WriteLine($"Done in {t.GetMsAndReset()}ms");
+                LoadBalancerResponseTime = t.GetMsAndReset();
+                
+                // Transciever.MatchmakerTranscieve
+
+                Console.WriteLine("Communicating with Lobbies");
+                Transciever.LobbyServersTranscieve();
+                AllLobbiesResponseTime = t.GetMsAndReset();
+
+
+                int empty_lobby_severs = 0;
+                foreach (LobbyData lobby_server in LobbyServers) {
+                    if (lobby_server.FillLevel == 0) {
+                        empty_lobby_severs++;
+                    }
+                }
+
+                while (empty_lobby_severs < config.MinEmptyLobbies) {
+                    ServerStarter.StartLobby();
+                    empty_lobby_severs++;
+                }
+
+                while (empty_lobby_severs > config.MaxEmptyLobbies) {
+                    ServerStarter.StopEmptyLobby();
+                    empty_lobby_severs--;
+                }
+                
+                InfoManager.ShowInfo();
                 Thread.Sleep(1000);
             }
         }

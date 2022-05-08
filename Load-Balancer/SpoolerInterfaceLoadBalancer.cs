@@ -22,7 +22,8 @@ public class SILoadBalancer: SpoolerInterface
         Console.WriteLine("Recieve server done");
         Program.LobbyServers = NewLobbyServerList;
 
-        uint num = 20321;
+        uint num = 0;
+        if (!(Program.server is null)) { num = (uint) Program.server.Players.Count; }
         SpoolerSocket.Send(new byte[] {(byte) num, (byte) (num>>8)});
     }
 }

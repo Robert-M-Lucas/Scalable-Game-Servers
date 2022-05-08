@@ -15,11 +15,12 @@ public static class Program {
     public static SILobbyServer? spoolerInterface;
 
     public static bool exit = false;
-    
+
+    public static uint fill_level;
+
     public static void Main(string[] args) {
         // [version] [spooler ip] [spooler port] [lobby port] [max lobby fill]
         if (args.Length < 5) { Console.WriteLine("Not enough arguments"); return; }
-
         version = args[0];
         SpoolerIP = args[1];
         if (!int.TryParse(args[2], out SpoolerPort)) { Console.WriteLine("Spooler port incorrectly formatted"); return; }
@@ -27,7 +28,7 @@ public static class Program {
         if (!int.TryParse(args[4], out MaxLobbyFill)) { Console.WriteLine("Max lobby fill incorrectly formatted"); return; }
 
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
-
+        
         try {
             spoolerInterface = new SILobbyServer(SpoolerIP, SpoolerPort);
         }
@@ -38,8 +39,7 @@ public static class Program {
         }
 
         Console.WriteLine("Press Ctrl-C to exit");
-
-
+        Console.ReadLine();
     }
 
     static void exitHandler(object? sender, ConsoleCancelEventArgs args) {

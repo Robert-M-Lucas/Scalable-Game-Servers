@@ -12,12 +12,12 @@ public static class Transciever {
         byte[] buffer = new byte[1024];
         uint cursor = PacketLenLen;
 
-        foreach (Tuple<ByteIP, uint> lobby in Program.LobbyServers){
-            ArrayExtentions.Merge(buffer, lobby.Item1.IP, (int) cursor);
+        foreach (LobbyData lobby in Program.LobbyServers){
+            ArrayExtentions.Merge(buffer, lobby.ip.IP, (int) cursor);
             cursor += 4;
-            ArrayExtentions.Merge(buffer, lobby.Item1.Port, (int) cursor);
+            ArrayExtentions.Merge(buffer, lobby.ip.Port, (int) cursor);
             cursor += 2;
-            ArrayExtentions.Merge(buffer, new byte[] {(byte) lobby.Item2}, (int) cursor);
+            ArrayExtentions.Merge(buffer, new byte[] {(byte) lobby.FillLevel}, (int) cursor);
             cursor += 1;
         }
 
@@ -30,7 +30,19 @@ public static class Transciever {
         // Expecting 2 byte uint for response (queue len)
         byte[] recv = new byte[2];
         Listener.LoadBalancerSocket.Receive(recv);
+        Program.LoadBalancerQueueLen =((uint) recv[0]) + (((uint) (recv[1]<<8)));
+        // Console.WriteLine($"Load balancer queue len = {Program.LoadBalancerQueueLen}");
+    }
 
-        Console.WriteLine($"Load balancer queue len = {((uint) recv[0]) + ((uint) (recv[1]<<8))}");
+    public static void LobbyServersTranscieve() {
+        Timer t = new Timer();
+        foreach (LobbyData lobby in Program.LobbyServers) {
+            if (lobby.socket is null) { Console.WriteLine("LOBBY SOCKET IS NULL!"); continue; }
+            lobby.socket.Send(new byte[] {2, 0});
+            byte[] recv = new byte[1];
+            lobby.socket.Receive(recv);
+            lobby.FillLevel = recv[0];
+            lobby.response_time = t.GetMsAndReset();
+        }
     }
 }

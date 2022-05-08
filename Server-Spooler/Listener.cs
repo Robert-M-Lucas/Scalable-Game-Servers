@@ -18,26 +18,31 @@ public static class Listener{
 
     public static Socket? TempSocket;
 
+    public static Socket? ListenerSocket;
+
     public static Socket AcceptClient(){
-        IPAddress ipAddress = IPAddress.Any;
+        if (ListenerSocket is null) {
+            IPAddress ipAddress = IPAddress.Any;
 
-        IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Program.config.ServerSpoolerPort);
+            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Program.config.ServerSpoolerPort);
 
-        Socket listener = new Socket(
-                ipAddress.AddressFamily,
-                SocketType.Stream,
-                ProtocolType.Tcp
-            );
+            ListenerSocket = new Socket(
+                    ipAddress.AddressFamily,
+                    SocketType.Stream,
+                    ProtocolType.Tcp
+                );
 
-        listener.Bind(localEndPoint);
-        listener.Listen(1);
+            ListenerSocket.Bind(localEndPoint);
+        }
+
+        ListenerSocket.Listen(1);
 
         Stopwatch s = new Stopwatch();
         s.Start();
         Console.WriteLine("Accepting connection");
 
         Thread t = new Thread(() => {
-            TempSocket = listener.Accept();
+            TempSocket = ListenerSocket.Accept();
         });
         t.Start();
 

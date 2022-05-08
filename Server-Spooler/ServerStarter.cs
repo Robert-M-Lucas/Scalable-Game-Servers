@@ -13,6 +13,9 @@ public class LobbyData {
     public int UID;
     public Process process;
     public Socket? socket;
+    public int FillLevel = 0;
+
+    public long response_time = 0;
 
     public LobbyData(int uid, ByteIP _ip, Process _process) {
         UID = uid;
@@ -22,6 +25,8 @@ public class LobbyData {
 }
 
 public static class ServerStarter {
+    public static int LobbyPort = 10123;
+    public static int LobbyUID = 0;
     public static Process? LoadBalancer;
 
     public static List<LobbyData> LobbyServers = new List<LobbyData>();
@@ -42,16 +47,59 @@ public static class ServerStarter {
         LoadBalancer = Process.Start(startInfo);
     }
 
-    public static void StartLobby() {
+    public static bool StartLobby() {
+        Console.WriteLine($"Starting lobby {LobbyUID} on port {LobbyPort}");
 
+        ProcessStartInfo startInfo = new ProcessStartInfo();
+        startInfo.CreateNoWindow = false;
+        startInfo.UseShellExecute = true;
+        startInfo.FileName = ".Build\\Lobby-Server\\Lobby-Server.exe";
+        startInfo.WindowStyle = ProcessWindowStyle.Normal;
+        startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {LobbyPort} {Program.config.MaxLobbyFill}";
+
+        Process? lobby_server = Process.Start(startInfo);
+        if (lobby_server is null) { return false; }
+        LobbyData new_lobby = new LobbyData(LobbyUID, ByteIP.StringToIP("127.0.0.1", (uint) LobbyPort), lobby_server);
+
+        Console.WriteLine("Waiting for lobby response");
+        try {
+            new_lobby.socket = Listener.AcceptClient();
+        }
+        catch (ServerConnectTimeoutException) {
+            Console.WriteLine("Lobby server failed to connect in time, killing...");
+            if (!(lobby_server is null)) { lobby_server.Kill(); }
+            LobbyUID ++;
+            LobbyPort ++;
+            return false;
+        }
+
+        Program.LobbyServers.Add(new_lobby);
+        LobbyUID ++;
+        LobbyPort ++;
+        return true;
+    }
+
+    public static void StopEmptyLobby() {
+        LobbyData? to_remove = null;
+        foreach (LobbyData lobby in Program.LobbyServers) {
+            if (lobby.FillLevel == 0) {
+                Console.WriteLine($"Stopping lobby server {lobby.UID} at port {lobby.ip.iPort}");
+                if (!(lobby.socket is null)) { lobby.socket.Shutdown(SocketShutdown.Both); }
+                Thread.Sleep(200);
+                lobby.process.Kill();
+                to_remove = lobby;
+                break;
+            }
+        }
+        if (!(to_remove is null)) { Program.LobbyServers.Remove(to_remove); }
     }
 
     public static void Exit() {
         if (!(LoadBalancer is null)) { Console.WriteLine("Killing load balancer"); LoadBalancer.Kill(); }
-        Console.WriteLine("Killing lobby servers");
-        foreach (LobbyData lb in LobbyServers) {
-            if (!(lb.socket is null)) { lb.socket.Shutdown(SocketShutdown.Both); }
-            lb.process.Kill();
-        }
+        // Console.WriteLine("Killing lobby servers");
+        // foreach (LobbyData lb in LobbyServers) {
+        //     if (!(lb.socket is null)) { lb.socket.Shutdown(SocketShutdown.Both); }
+        //     lb.process.Kill();
+        // }
     }
 }
