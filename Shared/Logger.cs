@@ -32,25 +32,27 @@ public class Logger {
 
     void LogLoop() {
         Directory.CreateDirectory("Logs");
+        StreamWriter sw = File.AppendText(LogName);
         try {
             while (true) { 
-                LogAll();
+                LogAll(sw);
                 Thread.Sleep(10);
                 // Console.WriteLine("Loop");
             }
         }
         catch (ThreadInterruptedException) {
             // Console.WriteLine("Interrupt");
-            LogAll();
+            LogAll(sw);
+            sw.Close();
             return;
         }
     }
 
-    void LogAll() {
+    void LogAll(StreamWriter sw) {
         while (LogQueue.Count > 0) {
             string log_line = "";
             if (LogQueue.TryDequeue(out log_line)) {
-                File.WriteAllLines(LogName, new string[] {log_line});
+                sw.WriteLine(log_line);
             }
             else {
                 // Console.WriteLine("Wait");

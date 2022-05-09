@@ -10,6 +10,8 @@ public static class Program {
     public const int GracefulShutdownTime = 1000;
     # endregion
 
+    public static Logger logger = new Logger("Server-Spooler", true);
+
     public static ConfigObj config;
     public static string config_path = "";
 
@@ -33,41 +35,41 @@ public static class Program {
         // Example lobby server
         // LobbyServers.Add(new LobbyData(0, ByteIP.StringToIP("127.0.0.1", 123), new Process()));
 
-        // if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
+        // if (args.Length < 1) { Program.logger.LogInfo("No config.json path, exitting"); return; }
         // config_path = args[0];
         config_path = "config.json";
         
         try { 
             config = Config.GetConfig(config_path);
         }
-        catch (BadConfigFormatException) { Console.WriteLine("Incorrect formatting of config.json"); Exit(); }
+        catch (BadConfigFormatException) { Program.logger.LogError("Incorrect formatting of config.json"); Exit(); }
         
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
 
         Timer t = new Timer();
 
-        Console.WriteLine("Starting load balancer");
+        Program.logger.LogInfo("Starting load balancer");
         ServerStarter.StartLoadBalancer();
-        Console.WriteLine("Waiting for load balancer response");
+        Program.logger.LogInfo("Waiting for load balancer response");
         t.Reset();
         try { Listener.LoadBalancerSocket = Listener.AcceptClient(); }
-        catch (ServerConnectTimeoutException) { Console.WriteLine("Load balancer didn't connect in required time, exitting"); Exit(); return; }
-        Console.WriteLine($"Connected in {t.GetMsAndReset()}ms");
+        catch (ServerConnectTimeoutException) { Program.logger.LogError("Load balancer didn't connect in required time, exitting"); Exit(); return; }
+        Program.logger.LogInfo($"Connected in {t.GetMsAndReset()}ms");
         // TODO: Same for matchmaker
 
 
-        Console.WriteLine("Press Ctrl-C to exit");
+        Program.logger.LogInfo("Press Ctrl-C to exit");
 
         try {
             while (!exit) {
                 t.Reset();
-                Console.WriteLine("Communicating with Load Balancer");
+                Program.logger.LogInfo("Communicating with Load Balancer");
                 Transciever.LoadBalancerTranscieve();
                 LoadBalancerResponseTime = t.GetMsAndReset();
                 
                 // Transciever.MatchmakerTranscieve
 
-                Console.WriteLine("Communicating with Lobbies");
+                Program.logger.LogInfo("Communicating with Lobbies");
                 Transciever.LobbyServersTranscieve();
                 AllLobbiesResponseTime = t.GetMsAndReset();
 
@@ -90,32 +92,35 @@ public static class Program {
                 }
                 
                 InfoManager.ShowInfo();
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
             }
         }
         catch (Exception e) {
-            Console.WriteLine(e);
+            logger.LogError("Error in main transcieve loop");
+            logger.LogError(e.ToString());
             Exit();
         }
     }
 
     static void exitHandler(object? sender, ConsoleCancelEventArgs args) {
-        Console.WriteLine("Escape key pressed");
+        Program.logger.LogInfo("Escape key pressed");
         args.Cancel = true;
         exit = true;
         Exit();
     }
 
     public static void Exit() {
-        Console.WriteLine("Shutting down network");
+        logger.LogInfo("Shutting down network");
         Listener.Exit();
 
-        Console.WriteLine("Giving time for graceful shutdown");
+        logger.LogInfo("Giving time for graceful shutdown");
         Thread.Sleep(GracefulShutdownTime);
 
-        Console.WriteLine("Terminating processes");
+        logger.LogInfo("Terminating processes");
 
         ServerStarter.Exit();
+
+        logger.CleanUp();
 
         Console.WriteLine("Exiting");
 

@@ -21,7 +21,11 @@ public static class Listener{
     public static Socket? ListenerSocket;
 
     public static Socket AcceptClient(){
+        Program.logger.LogInfo("Accepting client");
+
         if (ListenerSocket is null) {
+            Program.logger.LogDebug("Listener socket does not exist, creating");
+
             IPAddress ipAddress = IPAddress.Any;
 
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Program.config.ServerSpoolerPort);
@@ -39,7 +43,7 @@ public static class Listener{
 
         Stopwatch s = new Stopwatch();
         s.Start();
-        Console.WriteLine("Accepting connection");
+        Program.logger.LogInfo("Accepting connection");
 
         Thread t = new Thread(() => {
             TempSocket = ListenerSocket.Accept();
@@ -55,7 +59,7 @@ public static class Listener{
 
         t.Join();
 
-        Console.WriteLine("Connection established");
+        Program.logger.LogInfo("Connection established");
 
         if (TempSocket is null) { throw new NullReferenceException(); }
 
