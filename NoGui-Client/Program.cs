@@ -29,7 +29,7 @@ public static class Program {
         Console.Write("Enter name: "); ClientName = StringExtentions.DeNullString(Console.ReadLine());
 
         NetworkController.Start();
-        // A
+
         Console.ReadLine();
     }
 }
