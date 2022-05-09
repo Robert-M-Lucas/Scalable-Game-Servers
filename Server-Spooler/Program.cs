@@ -8,6 +8,7 @@ public static class Program {
     # region Constants
     public const int MaxServerConnectTime = 20000;
     public const int GracefulShutdownTime = 1000;
+    public const int interval = 500;
     # endregion
 
     public static Logger logger = new Logger("Server-Spooler", true);
@@ -58,7 +59,9 @@ public static class Program {
         // TODO: Same for matchmaker
 
 
-        Program.logger.LogInfo("Press Ctrl-C to exit");
+        Console.WriteLine("Press Ctrl-C to exit");
+        
+        Timer t_full = new Timer();
 
         try {
             while (!exit) {
@@ -92,7 +95,10 @@ public static class Program {
                 }
                 
                 InfoManager.ShowInfo();
-                Thread.Sleep(100);
+
+                long update_len = t_full.GetMs();
+                if (interval - update_len > 0) { Thread.Sleep(interval - (int) update_len); }
+                t_full.Reset();
             }
         }
         catch (Exception e) {
