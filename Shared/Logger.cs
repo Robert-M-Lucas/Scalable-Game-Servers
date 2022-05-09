@@ -16,7 +16,7 @@ public class Logger {
     const string INFO_TEXT =    "INFO   ";
     const ConsoleColor INFO_COLOUR = ConsoleColor.Cyan;
     const string WARNING_TEXT = "WARNING";
-    const ConsoleColor WARNING_COLOUR = ConsoleColor.Yellow;
+    const ConsoleColor WARNING_COLOUR = ConsoleColor.DarkYellow;
     const string ERROR_TEXT =   "ERROR  ";
     const ConsoleColor ERROR_COLOUR = ConsoleColor.DarkRed;
     const string DEBUG_TEXT =   "DEBUG  ";
