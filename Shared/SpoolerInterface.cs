@@ -10,14 +10,18 @@ public class SpoolerInterface
     byte[] buffer = new byte[1024];
     int buffer_cursor = 0;
 
-    public SpoolerInterface(string SpoolerIP, int SpoolerPort){
+    Logger logger;
+
+    public SpoolerInterface(string SpoolerIP, int SpoolerPort, Logger _logger){
+        logger = _logger;
+
         IPAddress HostIpA = IPAddress.Parse(SpoolerIP);
         IPEndPoint RemoteEP = new IPEndPoint(HostIpA, SpoolerPort);
 
         SpoolerSocket = new Socket(HostIpA.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
         SpoolerSocket.Connect(RemoteEP);
-        Console.WriteLine("Starting Spooler receive");
+        logger.LogInfo("Starting Spooler receive");
         SpoolerSocket.BeginReceive(buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), null);
     }
 
@@ -27,7 +31,6 @@ public class SpoolerInterface
 
     private void ReadCallback(IAsyncResult ar)
     {
-        Console.WriteLine("Callback");
         String content = String.Empty;
 
         buffer_cursor += SpoolerSocket.EndReceive(ar);
@@ -35,7 +38,7 @@ public class SpoolerInterface
         if (buffer_cursor >= 2) {
             uint packet_len = (uint) buffer[0] + (uint) (buffer[1]<<8);
 
-            Console.WriteLine($"Recieving packet from Spooler of len {packet_len}");
+            logger.LogDebug($"Recieving packet from Spooler of len {packet_len}");
 
             if (buffer_cursor >= packet_len){
                 OnRecieve(ArrayExtentions.Slice(buffer, 0, (int) packet_len));
@@ -46,7 +49,7 @@ public class SpoolerInterface
                 buffer_cursor = buffer_cursor - (int) packet_len;
             }
             else {
-                Console.WriteLine($"{buffer_cursor}/{packet_len} received");
+                logger.LogDebug($"{buffer_cursor}/{packet_len} received");
             }
         }
         SpoolerSocket.BeginReceive(buffer, buffer_cursor, 1024, 0, new AsyncCallback(ReadCallback), null);

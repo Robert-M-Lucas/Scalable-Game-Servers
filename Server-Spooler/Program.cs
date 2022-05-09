@@ -92,7 +92,7 @@ public static class Program {
                 }
                 
                 InfoManager.ShowInfo();
-                Thread.Sleep(500);
+                Thread.Sleep(4000);
             }
         }
         catch (Exception e) {

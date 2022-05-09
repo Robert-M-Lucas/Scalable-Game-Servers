@@ -6,10 +6,10 @@ using System.Net.Sockets;
 
 public class SILobbyServer: SpoolerInterface
 {
-    public SILobbyServer(string SpoolerIP, int SpoolerPort): base(SpoolerIP, SpoolerPort) {}
+    public SILobbyServer(string SpoolerIP, int SpoolerPort, Logger _logger): base(SpoolerIP, SpoolerPort, _logger) {}
 
     public override void OnRecieve(byte[] message) {
-        Console.WriteLine("Spooler requested update");
+        Program.logger.LogInfo("Spooler requested update");
         SpoolerSocket.Send(new byte[] {(byte) Program.fill_level});
     }
 }

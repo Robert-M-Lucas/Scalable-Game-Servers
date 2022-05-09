@@ -1,5 +1,7 @@
 ﻿namespace LobbyServer;
+
 using System;
+using Shared;
 
 public static class Program {
     public static string SpoolerIP = "";
@@ -18,23 +20,35 @@ public static class Program {
 
     public static uint fill_level;
 
+    public static Logger? _logger = null;
+    public static Logger logger {
+    get {
+        if (_logger is null) {throw new NullReferenceException();}
+        return _logger;
+    }}
+
+    static int LobbyServerID = -1;
+
     public static void Main(string[] args) {
-        // [version] [spooler ip] [spooler port] [lobby port] [max lobby fill]
-        if (args.Length < 5) { Console.WriteLine("Not enough arguments"); return; }
+        // [version] [spooler ip] [spooler port] [lobby port] [max lobby fill] [lobby id]
+        if (args.Length < 6) { Console.WriteLine("Not enough arguments"); return; }
         version = args[0];
         SpoolerIP = args[1];
         if (!int.TryParse(args[2], out SpoolerPort)) { Console.WriteLine("Spooler port incorrectly formatted"); return; }
         if (!int.TryParse(args[3], out Port)) { Console.WriteLine("Port incorrectly formatted"); return; }
         if (!int.TryParse(args[4], out MaxLobbyFill)) { Console.WriteLine("Max lobby fill incorrectly formatted"); return; }
+        if (!int.TryParse(args[5], out LobbyServerID)) { Console.WriteLine("Lobby server ID incorrectly formatted"); return; }
+
+        _logger =  new Logger("Lobby-Server-" + LobbyServerID, true);
 
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
         
         try {
-            spoolerInterface = new SILobbyServer(SpoolerIP, SpoolerPort);
+            spoolerInterface = new SILobbyServer(SpoolerIP, SpoolerPort, logger);
         }
         catch (Exception e) {
-            Console.WriteLine("Error connecting to spooler");
-            Console.WriteLine(e);
+            logger.LogError("Error connecting to spooler");
+            logger.LogError(e);
             return;
         }
 
@@ -50,7 +64,8 @@ public static class Program {
     }
 
     public static void Exit() {
-        Console.WriteLine("Shutting down environment");
+        logger.LogWarning("Shutting down environment and logger");
+        logger.CleanUp();
         Environment.Exit(0);
     }
 }

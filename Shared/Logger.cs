@@ -50,7 +50,7 @@ public class Logger {
 
     void LogAll(StreamWriter sw) {
         while (LogQueue.Count > 0) {
-            string log_line = "";
+            string? log_line = "";
             if (LogQueue.TryDequeue(out log_line)) {
                 sw.WriteLine(log_line);
             }
@@ -67,7 +67,9 @@ public class Logger {
         LogThread.Join();
     }
 
-    public void LogInfo(string log_text) {
+    public void LogInfo(object log_text_obj) {
+        if (log_text_obj is null) {return;}
+        string? log_text = log_text_obj.ToString();
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + INFO_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
         Console.ForegroundColor = INFO_COLOUR;
@@ -75,7 +77,9 @@ public class Logger {
         Console.ForegroundColor = DEFAULT_COLOUR;
     }
 
-    public void LogWarning(string log_text) {
+    public void LogWarning(object log_text_obj) {
+        if (log_text_obj is null) {return;}
+        string? log_text = log_text_obj.ToString();
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + WARNING_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
         Console.ForegroundColor = WARNING_COLOUR;
@@ -83,7 +87,9 @@ public class Logger {
         Console.ForegroundColor = DEFAULT_COLOUR;
     }
 
-    public void LogError(string log_text) {
+    public void LogError(object log_text_obj) {
+        if (log_text_obj is null) {return;}
+        string? log_text = log_text_obj.ToString();
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + ERROR_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
         Console.ForegroundColor = ERROR_COLOUR;
@@ -91,9 +97,10 @@ public class Logger {
         Console.ForegroundColor = DEFAULT_COLOUR;
     }
 
-    public void LogDebug(string log_text) {
+    public void LogDebug(object log_text_obj) {
         if (!debug_logged) {return;}
-
+        if (log_text_obj is null) {return;}
+        string? log_text = log_text_obj.ToString();
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + DEBUG_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
         Console.ForegroundColor = DEBUG_COLOUR;
