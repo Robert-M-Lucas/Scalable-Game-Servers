@@ -24,48 +24,48 @@ public class LoadBalancerClient {
             Handler.Connect(RemoteEP);
         }
         catch (SocketException e){
-            Console.WriteLine("Failed to connect to target");
-            Console.WriteLine(e);
+            Program.logger.LogError("Failed to connect to target load balancer " + Program.LoadBalancerIP + ":" + Program.LoadBalancerPort);
+            Program.logger.LogError(e.ToString());
             return false;
         }
 
-        if (Handler.RemoteEndPoint is null) {Console.WriteLine("Remote end point is null"); return false; }
+        if (Handler.RemoteEndPoint is null) {Program.logger.LogError("Remote end point is null"); return false; }
 
-        Console.WriteLine("Socket connected to " + Handler.RemoteEndPoint.ToString());
+        Program.logger.LogInfo("Socket connected to " + Handler.RemoteEndPoint.ToString());
 
         Handler.Send(ClientConnectRequestPacket.Build(0, Program.ClientName, Program.Version));
 
-        Console.WriteLine("Waiting for response");
+        Program.logger.LogInfo("Waiting for response from load balance");
 
         try {
             while (true) {
-                Console.WriteLine("Starting recieve");
+                Program.logger.LogDebug("Starting load balancer recieve");
                 byte[] packet_type = new byte[1];
                 Handler.Receive(packet_type, 0, 1, 0);
-                Console.WriteLine("Recieved");
+                Program.logger.LogDebug("Recieved");
 
                 switch (packet_type[0]){
                     case (byte) 0:
                         byte[] queue_pos_recv = new byte[2];
                         Handler.Receive(queue_pos_recv, 0, 2, 0);
-                        Console.WriteLine($"Position in queue: {((uint) queue_pos_recv[0]) + ((uint) (queue_pos_recv[1]<<8))}");
+                        Program.logger.LogInfo($"Position in queue: {((uint) queue_pos_recv[0]) + ((uint) (queue_pos_recv[1]<<8))}");
                         continue;
                     case (byte) 1:
                         byte[] ip_and_port = new byte[6];
                         Handler.Receive(ip_and_port, 0, 6, 0);
                         ByteIP ip = ByteIP.BytesToIP(ip_and_port);
-                        Console.WriteLine($"Being transfered to {ip.strIP}:{ip.iPort}");
+                        Program.logger.LogInfo($"Being transfered to {ip.strIP}:{ip.iPort}");
                         return true;
                     case (byte) 3:
                         Handler.Shutdown(SocketShutdown.Both);
-                        Console.WriteLine("Connection rejected - queue full");
+                        Program.logger.LogInfo("Connection rejected - queue full");
                         return false;
                 }
             }
         }
         catch (SocketException se) {
-            Console.WriteLine("Load Balancer disconnected client");
-            Console.WriteLine(se);
+            Program.logger.LogError("Load Balancer disconnected client");
+            Program.logger.LogError(se.ToString());
             return false;
         }
     }

@@ -65,8 +65,13 @@ public class BadConfigFormatException : Exception
 
 public static class Config{
     public static ConfigObj GetConfig(string config_path){
-        NullableConfigObj? null_config = JsonSerializer.Deserialize<NullableConfigObj>(File.ReadAllText(config_path));
-
+        NullableConfigObj? null_config = null;
+        try {
+            null_config = JsonSerializer.Deserialize<NullableConfigObj>(File.ReadAllText(config_path));
+        }
+        catch (System.IO.IOException e) {
+            throw new BadConfigFormatException(e.ToString());
+        }
         if (null_config is null) {throw new BadConfigFormatException();}
         if (null_config.Version is null) {throw new BadConfigFormatException();}
         if (null_config.ServerSpoolerPort is null) {throw new BadConfigFormatException();}

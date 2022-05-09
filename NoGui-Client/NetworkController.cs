@@ -8,7 +8,7 @@ public static class NetworkController{
     }    
 
     public static void ConnectToLoadBalancer() {
-        Console.WriteLine("Connecting to load balancer");
+        Program.logger.LogInfo("Connecting to load balancer");
         new LoadBalancerClient().Run();
     }
 
