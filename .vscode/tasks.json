@@ -2,40 +2,36 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
-            "command": "dotnet",
+            "label": "Build",
+            "command": "python",
             "type": "process",
             "args": [
-                "build",
-                "${workspaceFolder}/Game-Server/Game-Server.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "build.py"
             ],
-            "problemMatcher": "$msCompile"
         },
         {
-            "label": "publish",
-            "command": "dotnet",
+            "label": "Run",
+            "command": "python",
             "type": "process",
             "args": [
-                "publish",
-                "${workspaceFolder}/Game-Server/Game-Server.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "run.py"
             ],
-            "problemMatcher": "$msCompile"
         },
         {
-            "label": "watch",
-            "command": "dotnet",
+            "label": "Run Client",
+            "command": "python",
             "type": "process",
             "args": [
-                "watch",
-                "run",
-                "--project",
-                "${workspaceFolder}/Game-Server/Game-Server.csproj"
+                "run_client.py"
             ],
-            "problemMatcher": "$msCompile"
-        }
+        },
+        {
+            "label": "Clear Logs",
+            "command": "clear_logs.bat",
+            "type": "process",
+            "args": [
+                
+            ],
+        },
     ]
 }

@@ -4,9 +4,11 @@ from distutils.dir_util import copy_tree
 import subprocess
 import time
 
+os.chdir("\\".join(__file__.split("\\")[:-1]))
+
 start = time.time()
 
-config_only = input("(C)onfig only?: ").lower() == "c"
+config_only = False
 
 folders = ["Shared", "Server-Spooler", "Load-Balancer", "Game-Server", "Lobby-Server", "Matchmaker", "NoGui-Client"]
 
@@ -32,7 +34,7 @@ for f in folders:
     if not config_only:
         copy_tree(f + "\\bin\\Debug\\net6.0", ".Build\\" + f)
 
-    shutil.copy("config.json", ".Build\\" + f + "\\config.json")
+    shutil.copy("base_config.json", ".Build\\" + f + "\\config.json")
 
     # shutil.copy(f + "\\bin\\Debug\\net6.0\\" + f + ".exe", ".Build")
     # shutil.copy(f + "\\bin\\Debug\\net6.0\\" + f + ".dll", ".Build")

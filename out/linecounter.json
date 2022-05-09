@@ -1904,6 +1904,3157 @@
                     "filename": "Shared\\Timer.cs"
                 }
             ]
+        },
+        {
+            "version": "0.2.7",
+            "counttime": "2022-05-09 15:41:56",
+            "filesum": 492,
+            "codesum": 55604,
+            "commentsum": 161,
+            "blanksum": 553,
+            "statistics": {
+                ".sln": {
+                    "code": 62,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".py": {
+                    "code": 128,
+                    "comment": 13,
+                    "blank": 46
+                },
+                ".cs": {
+                    "code": 1242,
+                    "comment": 148,
+                    "blank": 331
+                },
+                ".csproj": {
+                    "code": 85,
+                    "comment": 0,
+                    "blank": 22
+                },
+                ".txt": {
+                    "code": 376,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".md": {
+                    "code": 30,
+                    "comment": 0,
+                    "blank": 8
+                },
+                ".json": {
+                    "code": 2205,
+                    "comment": 0,
+                    "blank": 146
+                },
+                ".targets": {
+                    "code": 16,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".props": {
+                    "code": 104,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".cache": {
+                    "code": 87,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".editorconfig": {
+                    "code": 80,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".CopyComplete": {
+                    "code": 0,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".log": {
+                    "code": 51189,
+                    "comment": 0,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 4,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": ".Build\\Game-Server\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": ".Build\\Game-Server\\Game-Server.deps.json"
+                },
+                {
+                    "filename": ".Build\\Game-Server\\Game-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Game-Server\\Game-Server.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Game-Server\\Game-Server.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".Build\\Game-Server\\Game-Server.runtimeconfig.json"
+                },
+                {
+                    "filename": ".Build\\Game-Server\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Game-Server\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": ".Build\\Load-Balancer\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": ".Build\\Load-Balancer\\Load-Balancer.deps.json"
+                },
+                {
+                    "filename": ".Build\\Load-Balancer\\Load-Balancer.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Load-Balancer\\Load-Balancer.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Load-Balancer\\Load-Balancer.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".Build\\Load-Balancer\\Load-Balancer.runtimeconfig.json"
+                },
+                {
+                    "filename": ".Build\\Load-Balancer\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Load-Balancer\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": ".Build\\Lobby-Server\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": ".Build\\Lobby-Server\\Lobby-Server.deps.json"
+                },
+                {
+                    "filename": ".Build\\Lobby-Server\\Lobby-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Lobby-Server\\Lobby-Server.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Lobby-Server\\Lobby-Server.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".Build\\Lobby-Server\\Lobby-Server.runtimeconfig.json"
+                },
+                {
+                    "filename": ".Build\\Lobby-Server\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Lobby-Server\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": ".Build\\Matchmaker\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": ".Build\\Matchmaker\\Matchmaker.deps.json"
+                },
+                {
+                    "filename": ".Build\\Matchmaker\\Matchmaker.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Matchmaker\\Matchmaker.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Matchmaker\\Matchmaker.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".Build\\Matchmaker\\Matchmaker.runtimeconfig.json"
+                },
+                {
+                    "filename": ".Build\\Matchmaker\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Matchmaker\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": ".Build\\NoGui-Client\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": ".Build\\NoGui-Client\\Logs\\NoGui-Client [09-05-22 15;38;53].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": ".Build\\NoGui-Client\\Logs\\NoGui-Client [09-05-22 15;39;11].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": ".Build\\NoGui-Client\\Logs\\NoGui-Client [09-05-22 15;39;32].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": ".Build\\NoGui-Client\\NoGui-Client.deps.json"
+                },
+                {
+                    "filename": ".Build\\NoGui-Client\\NoGui-Client.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\NoGui-Client\\NoGui-Client.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\NoGui-Client\\NoGui-Client.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".Build\\NoGui-Client\\NoGui-Client.runtimeconfig.json"
+                },
+                {
+                    "filename": ".Build\\NoGui-Client\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\NoGui-Client\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": ".Build\\Server-Spooler\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": ".Build\\Server-Spooler\\Server-Spooler.deps.json"
+                },
+                {
+                    "filename": ".Build\\Server-Spooler\\Server-Spooler.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Server-Spooler\\Server-Spooler.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Server-Spooler\\Server-Spooler.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".Build\\Server-Spooler\\Server-Spooler.runtimeconfig.json"
+                },
+                {
+                    "filename": ".Build\\Server-Spooler\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Server-Spooler\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": ".Build\\Shared\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": ".Build\\Shared\\Shared.deps.json"
+                },
+                {
+                    "filename": ".Build\\Shared\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Shared\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 24,
+                    "code": 86,
+                    "comment": 0,
+                    "filename": ".Packet Generator\\AutoPacketGenerator.py"
+                },
+                {
+                    "blank": 11,
+                    "code": 19,
+                    "comment": 11,
+                    "filename": "build.py"
+                },
+                {
+                    "blank": 4,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Game-Server.deps.json"
+                },
+                {
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Game-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Game-Server.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Game-Server.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Game-Server.runtimeconfig.json"
+                },
+                {
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "Game-Server\\Game-Server.csproj"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.csproj.CopyComplete"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\ref\\Game-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\refint\\Game-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 10,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Game-Server.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Game-Server.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Game-Server.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 6,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Game-Server\\Packets.txt"
+                },
+                {
+                    "blank": 5,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "Game-Server\\Program.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Load-Balancer.deps.json"
+                },
+                {
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Load-Balancer.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Load-Balancer.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Load-Balancer.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Load-Balancer.runtimeconfig.json"
+                },
+                {
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\Load-Balancer.csproj"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.csproj.CopyComplete"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\ref\\Load-Balancer.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\refint\\Load-Balancer.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 10,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Load-Balancer.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Load-Balancer.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Load-Balancer.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 6,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\Packets.txt"
+                },
+                {
+                    "blank": 21,
+                    "code": 73,
+                    "comment": 1,
+                    "filename": "Load-Balancer\\Program.cs"
+                },
+                {
+                    "blank": 14,
+                    "code": 63,
+                    "comment": 5,
+                    "filename": "Load-Balancer\\Server.cs"
+                },
+                {
+                    "blank": 6,
+                    "code": 24,
+                    "comment": 1,
+                    "filename": "Load-Balancer\\SpoolerInterfaceLoadBalancer.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Lobby-Server.deps.json"
+                },
+                {
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Lobby-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Lobby-Server.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Lobby-Server.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Lobby-Server.runtimeconfig.json"
+                },
+                {
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 2,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\Client.cs"
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\Lobby-Server.csproj"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.csproj.CopyComplete"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\ref\\Lobby-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\refint\\Lobby-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 10,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Lobby-Server.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Lobby-Server.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Lobby-Server.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 6,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\Packets.txt"
+                },
+                {
+                    "blank": 17,
+                    "code": 53,
+                    "comment": 1,
+                    "filename": "Lobby-Server\\Program.cs"
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\SpoolerInterfaceLobbyServer.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Load-Balancer [09-05-22 14;27;29].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 377,
+                    "comment": 0,
+                    "filename": "Logs\\Load-Balancer [09-05-22 14;30;56].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 1879,
+                    "comment": 0,
+                    "filename": "Logs\\Load-Balancer [09-05-22 14;33;27].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 5367,
+                    "comment": 0,
+                    "filename": "Logs\\Load-Balancer [09-05-22 15;32;50].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 1689,
+                    "comment": 0,
+                    "filename": "Logs\\Load-Balancer [09-05-22 15;38;05].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-0 [09-05-22 14;27;29].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-0 [09-05-22 14;30;57].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-0 [09-05-22 14;33;28].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-0 [09-05-22 15;32;50].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 342,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-0 [09-05-22 15;38;05].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-1 [09-05-22 14;27;30].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-1 [09-05-22 14;30;57].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-1 [09-05-22 14;33;28].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-1 [09-05-22 15;32;50].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 342,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-1 [09-05-22 15;38;05].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-10 [09-05-22 14;31;01].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-10 [09-05-22 14;33;32].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-10 [09-05-22 15;32;51].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-11 [09-05-22 14;31;01].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-11 [09-05-22 14;33;32].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-11 [09-05-22 15;32;51].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-12 [09-05-22 14;31;01].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-12 [09-05-22 14;33;33].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-12 [09-05-22 15;32;51].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-13 [09-05-22 14;31;02].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-13 [09-05-22 14;33;33].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-13 [09-05-22 15;32;51].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-14 [09-05-22 14;31;02].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-14 [09-05-22 14;33;34].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-14 [09-05-22 15;32;51].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-15 [09-05-22 14;31;03].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-15 [09-05-22 14;33;34].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-15 [09-05-22 15;32;52].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-16 [09-05-22 14;31;03].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-16 [09-05-22 14;33;35].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-16 [09-05-22 15;32;52].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-17 [09-05-22 14;31;03].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-17 [09-05-22 14;33;35].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-17 [09-05-22 15;32;52].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-18 [09-05-22 14;31;04].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-18 [09-05-22 14;33;35].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-18 [09-05-22 15;32;52].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-19 [09-05-22 14;31;04].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-19 [09-05-22 14;33;36].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-19 [09-05-22 15;32;52].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-2 [09-05-22 14;27;30].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-2 [09-05-22 14;30;58].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-2 [09-05-22 14;33;28].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-2 [09-05-22 15;32;50].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 342,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-2 [09-05-22 15;38;06].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-20 [09-05-22 14;31;05].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-20 [09-05-22 14;33;36].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-20 [09-05-22 15;32;52].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-21 [09-05-22 14;31;05].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-21 [09-05-22 14;33;37].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-21 [09-05-22 15;32;52].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-22 [09-05-22 14;31;05].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-22 [09-05-22 14;33;37].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-22 [09-05-22 15;32;52].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-23 [09-05-22 14;31;06].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-23 [09-05-22 14;33;37].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-23 [09-05-22 15;32;52].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-24 [09-05-22 14;31;06].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-24 [09-05-22 14;33;38].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-24 [09-05-22 15;32;53].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-25 [09-05-22 14;31;07].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-25 [09-05-22 14;33;38].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-25 [09-05-22 15;32;53].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-26 [09-05-22 14;31;07].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-26 [09-05-22 14;33;39].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-26 [09-05-22 15;32;53].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-27 [09-05-22 14;31;08].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-27 [09-05-22 14;33;39].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-27 [09-05-22 15;32;53].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-28 [09-05-22 14;31;08].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-28 [09-05-22 14;33;39].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-28 [09-05-22 15;32;53].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-29 [09-05-22 14;31;08].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-29 [09-05-22 14;33;40].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-29 [09-05-22 15;32;53].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-3 [09-05-22 14;27;30].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-3 [09-05-22 14;30;58].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-3 [09-05-22 14;33;29].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-3 [09-05-22 15;32;50].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 378,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-3 [09-05-22 15;38;06].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-30 [09-05-22 14;31;09].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-30 [09-05-22 14;33;40].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-30 [09-05-22 15;32;53].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-31 [09-05-22 14;31;09].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-31 [09-05-22 14;33;41].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-31 [09-05-22 15;32;53].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-32 [09-05-22 14;31;09].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-32 [09-05-22 14;33;41].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-32 [09-05-22 15;32;53].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-33 [09-05-22 14;31;10].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-33 [09-05-22 14;33;42].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-33 [09-05-22 15;32;54].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-34 [09-05-22 14;31;10].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-34 [09-05-22 14;33;42].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-34 [09-05-22 15;32;54].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-35 [09-05-22 14;31;11].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-35 [09-05-22 14;33;42].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-35 [09-05-22 15;32;54].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-36 [09-05-22 14;31;11].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-36 [09-05-22 14;33;43].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-36 [09-05-22 15;32;54].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-37 [09-05-22 14;31;12].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-37 [09-05-22 14;33;43].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-37 [09-05-22 15;32;54].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-38 [09-05-22 14;31;12].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-38 [09-05-22 14;33;43].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-38 [09-05-22 15;32;54].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-39 [09-05-22 14;31;13].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-39 [09-05-22 14;33;44].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-39 [09-05-22 15;32;54].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-4 [09-05-22 14;27;31].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-4 [09-05-22 14;30;58].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-4 [09-05-22 14;33;29].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-4 [09-05-22 15;32;50].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 342,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-4 [09-05-22 15;38;06].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-40 [09-05-22 14;31;13].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-40 [09-05-22 14;33;44].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-40 [09-05-22 15;32;54].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-41 [09-05-22 14;31;13].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-41 [09-05-22 14;33;45].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-41 [09-05-22 15;32;54].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-42 [09-05-22 14;31;14].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-42 [09-05-22 14;33;45].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-42 [09-05-22 15;32;55].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-43 [09-05-22 14;31;14].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-43 [09-05-22 14;33;46].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-43 [09-05-22 15;32;55].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-44 [09-05-22 14;31;15].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-44 [09-05-22 14;33;46].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-44 [09-05-22 15;32;55].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-45 [09-05-22 14;31;15].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-45 [09-05-22 14;33;47].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-45 [09-05-22 15;32;55].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-46 [09-05-22 14;31;15].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-46 [09-05-22 14;33;47].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-46 [09-05-22 15;32;55].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-47 [09-05-22 14;31;16].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-47 [09-05-22 14;33;48].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-47 [09-05-22 15;32;55].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-48 [09-05-22 14;31;16].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-48 [09-05-22 14;33;48].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-48 [09-05-22 15;32;55].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-49 [09-05-22 14;31;17].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-49 [09-05-22 14;33;49].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-49 [09-05-22 15;32;55].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-5 [09-05-22 14;30;59].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-5 [09-05-22 14;33;30].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-5 [09-05-22 15;32;51].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-6 [09-05-22 14;30;59].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-6 [09-05-22 14;33;30].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-6 [09-05-22 15;32;51].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-7 [09-05-22 14;30;59].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-7 [09-05-22 14;33;30].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-7 [09-05-22 15;32;51].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-8 [09-05-22 14;31;00].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-8 [09-05-22 14;33;31].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-8 [09-05-22 15;32;51].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-9 [09-05-22 14;31;00].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-9 [09-05-22 14;33;31].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 171,
+                    "comment": 0,
+                    "filename": "Logs\\Lobby-Server-9 [09-05-22 15;32;51].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 60,
+                    "comment": 0,
+                    "filename": "Logs\\Server-Spooler [09-05-22 14;27;29].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 1604,
+                    "comment": 0,
+                    "filename": "Logs\\Server-Spooler [09-05-22 14;30;56].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 5924,
+                    "comment": 0,
+                    "filename": "Logs\\Server-Spooler [09-05-22 14;33;26].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 16324,
+                    "comment": 0,
+                    "filename": "Logs\\Server-Spooler [09-05-22 15;32;49].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 4734,
+                    "comment": 0,
+                    "filename": "Logs\\Server-Spooler [09-05-22 15;38;05].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Matchmaker.deps.json"
+                },
+                {
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Matchmaker.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Matchmaker.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Matchmaker.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Matchmaker.runtimeconfig.json"
+                },
+                {
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "Matchmaker\\Matchmaker.csproj"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.csproj.CopyComplete"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\ref\\Matchmaker.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\refint\\Matchmaker.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 10,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Matchmaker.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Matchmaker.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Matchmaker.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 6,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Matchmaker\\Packets.txt"
+                },
+                {
+                    "blank": 4,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "Matchmaker\\Program.cs"
+                },
+                {
+                    "blank": 8,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "namespace_enforcer.py"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\NoGui-Client.deps.json"
+                },
+                {
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\NoGui-Client.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\NoGui-Client.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\NoGui-Client.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\NoGui-Client.runtimeconfig.json"
+                },
+                {
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 13,
+                    "code": 58,
+                    "comment": 1,
+                    "filename": "NoGui-Client\\LoadBalancerClient.cs"
+                },
+                {
+                    "blank": 7,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\NetworkController.cs"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\NoGui-Client.csproj"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.csproj.CopyComplete"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\ref\\NoGui-Client.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\refint\\NoGui-Client.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 10,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\NoGui-Client.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\NoGui-Client.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\NoGui-Client.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 6,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\Packets.txt"
+                },
+                {
+                    "blank": 13,
+                    "code": 33,
+                    "comment": 1,
+                    "filename": "NoGui-Client\\Program.cs"
+                },
+                {
+                    "blank": 4,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "Protocols\\LoadBalancer - Client.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Protocols\\ServerSpooler - LoadBalancer.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "Protocols\\ServerSpooler - LobbyServer.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Readme.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 2,
+                    "comment": 2,
+                    "filename": "run.py"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "run_client.py"
+                },
+                {
+                    "blank": 0,
+                    "code": 62,
+                    "comment": 0,
+                    "filename": "Scalable Game Servers.sln"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Server-Spooler.deps.json"
+                },
+                {
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Server-Spooler.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Server-Spooler.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Server-Spooler.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Server-Spooler.runtimeconfig.json"
+                },
+                {
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 2,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\InfoManager.cs"
+                },
+                {
+                    "blank": 24,
+                    "code": 48,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\Listener.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\ref\\Server-Spooler.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\refint\\Server-Spooler.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.csproj.CopyComplete"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 6,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 10,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Server-Spooler.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Server-Spooler.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Server-Spooler.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 37,
+                    "code": 92,
+                    "comment": 6,
+                    "filename": "Server-Spooler\\Program.cs"
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\Server-Spooler.csproj"
+                },
+                {
+                    "blank": 17,
+                    "code": 77,
+                    "comment": 11,
+                    "filename": "Server-Spooler\\ServerStarter.cs"
+                },
+                {
+                    "blank": 7,
+                    "code": 37,
+                    "comment": 4,
+                    "filename": "Server-Spooler\\Transciever.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": "Shared\\bin\\Debug\\net6.0\\Shared.deps.json"
+                },
+                {
+                    "filename": "Shared\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Shared\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 14,
+                    "code": 35,
+                    "comment": 0,
+                    "filename": "Shared\\ByteIP.cs"
+                },
+                {
+                    "blank": 9,
+                    "code": 40,
+                    "comment": 0,
+                    "filename": "Shared\\ConsoleInputUtil.cs"
+                },
+                {
+                    "blank": 5,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": "Shared\\Extentions\\ArrayExtentions.cs"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "Shared\\Extentions\\StringExtentions.cs"
+                },
+                {
+                    "blank": 19,
+                    "code": 61,
+                    "comment": 15,
+                    "filename": "Shared\\GetConfig.cs"
+                },
+                {
+                    "blank": 12,
+                    "code": 95,
+                    "comment": 3,
+                    "filename": "Shared\\Logger.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Shared\\obj\\Debug\\net6.0\\ref\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Shared\\obj\\Debug\\net6.0\\refint\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 5,
+                    "code": 67,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 5,
+                    "code": 61,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Shared.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Shared.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Shared.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 22,
+                    "code": 89,
+                    "comment": 11,
+                    "filename": "Shared\\PacketManager.cs"
+                },
+                {
+                    "blank": 2,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "Shared\\Packets\\NoGui-Client\\0_ClientConnectRequestPacket.cs"
+                },
+                {
+                    "blank": 2,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "Shared\\Shared.csproj"
+                },
+                {
+                    "blank": 16,
+                    "code": 41,
+                    "comment": 0,
+                    "filename": "Shared\\SpoolerInterface.cs"
+                },
+                {
+                    "blank": 5,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "Shared\\Timer.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Testing\\bin\\Debug\\net6.0\\Logs\\log.log"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Testing\\bin\\Debug\\net6.0\\NoGui-Client [09-05-22 111156].log"
+                },
+                {
+                    "blank": 0,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": "Testing\\bin\\Debug\\net6.0\\Testing.deps.json"
+                },
+                {
+                    "filename": "Testing\\bin\\Debug\\net6.0\\Testing.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Testing\\bin\\Debug\\net6.0\\Testing.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Testing\\bin\\Debug\\net6.0\\Testing.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Testing\\bin\\Debug\\net6.0\\Testing.runtimeconfig.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Testing\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Testing\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Testing\\obj\\Debug\\net6.0\\ref\\Testing.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Testing\\obj\\Debug\\net6.0\\refint\\Testing.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Testing\\obj\\Debug\\net6.0\\Testing.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Testing\\obj\\Debug\\net6.0\\Testing.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Testing\\obj\\Debug\\net6.0\\Testing.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Testing\\obj\\Debug\\net6.0\\Testing.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Testing\\obj\\Debug\\net6.0\\Testing.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "Testing\\obj\\Debug\\net6.0\\Testing.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Testing\\obj\\Debug\\net6.0\\Testing.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Testing\\obj\\Debug\\net6.0\\Testing.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Testing\\obj\\Debug\\net6.0\\Testing.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Testing\\obj\\Debug\\net6.0\\Testing.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Testing\\obj\\Debug\\net6.0\\Testing.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 63,
+                    "comment": 0,
+                    "filename": "Testing\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Testing\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 4,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "Testing\\obj\\Testing.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Testing\\obj\\Testing.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Testing\\obj\\Testing.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Testing\\Program.cs"
+                },
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Testing\\Testing.csproj"
+                }
+            ]
         }
     ]
 }

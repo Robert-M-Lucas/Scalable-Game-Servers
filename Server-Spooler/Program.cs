@@ -8,7 +8,7 @@ public static class Program {
     # region Constants
     public const int MaxServerConnectTime = 20000;
     public const int GracefulShutdownTime = 1000;
-    public const int interval = 500;
+    public const int interval = 50;
     # endregion
 
     public static Logger logger = new Logger("Server-Spooler", true);

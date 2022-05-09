@@ -12,5 +12,11 @@
             "cmd": "python.exe \"${workspaceRoot}\\namespace_enforcer.py\" ${file}",
             "event": "onFileChange"
         },
+        {
+            "match": "base_config.json",
+            "isAsync": true,
+            "cmd": "python.exe \"${workspaceRoot}\\update_config.py\"",
+            "event": "onFileChange"
+        },
     ],
 }
