@@ -6,14 +6,16 @@ import time
 
 start = time.time()
 
+config_only = input("(C)onfig only?: ").lower() == "c"
+
 folders = ["Shared", "Server-Spooler", "Load-Balancer", "Game-Server", "Lobby-Server", "Matchmaker", "NoGui-Client"]
 
+if not config_only:
+    done = []
+    for f in folders[:-1]:
+        done.append(subprocess.call(["dotnet", "build", f]))
 
-done = []
-for f in folders[:-1]:
-    done.append(subprocess.call(["dotnet", "build", f]))
-
-subprocess.call(["dotnet", "build", f"{folders[-1]}"])
+    subprocess.call(["dotnet", "build", f"{folders[-1]}"])
 
 # cont = False
 # while not cont:
@@ -27,7 +29,8 @@ subprocess.call(["dotnet", "build", f"{folders[-1]}"])
 
 print("Copying files")
 for f in folders:
-    copy_tree(f + "\\bin\\Debug\\net6.0", ".Build\\" + f)
+    if not config_only:
+        copy_tree(f + "\\bin\\Debug\\net6.0", ".Build\\" + f)
 
     shutil.copy("config.json", ".Build\\" + f + "\\config.json")
 
