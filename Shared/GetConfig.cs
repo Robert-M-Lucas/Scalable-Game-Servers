@@ -70,6 +70,7 @@ public static class Config{
             null_config = JsonSerializer.Deserialize<NullableConfigObj>(File.ReadAllText(config_path));
         }
         catch (System.IO.IOException e) {
+            Console.WriteLine(e);
             throw new BadConfigFormatException(e.ToString());
         }
         if (null_config is null) {throw new BadConfigFormatException();}

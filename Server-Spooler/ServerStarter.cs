@@ -40,7 +40,7 @@ public static class ServerStarter {
         ProcessStartInfo startInfo = new ProcessStartInfo();
         startInfo.CreateNoWindow = false;
         startInfo.UseShellExecute = true;
-        startInfo.FileName = ".Build\\Load-Balancer\\Load-Balancer.exe";
+        startInfo.FileName = "..\\Load-Balancer\\Load-Balancer.exe";
         startInfo.WindowStyle = ProcessWindowStyle.Normal;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {Program.config.LoadBalancerPort} {Program.config.MaxLobbyFill} {Program.config.MaxQueueLen}";
 
@@ -53,7 +53,7 @@ public static class ServerStarter {
         ProcessStartInfo startInfo = new ProcessStartInfo();
         startInfo.CreateNoWindow = false;
         startInfo.UseShellExecute = true;
-        startInfo.FileName = ".Build\\Lobby-Server\\Lobby-Server.exe";
+        startInfo.FileName = "..\\Lobby-Server\\Lobby-Server.exe";
         startInfo.WindowStyle = ProcessWindowStyle.Normal;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {LobbyPort} {Program.config.MaxLobbyFill} {LobbyUID}";
 

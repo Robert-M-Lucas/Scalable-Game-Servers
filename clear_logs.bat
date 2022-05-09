@@ -1,1 +1,1 @@
-del /S C:\Logs\*
+del /S /F /Q Logs\*
