@@ -13,13 +13,13 @@ public class Logger {
     public bool debug_logged = false;
 
     const ConsoleColor DEFAULT_COLOUR = ConsoleColor.White;
-    const string INFO_TEXT =    "INFO   ";
+    const string INFO_TEXT =    "INFO ";
     const ConsoleColor INFO_COLOUR = ConsoleColor.Cyan;
-    const string WARNING_TEXT = "WARNING";
+    const string WARNING_TEXT = "WARN ";
     const ConsoleColor WARNING_COLOUR = ConsoleColor.DarkYellow;
-    const string ERROR_TEXT =   "ERROR  ";
+    const string ERROR_TEXT =   "ERROR";
     const ConsoleColor ERROR_COLOUR = ConsoleColor.DarkRed;
-    const string DEBUG_TEXT =   "DEBUG  ";
+    const string DEBUG_TEXT =   "DEBUG";
     const ConsoleColor DEBUG_COLOUR = ConsoleColor.Green;
 
     public Logger(string log_name, bool debug = false) {
