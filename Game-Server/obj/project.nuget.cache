@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tw5SrUHxkr8hkR5piqwIjR/V5PaB1ShY7Ack7T8SnT068VAuCAZFFVGXKJYXvDqroh1trkGewfFRCX8DCgCk8g==",
+  "dgSpecHash": "lGj8SM0iZrS8OS4rguYZpj6uNjuFuO1EWV2E4ghWsMR2U4N+jo+9b3bXDW0k+4XvNrNJsH8q3nP4nkyAmLqr+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable-Game-Servers\\Game-Server\\Game-Server.csproj",
+  "projectFilePath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Game-Server\\Game-Server.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

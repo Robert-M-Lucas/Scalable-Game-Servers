@@ -8,6 +8,7 @@ public static class Program {
     # region Constants
     public const int MaxServerConnectTime = 20000;
     public const int GracefulShutdownTime = 1000;
+    public const long ServerInfoInterval = 2000;
     public const int interval = 50;
     # endregion
 
@@ -15,7 +16,6 @@ public static class Program {
 
     public static ConfigObj config;
     public static string config_path = "";
-
 
     public static List<LobbyData> LobbyServers = new List<LobbyData>();
     public static List<Tuple<ByteIP, uint>> GameServers = new List<Tuple<ByteIP, uint>>();
@@ -33,6 +33,7 @@ public static class Program {
     # endregion
 
     public static void Main(string[] args) {
+        logger.debug_logged = config.Debug;
         // Example lobby server
         // LobbyServers.Add(new LobbyData(0, ByteIP.StringToIP("127.0.0.1", 123), new Process()));
 
@@ -62,17 +63,18 @@ public static class Program {
         Console.WriteLine("Press Ctrl-C to exit");
         
         Timer t_full = new Timer();
+        Timer info_refresh = new Timer();
 
         try {
             while (!exit) {
                 t.Reset();
-                Program.logger.LogInfo("Communicating with Load Balancer");
+                Program.logger.LogDebug("Communicating with Load Balancer");
                 Transciever.LoadBalancerTranscieve();
                 LoadBalancerResponseTime = t.GetMsAndReset();
                 
                 // Transciever.MatchmakerTranscieve
 
-                Program.logger.LogInfo("Communicating with Lobbies");
+                Program.logger.LogDebug("Communicating with Lobbies");
                 Transciever.LobbyServersTranscieve();
                 AllLobbiesResponseTime = t.GetMsAndReset();
 
@@ -94,7 +96,10 @@ public static class Program {
                     empty_lobby_severs--;
                 }
                 
-                InfoManager.ShowInfo();
+                if (info_refresh.GetMs() > ServerInfoInterval) {
+                    InfoManager.ShowInfo();
+                    info_refresh.Restart();
+                }
 
                 long update_len = t_full.GetMs();
                 if (interval - update_len > 0) { Thread.Sleep(interval - (int) update_len); }

@@ -1,0 +1,50 @@
+[10/05/22 13:14:31:7426890] [INFO   ]: Logging started
+[10/05/22 13:14:31:8569654] [INFO   ]: Starting load balancer
+[10/05/22 13:14:32:2212510] [INFO   ]: Waiting for load balancer response
+[10/05/22 13:14:32:2274289] [INFO   ]: Accepting client
+[10/05/22 13:14:32:2479782] [INFO   ]: Accepting connection
+[10/05/22 13:14:32:7824448] [INFO   ]: Connection established
+[10/05/22 13:14:32:7854644] [INFO   ]: Connected in 0ms
+[10/05/22 13:14:32:9516527] [INFO   ]: Accepting client
+[10/05/22 13:14:32:9541947] [INFO   ]: Accepting connection
+[10/05/22 13:14:33:3791787] [INFO   ]: Connection established
+[10/05/22 13:14:33:4130810] [INFO   ]: Accepting client
+[10/05/22 13:14:33:4194146] [INFO   ]: Accepting connection
+[10/05/22 13:14:33:6916709] [INFO   ]: Connection established
+[10/05/22 13:14:33:7673391] [INFO   ]: Accepting client
+[10/05/22 13:14:33:7831471] [INFO   ]: Accepting connection
+[10/05/22 13:14:34:0627131] [INFO   ]: Connection established
+[10/05/22 13:14:34:1212500] [INFO   ]: Accepting client
+[10/05/22 13:14:34:1406803] [INFO   ]: Accepting connection
+[10/05/22 13:14:34:4142983] [INFO   ]: Connection established
+[10/05/22 13:14:34:4509217] [INFO   ]: Accepting client
+[10/05/22 13:14:34:4594461] [INFO   ]: Accepting connection
+[10/05/22 13:14:34:7320636] [INFO   ]: Connection established
+[10/05/22 13:14:34:7972092] [INFO   ]: ----------INFO START----------
+[10/05/22 13:14:34:7997880] [INFO   ]: Server Spooler:
+[10/05/22 13:14:34:8009133] [INFO   ]:  | IP: 127.0.0.1:5105
+[10/05/22 13:14:34:8024397] [INFO   ]: Load Balancer [0ms]:
+[10/05/22 13:14:34:8029662] [INFO   ]:  | IP: 127.0.0.1:7107
+[10/05/22 13:14:34:8044546] [INFO   ]:  | Queue Length: 0
+[10/05/22 13:14:34:8058292] [INFO   ]: Lobby Servers [53ms]: 
+[10/05/22 13:14:34:8063585] [INFO   ]:  | Lobby Server [0] [7ms]: 
+[10/05/22 13:14:34:8068384] [INFO   ]:  | | IP: 127.0.0.1:10123
+[10/05/22 13:14:34:8073166] [INFO   ]:  | | Fill Level: 0
+[10/05/22 13:14:34:8077758] [INFO   ]:  | Lobby Server [1] [13ms]: 
+[10/05/22 13:14:34:8082413] [INFO   ]:  | | IP: 127.0.0.1:10124
+[10/05/22 13:14:34:8086821] [INFO   ]:  | | Fill Level: 0
+[10/05/22 13:14:34:8091148] [INFO   ]:  | Lobby Server [2] [12ms]: 
+[10/05/22 13:14:34:8095465] [INFO   ]:  | | IP: 127.0.0.1:10125
+[10/05/22 13:14:34:8099789] [INFO   ]:  | | Fill Level: 0
+[10/05/22 13:14:34:8104172] [INFO   ]:  | Lobby Server [3] [8ms]: 
+[10/05/22 13:14:34:8108974] [INFO   ]:  | | IP: 127.0.0.1:10126
+[10/05/22 13:14:34:8113579] [INFO   ]:  | | Fill Level: 0
+[10/05/22 13:14:34:8118069] [INFO   ]:  | Lobby Server [4] [10ms]: 
+[10/05/22 13:14:34:8122477] [INFO   ]:  | | IP: 127.0.0.1:10127
+[10/05/22 13:14:34:8126742] [INFO   ]:  | | Fill Level: 0
+[10/05/22 13:14:34:8134059] [INFO   ]: ----------INFO ENDS----------
+[10/05/22 13:15:00:9504183] [INFO   ]: Escape key pressed
+[10/05/22 13:15:00:9518801] [INFO   ]: Shutting down network
+[10/05/22 13:15:00:9529312] [INFO   ]: Giving time for graceful shutdown
+[10/05/22 13:15:01:9594807] [INFO   ]: Terminating processes
+[10/05/22 13:15:01:9649409] [WARNING]: Shutting down logging

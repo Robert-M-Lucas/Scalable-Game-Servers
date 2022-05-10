@@ -20,6 +20,8 @@ using System.Text.Json.Serialization;
 */
 
 public class NullableConfigObj{
+    
+    public bool? Debug { get; set; }
     public string? Version { get; set; }
 
     public int? ServerSpoolerPort { get; set; }
@@ -38,6 +40,7 @@ public class NullableConfigObj{
 }
 
 public struct ConfigObj {
+    public bool Debug;
     public string Version;
 
     public int ServerSpoolerPort;
@@ -84,12 +87,13 @@ public static class Config{
         if (null_config.MinEmptyGameServers is null) {throw new BadConfigFormatException();}
         if (null_config.MaxEmptyLobbies is null) {throw new BadConfigFormatException();}
         if (null_config.MinEmptyLobbies is null) {throw new BadConfigFormatException();}
+        if (null_config.Debug is null) {throw new BadConfigFormatException();}
 
         ConfigObj config = new ConfigObj();
         config.Version = null_config.Version; config.ServerSpoolerPort = (int) null_config.ServerSpoolerPort; config.MatchmakerPort = (int) null_config.MatchmakerPort;
         config.LoadBalancerPort = (int) null_config.LoadBalancerPort; config.MaxEmptyGameServers = (int) null_config.MaxEmptyGameServers; config.MinEmptyGameServers = (int) null_config.MinEmptyGameServers;
         config.MaxEmptyLobbies = (int) null_config.MaxEmptyLobbies; config.MinEmptyLobbies = (int) null_config.MinEmptyLobbies;
-        config.MaxLobbyFill = (int) null_config.MaxLobbyFill; config.MaxQueueLen = (int) null_config.MaxQueueLen;
+        config.MaxLobbyFill = (int) null_config.MaxLobbyFill; config.MaxQueueLen = (int) null_config.MaxQueueLen; config.Debug = (bool) null_config.Debug;
 
         return config;
     }
