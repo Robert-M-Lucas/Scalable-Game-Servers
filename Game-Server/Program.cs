@@ -11,6 +11,6 @@ public static class Program {
     public static int SpoolerPort = -1;
     
     public static void Main(string[] args) {
-
+        
     }
 }
