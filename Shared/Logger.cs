@@ -7,8 +7,8 @@ using System.IO;
 
 public class Logger {
     public ConcurrentQueue<string> LogQueue = new ConcurrentQueue<string>();
-    public string LogName = "";
-    public Thread LogThread;
+    private string LogName = "";
+    private Thread LogThread;
 
     public bool debug_logged = false;
 
@@ -24,7 +24,7 @@ public class Logger {
 
     public Logger(string log_name, bool debug = false) {
         debug_logged = debug;
-        LogName = "Logs\\" + log_name + DateTime.Now.ToString(" [dd-MM-yy HH;mm;ss]") + ".log";
+        LogName = "Logs\\" + log_name + DateTime.Now.ToString(" [dd-MM-yy HH.mm.ss]") + ".log";
         LogInfo("Logging started");
         LogThread = new Thread(LogLoop);
         LogThread.Start();

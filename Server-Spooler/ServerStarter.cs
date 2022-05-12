@@ -41,32 +41,33 @@ public static class ServerStarter {
         startInfo.CreateNoWindow = false;
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Load-Balancer\\Load-Balancer.exe";
-        startInfo.WindowStyle = ProcessWindowStyle.Normal;
+        Program.logger.LogDebug("Load balancer start");
+        startInfo.WindowStyle = ProcessWindowStyle.Minimized;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {Program.config.LoadBalancerPort} {Program.config.MaxLobbyFill} {Program.config.MaxQueueLen}";
 
         LoadBalancer = Process.Start(startInfo);
     }
 
     public static bool StartLobby() {
-        Console.WriteLine($"Starting lobby {LobbyUID} on port {LobbyPort}");
+        Program.logger.LogInfo($"Starting lobby {LobbyUID} on port {LobbyPort}");
 
         ProcessStartInfo startInfo = new ProcessStartInfo();
         startInfo.CreateNoWindow = false;
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Lobby-Server\\Lobby-Server.exe";
-        startInfo.WindowStyle = ProcessWindowStyle.Normal;
+        startInfo.WindowStyle = ProcessWindowStyle.Minimized;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {LobbyPort} {Program.config.MaxLobbyFill} {LobbyUID}";
 
         Process? lobby_server = Process.Start(startInfo);
         if (lobby_server is null) { return false; }
         LobbyData new_lobby = new LobbyData(LobbyUID, ByteIP.StringToIP("127.0.0.1", (uint) LobbyPort), lobby_server);
 
-        Console.WriteLine("Waiting for lobby response");
+        Program.logger.LogDebug("Waiting for lobby response");
         try {
             new_lobby.socket = Listener.AcceptClient();
         }
         catch (ServerConnectTimeoutException) {
-            Console.WriteLine("Lobby server failed to connect in time, killing...");
+            Program.logger.LogError("Lobby server failed to connect in time, killing...");
             if (!(lobby_server is null)) { lobby_server.Kill(); }
             LobbyUID ++;
             LobbyPort ++;
@@ -95,7 +96,7 @@ public static class ServerStarter {
     }
 
     public static void Exit() {
-        if (!(LoadBalancer is null)) { Console.WriteLine("Killing load balancer"); LoadBalancer.Kill(); }
+        if (!(LoadBalancer is null)) { Program.logger.LogInfo("Killing load balancer"); LoadBalancer.Kill(); }
         // Console.WriteLine("Killing lobby servers");
         // foreach (LobbyData lb in LobbyServers) {
         //     if (!(lb.socket is null)) { lb.socket.Shutdown(SocketShutdown.Both); }

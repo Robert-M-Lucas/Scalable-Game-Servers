@@ -1,0 +1,8 @@
+[12/05/22 17:56:14:1722960] [INFO ]: Logging started
+[12/05/22 17:56:18:9387491] [INFO ]: Connecting to load balancer
+[12/05/22 17:56:20:9728857] [ERROR]: Failed to connect to target load balancer 127.0.0.1:7107
+[12/05/22 17:56:20:9860795] [ERROR]: System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): No connection could be made because the target machine actively refused it. 127.0.0.1:7107
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at NoGuiClient.LoadBalancerClient.Connect() in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\NoGui-Client\LoadBalancerClient.cs:line 24
+[12/05/22 17:56:28:9343597] [WARN ]: Shutting down logging

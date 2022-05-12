@@ -33,7 +33,6 @@ public static class Program {
     # endregion
 
     public static void Main(string[] args) {
-        logger.debug_logged = config.Debug;
         // Example lobby server
         // LobbyServers.Add(new LobbyData(0, ByteIP.StringToIP("127.0.0.1", 123), new Process()));
 
@@ -43,6 +42,7 @@ public static class Program {
         
         try { 
             config = Config.GetConfig(config_path);
+            logger.debug_logged = config.Debug;
         }
         catch (BadConfigFormatException) { Program.logger.LogError("Incorrect formatting of config.json"); Exit(); }
         

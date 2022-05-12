@@ -76,6 +76,7 @@ public static class Config{
             Console.WriteLine(e);
             throw new BadConfigFormatException(e.ToString());
         }
+
         if (null_config is null) {throw new BadConfigFormatException();}
         if (null_config.Version is null) {throw new BadConfigFormatException();}
         if (null_config.ServerSpoolerPort is null) {throw new BadConfigFormatException();}
