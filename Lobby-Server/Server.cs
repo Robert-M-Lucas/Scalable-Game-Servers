@@ -82,7 +82,7 @@ public class Server {
         // Start recieving data from client
         socket.BeginReceive(player.buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), player);
 
-        Program.logger.LogInfo($"Client {player} connected, player count: {Players.Count}");
+        Program.logger.LogInfo($"Client {player} connected, player count: {Players.Count}/{Program.MaxLobbyFill}");
         Program.fill_level = (uint) Players.Count();
     }
 

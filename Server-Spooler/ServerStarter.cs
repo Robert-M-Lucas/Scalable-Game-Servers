@@ -13,7 +13,7 @@ public class LobbyData {
     public int UID;
     public Process process;
     public Socket? socket;
-    public int FillLevel = 0;
+    public uint FillLevel = 0;
 
     public long response_time = 0;
 

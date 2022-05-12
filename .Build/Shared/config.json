@@ -8,7 +8,7 @@
     "LoadBalancerPort": 7107,
 
     "MaxQueueLen": 1000,
-    "MaxLobbyFill": 100,
+    "MaxLobbyFill": 2,
 
     "MaxEmptyLobbies": 10,
     "MinEmptyLobbies": 1,

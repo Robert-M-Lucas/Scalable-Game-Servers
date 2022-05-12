@@ -14,7 +14,7 @@ public static class InfoManager {
         foreach (LobbyData lobby in Program.LobbyServers) {
             Program.logger.LogInfo($" | Lobby Server [{lobby.UID}] [{lobby.response_time}ms]: ");
             Program.logger.LogInfo($" | | IP: {"127.0.0.1"}:{lobby.ip.iPort}");
-            Program.logger.LogInfo($" | | Fill Level: {lobby.FillLevel}");
+            Program.logger.LogInfo($" | | Fill Level: {lobby.FillLevel}/{Program.config.MaxLobbyFill}");
         }
         Program.logger.LogInfo($"----------INFO ENDS----------");
     }
