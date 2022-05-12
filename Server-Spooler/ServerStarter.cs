@@ -55,7 +55,7 @@ public static class ServerStarter {
         startInfo.CreateNoWindow = false;
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Lobby-Server\\Lobby-Server.exe";
-        startInfo.WindowStyle = ProcessWindowStyle.Minimized;
+        startInfo.WindowStyle = ProcessWindowStyle.Normal;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {LobbyPort} {Program.config.MaxLobbyFill} {LobbyUID}";
 
         Process? lobby_server = Process.Start(startInfo);

@@ -1,0 +1,87 @@
+[12/05/22 19:26:39:9452078] [INFO ]: Logging started
+[12/05/22 19:26:39:9688423] [INFO ]: Starting load balancer
+[12/05/22 19:26:40:0044595] [INFO ]: Waiting for load balancer response
+[12/05/22 19:26:40:0054269] [INFO ]: Accepting client
+[12/05/22 19:26:40:0093099] [INFO ]: Accepting connection
+[12/05/22 19:26:40:0816725] [INFO ]: Connection established
+[12/05/22 19:26:40:0821621] [INFO ]: Connected in 0ms
+[12/05/22 19:26:40:0853706] [INFO ]: Starting lobby 0 on port 10123
+[12/05/22 19:26:40:0938397] [INFO ]: Accepting client
+[12/05/22 19:26:40:0940334] [INFO ]: Accepting connection
+[12/05/22 19:26:40:1745372] [INFO ]: Connection established
+[12/05/22 19:26:42:0880412] [INFO ]: ----------INFO START----------
+[12/05/22 19:26:42:0883768] [INFO ]: Server Spooler:
+[12/05/22 19:26:42:0885110] [INFO ]:  | IP: 127.0.0.1:5105
+[12/05/22 19:26:42:0887526] [INFO ]: Load Balancer [0ms]:
+[12/05/22 19:26:42:0889181] [INFO ]:  | IP: 127.0.0.1:7107
+[12/05/22 19:26:42:0890794] [INFO ]:  | Queue Length: 0
+[12/05/22 19:26:42:0892416] [INFO ]: Lobby Servers [0ms]: 
+[12/05/22 19:26:42:0893739] [INFO ]:  | Lobby Server [0] [0ms]: 
+[12/05/22 19:26:42:0895235] [INFO ]:  | | IP: 127.0.0.1:10123
+[12/05/22 19:26:42:0896598] [INFO ]:  | | Fill Level: 0
+[12/05/22 19:26:42:0897990] [INFO ]: ----------INFO ENDS----------
+[12/05/22 19:26:44:1234764] [INFO ]: ----------INFO START----------
+[12/05/22 19:26:44:1238214] [INFO ]: Server Spooler:
+[12/05/22 19:26:44:1239726] [INFO ]:  | IP: 127.0.0.1:5105
+[12/05/22 19:26:44:1241121] [INFO ]: Load Balancer [0ms]:
+[12/05/22 19:26:44:1243032] [INFO ]:  | IP: 127.0.0.1:7107
+[12/05/22 19:26:44:1244752] [INFO ]:  | Queue Length: 0
+[12/05/22 19:26:44:1246367] [INFO ]: Lobby Servers [0ms]: 
+[12/05/22 19:26:44:1247904] [INFO ]:  | Lobby Server [0] [0ms]: 
+[12/05/22 19:26:44:1249555] [INFO ]:  | | IP: 127.0.0.1:10123
+[12/05/22 19:26:44:1251124] [INFO ]:  | | Fill Level: 0
+[12/05/22 19:26:44:1252578] [INFO ]: ----------INFO ENDS----------
+[12/05/22 19:26:46:1580316] [INFO ]: ----------INFO START----------
+[12/05/22 19:26:46:1583631] [INFO ]: Server Spooler:
+[12/05/22 19:26:46:1585248] [INFO ]:  | IP: 127.0.0.1:5105
+[12/05/22 19:26:46:1586693] [INFO ]: Load Balancer [0ms]:
+[12/05/22 19:26:46:1588103] [INFO ]:  | IP: 127.0.0.1:7107
+[12/05/22 19:26:46:1589659] [INFO ]:  | Queue Length: 0
+[12/05/22 19:26:46:1591146] [INFO ]: Lobby Servers [1ms]: 
+[12/05/22 19:26:46:1592929] [INFO ]:  | Lobby Server [0] [1ms]: 
+[12/05/22 19:26:46:1595318] [INFO ]:  | | IP: 127.0.0.1:10123
+[12/05/22 19:26:46:1596940] [INFO ]:  | | Fill Level: 0
+[12/05/22 19:26:46:1598666] [INFO ]: ----------INFO ENDS----------
+[12/05/22 19:26:48:1927318] [INFO ]: ----------INFO START----------
+[12/05/22 19:26:48:1930781] [INFO ]: Server Spooler:
+[12/05/22 19:26:48:1932147] [INFO ]:  | IP: 127.0.0.1:5105
+[12/05/22 19:26:48:1933641] [INFO ]: Load Balancer [0ms]:
+[12/05/22 19:26:48:1935288] [INFO ]:  | IP: 127.0.0.1:7107
+[12/05/22 19:26:48:1936655] [INFO ]:  | Queue Length: 0
+[12/05/22 19:26:48:1938020] [INFO ]: Lobby Servers [0ms]: 
+[12/05/22 19:26:48:1939731] [INFO ]:  | Lobby Server [0] [0ms]: 
+[12/05/22 19:26:48:1941294] [INFO ]:  | | IP: 127.0.0.1:10123
+[12/05/22 19:26:48:1942830] [INFO ]:  | | Fill Level: 0
+[12/05/22 19:26:48:1944188] [INFO ]: ----------INFO ENDS----------
+[12/05/22 19:26:50:2318710] [INFO ]: ----------INFO START----------
+[12/05/22 19:26:50:2322360] [INFO ]: Server Spooler:
+[12/05/22 19:26:50:2324002] [INFO ]:  | IP: 127.0.0.1:5105
+[12/05/22 19:26:50:2325612] [INFO ]: Load Balancer [0ms]:
+[12/05/22 19:26:50:2327104] [INFO ]:  | IP: 127.0.0.1:7107
+[12/05/22 19:26:50:2328726] [INFO ]:  | Queue Length: 0
+[12/05/22 19:26:50:2330160] [INFO ]: Lobby Servers [1117ms]: 
+[12/05/22 19:26:50:2331535] [INFO ]:  | Lobby Server [0] [1117ms]: 
+[12/05/22 19:26:50:2332798] [INFO ]:  | | IP: 127.0.0.1:10123
+[12/05/22 19:26:50:2334133] [INFO ]:  | | Fill Level: 0
+[12/05/22 19:26:50:2335654] [INFO ]: ----------INFO ENDS----------
+[12/05/22 19:26:52:2707891] [INFO ]: ----------INFO START----------
+[12/05/22 19:26:52:2710835] [INFO ]: Server Spooler:
+[12/05/22 19:26:52:2712023] [INFO ]:  | IP: 127.0.0.1:5105
+[12/05/22 19:26:52:2713277] [INFO ]: Load Balancer [0ms]:
+[12/05/22 19:26:52:2714648] [INFO ]:  | IP: 127.0.0.1:7107
+[12/05/22 19:26:52:2716119] [INFO ]:  | Queue Length: 0
+[12/05/22 19:26:52:2717809] [INFO ]: Lobby Servers [0ms]: 
+[12/05/22 19:26:52:2719220] [INFO ]:  | Lobby Server [0] [0ms]: 
+[12/05/22 19:26:52:2720716] [INFO ]:  | | IP: 127.0.0.1:10123
+[12/05/22 19:26:52:2722096] [INFO ]:  | | Fill Level: 0
+[12/05/22 19:26:52:2723694] [INFO ]: ----------INFO ENDS----------
+[12/05/22 19:26:52:9502008] [ERROR]: Error in main transcieve loop
+[12/05/22 19:26:52:9629017] [ERROR]: System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.Socket.Send(Byte[] buffer)
+   at ServerSpooler.Transciever.LobbyServersTranscieve() in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Server-Spooler\Transciever.cs:line 41
+   at ServerSpooler.Program.Main(String[] args) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Server-Spooler\Program.cs:line 78
+[12/05/22 19:26:52:9636052] [INFO ]: Shutting down network
+[12/05/22 19:26:52:9638286] [INFO ]: Giving time for graceful shutdown
+[12/05/22 19:26:53:9685705] [INFO ]: Terminating processes
+[12/05/22 19:26:53:9691667] [INFO ]: Killing load balancer
+[12/05/22 19:26:53:9700830] [WARN ]: Shutting down logging

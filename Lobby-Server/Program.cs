@@ -10,9 +10,9 @@ public static class Program {
     public static int Port = -1;
     public static int MaxLobbyFill = -1;
 
-    public static string version = "";
+    public const int MaxClientConnectionDataSendTime = 5000;
 
-    public static List<Client> Players = new List<Client>();
+    public static string version = "";
 
     public static SILobbyServer? spoolerInterface;
 
@@ -21,6 +21,9 @@ public static class Program {
     public static uint fill_level;
 
     public static Logger? _logger = null;
+
+    public static Server? server = null;
+
     public static Logger logger {
     get {
         if (_logger is null) {throw new NullReferenceException();}
@@ -39,7 +42,7 @@ public static class Program {
         if (!int.TryParse(args[4], out MaxLobbyFill)) { Console.WriteLine("Max lobby fill incorrectly formatted"); return; }
         if (!int.TryParse(args[5], out LobbyServerID)) { Console.WriteLine("Lobby server ID incorrectly formatted"); return; }
 
-        _logger =  new Logger("Lobby-Server-" + LobbyServerID, true);
+        _logger =  new Logger("Lobby-Server-" + LobbyServerID, false);
 
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
         
@@ -53,7 +56,9 @@ public static class Program {
         }
 
         Console.WriteLine("Press Ctrl-C to exit");
-        Console.ReadLine();
+        server = new Server();
+        server.Start();
+        // Console.ReadLine();
     }
 
     static void exitHandler(object? sender, ConsoleCancelEventArgs args) {
@@ -64,6 +69,11 @@ public static class Program {
     }
 
     public static void Exit() {
+        if (!(server is null)) {
+            logger.LogInfo("Shutting down server");
+            server.Stop();
+        }
+        
         logger.LogWarning("Shutting down environment and logger");
         logger.CleanUp();
         Environment.Exit(0);

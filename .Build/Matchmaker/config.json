@@ -11,7 +11,7 @@
     "MaxLobbyFill": 100,
 
     "MaxEmptyLobbies": 10,
-    "MinEmptyLobbies": 5,
+    "MinEmptyLobbies": 1,
 
     "MaxEmptyGameServers": 15,
     "MinEmptyGameServers": 7

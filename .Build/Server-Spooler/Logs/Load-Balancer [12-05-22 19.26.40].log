@@ -1,0 +1,851 @@
+[12/05/22 19:26:40:0683449] [INFO ]: Logging started
+[12/05/22 19:26:40:0791693] [INFO ]: Starting Spooler receive
+[12/05/22 19:26:40:0814076] [INFO ]: Load Balancer server start
+[12/05/22 19:26:40:0819145] [INFO ]: Load Balancer Client Accept Thread Start
+[12/05/22 19:26:40:0831751] [INFO ]: Waiting for client to connect
+[12/05/22 19:26:40:0842109] [DEBUG]: Recieving packet from Spooler of len 2
+[12/05/22 19:26:40:0845342] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:0846387] [INFO ]: Recieve server done
+[12/05/22 19:26:40:0847236] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:1754224] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:1756637] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:1761371] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:1762698] [INFO ]: Recieve server done
+[12/05/22 19:26:40:1763459] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:2366480] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:2368386] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:2369393] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:2370273] [INFO ]: Recieve server done
+[12/05/22 19:26:40:2371008] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:2978890] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:2981368] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:2982469] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:2983558] [INFO ]: Recieve server done
+[12/05/22 19:26:40:2984426] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:3593239] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:3595673] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:3596814] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:3597888] [INFO ]: Recieve server done
+[12/05/22 19:26:40:3598794] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:4207548] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:4212611] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:4216034] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:4218533] [INFO ]: Recieve server done
+[12/05/22 19:26:40:4220332] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:4826219] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:4833720] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:4840565] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:4844830] [INFO ]: Recieve server done
+[12/05/22 19:26:40:4846118] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:5439142] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:5442616] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:5444530] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:5446181] [INFO ]: Recieve server done
+[12/05/22 19:26:40:5447949] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:6053965] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:6057763] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:6060091] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:6062197] [INFO ]: Recieve server done
+[12/05/22 19:26:40:6064150] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:6668805] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:6672242] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:6674480] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:6676366] [INFO ]: Recieve server done
+[12/05/22 19:26:40:6681036] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:7288966] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:7293076] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:7295002] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:7296765] [INFO ]: Recieve server done
+[12/05/22 19:26:40:7304386] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:7903584] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:7908636] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:7910536] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:7912221] [INFO ]: Recieve server done
+[12/05/22 19:26:40:7913803] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:8522771] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:8529615] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:8532533] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:8534255] [INFO ]: Recieve server done
+[12/05/22 19:26:40:8535985] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:9137008] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:9150898] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:9155928] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:9162300] [INFO ]: Recieve server done
+[12/05/22 19:26:40:9165326] [INFO ]: Replying to spooler
+[12/05/22 19:26:40:9754370] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:40:9760135] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:40:9762286] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:40:9763928] [INFO ]: Recieve server done
+[12/05/22 19:26:40:9765549] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:0371491] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:0374341] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:0376659] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:0384384] [INFO ]: Recieve server done
+[12/05/22 19:26:41:0386150] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:0988684] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:0991668] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:0993416] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:0995240] [INFO ]: Recieve server done
+[12/05/22 19:26:41:0996815] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:1609271] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:1613634] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:1615703] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:1617492] [INFO ]: Recieve server done
+[12/05/22 19:26:41:1619168] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:2226374] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:2231956] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:2234244] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:2236282] [INFO ]: Recieve server done
+[12/05/22 19:26:41:2238058] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:2844352] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:2852576] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:2854486] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:2856176] [INFO ]: Recieve server done
+[12/05/22 19:26:41:2857948] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:3456267] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:3461230] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:3463437] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:3465792] [INFO ]: Recieve server done
+[12/05/22 19:26:41:3467675] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:4069146] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:4072481] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:4074517] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:4076450] [INFO ]: Recieve server done
+[12/05/22 19:26:41:4081116] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:4686135] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:4699059] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:4703330] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:4705196] [INFO ]: Recieve server done
+[12/05/22 19:26:41:4706958] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:5303529] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:5308104] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:5309921] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:5312816] [INFO ]: Recieve server done
+[12/05/22 19:26:41:5314525] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:5918976] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:5923544] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:5925395] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:5927100] [INFO ]: Recieve server done
+[12/05/22 19:26:41:5928689] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:6534295] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:6537794] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:6541265] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:6543647] [INFO ]: Recieve server done
+[12/05/22 19:26:41:6545361] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:7147610] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:7153181] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:7155702] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:7157370] [INFO ]: Recieve server done
+[12/05/22 19:26:41:7159120] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:7768012] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:7771189] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:7773243] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:7775055] [INFO ]: Recieve server done
+[12/05/22 19:26:41:7776718] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:8387826] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:8396426] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:8398602] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:8400346] [INFO ]: Recieve server done
+[12/05/22 19:26:41:8402091] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:9007445] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:9011661] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:9013666] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:9015553] [INFO ]: Recieve server done
+[12/05/22 19:26:41:9017613] [INFO ]: Replying to spooler
+[12/05/22 19:26:41:9623781] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:41:9629882] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:41:9631965] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:41:9633904] [INFO ]: Recieve server done
+[12/05/22 19:26:41:9635784] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:0236791] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:0240879] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:0242872] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:0244665] [INFO ]: Recieve server done
+[12/05/22 19:26:42:0246539] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:0852261] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:0858996] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:0861258] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:0863213] [INFO ]: Recieve server done
+[12/05/22 19:26:42:0864827] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:1469489] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:1474994] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:1476796] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:1478561] [INFO ]: Recieve server done
+[12/05/22 19:26:42:1480218] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:2089013] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:2099228] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:2101773] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:2103757] [INFO ]: Recieve server done
+[12/05/22 19:26:42:2105506] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:2707987] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:2712655] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:2715055] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:2716663] [INFO ]: Recieve server done
+[12/05/22 19:26:42:2718426] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:3319707] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:3323698] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:3325893] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:3328108] [INFO ]: Recieve server done
+[12/05/22 19:26:42:3329812] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:3937049] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:3940880] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:3943253] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:3945304] [INFO ]: Recieve server done
+[12/05/22 19:26:42:3947564] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:4557894] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:4562246] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:4564534] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:4566543] [INFO ]: Recieve server done
+[12/05/22 19:26:42:4568798] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:5176996] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:5180760] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:5182570] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:5184401] [INFO ]: Recieve server done
+[12/05/22 19:26:42:5186105] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:5791334] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:5794632] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:5796919] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:5799055] [INFO ]: Recieve server done
+[12/05/22 19:26:42:5801266] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:6407403] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:6411529] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:6413625] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:6415320] [INFO ]: Recieve server done
+[12/05/22 19:26:42:6417192] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:7022452] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:7026115] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:7028772] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:7030844] [INFO ]: Recieve server done
+[12/05/22 19:26:42:7034192] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:7633761] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:7638724] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:7640940] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:7643149] [INFO ]: Recieve server done
+[12/05/22 19:26:42:7645215] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:8248788] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:8263134] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:8265271] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:8267160] [INFO ]: Recieve server done
+[12/05/22 19:26:42:8268851] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:8864161] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:8870077] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:8872016] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:8873909] [INFO ]: Recieve server done
+[12/05/22 19:26:42:8875634] [INFO ]: Replying to spooler
+[12/05/22 19:26:42:9481083] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:42:9484674] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:42:9487005] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:42:9488684] [INFO ]: Recieve server done
+[12/05/22 19:26:42:9490426] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:0099511] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:0105355] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:0107542] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:0109592] [INFO ]: Recieve server done
+[12/05/22 19:26:43:0111368] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:0719974] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:0723980] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:0726184] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:0728571] [INFO ]: Recieve server done
+[12/05/22 19:26:43:0730795] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:1341373] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:1349800] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:1355522] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:1358114] [INFO ]: Recieve server done
+[12/05/22 19:26:43:1359635] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:1961015] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:1971259] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:1974811] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:1976870] [INFO ]: Recieve server done
+[12/05/22 19:26:43:1979477] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:2580428] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:2584426] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:2586201] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:2587931] [INFO ]: Recieve server done
+[12/05/22 19:26:43:2589752] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:3198590] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:3204305] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:3206218] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:3207987] [INFO ]: Recieve server done
+[12/05/22 19:26:43:3209758] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:3813721] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:3836335] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:3840877] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:3849802] [INFO ]: Recieve server done
+[12/05/22 19:26:43:3852043] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:4428949] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:4433619] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:4436252] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:4439642] [INFO ]: Recieve server done
+[12/05/22 19:26:43:4441503] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:5045422] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:5055200] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:5057332] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:5059291] [INFO ]: Recieve server done
+[12/05/22 19:26:43:5061290] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:5661664] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:5673304] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:5678870] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:5682938] [INFO ]: Recieve server done
+[12/05/22 19:26:43:5684941] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:6275629] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:6282251] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:6284304] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:6286230] [INFO ]: Recieve server done
+[12/05/22 19:26:43:6288341] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:6888976] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:6896951] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:6899108] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:6901049] [INFO ]: Recieve server done
+[12/05/22 19:26:43:6902932] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:7503983] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:7516094] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:7519354] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:7523533] [INFO ]: Recieve server done
+[12/05/22 19:26:43:7525481] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:8121841] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:8131467] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:8133681] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:8135714] [INFO ]: Recieve server done
+[12/05/22 19:26:43:8137599] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:8739510] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:8750160] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:8752625] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:8754866] [INFO ]: Recieve server done
+[12/05/22 19:26:43:8757170] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:9358271] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:9369860] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:9374445] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:9377647] [INFO ]: Recieve server done
+[12/05/22 19:26:43:9380687] [INFO ]: Replying to spooler
+[12/05/22 19:26:43:9974906] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:43:9982301] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:43:9985618] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:43:9988897] [INFO ]: Recieve server done
+[12/05/22 19:26:43:9992060] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:0589583] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:0598423] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:0601862] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:0605052] [INFO ]: Recieve server done
+[12/05/22 19:26:44:0608181] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:1199365] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:1209887] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:1213617] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:1216855] [INFO ]: Recieve server done
+[12/05/22 19:26:44:1221135] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:1814227] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:1823846] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:1827919] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:1831304] [INFO ]: Recieve server done
+[12/05/22 19:26:44:1834721] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:2434499] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:2442908] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:2446273] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:2449508] [INFO ]: Recieve server done
+[12/05/22 19:26:44:2452610] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:3055596] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:3068904] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:3072173] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:3075417] [INFO ]: Recieve server done
+[12/05/22 19:26:44:3078514] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:3674169] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:3691045] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:3695278] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:3698530] [INFO ]: Recieve server done
+[12/05/22 19:26:44:3701662] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:4285190] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:4300977] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:4304333] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:4307535] [INFO ]: Recieve server done
+[12/05/22 19:26:44:4310857] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:4900578] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:4908848] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:4912174] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:4915318] [INFO ]: Recieve server done
+[12/05/22 19:26:44:4918361] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:5515538] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:5527091] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:5536432] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:5541703] [INFO ]: Recieve server done
+[12/05/22 19:26:44:5544978] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:6127929] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:6135837] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:6140548] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:6144058] [INFO ]: Recieve server done
+[12/05/22 19:26:44:6147390] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:6745294] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:6753368] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:6756561] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:6759667] [INFO ]: Recieve server done
+[12/05/22 19:26:44:6762719] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:7363582] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:7372394] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:7375608] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:7378676] [INFO ]: Recieve server done
+[12/05/22 19:26:44:7381827] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:7982884] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:7990521] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:7997998] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:8001173] [INFO ]: Recieve server done
+[12/05/22 19:26:44:8004214] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:8601760] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:8609776] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:8613504] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:8616634] [INFO ]: Recieve server done
+[12/05/22 19:26:44:8619826] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:9222510] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:9231003] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:9235058] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:9238530] [INFO ]: Recieve server done
+[12/05/22 19:26:44:9241818] [INFO ]: Replying to spooler
+[12/05/22 19:26:44:9841597] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:44:9852952] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:44:9856242] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:44:9859897] [INFO ]: Recieve server done
+[12/05/22 19:26:44:9863211] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:0458809] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:0461846] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:0469798] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:0473763] [INFO ]: Recieve server done
+[12/05/22 19:26:45:0482902] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:1074066] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:1082757] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:1084623] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:1086347] [INFO ]: Recieve server done
+[12/05/22 19:26:45:1087967] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:1686044] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:1689990] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:1691953] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:1693781] [INFO ]: Recieve server done
+[12/05/22 19:26:45:1695581] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:2302693] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:2309517] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:2311719] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:2313616] [INFO ]: Recieve server done
+[12/05/22 19:26:45:2315407] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:2920790] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:2924316] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:2926701] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:2928960] [INFO ]: Recieve server done
+[12/05/22 19:26:45:2931114] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:3531438] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:3538771] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:3541063] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:3543341] [INFO ]: Recieve server done
+[12/05/22 19:26:45:3545199] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:4143829] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:4148542] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:4150743] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:4152894] [INFO ]: Recieve server done
+[12/05/22 19:26:45:4154794] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:4758516] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:4763768] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:4766836] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:4769119] [INFO ]: Recieve server done
+[12/05/22 19:26:45:4770857] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:5373776] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:5377252] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:5379440] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:5381442] [INFO ]: Recieve server done
+[12/05/22 19:26:45:5383407] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:5992539] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:6002303] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:6005630] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:6007692] [INFO ]: Recieve server done
+[12/05/22 19:26:45:6009431] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:6612242] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:6615642] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:6617935] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:6620002] [INFO ]: Recieve server done
+[12/05/22 19:26:45:6621744] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:7229568] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:7235225] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:7237428] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:7239508] [INFO ]: Recieve server done
+[12/05/22 19:26:45:7241514] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:7844473] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:7847491] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:7849424] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:7851431] [INFO ]: Recieve server done
+[12/05/22 19:26:45:7853426] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:8460517] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:8464210] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:8466540] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:8468541] [INFO ]: Recieve server done
+[12/05/22 19:26:45:8470775] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:9073954] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:9077909] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:9080088] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:9082363] [INFO ]: Recieve server done
+[12/05/22 19:26:45:9084433] [INFO ]: Replying to spooler
+[12/05/22 19:26:45:9690232] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:45:9695857] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:45:9697872] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:45:9701051] [INFO ]: Recieve server done
+[12/05/22 19:26:45:9703014] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:0310883] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:0315523] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:0317663] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:0319557] [INFO ]: Recieve server done
+[12/05/22 19:26:46:0324853] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:0928181] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:0932589] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:0934664] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:0936656] [INFO ]: Recieve server done
+[12/05/22 19:26:46:0942080] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:1548739] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:1552419] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:1554649] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:1556614] [INFO ]: Recieve server done
+[12/05/22 19:26:46:1564171] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:2169294] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:2176123] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:2182426] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:2185344] [INFO ]: Recieve server done
+[12/05/22 19:26:46:2187049] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:2788231] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:2793030] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:2794861] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:2796835] [INFO ]: Recieve server done
+[12/05/22 19:26:46:2804632] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:3408257] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:3415366] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:3417527] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:3419171] [INFO ]: Recieve server done
+[12/05/22 19:26:46:3427422] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:4026844] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:4036897] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:4047361] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:4049428] [INFO ]: Recieve server done
+[12/05/22 19:26:46:4051278] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:4642795] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:4652452] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:4654962] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:4657293] [INFO ]: Recieve server done
+[12/05/22 19:26:46:4659709] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:5258798] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:5267050] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:5268899] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:5270668] [INFO ]: Recieve server done
+[12/05/22 19:26:46:5272305] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:5874273] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:5877622] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:5879337] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:5884708] [INFO ]: Recieve server done
+[12/05/22 19:26:46:5886667] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:6488611] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:6497818] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:6499501] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:6506335] [INFO ]: Recieve server done
+[12/05/22 19:26:46:6508010] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:7108551] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:7113294] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:7115107] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:7116905] [INFO ]: Recieve server done
+[12/05/22 19:26:46:7118998] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:7721353] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:7724589] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:7726601] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:7728437] [INFO ]: Recieve server done
+[12/05/22 19:26:46:7730257] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:8338091] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:8341451] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:8343687] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:8345674] [INFO ]: Recieve server done
+[12/05/22 19:26:46:8347701] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:8954042] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:8959882] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:8962199] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:8964981] [INFO ]: Recieve server done
+[12/05/22 19:26:46:8966755] [INFO ]: Replying to spooler
+[12/05/22 19:26:46:9574371] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:46:9578292] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:46:9580492] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:46:9582505] [INFO ]: Recieve server done
+[12/05/22 19:26:46:9584421] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:0185518] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:0195962] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:0198471] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:0200541] [INFO ]: Recieve server done
+[12/05/22 19:26:47:0202241] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:0797478] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:0801116] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:0803186] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:0805225] [INFO ]: Recieve server done
+[12/05/22 19:26:47:0807151] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:1416663] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:1420237] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:1422625] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:1424691] [INFO ]: Recieve server done
+[12/05/22 19:26:47:1426918] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:2027123] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:2030410] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:2032753] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:2034846] [INFO ]: Recieve server done
+[12/05/22 19:26:47:2036981] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:2648441] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:2658299] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:2660205] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:2662008] [INFO ]: Recieve server done
+[12/05/22 19:26:47:2663689] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:3260815] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:3269147] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:3271415] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:3273167] [INFO ]: Recieve server done
+[12/05/22 19:26:47:3274827] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:3878722] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:3882395] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:3884252] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:3886231] [INFO ]: Recieve server done
+[12/05/22 19:26:47:3888161] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:4496004] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:4502816] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:4506185] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:4507908] [INFO ]: Recieve server done
+[12/05/22 19:26:47:4509580] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:5111304] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:5115920] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:5117960] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:5119759] [INFO ]: Recieve server done
+[12/05/22 19:26:47:5122540] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:5723926] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:5727501] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:5729764] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:5731873] [INFO ]: Recieve server done
+[12/05/22 19:26:47:5734057] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:6339589] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:6345647] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:6347951] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:6350235] [INFO ]: Recieve server done
+[12/05/22 19:26:47:6352518] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:6958680] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:6962900] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:6965134] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:6967204] [INFO ]: Recieve server done
+[12/05/22 19:26:47:6969384] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:7574688] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:7581338] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:7583130] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:7584756] [INFO ]: Recieve server done
+[12/05/22 19:26:47:7586314] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:8189967] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:8200836] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:8204608] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:8206485] [INFO ]: Recieve server done
+[12/05/22 19:26:47:8208215] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:8808539] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:8811977] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:8814231] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:8816355] [INFO ]: Recieve server done
+[12/05/22 19:26:47:8818425] [INFO ]: Replying to spooler
+[12/05/22 19:26:47:9428623] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:47:9436044] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:47:9437968] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:47:9441304] [INFO ]: Recieve server done
+[12/05/22 19:26:47:9443040] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:0049263] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:0053200] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:0055181] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:0056861] [INFO ]: Recieve server done
+[12/05/22 19:26:48:0058519] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:0664966] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:0673663] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:0675916] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:0678005] [INFO ]: Recieve server done
+[12/05/22 19:26:48:0679730] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:1284335] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:1287482] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:1289780] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:1291853] [INFO ]: Recieve server done
+[12/05/22 19:26:48:1294018] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:1903152] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:1910514] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:1912395] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:1914204] [INFO ]: Recieve server done
+[12/05/22 19:26:48:1916266] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:2518372] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:2521629] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:2523564] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:2525185] [INFO ]: Recieve server done
+[12/05/22 19:26:48:2526971] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:3138908] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:3149800] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:3152069] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:3153806] [INFO ]: Recieve server done
+[12/05/22 19:26:48:3155647] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:3748834] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:3760015] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:3762046] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:3763790] [INFO ]: Recieve server done
+[12/05/22 19:26:48:3765428] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:4365876] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:4380759] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:4388544] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:4392408] [INFO ]: Recieve server done
+[12/05/22 19:26:48:4394273] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:4979537] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:4987642] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:4989454] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:4991182] [INFO ]: Recieve server done
+[12/05/22 19:26:48:4992826] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:5593929] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:5599231] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:5601407] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:5603576] [INFO ]: Recieve server done
+[12/05/22 19:26:48:5605446] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:6201898] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:6207810] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:6209592] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:6211466] [INFO ]: Recieve server done
+[12/05/22 19:26:48:6213171] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:6816811] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:6830099] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:6831982] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:6833722] [INFO ]: Recieve server done
+[12/05/22 19:26:48:6835279] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:7438240] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:7450714] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:7452509] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:7454266] [INFO ]: Recieve server done
+[12/05/22 19:26:48:7455978] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:8051613] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:8056961] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:8062768] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:8064496] [INFO ]: Recieve server done
+[12/05/22 19:26:48:8066273] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:8667992] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:8677290] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:8682550] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:8684318] [INFO ]: Recieve server done
+[12/05/22 19:26:48:8685963] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:9277993] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:9291884] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:9296572] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:9298327] [INFO ]: Recieve server done
+[12/05/22 19:26:48:9300043] [INFO ]: Replying to spooler
+[12/05/22 19:26:48:9894983] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:48:9901784] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:48:9903969] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:48:9905781] [INFO ]: Recieve server done
+[12/05/22 19:26:48:9907548] [INFO ]: Replying to spooler
+[12/05/22 19:26:49:0509477] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:49:0519514] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:49:0523084] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:49:0524783] [INFO ]: Recieve server done
+[12/05/22 19:26:49:0526414] [INFO ]: Replying to spooler
+[12/05/22 19:26:49:1126482] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:49:1130730] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:49:1132980] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:49:1135211] [INFO ]: Recieve server done
+[12/05/22 19:26:49:1136963] [INFO ]: Replying to spooler
+[12/05/22 19:26:50:2969636] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:50:2974466] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:50:2977145] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:50:2979014] [INFO ]: Recieve server done
+[12/05/22 19:26:50:2980700] [INFO ]: Replying to spooler
+[12/05/22 19:26:50:3587571] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:50:3594893] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:50:3597210] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:50:3598956] [INFO ]: Recieve server done
+[12/05/22 19:26:50:3600691] [INFO ]: Replying to spooler
+[12/05/22 19:26:50:4207849] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:50:4212216] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:50:4214070] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:50:4216069] [INFO ]: Recieve server done
+[12/05/22 19:26:50:4218000] [INFO ]: Replying to spooler
+[12/05/22 19:26:50:4822102] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:50:4826732] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:50:4828542] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:50:4830219] [INFO ]: Recieve server done
+[12/05/22 19:26:50:4832069] [INFO ]: Replying to spooler
+[12/05/22 19:26:50:5436279] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:50:5442125] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:50:5444295] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:50:5446334] [INFO ]: Recieve server done
+[12/05/22 19:26:50:5448330] [INFO ]: Replying to spooler
+[12/05/22 19:26:50:6047768] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:50:6055599] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:50:6057822] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:50:6059588] [INFO ]: Recieve server done
+[12/05/22 19:26:50:6061255] [INFO ]: Replying to spooler
+[12/05/22 19:26:50:6668264] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:50:6672600] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:50:6674744] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:50:6676480] [INFO ]: Recieve server done
+[12/05/22 19:26:50:6678951] [INFO ]: Replying to spooler
+[12/05/22 19:26:50:7286031] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:50:7291818] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:50:7294123] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:50:7295991] [INFO ]: Recieve server done
+[12/05/22 19:26:50:7297569] [INFO ]: Replying to spooler
+[12/05/22 19:26:50:7898319] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:50:7900770] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:50:7902926] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:50:7904760] [INFO ]: Recieve server done
+[12/05/22 19:26:50:7906361] [INFO ]: Replying to spooler
+[12/05/22 19:26:50:8519168] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:50:8524150] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:50:8526379] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:50:8528296] [INFO ]: Recieve server done
+[12/05/22 19:26:50:8529870] [INFO ]: Replying to spooler
+[12/05/22 19:26:50:9136871] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:50:9147600] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:50:9151526] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:50:9153237] [INFO ]: Recieve server done
+[12/05/22 19:26:50:9154974] [INFO ]: Replying to spooler
+[12/05/22 19:26:50:9751830] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:50:9757430] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:50:9759273] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:50:9762937] [INFO ]: Recieve server done
+[12/05/22 19:26:50:9764680] [INFO ]: Replying to spooler
+[12/05/22 19:26:51:0362839] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:51:0366453] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:51:0368704] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:51:0370808] [INFO ]: Recieve server done
+[12/05/22 19:26:51:0372618] [INFO ]: Replying to spooler
+[12/05/22 19:26:51:0976001] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:51:0980468] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:51:0982582] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:51:0985374] [INFO ]: Recieve server done
+[12/05/22 19:26:51:0987079] [INFO ]: Replying to spooler
+[12/05/22 19:26:51:1596051] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:51:1599577] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:51:1602067] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:51:1604155] [INFO ]: Recieve server done
+[12/05/22 19:26:51:1606169] [INFO ]: Replying to spooler
+[12/05/22 19:26:51:2209768] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:51:2217577] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:51:2219779] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:51:2221872] [INFO ]: Recieve server done
+[12/05/22 19:26:51:2223874] [INFO ]: Replying to spooler
+[12/05/22 19:26:51:2824023] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:51:2827874] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:51:2830262] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:51:2832548] [INFO ]: Recieve server done
+[12/05/22 19:26:51:2834542] [INFO ]: Replying to spooler
+[12/05/22 19:26:51:3444101] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:51:3450414] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:51:3453464] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:51:3455294] [INFO ]: Recieve server done
+[12/05/22 19:26:51:3457049] [INFO ]: Replying to spooler
+[12/05/22 19:26:51:4056184] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:51:4060382] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:51:4062507] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:51:4064586] [INFO ]: Recieve server done
+[12/05/22 19:26:51:4066819] [INFO ]: Replying to spooler
+[12/05/22 19:26:51:4673700] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:51:4686176] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:51:4688777] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:51:4690596] [INFO ]: Recieve server done
+[12/05/22 19:26:51:4692274] [INFO ]: Replying to spooler
+[12/05/22 19:26:51:5293799] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:51:5303656] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:51:5305774] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:51:5307628] [INFO ]: Recieve server done
+[12/05/22 19:26:51:5309372] [INFO ]: Replying to spooler
+[12/05/22 19:26:51:5904286] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:51:5908942] [INFO ]: Recieving servers from spooler
+[12/05/22 19:26:51:5911205] [DEBUG]: Recieved server: 127.0.0.1:10123 - 0
+[12/05/22 19:26:51:5912979] [INFO ]: Recieve server done
+[12/05/22 19:26:51:5914654] [INFO ]: Replying to spooler
+[12/05/22 19:26:52:2066420] [DEBUG]: Recieving packet from Spooler of len 9
+[12/05/22 19:26:52:2070132] [INFO ]: Recieving servers from 

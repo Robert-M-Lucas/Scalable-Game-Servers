@@ -31,8 +31,6 @@ public class SpoolerInterface
 
     private void ReadCallback(IAsyncResult ar)
     {
-        String content = String.Empty;
-
         buffer_cursor += SpoolerSocket.EndReceive(ar);
 
         if (buffer_cursor >= 2) {

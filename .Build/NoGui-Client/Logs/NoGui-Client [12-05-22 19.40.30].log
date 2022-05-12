@@ -1,0 +1,19 @@
+[12/05/22 19:40:30:5548557] [INFO ]: Logging started
+[12/05/22 19:40:37:1356715] [INFO ]: Connecting to load balancer
+[12/05/22 19:40:37:1415221] [DEBUG]: Socket connected to 127.0.0.1:7107
+[12/05/22 19:40:37:1424389] [DEBUG]: Waiting for response from load balance
+[12/05/22 19:40:37:1425819] [DEBUG]: Starting load balancer recieve
+[12/05/22 19:40:37:1427331] [DEBUG]: Recieved
+[12/05/22 19:40:37:1428963] [INFO ]: Position in queue: 0
+[12/05/22 19:40:37:1430466] [DEBUG]: Starting load balancer recieve
+[12/05/22 19:40:37:1441697] [DEBUG]: Recieved
+[12/05/22 19:40:37:1444951] [INFO ]: Being transfered to 127.0.0.1:10123
+[12/05/22 19:40:37:1451100] [DEBUG]: Socket connected to 127.0.0.1:10123
+[12/05/22 19:40:42:6608075] [INFO ]: Sending echo request
+[12/05/22 19:40:42:6610109] [INFO ]: Waiting for echo response
+[12/05/22 19:40:52:9122662] [ERROR]: Load Balancer disconnected client
+[12/05/22 19:40:52:9289212] [ERROR]: System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at NoGuiClient.LobbyServerClient.EchoName(Socket socket) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\NoGui-Client\LobbyServerClient.cs:line 59
+   at NoGuiClient.LobbyServerClient.Connect(String IP, Int32 Port) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\NoGui-Client\LobbyServerClient.cs:line 43
+[12/05/22 19:40:57:7955242] [WARN ]: Shutting down logging

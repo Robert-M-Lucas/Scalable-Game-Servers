@@ -15,6 +15,8 @@ public class Logger {
     const ConsoleColor DEFAULT_COLOUR = ConsoleColor.White;
     const string INFO_TEXT =    "INFO ";
     const ConsoleColor INFO_COLOUR = ConsoleColor.Cyan;
+    const string IMPORTANT_INFO_TEXT =    "INFO+";
+    const ConsoleColor IMPORTANT_INFO_COLOUR = ConsoleColor.Magenta;
     const string WARNING_TEXT = "WARN ";
     const ConsoleColor WARNING_COLOUR = ConsoleColor.DarkYellow;
     const string ERROR_TEXT =   "ERROR";
@@ -73,6 +75,16 @@ public class Logger {
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + INFO_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
         Console.ForegroundColor = INFO_COLOUR;
+        Console.WriteLine(text);
+        Console.ForegroundColor = DEFAULT_COLOUR;
+    }
+
+    public void LogImportant(object log_text_obj) {
+        if (log_text_obj is null) {return;}
+        string? log_text = log_text_obj.ToString();
+        string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + IMPORTANT_INFO_TEXT + "]: " + log_text;
+        LogQueue.Enqueue(text);
+        Console.ForegroundColor = IMPORTANT_INFO_COLOUR;
         Console.WriteLine(text);
         Console.ForegroundColor = DEFAULT_COLOUR;
     }

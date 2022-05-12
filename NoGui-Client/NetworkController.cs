@@ -9,7 +9,14 @@ public static class NetworkController{
 
     public static void ConnectToLoadBalancer() {
         Program.logger.LogInfo("Connecting to load balancer");
-        new LoadBalancerClient().Run();
+        ByteIP? ip = LoadBalancerClient.Run();
+        if (!(ip is null)) {
+            // Transfer successful
+            ConnectToLobby(ip.strIP, (int) ip.iPort);
+        }
+        else {
+            LoadBalancerConnectFailed();
+        }
     }
 
     public static void LoadBalancerConnectFailed()
@@ -18,7 +25,15 @@ public static class NetworkController{
         if (c == 0) {ConnectToLoadBalancer();}
     }
 
-    public static void ConnectToLobby(string IP, int Port) {}
+    public static void ConnectToLobby(string IP, int Port) 
+    {
+        new LobbyServerClient().Run(IP, Port);
+    }
+
+    public static void LobbyConnectFailed() {
+        int c = ConsoleInputUtil.ChooseOption(new string[] {"Reconnect to Load Balancer", "Quit"});
+        if (c == 0) {ConnectToLoadBalancer();}
+    }
 
     public static void ConnectToMatchmaker() {}
 
