@@ -82,7 +82,7 @@ public class Server {
         // Start recieving data from client
         socket.BeginReceive(player.buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), player);
 
-        Program.logger.LogInfo($"Client {player.PlayerName} connected, player count: {Players.Count}");
+        Program.logger.LogInfo($"Client {player} connected, player count: {Players.Count}");
         Program.fill_level = (uint) Players.Count();
     }
 
@@ -96,7 +96,7 @@ public class Server {
         if (player.buffer_cursor >= 2) {
             uint packet_len = (uint) player.buffer[0] + (uint) (player.buffer[1]<<8);
 
-            Program.logger.LogDebug($"Recieving packet from player {player.PlayerName} of len {packet_len}");
+            Program.logger.LogDebug($"Recieving packet from player {player} of len {packet_len}");
 
             if (player.buffer_cursor >= packet_len){
                 OnRecieve(player, ArrayExtentions.Slice(player.buffer, 0, (int) packet_len));
@@ -114,7 +114,22 @@ public class Server {
     }
 
     void OnRecieve(LobbyPlayer player, byte[] data) {
+        uint packet_type = (uint) data[3];
 
+        switch (packet_type) {
+            case 1:
+                Program.logger.LogInfo($"Player {player} requested name echo, replying");
+                byte[] name_buffer = new byte[13];
+                name_buffer[0] = (byte) (uint) 13;
+                name_buffer[1] = (byte) (uint) 0;
+                name_buffer[2] = (byte) (uint) 1;
+                ArrayExtentions.Merge(name_buffer, Encoding.ASCII.GetBytes(player.PlayerName), 3);
+                player.socket.Send(name_buffer);
+                break;
+            default:
+                Program.logger.LogError($"Player {player} requested requestID {packet_type} which doesn't exist");
+                break;
+        }
     }
 
     ~Server(){Stop();}

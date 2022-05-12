@@ -53,7 +53,7 @@ public class LobbyServerClient {
 
     void EchoName(Socket socket) {
         Program.logger.LogInfo("Sending echo request");
-        socket.Send(new byte[] {3, 0, 1});
+        socket.Send(new byte[] {(byte) (uint) 3, (byte) (uint) 0, (byte) (uint) 1});
         byte[] buffer = new byte[13];
         Program.logger.LogInfo("Waiting for echo response");
         socket.Receive(buffer, 0, 13, 0);

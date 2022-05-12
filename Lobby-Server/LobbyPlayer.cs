@@ -20,4 +20,11 @@ public class LobbyPlayer {
         socket = _socket;
         PlayerName = player_name;
     }
+
+    public override string ToString()
+    {
+        if (socket.RemoteEndPoint is null) { return $"[{PlayerName}]:[Null]"; }
+        IPEndPoint remoteEndPoint = (IPEndPoint) socket.RemoteEndPoint;
+        return $"[{PlayerName}]:[{remoteEndPoint.Address}:{remoteEndPoint.Port}]";
+    }
 }
