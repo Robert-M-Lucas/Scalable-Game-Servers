@@ -1,0 +1,12 @@
+[12/05/22 21:23:14:6510225] [INFO ]: Logging started
+[12/05/22 21:23:22:4966735] [INFO ]: Connecting to load balancer
+[12/05/22 21:23:22:5040712] [DEBUG]: Socket connected to 127.0.0.1:7107
+[12/05/22 21:23:22:5051517] [DEBUG]: Waiting for response from load balance
+[12/05/22 21:23:22:5053244] [DEBUG]: Starting load balancer recieve
+[12/05/22 21:23:22:5055090] [DEBUG]: Recieved
+[12/05/22 21:23:22:5056897] [INFO ]: Position in queue: 0
+[12/05/22 21:23:22:5058604] [DEBUG]: Starting load balancer recieve
+[12/05/22 21:23:22:5127097] [DEBUG]: Recieved
+[12/05/22 21:23:22:5131139] [INFO ]: Being transfered to 127.0.0.1:10123
+[12/05/22 21:23:22:5139668] [DEBUG]: Socket connected to 127.0.0.1:10123
+[12/05/22 21:23:25:0571907] [WARN ]: Shutting down logging

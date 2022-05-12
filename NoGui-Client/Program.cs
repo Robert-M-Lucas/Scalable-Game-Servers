@@ -40,7 +40,17 @@ public static class Program {
         int choice = ConsoleInputUtil.ChooseOption(new string[] {"Connect", "Quit"}, true);
         if (choice == 1) { return; }
 
-        Console.Write("Enter name: "); ClientName = StringExtentions.DeNullString(Console.ReadLine());
+        bool good_name = false;
+        while (!good_name) {
+            Console.Write("Enter name (1-10 characters): "); ClientName = StringExtentions.DeNullString(Console.ReadLine());
+
+            if (ClientName == "") {continue;}
+            if (ClientName.Length > 10) {continue;}
+
+            foreach (char l in ClientName) {
+                if (l != ' ') { good_name = true; break; }
+            }
+        }
 
         NetworkController.Start();
     }

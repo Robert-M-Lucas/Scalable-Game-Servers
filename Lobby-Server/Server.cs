@@ -41,6 +41,7 @@ public class Server {
         while (!Program.exit) {
             Program.logger.LogInfo("Waiting for client to connect");
             Socket temp_socket = listener.Accept();
+            Program.logger.LogInfo("Client accepted");
 
             // Start wait for connection data
             new Thread(() => FullClientAcceptThread(temp_socket)).Start();
@@ -81,7 +82,7 @@ public class Server {
         // Start recieving data from client
         socket.BeginReceive(player.buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), player);
 
-        Program.logger.LogInfo($"Client connected, player count: {Players.Count}");
+        Program.logger.LogInfo($"Client {player.PlayerName} connected, player count: {Players.Count}");
         Program.fill_level = (uint) Players.Count();
     }
 
@@ -113,7 +114,7 @@ public class Server {
     }
 
     void OnRecieve(LobbyPlayer player, byte[] data) {
-        
+
     }
 
     ~Server(){Stop();}
