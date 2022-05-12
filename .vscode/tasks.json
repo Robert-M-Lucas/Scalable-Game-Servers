@@ -10,6 +10,14 @@
             ],
         },
         {
+            "label": "Build Fast",
+            "command": "python",
+            "type": "process",
+            "args": [
+                "build_fast.py"
+            ],
+        },
+        {
             "label": "Run",
             "command": "python",
             "type": "process",
