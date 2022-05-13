@@ -23,7 +23,7 @@ public static class Program {
 
     public static List<Tuple<ByteIP, uint>> LobbyServers = new List<Tuple<ByteIP, uint>>();
 
-    public static Logger logger = new Logger("Load-Balancer", true);
+    public static Logger logger = new Logger("Load-Balancer", false);
 
     public static void Main(string[] args) {
         if (args.Length < 6) { logger.LogError("Args must be: [Version] [Server Spooler IP] [Server Spooler Port] [Load Balancer Port] [Max lobby fill] [Max queue length]"); Exit(); return; }
@@ -35,6 +35,7 @@ public static class Program {
         if (!int.TryParse(args[4], out MaxLobbyFill)) { logger.LogInfo("Max lobby fill incorrectly formatted"); Exit(); return; }
         if (!int.TryParse(args[5], out MaxQueueLen)) { logger.LogInfo("Max queue fill incorrectly formatted"); Exit(); return; }
 
+        Console.Title = "Load Balancer";
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
 
         try {

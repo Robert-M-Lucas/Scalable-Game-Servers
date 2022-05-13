@@ -81,16 +81,32 @@ public class Server {
 
         // Start recieving data from client
         socket.BeginReceive(player.buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), player);
-
-        Program.logger.LogInfo($"Client {player} connected, player count: {Players.Count}/{Program.MaxLobbyFill}");
         Program.fill_level = (uint) Players.Count();
+        Program.logger.LogInfo($"Client {player} connected. Player count: {Program.fill_level}/{Program.MaxLobbyFill}");
+        
+    }
+
+    private void RemovePlayer(LobbyPlayer player) {
+        Players.Remove(player);
+        Program.fill_level = (uint) Players.Count();
+        Program.logger.LogInfo($"Player {player} disconnected. Player count: {Program.fill_level}/{Program.MaxLobbyFill}");
+        try {
+            player.socket.Shutdown(SocketShutdown.Both);
+        }
+        catch (Exception e) {
+            Program.logger.LogDebug("Error shutting down socket");
+            Program.logger.LogDebug(e);
+        }
     }
 
     private void ReadCallback(IAsyncResult ar)
     {
         if (ar.AsyncState is null) { throw new NullReferenceException(); }
         LobbyPlayer player = (LobbyPlayer) ar.AsyncState;
-        if (!SocketExtentions.SocketConnected(player.socket, 10000)) { Players.Remove(player); Program.logger.LogInfo($"Player {player} disconnected"); return; }
+        if (!SocketExtentions.SocketConnected(player.socket, 10000)) { 
+            RemovePlayer(player);
+            return;
+        }
         
         player.buffer_cursor += player.socket.EndReceive(ar);
 

@@ -46,6 +46,7 @@ public static class Program {
         }
         catch (BadConfigFormatException) { Program.logger.LogError("Incorrect formatting of config.json"); Exit(); }
         
+        Console.Title = "Server Spooler";
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
 
         Timer t = new Timer();

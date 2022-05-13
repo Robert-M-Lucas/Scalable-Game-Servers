@@ -10,7 +10,7 @@ public class SILoadBalancer: SpoolerInterface
 
     public override void OnRecieve(byte[] message) {
         // Console.WriteLine();
-        Program.logger.LogInfo("Recieving servers from spooler");
+        Program.logger.LogDebug("Recieving servers from spooler");
         List<Tuple<ByteIP, uint>> NewLobbyServerList = new List<Tuple<ByteIP, uint>>();
 
         for (int i = 2; i < message.Length; i+=7) {
@@ -19,10 +19,10 @@ public class SILoadBalancer: SpoolerInterface
             Program.logger.LogDebug($"Recieved server: {ip} - {fill_level}");
             NewLobbyServerList.Add(new Tuple<ByteIP, uint>(ip, fill_level));
         }
-        Program.logger.LogInfo("Recieve server done");
+        Program.logger.LogDebug("Recieve server done");
         Program.LobbyServers = NewLobbyServerList;
 
-        Program.logger.LogInfo("Replying to spooler");
+        Program.logger.LogDebug("Replying to spooler");
         uint num = 0;
         if (Program.server is not null) { num = (uint) Program.server.Players.Count; }
         SpoolerSocket.Send(new byte[] {(byte) num, (byte) (num>>8)});

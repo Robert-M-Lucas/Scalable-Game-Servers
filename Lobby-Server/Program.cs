@@ -44,6 +44,7 @@ public static class Program {
 
         _logger =  new Logger("Lobby-Server-" + LobbyServerID, false);
 
+        Console.Title = $"Lobby Server [{LobbyServerID}]";
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
         
         try {

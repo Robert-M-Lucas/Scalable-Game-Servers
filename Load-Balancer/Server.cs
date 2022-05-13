@@ -63,7 +63,7 @@ public class Server {
         ArrayExtentions.Merge(to_send, ip.IP, 1);
         ArrayExtentions.Merge(to_send, ip.Port, 5);
         socket.Send(to_send);
-        Program.logger.LogInfo($"Player sent to {ip.strIP}:{ip.iPort}");
+        Program.logger.LogImportant($"Player sent to {ip.strIP}:{ip.iPort}");
         Task.Delay(new TimeSpan(0, 0, 15)).ContinueWith(o => { 
             Program.logger.LogDebug("Shutting down client socket");
             socket.Shutdown(SocketShutdown.Both); 

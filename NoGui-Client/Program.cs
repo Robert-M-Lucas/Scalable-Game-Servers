@@ -28,6 +28,7 @@ public static class Program {
     
     public static void ProtectedMain(string[] args) {
         //if (args.Length < 1) { Console.WriteLine("No config.json path, exitting"); return; }
+        Console.Title = "Client";
 
         LoadBalancerIP = "127.0.0.1";
 
@@ -51,7 +52,7 @@ public static class Program {
                 if (l != ' ') { good_name = true; break; }
             }
         }
-
+        Console.Title = $"Client - {ClientName}";
         NetworkController.Start();
     }
 }
