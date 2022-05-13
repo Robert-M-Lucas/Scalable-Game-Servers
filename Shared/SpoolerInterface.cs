@@ -3,9 +3,9 @@ namespace Shared;
 using System.Net;
 using System.Net.Sockets;
 
-public class SpoolerInterface 
+public abstract class SpoolerInterface 
 {
-    public Socket SpoolerSocket;
+    protected Socket SpoolerSocket;
 
     byte[] buffer = new byte[1024];
     int buffer_cursor = 0;
@@ -25,9 +25,7 @@ public class SpoolerInterface
         SpoolerSocket.BeginReceive(buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), null);
     }
 
-    public virtual void OnRecieve(byte[] message) {
-
-    }
+    public abstract void OnRecieve(byte[] message);
 
     private void ReadCallback(IAsyncResult ar)
     {
