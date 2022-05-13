@@ -58,7 +58,14 @@ public static class Program {
         try { Listener.LoadBalancerSocket = Listener.AcceptClient(); }
         catch (ServerConnectTimeoutException) { Program.logger.LogError("Load balancer didn't connect in required time, exitting"); Exit(); return; }
         Program.logger.LogInfo($"Connected in {t.GetMsAndReset()}ms");
-        // TODO: Same for matchmaker
+        
+        Program.logger.LogInfo("Starting Matchmaker");
+        ServerStarter.StartMatchmaker();
+        Program.logger.LogInfo("Waiting for Matchmaker response");
+        t.Reset();
+        try { Listener.MatchmakerSocket = Listener.AcceptClient(); }
+        catch (ServerConnectTimeoutException) { Program.logger.LogError("Matchmaker didn't connect in required time, exitting"); Exit(); return; }
+        Program.logger.LogInfo($"Connected in {t.GetMsAndReset()}ms");
 
 
         Console.WriteLine("Press Ctrl-C to exit");

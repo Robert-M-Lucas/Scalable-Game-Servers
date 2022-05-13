@@ -15,6 +15,7 @@ public class ServerConnectTimeoutException : Exception
 
 public static class Listener{
     public static Socket? LoadBalancerSocket;
+    public static Socket? MatchmakerSocket;
 
     public static Socket? TempSocket;
 
