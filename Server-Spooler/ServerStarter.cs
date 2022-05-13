@@ -68,7 +68,7 @@ public static class ServerStarter {
         }
         catch (ServerConnectTimeoutException) {
             Program.logger.LogError("Lobby server failed to connect in time, killing...");
-            if (!(lobby_server is null)) { lobby_server.Kill(); }
+            if (lobby_server is not null) { lobby_server.Kill(); }
             LobbyUID ++;
             LobbyPort ++;
             return false;
@@ -85,18 +85,18 @@ public static class ServerStarter {
         foreach (LobbyData lobby in Program.LobbyServers) {
             if (lobby.FillLevel == 0) {
                 Console.WriteLine($"Stopping lobby server {lobby.UID} at port {lobby.ip.iPort}");
-                if (!(lobby.socket is null)) { lobby.socket.Shutdown(SocketShutdown.Both); }
+                if (lobby.socket is not null) { lobby.socket.Shutdown(SocketShutdown.Both); }
                 Thread.Sleep(200);
                 lobby.process.Kill();
                 to_remove = lobby;
                 break;
             }
         }
-        if (!(to_remove is null)) { Program.LobbyServers.Remove(to_remove); }
+        if (to_remove is not null) { Program.LobbyServers.Remove(to_remove); }
     }
 
     public static void Exit() {
-        if (!(LoadBalancer is null)) { Program.logger.LogInfo("Killing load balancer"); LoadBalancer.Kill(); }
+        if (LoadBalancer is not null) { Program.logger.LogInfo("Killing load balancer"); LoadBalancer.Kill(); }
         // Console.WriteLine("Killing lobby servers");
         // foreach (LobbyData lb in LobbyServers) {
         //     if (!(lb.socket is null)) { lb.socket.Shutdown(SocketShutdown.Both); }

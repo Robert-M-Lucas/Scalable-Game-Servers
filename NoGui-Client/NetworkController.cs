@@ -10,7 +10,7 @@ public static class NetworkController{
     public static void ConnectToLoadBalancer() {
         Program.logger.LogInfo("Connecting to load balancer");
         ByteIP? ip = LoadBalancerClient.Run();
-        if (!(ip is null)) {
+        if (ip is not null) {
             // Transfer successful
             ConnectToLobby(ip.strIP, (int) ip.iPort);
         }

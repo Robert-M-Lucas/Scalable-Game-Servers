@@ -69,7 +69,7 @@ public static class Program {
     }
 
     public static void Exit() {
-        if (!(server is null)) {
+        if (server is not null) {
             logger.LogInfo("Shutting down server");
             server.Stop();
         }

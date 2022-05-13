@@ -74,7 +74,7 @@ public class Server {
     ~Server(){Stop();}
     public void Stop(){
         Program.logger.LogWarning("Stopping Load Balancer");
-        if (!(AcceptClientThread is null)) {try{AcceptClientThread.Interrupt();}catch(Exception e){Console.WriteLine(e);}}
+        if (AcceptClientThread is not null) {try{AcceptClientThread.Interrupt();}catch(Exception e){Console.WriteLine(e);}}
         Program.logger.LogInfo("Load balancer stopped");
     }
 }

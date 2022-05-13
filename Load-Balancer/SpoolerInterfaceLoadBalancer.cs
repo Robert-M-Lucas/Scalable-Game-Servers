@@ -24,7 +24,7 @@ public class SILoadBalancer: SpoolerInterface
 
         Program.logger.LogInfo("Replying to spooler");
         uint num = 0;
-        if (!(Program.server is null)) { num = (uint) Program.server.Players.Count; }
+        if (Program.server is not null) { num = (uint) Program.server.Players.Count; }
         SpoolerSocket.Send(new byte[] {(byte) num, (byte) (num>>8)});
     }
 }

@@ -136,7 +136,7 @@ public class Server {
     ~Server(){Stop();}
     public void Stop(){
         Program.logger.LogWarning("Stopping Lobby Server");
-        if (!(AcceptClientThread is null)) {try{AcceptClientThread.Interrupt();}catch(Exception e){Console.WriteLine(e);}}
+        if (AcceptClientThread is not null) {try{AcceptClientThread.Interrupt();}catch(Exception e){Console.WriteLine(e);}}
         Program.logger.LogInfo("Lobby Server stopped");
     }
 }
