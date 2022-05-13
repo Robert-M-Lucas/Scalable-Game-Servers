@@ -20,7 +20,7 @@ public static class Program{
 
     public static List<Tuple<ByteIP, uint>> GameServers = new List<Tuple<ByteIP, uint>>();
 
-    public static Logger logger = new Logger("Load-Balancer", false);
+    public static Logger logger = new Logger("Matchmaker", false);
 
     public static void Main(string[] args) {
         if (args.Length < 6) { logger.LogError("Args must be: [Version] [Server Spooler IP] [Server Spooler Port] [Matchmaker Port] [Max Game fill] [Max queue length]"); Exit(); return; }
