@@ -1,0 +1,39 @@
+[13/05/22 21:38:00:6178496] [INFO ]: Logging started
+[13/05/22 21:38:00:6423711] [INFO ]: Starting Load Balancer
+[13/05/22 21:38:00:6793576] [INFO ]: Waiting for Load Balancer response
+[13/05/22 21:38:00:6802264] [INFO ]: Accepting client
+[13/05/22 21:38:00:6838982] [INFO ]: Accepting connection
+[13/05/22 21:38:00:7616280] [INFO ]: Connection established
+[13/05/22 21:38:00:7621961] [INFO ]: Connected in 0ms
+[13/05/22 21:38:00:7623796] [INFO ]: Starting Matchmaker
+[13/05/22 21:38:00:7705172] [INFO ]: Waiting for Matchmaker response
+[13/05/22 21:38:00:7707118] [INFO ]: Accepting client
+[13/05/22 21:38:00:7708588] [INFO ]: Accepting connection
+[13/05/22 21:38:00:8546330] [INFO ]: Connection established
+[13/05/22 21:38:00:8552181] [INFO ]: Connected in 0ms
+[13/05/22 21:38:00:8588567] [INFO ]: Starting lobby 0 on port 10123
+[13/05/22 21:38:00:8676685] [INFO ]: Accepting client
+[13/05/22 21:38:00:8679401] [INFO ]: Accepting connection
+[13/05/22 21:38:00:9630838] [INFO ]: Connection established
+[13/05/22 21:38:02:8782500] [INFO+]: ----------INFO START----------
+[13/05/22 21:38:02:8787015] [INFO ]: Server Spooler:
+[13/05/22 21:38:02:8788970] [INFO ]:  | >IP: 127.0.0.1:5105
+[13/05/22 21:38:02:8790968] [INFO ]: Load Balancer [0ms]:
+[13/05/22 21:38:02:8792810] [INFO ]:  | >IP: 127.0.0.1:7107
+[13/05/22 21:38:02:8794926] [INFO ]:  | >Queue Length: 0
+[13/05/22 21:38:02:8796750] [INFO ]: Lobby Servers [0ms]: 
+[13/05/22 21:38:02:8798594] [INFO ]:  | Lobby Server [0] [0ms]: 
+[13/05/22 21:38:02:8800186] [INFO ]:  | | >IP: 127.0.0.1:10123
+[13/05/22 21:38:02:8802014] [INFO ]:  | | >Fill Level: 0/2
+[13/05/22 21:38:02:8804093] [INFO ]: ----------INFO ENDS----------
+[13/05/22 21:38:04:7955455] [ERROR]: Error in main transcieve loop
+[13/05/22 21:38:04:8081779] [ERROR]: System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.Socket.Send(Byte[] buffer)
+   at ServerSpooler.Transciever.LobbyServersTranscieve() in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Server-Spooler\Transciever.cs:line 41
+   at ServerSpooler.Program.Main(String[] args) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Server-Spooler\Program.cs:line 86
+[13/05/22 21:38:04:8088564] [INFO ]: Shutting down network
+[13/05/22 21:38:04:8090620] [INFO ]: Giving time for graceful shutdown
+[13/05/22 21:38:05:8158996] [INFO ]: Terminating processes
+[13/05/22 21:38:05:8166433] [INFO ]: Killing Load Balancer
+[13/05/22 21:38:05:8173760] [INFO ]: Killing Matchmaker
+[13/05/22 21:38:05:8180576] [WARN ]: Shutting down logging
