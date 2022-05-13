@@ -1,0 +1,262 @@
+[13/05/22 10:05:31:3054493] [INFO ]: Logging started
+[13/05/22 10:05:31:3444859] [INFO ]: Starting Spooler receive
+[13/05/22 10:05:31:3593475] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:31:3621788] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:31:3660192] [INFO ]: Lobby Server start
+[13/05/22 10:05:31:3671608] [INFO ]: Lobby Server Client Accept Thread start
+[13/05/22 10:05:31:3760232] [INFO ]: Waiting for client to connect
+[13/05/22 10:05:31:4428536] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:31:4454979] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:31:5055453] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:31:5061631] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:31:5809020] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:31:5814233] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:31:6411137] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:31:6420490] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:31:6976650] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:31:6986493] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:31:7676362] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:31:7682454] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:31:8262842] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:31:8271005] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:31:9102916] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:31:9111089] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:31:9835245] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:31:9844233] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:0645337] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:0655651] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:1311202] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:1321415] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:2012686] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:2048172] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:2676222] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:2729158] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:3355697] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:3389520] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:3979664] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:4005507] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:4662917] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:4715411] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:5349980] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:5395667] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:5975894] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:6001553] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:6750086] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:6785091] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:7407916] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:7438045] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:8178731] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:8222768] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:8888149] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:8916965] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:32:9601929] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:32:9700220] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:0292349] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:0313638] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:1018739] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:1050151] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:1662563] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:1718237] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:2361319] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:2395760] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:2991764] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:3046016] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:3706102] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:3737720] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:4396566] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:4417890] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:5047707] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:5065891] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:5677452] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:5711606] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:6412677] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:6437606] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:7052510] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:7079842] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:7700119] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:7727202] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:8404986] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:8428498] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:9073262] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:9095798] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:33:9768083] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:33:9794076] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:0401254] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:0426172] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:1005279] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:1050881] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:1742060] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:1763227] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:2384921] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:2417198] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:2977420] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:2997304] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:3614079] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:3640995] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:4244765] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:4273584] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:4956417] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:4980445] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:5685859] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:5875659] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:6537848] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:6586988] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:7312116] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:7400798] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:8047062] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:8068947] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:8697533] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:8714536] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:34:9308882] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:34:9330465] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:0003389] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:0042304] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:0624193] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:0644710] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:1361122] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:1378294] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:1967282] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:1986660] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:2633586] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:2707858] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:3378998] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:3407133] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:4065365] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:4081702] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:4697948] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:4714927] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:5344950] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:5362436] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:6047444] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:6065324] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:6661181] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:6704899] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:7367614] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:7385392] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:7952415] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:7969147] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:8642891] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:8661084] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:35:9329644] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:35:9382975] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:0062344] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:0095036] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:0764628] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:0783021] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:1456466] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:1475917] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:2090065] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:2109111] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:2756399] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:2780141] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:3369454] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:3390058] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:4025641] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:4057017] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:4705021] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:4726745] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:5323984] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:5370909] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:6070780] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:6092259] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:6694908] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:6724846] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:7488198] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:7558436] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:8260810] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:8413008] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:9036165] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:9054464] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:36:9612534] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:36:9632043] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:0314467] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:0331395] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:1021487] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:1039941] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:1729880] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:1747593] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:2309464] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:2329902] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:3042744] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:3061001] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:3727349] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:3759489] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:4446579] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:4467739] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:5155770] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:5229311] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:5931564] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:5951662] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:6554400] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:6582724] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:7232275] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:7262653] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:7931994] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:7955982] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:8633844] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:8656954] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:9255061] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:9275539] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:37:9964869] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:37:9986114] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:0562046] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:0578710] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:1151308] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:1168756] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:1744012] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:1763086] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:2370306] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:2389545] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:3036119] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:3053886] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:3718212] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:3734431] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:4350918] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:4369121] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:4947927] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:4966463] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:5590092] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:5609238] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:6227302] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:6245201] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:6801268] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:6818407] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:7581837] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:7600618] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:8157477] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:8198287] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:8810998] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:8829106] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:38:9436923] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:38:9456528] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:39:0024795] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:39:0053813] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:39:0637823] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:39:0657949] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:39:1298470] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:39:1317587] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:39:1948349] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:39:1974184] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:40:3353524] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:40:3371406] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:40:3981821] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:40:4028339] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:40:4634329] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:40:4653677] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:40:5240996] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:40:5259348] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:40:5959652] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:40:5978680] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:40:6603281] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:40:6621297] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:40:7224548] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:40:7243429] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:40:7913882] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:40:7933004] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:40:8549781] [DEBUG]: Recieving packet from Spooler of len 2
+[13/05/22 10:05:40:8568853] [DEBUG]: Spooler requested update, sending 0
+[13/05/22 10:05:40:8991940] [INFO ]: Shutting down server
+[13/05/22 10:05:40:9053920] [WARN ]: Stopping Lobby Server
+[13/05/22 10:05:40:9062264] [INFO ]: Lobby Server stopped
+[13/05/22 10:05:40:9070468] [WARN ]: Shutting down environment and logger
+[13/05/22 10:05:40:9080500] [WARN ]: Shutting down logging

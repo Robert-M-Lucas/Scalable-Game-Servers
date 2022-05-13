@@ -90,13 +90,14 @@ public class Server {
     {
         if (ar.AsyncState is null) { throw new NullReferenceException(); }
         LobbyPlayer player = (LobbyPlayer) ar.AsyncState;
-
+        if (!SocketExtentions.SocketConnected(player.socket, 10000)) { Players.Remove(player); Program.logger.LogInfo($"Player {player} disconnected"); return; }
+        
         player.buffer_cursor += player.socket.EndReceive(ar);
 
         if (player.buffer_cursor >= 2) {
             uint packet_len = (uint) player.buffer[0] + (uint) (player.buffer[1]<<8);
 
-            Program.logger.LogDebug($"Recieving packet from player {player} of len {packet_len}");
+            Program.logger.LogInfo($"Recieving packet from player {player} of len {packet_len}");
 
             if (player.buffer_cursor >= packet_len){
                 OnRecieve(player, ArrayExtentions.Slice(player.buffer, 0, (int) packet_len));
@@ -107,14 +108,14 @@ public class Server {
                 player.buffer_cursor = player.buffer_cursor - (int) packet_len;
             }
             else {
-                Program.logger.LogDebug($"{player.buffer_cursor}/{packet_len} received from {player.PlayerName}");
+                Program.logger.LogInfo($"{player.buffer_cursor}/{packet_len} received from {player.PlayerName}");
             }
         }
-        player.socket.BeginReceive(player.buffer, player.buffer_cursor, 1024, 0, new AsyncCallback(ReadCallback), null);
+        player.socket.BeginReceive(player.buffer, player.buffer_cursor, 1024, 0, new AsyncCallback(ReadCallback), player);
     }
 
     void OnRecieve(LobbyPlayer player, byte[] data) {
-        uint packet_type = (uint) data[3];
+        uint packet_type = (uint) data[2];
 
         switch (packet_type) {
             case 1:

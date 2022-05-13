@@ -42,7 +42,7 @@ public static class Program {
         if (!int.TryParse(args[4], out MaxLobbyFill)) { Console.WriteLine("Max lobby fill incorrectly formatted"); return; }
         if (!int.TryParse(args[5], out LobbyServerID)) { Console.WriteLine("Lobby server ID incorrectly formatted"); return; }
 
-        _logger =  new Logger("Lobby-Server-" + LobbyServerID, true);
+        _logger =  new Logger("Lobby-Server-" + LobbyServerID, false);
 
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
         
