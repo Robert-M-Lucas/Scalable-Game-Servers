@@ -8,7 +8,7 @@ public class Timer{
         s.Start();
     }
 
-    public long GetMsAndReset(){
+    public long GetMsAndRestart(){
         long ms = s.ElapsedMilliseconds;
         s.Restart();
         return ms;
