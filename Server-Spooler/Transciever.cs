@@ -31,7 +31,7 @@ public static class Transciever {
         byte[] recv = new byte[2];
         Listener.LoadBalancerSocket.Receive(recv);
         Program.LoadBalancerQueueLen =((uint) recv[0]) + (((uint) (recv[1]<<8)));
-        // Console.WriteLine($"Load balancer queue len = {Program.LoadBalancerQueueLen}");
+        // Console.WriteLine($"Load Balancer queue len = {Program.LoadBalancerQueueLen}");
     }
 
     public static void LobbyServersTranscieve() {

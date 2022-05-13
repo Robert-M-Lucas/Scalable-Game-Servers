@@ -24,7 +24,7 @@ public static class LoadBalancerClient {
             Handler.Connect(RemoteEP);
         }
         catch (SocketException e){
-            Program.logger.LogError("Failed to connect to target load balancer " + Program.LoadBalancerIP + ":" + Program.LoadBalancerPort);
+            Program.logger.LogError("Failed to connect to target Load Balancer " + Program.LoadBalancerIP + ":" + Program.LoadBalancerPort);
             Program.logger.LogError(e.ToString());
             return null;
         }
@@ -39,7 +39,7 @@ public static class LoadBalancerClient {
 
         try {
             while (true) {
-                Program.logger.LogDebug("Starting load balancer recieve");
+                Program.logger.LogDebug("Starting Load Balancer recieve");
                 byte[] packet_type = new byte[1];
                 Handler.Receive(packet_type, 0, 1, 0);
                 Program.logger.LogDebug("Recieved");

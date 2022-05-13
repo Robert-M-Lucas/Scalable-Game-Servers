@@ -51,12 +51,12 @@ public static class Program {
 
         Timer t = new Timer();
 
-        Program.logger.LogInfo("Starting load balancer");
+        Program.logger.LogInfo("Starting Load Balancer");
         ServerStarter.StartLoadBalancer();
-        Program.logger.LogInfo("Waiting for load balancer response");
+        Program.logger.LogInfo("Waiting for Load Balancer response");
         t.Reset();
         try { Listener.LoadBalancerSocket = Listener.AcceptClient(); }
-        catch (ServerConnectTimeoutException) { Program.logger.LogError("Load balancer didn't connect in required time, exitting"); Exit(); return; }
+        catch (ServerConnectTimeoutException) { Program.logger.LogError("Load Balancer didn't connect in required time, exitting"); Exit(); return; }
         Program.logger.LogInfo($"Connected in {t.GetMsAndReset()}ms");
         
         Program.logger.LogInfo("Starting Matchmaker");

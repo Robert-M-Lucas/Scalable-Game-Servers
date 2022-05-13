@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Diagnostics;
 
-// Load balancer args:
+// Load Balancer args:
 // [Server Spooler IP] [Server Spooler Port] [Load Balancer Port]
 
 public class LobbyData {
@@ -37,7 +37,7 @@ public static class ServerStarter {
         startInfo.CreateNoWindow = false;
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Load-Balancer\\Load-Balancer.exe";
-        Program.logger.LogDebug("Load balancer start");
+        Program.logger.LogDebug("Load Balancer start");
         startInfo.WindowStyle = ProcessWindowStyle.Minimized;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {Program.config.LoadBalancerPort} {Program.config.MaxLobbyFill} {Program.config.MaxQueueLen}";
 

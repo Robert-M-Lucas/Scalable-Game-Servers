@@ -25,7 +25,7 @@ public class LobbyServerClient {
             Handler.Connect(RemoteEP);
         }
         catch (SocketException e){
-            Program.logger.LogError("Failed to connect to target load balancer " + Program.LoadBalancerIP + ":" + Program.LoadBalancerPort);
+            Program.logger.LogError("Failed to connect to target Load Balancer " + Program.LoadBalancerIP + ":" + Program.LoadBalancerPort);
             Program.logger.LogError(e.ToString());
             return 0;
         }

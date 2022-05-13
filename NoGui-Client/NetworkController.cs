@@ -8,7 +8,7 @@ public static class NetworkController{
     }    
 
     public static void ConnectToLoadBalancer() {
-        Program.logger.LogInfo("Connecting to load balancer");
+        Program.logger.LogInfo("Connecting to Load Balancer");
         ByteIP? ip = LoadBalancerClient.Run();
         if (ip is not null) {
             // Transfer successful
