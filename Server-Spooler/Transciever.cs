@@ -34,6 +34,35 @@ public static class Transciever {
         // Console.WriteLine($"Load Balancer queue len = {Program.LoadBalancerQueueLen}");
     }
 
+    public static void MatchmakerTranscieve() {
+        const int PacketLenLen = 2;
+        // 2bytes [Packet Len] byte.byte.byte.byte:2bytes [IP] byte [Player count]
+        // All bytes unsigned
+        byte[] buffer = new byte[1024];
+        uint cursor = PacketLenLen;
+
+        foreach (LobbyData lobby in Program.GameServers){
+            ArrayExtentions.Merge(buffer, lobby.ip.IP, (int) cursor);
+            cursor += 4;
+            ArrayExtentions.Merge(buffer, lobby.ip.Port, (int) cursor);
+            cursor += 2;
+            ArrayExtentions.Merge(buffer, new byte[] {(byte) lobby.FillLevel}, (int) cursor);
+            cursor += 1;
+        }
+
+        buffer[0] = (byte) (cursor);
+        buffer[1] = (byte) ((cursor)>>8);
+
+        if (Listener.MatchmakerSocket is null) {throw new NullReferenceException(); }
+        Listener.MatchmakerSocket.Send(ArrayExtentions.Slice(buffer, 0, (int) cursor));
+
+        // Expecting 2 byte uint for response (queue len)
+        byte[] recv = new byte[2];
+        Listener.MatchmakerSocket.Receive(recv);
+        Program.MatchmakerQueueLen =((uint) recv[0]) + (((uint) (recv[1]<<8)));
+        // Console.WriteLine($"Load Balancer queue len = {Program.LoadBalancerQueueLen}");
+    }
+
     public static void LobbyServersTranscieve() {
         Timer t = new Timer();
         foreach (LobbyData lobby in Program.LobbyServers) {
@@ -42,7 +71,7 @@ public static class Transciever {
             byte[] recv = new byte[1];
             lobby.socket.Receive(recv);
             lobby.FillLevel = recv[0];
-            lobby.response_time = t.GetMsAndReset();
+            lobby.response_time = t.GetMsAndRestart();
         }
     }
 }

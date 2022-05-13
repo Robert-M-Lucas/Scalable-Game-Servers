@@ -8,7 +8,7 @@ public static class Program {
     # region Constants
     public const int MaxServerConnectTime = 20000;
     public const int GracefulShutdownTime = 1000;
-    public const long ServerInfoInterval = 2000;
+    public const long ServerInfoInterval = 1000;
     public const int interval = 50;
     # endregion
 
@@ -18,9 +18,10 @@ public static class Program {
     public static string config_path = "";
 
     public static List<LobbyData> LobbyServers = new List<LobbyData>();
-    public static List<Tuple<ByteIP, uint>> GameServers = new List<Tuple<ByteIP, uint>>();
+    public static List<LobbyData> GameServers = new List<LobbyData>();
 
     public static uint LoadBalancerQueueLen = 0;
+    public static uint MatchmakerQueueLen = 0;
 
     public static bool exit = false;
 
@@ -54,18 +55,18 @@ public static class Program {
         Program.logger.LogInfo("Starting Load Balancer");
         ServerStarter.StartLoadBalancer();
         Program.logger.LogInfo("Waiting for Load Balancer response");
-        t.Reset();
+        t.Restart();
         try { Listener.LoadBalancerSocket = Listener.AcceptClient(); }
         catch (ServerConnectTimeoutException) { Program.logger.LogError("Load Balancer didn't connect in required time, exitting"); Exit(); return; }
-        Program.logger.LogInfo($"Connected in {t.GetMsAndReset()}ms");
+        Program.logger.LogInfo($"Connected in {t.GetMsAndRestart()}ms");
         
         Program.logger.LogInfo("Starting Matchmaker");
         ServerStarter.StartMatchmaker();
         Program.logger.LogInfo("Waiting for Matchmaker response");
-        t.Reset();
+        t.Restart();
         try { Listener.MatchmakerSocket = Listener.AcceptClient(); }
         catch (ServerConnectTimeoutException) { Program.logger.LogError("Matchmaker didn't connect in required time, exitting"); Exit(); return; }
-        Program.logger.LogInfo($"Connected in {t.GetMsAndReset()}ms");
+        Program.logger.LogInfo($"Connected in {t.GetMsAndRestart()}ms");
 
 
         Console.WriteLine("Press Ctrl-C to exit");
@@ -75,16 +76,18 @@ public static class Program {
 
         try {
             while (!exit) {
-                t.Reset();
+                t.Restart();
                 Program.logger.LogDebug("Communicating with Load Balancer");
                 Transciever.LoadBalancerTranscieve();
-                LoadBalancerResponseTime = t.GetMsAndReset();
+                LoadBalancerResponseTime = t.GetMsAndRestart();
                 
-                // Transciever.MatchmakerTranscieve
+                Program.logger.LogDebug("Communicating with Matchmaker");
+                Transciever.MatchmakerTranscieve();
+                MatchmakerResponseTime = t.GetMsAndRestart();
 
                 Program.logger.LogDebug("Communicating with Lobbies");
                 Transciever.LobbyServersTranscieve();
-                AllLobbiesResponseTime = t.GetMsAndReset();
+                AllLobbiesResponseTime = t.GetMsAndRestart();
 
 
                 int empty_lobby_severs = 0;
