@@ -27,7 +27,9 @@ public static class NetworkController{
 
     public static void ConnectToLobby(string IP, int Port) 
     {
-        new LobbyServerClient().Run(IP, Port);
+        int status = new LobbyServerClient().Run(IP, Port);
+        if (status == 0) { LobbyConnectFailed(); }
+        else if (status == 1) { ConnectToMatchmaker(); }
     }
 
     public static void LobbyConnectFailed() {

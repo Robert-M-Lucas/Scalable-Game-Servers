@@ -27,3 +27,14 @@ Server Response
 1. [2 bytes] Packet length (13)
 2. [1 byte] Response type - 0000001
 3. [10 bytes] Player name
+
+## Example interface - Type 2
+1. [2 bytes] Packet length
+2. [1 byte ] Request type - 00000010
+3. [0 bytes] No payload
+
+Server Response
+
+1. [2 bytes] Packet length (4)
+2. [1 byte] Response type - 0000010
+3. [1 bytes] player counter

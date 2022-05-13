@@ -14,7 +14,7 @@ public class LobbyPlayer {
     # endregion
 
     // TODO: Remove this after testing
-    public int player_counter_test = 0;
+    public uint player_counter_test = 0;
 
     public LobbyPlayer(Socket _socket, string player_name) {
         socket = _socket;
