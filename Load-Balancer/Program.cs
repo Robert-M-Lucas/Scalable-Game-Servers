@@ -54,6 +54,7 @@ public static class Program {
 
         while (!exit) {
             if (server.Players.Count > 0) {
+                // Temp server list to not have to worry about updates from spooler
                 Tuple<ByteIP, uint>[] LobbyServersCopy = new Tuple<ByteIP, uint>[LobbyServers.Count];
                 LobbyServers.CopyTo(LobbyServersCopy);
                 logger.LogInfo(LobbyServersCopy.Length);
