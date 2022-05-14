@@ -57,17 +57,31 @@ public class Server {
 
     public void TransferClient(ByteIP ip){
         Socket? socket;
+
         if (!Players.TryDequeue(out socket)) { Program.logger.LogError("Failed to dequeue client"); return; }
+
         byte[] to_send = new byte[7];
         to_send[0] = (byte) (uint) 1;
         ArrayExtentions.Merge(to_send, ip.IP, 1);
         ArrayExtentions.Merge(to_send, ip.Port, 5);
-        socket.Send(to_send);
+
+        try {
+            socket.Send(to_send);
+        } catch (SocketException se) {
+            Program.logger.LogWarning("Failed to transfer client, probably due to client disconnect");
+            Program.logger.LogWarning(se);
+            socket.Shutdown(SocketShutdown.Both);
+            return;
+        }
+
         Program.logger.LogImportant($"Player sent to {ip.strIP}:{ip.iPort}");
-        Task.Delay(new TimeSpan(0, 0, 15)).ContinueWith(o => { 
+
+        // Shutdown socket 1 second later
+        Task.Delay(new TimeSpan(0, 0, 1)).ContinueWith(o => { 
             Program.logger.LogDebug("Shutting down client socket");
             socket.Shutdown(SocketShutdown.Both); 
         });
+
         Program.logger.LogDebug("Client transfer done");
     }
 
