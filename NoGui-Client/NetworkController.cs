@@ -37,7 +37,21 @@ public static class NetworkController{
         if (c == 0) {ConnectToLoadBalancer();}
     }
 
-    public static void ConnectToMatchmaker() {}
+    public static void ConnectToMatchmaker() {
+        Program.logger.LogInfo("Connecting to Matchmaker");
+        ByteIP? ip = MatchmakerClient.Run();
+        if (ip is not null) {
+            // Transfer successful
+            ConnectToMatch(ip.strIP, (int) ip.iPort);
+        }
+        else {
+            MatchmakerConnectFailed();
+        }
+    }
+
+    public static void MatchmakerConnectFailed() {
+
+    }
 
     public static void ConnectToMatch(string IP, int Port) {}
 }

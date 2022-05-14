@@ -15,6 +15,8 @@ public static class Program {
 
     public static Logger logger = new Logger("NoGui-Client", true);
 
+    public static ConfigObj config;
+
     public static void Main(string[] args) {
         try {
             ProtectedMain(args);
@@ -33,7 +35,7 @@ public static class Program {
         LoadBalancerIP = "127.0.0.1";
 
         try { 
-            ConfigObj config = Config.GetConfig("config.json"); 
+            config = Config.GetConfig("config.json"); 
             LoadBalancerPort = config.LoadBalancerPort;
         }
         catch (BadConfigFormatException) { logger.LogError("Incorrect formatting of config.json"); return; }
