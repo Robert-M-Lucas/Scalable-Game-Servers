@@ -42,8 +42,8 @@ public class LobbyServerClient {
                 int c = ConsoleInputUtil.ChooseOption(new string[] {"Echo name", "Get counter", "Connect to matchmaker", "Quit"});
                 if (c == 0) {EchoName(Handler);}
                 else if (c == 1) {GetCounter(Handler);}
+                else if (c == 2) {Handler.Shutdown(SocketShutdown.Both); return 1; }
                 else if (c == 3) {Handler.Shutdown(SocketShutdown.Both); return 2; }
-                else if (c == 4) {Handler.Shutdown(SocketShutdown.Both); return 1; }
             }
         }
         catch (SocketException se) {

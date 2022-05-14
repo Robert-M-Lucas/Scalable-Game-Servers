@@ -1,0 +1,195 @@
+[14/05/22 21:52:10:3199469] [INFO ]: Logging started
+[14/05/22 21:52:10:3307294] [INFO ]: Starting Spooler receive
+[14/05/22 21:52:10:3327253] [INFO ]: Matchmaker server start
+[14/05/22 21:52:10:3331770] [INFO ]: Matchmaker Client Accept Thread Start
+[14/05/22 21:52:10:3343018] [INFO ]: Waiting for client to connect
+[14/05/22 21:52:16:6424614] [INFO ]: Client connected, queue len: 1
+[14/05/22 21:52:16:6426521] [INFO ]: Waiting for client to connect
+[14/05/22 21:52:16:6544586] [INFO ]: 0
+[14/05/22 21:52:16:6547457] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:16:8553719] [INFO ]: 0
+[14/05/22 21:52:16:8557149] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:17:0561397] [INFO ]: 0
+[14/05/22 21:52:17:0564454] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:17:2719065] [INFO ]: 0
+[14/05/22 21:52:17:2721804] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:17:4875525] [INFO ]: 0
+[14/05/22 21:52:17:4877874] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:17:7028618] [INFO ]: 0
+[14/05/22 21:52:17:7030835] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:17:9184464] [INFO ]: 0
+[14/05/22 21:52:17:9186513] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:18:1199674] [INFO ]: 0
+[14/05/22 21:52:18:1202434] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:18:3215938] [INFO ]: 0
+[14/05/22 21:52:18:3219414] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:18:5230787] [INFO ]: 0
+[14/05/22 21:52:18:5233111] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:18:7235969] [INFO ]: 0
+[14/05/22 21:52:18:7239020] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:18:9245320] [INFO ]: 0
+[14/05/22 21:52:18:9251614] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:19:1398026] [INFO ]: 0
+[14/05/22 21:52:19:1403045] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:19:3558058] [INFO ]: 0
+[14/05/22 21:52:19:3568473] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:19:5720575] [INFO ]: 0
+[14/05/22 21:52:19:5730089] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:19:7880625] [INFO ]: 0
+[14/05/22 21:52:19:7892255] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:20:0048049] [INFO ]: 0
+[14/05/22 21:52:20:0056988] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:20:2211390] [INFO ]: 0
+[14/05/22 21:52:20:2219433] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:20:4227675] [INFO ]: 0
+[14/05/22 21:52:20:4235741] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:20:6386074] [INFO ]: 0
+[14/05/22 21:52:20:6393665] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:20:8402115] [INFO ]: 0
+[14/05/22 21:52:20:8410510] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:21:0555390] [INFO ]: 0
+[14/05/22 21:52:21:0565951] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:21:2704913] [INFO ]: 0
+[14/05/22 21:52:21:2712434] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:21:4717700] [INFO ]: 0
+[14/05/22 21:52:21:4728003] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:21:6872456] [INFO ]: 0
+[14/05/22 21:52:21:6880496] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:21:9020907] [INFO ]: 0
+[14/05/22 21:52:21:9030667] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:22:1178061] [INFO ]: 0
+[14/05/22 21:52:22:1186577] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:22:3338618] [INFO ]: 0
+[14/05/22 21:52:22:3354926] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:22:5495407] [INFO ]: 0
+[14/05/22 21:52:22:5504699] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:22:7655518] [INFO ]: 0
+[14/05/22 21:52:22:7664486] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:22:9813024] [INFO ]: 0
+[14/05/22 21:52:22:9823733] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:23:1976699] [INFO ]: 0
+[14/05/22 21:52:23:1985220] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:23:4137529] [INFO ]: 0
+[14/05/22 21:52:23:4145641] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:23:6302996] [INFO ]: 0
+[14/05/22 21:52:23:6310765] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:23:8465343] [INFO ]: 0
+[14/05/22 21:52:23:8474457] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:24:0630199] [INFO ]: 0
+[14/05/22 21:52:24:0639348] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:24:2792863] [INFO ]: 0
+[14/05/22 21:52:24:2801849] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:24:4949759] [INFO ]: 0
+[14/05/22 21:52:24:4957116] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:24:7098013] [INFO ]: 0
+[14/05/22 21:52:24:7111272] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:24:9260919] [INFO ]: 0
+[14/05/22 21:52:24:9269455] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:25:1406813] [INFO ]: 0
+[14/05/22 21:52:25:1415227] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:25:3421756] [INFO ]: 0
+[14/05/22 21:52:25:3430866] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:25:5573354] [INFO ]: 0
+[14/05/22 21:52:25:5580888] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:25:7733004] [INFO ]: 0
+[14/05/22 21:52:25:7740744] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:25:9888439] [INFO ]: 0
+[14/05/22 21:52:25:9896235] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:26:2049473] [INFO ]: 0
+[14/05/22 21:52:26:2057623] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:26:4216171] [INFO ]: 0
+[14/05/22 21:52:26:4225052] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:26:6371648] [INFO ]: 0
+[14/05/22 21:52:26:6380596] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:26:8525586] [INFO ]: 0
+[14/05/22 21:52:26:8533168] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:27:0681676] [INFO ]: 0
+[14/05/22 21:52:27:0690864] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:27:2843939] [INFO ]: 0
+[14/05/22 21:52:27:2852003] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:27:5006144] [INFO ]: 0
+[14/05/22 21:52:27:5015056] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:27:7022369] [INFO ]: 0
+[14/05/22 21:52:27:7029845] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:27:9177803] [INFO ]: 0
+[14/05/22 21:52:27:9186415] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:28:1332858] [INFO ]: 0
+[14/05/22 21:52:28:1341787] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:28:3492160] [INFO ]: 0
+[14/05/22 21:52:28:3500120] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:28:5654570] [INFO ]: 0
+[14/05/22 21:52:28:5662568] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:28:7812080] [INFO ]: 0
+[14/05/22 21:52:28:7820671] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:28:9973119] [INFO ]: 0
+[14/05/22 21:52:28:9981263] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:29:2129601] [INFO ]: 0
+[14/05/22 21:52:29:2137838] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:29:4277907] [INFO ]: 0
+[14/05/22 21:52:29:4286772] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:29:6443697] [INFO ]: 0
+[14/05/22 21:52:29:6453850] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:29:8595341] [INFO ]: 0
+[14/05/22 21:52:29:8607770] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:30:0746408] [INFO ]: 0
+[14/05/22 21:52:30:0755164] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:30:2905400] [INFO ]: 0
+[14/05/22 21:52:30:2914173] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:30:5059615] [INFO ]: 0
+[14/05/22 21:52:30:5068385] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:30:7218283] [INFO ]: 0
+[14/05/22 21:52:30:7226571] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:30:9363212] [INFO ]: 0
+[14/05/22 21:52:30:9371370] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:31:1528897] [INFO ]: 0
+[14/05/22 21:52:31:1537300] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:31:3695042] [INFO ]: 0
+[14/05/22 21:52:31:3702507] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:31:5706520] [INFO ]: 0
+[14/05/22 21:52:31:5710234] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:31:7865430] [INFO ]: 0
+[14/05/22 21:52:31:7869075] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:32:0023062] [INFO ]: 0
+[14/05/22 21:52:32:0027091] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:32:2180411] [INFO ]: 0
+[14/05/22 21:52:32:2185148] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:32:4336235] [INFO ]: 0
+[14/05/22 21:52:32:4340186] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:32:6481770] [INFO ]: 0
+[14/05/22 21:52:32:6486093] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:32:8633796] [INFO ]: 0
+[14/05/22 21:52:32:8638242] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:33:0642364] [INFO ]: 0
+[14/05/22 21:52:33:0646411] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:33:2650313] [INFO ]: 0
+[14/05/22 21:52:33:2655582] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:33:4813836] [INFO ]: 0
+[14/05/22 21:52:33:4818297] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:33:6972246] [INFO ]: 0
+[14/05/22 21:52:33:6977021] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:33:9133139] [INFO ]: 0
+[14/05/22 21:52:33:9144492] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:34:1290548] [INFO ]: 0
+[14/05/22 21:52:34:1294190] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:34:3303484] [INFO ]: 0
+[14/05/22 21:52:34:3307788] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:34:5318268] [INFO ]: 0
+[14/05/22 21:52:34:5322277] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:34:7472638] [INFO ]: 0
+[14/05/22 21:52:34:7477817] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:34:9635210] [INFO ]: 0
+[14/05/22 21:52:34:9643950] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:35:1785599] [INFO ]: 0
+[14/05/22 21:52:35:1791898] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:35:3795064] [INFO ]: 0
+[14/05/22 21:52:35:3803523] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:35:5810592] [INFO ]: 0
+[14/05/22 21:52:35:5814998] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:35:7965127] [INFO ]: 0
+[14/05/22 21:52:35:7976665] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:36:0119506] [INFO ]: 0
+[14/05/22 21:52:36:0127981] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:36:2282740] [INFO ]: 0
+[14/05/22 21:52:36:2295305] [WARN ]: No available game servers to transfer client to
+[14/05/22 21:52:36:4437241] [INFO ]: 0
+[14/05/22 21:52:36:4446485] [WARN ]: No available game servers to tran

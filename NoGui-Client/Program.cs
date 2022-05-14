@@ -33,10 +33,12 @@ public static class Program {
         Console.Title = "Client";
 
         LoadBalancerIP = "127.0.0.1";
+        MatchmakerIP = "127.0.0.1";
 
         try { 
-            config = Config.GetConfig("config.json"); 
+            config = Config.GetConfig("config.json");
             LoadBalancerPort = config.LoadBalancerPort;
+            MatchmakerPort = config.MatchmakerPort;
         }
         catch (BadConfigFormatException) { logger.LogError("Incorrect formatting of config.json"); return; }
         
