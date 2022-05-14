@@ -73,8 +73,8 @@ public class Server {
 
     ~Server(){Stop();}
     public void Stop(){
-        Program.logger.LogWarning("Stopping Load Balancer");
+        Program.logger.LogWarning("Stopping Matchmaker");
         if (AcceptClientThread is not null) {try{AcceptClientThread.Interrupt();}catch(Exception e){Console.WriteLine(e);}}
-        Program.logger.LogInfo("Load Balancer stopped");
+        Program.logger.LogInfo("Matchmaker stopped");
     }
 }
