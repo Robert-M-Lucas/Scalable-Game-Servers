@@ -24,13 +24,32 @@ public class LobbyData {
     }
 }
 
+public class GameServerData {
+    public ByteIP ip;
+    public int UID;
+    public Process process;
+    public Socket? socket;
+    public uint FillLevel = 0;
+
+    public long response_time = 0;
+
+    public GameServerData(int uid, ByteIP _ip, Process _process) {
+        UID = uid;
+        ip = _ip;
+        process = _process;
+    }
+}
+
 public static class ServerStarter {
     public static int LobbyPortCounter = 10123;
     public static int LobbyUIDCounter = 0;
+    public static int GameServerPortCounter = 20123;
+    public static int GameServerUIDCounter = 0;
     public static Process? LoadBalancer;
     public static Process? Matchmaker;
 
     public static List<LobbyData> LobbyServers = new List<LobbyData>();
+    public static List<GameServerData> GameServers = new List<GameServerData>();
 
     public static void StartLoadBalancer() {
         ProcessStartInfo startInfo = new ProcessStartInfo();
@@ -103,14 +122,67 @@ public static class ServerStarter {
         Matchmaker = Process.Start(startInfo);
     }
 
+    public static bool StartGameServer() {
+        Program.logger.LogInfo($"Starting game server {GameServerUIDCounter} on port {GameServerPortCounter}");
+
+        ProcessStartInfo startInfo = new ProcessStartInfo();
+        startInfo.CreateNoWindow = false;
+        startInfo.UseShellExecute = true;
+        startInfo.FileName = "..\\Game-Server\\Game-Server.exe";
+        startInfo.WindowStyle = ProcessWindowStyle.Normal;
+        startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {GameServerPortCounter} {Program.config.MaxLobbyFill} {GameServerUIDCounter}";
+
+        Process? game_server = Process.Start(startInfo);
+        if (game_server is null) { return false; }
+        GameServerData new_game_server = new GameServerData(GameServerUIDCounter, ByteIP.StringToIP("127.0.0.1", (uint) GameServerPortCounter), game_server);
+
+        Program.logger.LogDebug("Waiting for game server response");
+        try {
+            new_game_server.socket = Listener.AcceptClient();
+        }
+        catch (ServerConnectTimeoutException) {
+            Program.logger.LogError("Game server failed to connect in time, killing...");
+            if (game_server is not null) { game_server.Kill(); }
+            GameServerUIDCounter++;
+            GameServerPortCounter++;
+            return false;
+        }
+
+        Program.GameServers.Add(new_game_server);
+        GameServerUIDCounter ++;
+        GameServerPortCounter ++;
+        return true;
+    }
+
+    public static void StopEmptyGameServer() {
+        GameServerData? to_remove = null;
+        foreach (GameServerData gameServer in Program.GameServers) {
+            if (gameServer.FillLevel == 0) {
+                Console.WriteLine($"Stopping lobby server {gameServer.UID} at port {gameServer.ip.iPort}");
+                if (gameServer.socket is not null) { gameServer.socket.Shutdown(SocketShutdown.Both); }
+                Thread.Sleep(100);
+                gameServer.process.Kill();
+                to_remove = gameServer;
+                break;
+            }
+        }
+        if (to_remove is not null) { Program.GameServers.Remove(to_remove); }
+    }
+
     public static void Exit() {
         if (LoadBalancer is not null) { Program.logger.LogInfo("Killing Load Balancer"); LoadBalancer.Kill(); }
         if (Matchmaker is not null) { Program.logger.LogInfo("Killing Matchmaker"); Matchmaker.Kill(); }
 
-        Console.WriteLine("Killing lobby servers");
+        Program.logger.LogInfo("Killing lobby servers");
         foreach (LobbyData lb in LobbyServers) {
             if (lb.socket is not null) { lb.socket.Shutdown(SocketShutdown.Both); }
             lb.process.Kill();
+        }
+
+        Program.logger.LogInfo("Killing game servers");
+        foreach (GameServerData gs in GameServers) {
+            if (gs.socket is not null) { gs.socket.Shutdown(SocketShutdown.Both); }
+            gs.process.Kill();
         }
     }
 }

@@ -18,7 +18,7 @@ public static class Program {
     public static string config_path = "";
 
     public static List<LobbyData> LobbyServers = new List<LobbyData>();
-    public static List<LobbyData> GameServers = new List<LobbyData>();
+    public static List<GameServerData> GameServers = new List<GameServerData>();
 
     public static uint LoadBalancerQueueLen = 0;
     public static uint MatchmakerQueueLen = 0;
@@ -30,6 +30,11 @@ public static class Program {
     public static long LoadBalancerResponseTime = 0;
     public static long AllLobbiesResponseTime = 0;
     public static long MatchmakerResponseTime = 0;
+    public static long AllGameServersResponseTime = 0;
+    public static long LobbyServerStartTime = 0;
+    public static long LobbyServerStopTime = 0;
+    public static long GameServerStartTime = 0;
+    public static long GameServerStopTime = 0;
 
     # endregion
 
@@ -89,6 +94,10 @@ public static class Program {
                 Transciever.LobbyServersTranscieve();
                 AllLobbiesResponseTime = t.GetMsAndRestart();
 
+                Program.logger.LogDebug("Communicating with Game Servers");
+                Transciever.GameServersTranscieve();
+                AllGameServersResponseTime = t.GetMsAndRestart();
+
 
                 int empty_lobby_severs = 0;
                 foreach (LobbyData lobby_server in LobbyServers) {
@@ -97,18 +106,43 @@ public static class Program {
                     }
                 }
 
+                t.Restart();
                 while (empty_lobby_severs < config.MinEmptyLobbies) {
                     ServerStarter.StartLobby();
                     empty_lobby_severs++;
                 }
+                LobbyServerStartTime = t.GetMsAndRestart();
 
+                t.Restart();
                 while (empty_lobby_severs > config.MaxEmptyLobbies) {
                     ServerStarter.StopEmptyLobby();
                     empty_lobby_severs--;
                 }
+                LobbyServerStopTime = t.GetMsAndRestart();
+
+                int empty_game_severs = 0;
+                foreach (GameServerData game_server in GameServers) {
+                    if (game_server.FillLevel == 0) {
+                        empty_game_severs++;
+                    }
+                }
+
+                t.Restart();
+                while (empty_game_severs < config.MinEmptyGameServers) {
+                    ServerStarter.StartGameServer();
+                    empty_game_severs++;
+                }
+                GameServerStartTime = t.GetMsAndRestart();
+
+                t.Restart();
+                while (empty_game_severs > config.MaxEmptyGameServers) {
+                    ServerStarter.StopEmptyGameServer();
+                    empty_game_severs--;
+                }
+                GameServerStopTime = t.GetMsAndRestart();
                 
                 if (info_refresh.GetMs() > ServerInfoInterval) {
-                    InfoManager.ShowInfo();
+                    InfoManager.ShowInfo(t_full.GetMs());
                     info_refresh.Restart();
                 }
 

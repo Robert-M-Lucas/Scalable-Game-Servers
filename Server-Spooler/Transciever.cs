@@ -41,12 +41,12 @@ public static class Transciever {
         byte[] buffer = new byte[1024];
         uint cursor = PacketLenLen;
 
-        foreach (LobbyData lobby in Program.GameServers){
-            ArrayExtentions.Merge(buffer, lobby.ip.IP, (int) cursor);
+        foreach (GameServerData gameServer in Program.GameServers){
+            ArrayExtentions.Merge(buffer, gameServer.ip.IP, (int) cursor);
             cursor += 4;
-            ArrayExtentions.Merge(buffer, lobby.ip.Port, (int) cursor);
+            ArrayExtentions.Merge(buffer, gameServer.ip.Port, (int) cursor);
             cursor += 2;
-            ArrayExtentions.Merge(buffer, new byte[] {(byte) lobby.FillLevel}, (int) cursor);
+            ArrayExtentions.Merge(buffer, new byte[] {(byte) gameServer.FillLevel}, (int) cursor);
             cursor += 1;
         }
 
@@ -72,6 +72,18 @@ public static class Transciever {
             lobby.socket.Receive(recv);
             lobby.FillLevel = recv[0];
             lobby.response_time = t.GetMsAndRestart();
+        }
+    }
+
+    public static void GameServersTranscieve() {
+        Timer t = new Timer();
+        foreach (GameServerData gameServer in Program.GameServers) {
+            if (gameServer.socket is null) { Console.WriteLine("GAME SERVER SOCKET IS NULL!"); continue; }
+            gameServer.socket.Send(new byte[] {2, 0});
+            byte[] recv = new byte[1];
+            gameServer.socket.Receive(recv);
+            gameServer.FillLevel = recv[0];
+            gameServer.response_time = t.GetMsAndRestart();
         }
     }
 }
