@@ -1,0 +1,21 @@
+[16/05/22 11:36:10:2571146] [INFO ]: Logging started
+[16/05/22 11:36:17:7462852] [INFO ]: Connecting to Load Balancer
+[16/05/22 11:36:17:7616896] [DEBUG]: Socket connected to 127.0.0.1:7107
+[16/05/22 11:36:17:7638960] [DEBUG]: Waiting for response from load balance
+[16/05/22 11:36:17:7645735] [DEBUG]: Starting Load Balancer recieve
+[16/05/22 11:36:17:7651759] [DEBUG]: Recieved
+[16/05/22 11:36:17:7656883] [INFO ]: Position in queue: 0
+[16/05/22 11:36:17:7659751] [DEBUG]: Starting Load Balancer recieve
+[16/05/22 11:36:17:7783454] [DEBUG]: Recieved
+[16/05/22 11:36:17:7795718] [INFO ]: Being transfered to 127.0.0.1:10123
+[16/05/22 11:36:17:7826277] [DEBUG]: Socket connected to 127.0.0.1:10123
+[16/05/22 11:36:22:2208034] [INFO ]: Connecting to Matchmaker
+[16/05/22 11:36:22:2224702] [DEBUG]: Socket connected to 127.0.0.1:6106
+[16/05/22 11:36:22:2227306] [DEBUG]: Waiting for response from Matchmaker
+[16/05/22 11:36:22:2229982] [DEBUG]: Starting Matchmaker recieve
+[16/05/22 11:36:22:2236950] [DEBUG]: Recieved
+[16/05/22 11:36:22:2240481] [INFO ]: Position in queue: 0
+[16/05/22 11:36:22:2243893] [DEBUG]: Starting Matchmaker recieve
+[16/05/22 11:36:22:2257704] [DEBUG]: Recieved
+[16/05/22 11:36:22:2261796] [INFO ]: Being transfered to 127.0.0.1:20123
+[16/05/22 11:36:22:2268970] [WARN ]: Shutting down logging
