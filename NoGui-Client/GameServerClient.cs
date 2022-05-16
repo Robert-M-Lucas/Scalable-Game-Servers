@@ -39,10 +39,11 @@ public class GameServerClient {
 
         try {
             while (true) {
-                int c = ConsoleInputUtil.ChooseOption(new string[] {"Echo name", "Get counter", "Quit"});
+                int c = ConsoleInputUtil.ChooseOption(new string[] {"Echo name", "Get counter", "Quit Game", "Quit"});
                 if (c == 0) {EchoName(Handler);}
                 else if (c == 1) {GetCounter(Handler);}
                 else if (c == 2) {Handler.Shutdown(SocketShutdown.Both); return 1; }
+                else if (c == 2) {Handler.Shutdown(SocketShutdown.Both); return 2; }
             }
         }
         catch (SocketException se) {

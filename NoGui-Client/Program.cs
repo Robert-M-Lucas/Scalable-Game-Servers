@@ -13,7 +13,7 @@ public static class Program {
 
     public static string ClientName = "";
 
-    public static Logger logger = new Logger("NoGui-Client", true);
+    public static Logger logger = new Logger("NoGui-Client", false);
 
     public static ConfigObj config;
 

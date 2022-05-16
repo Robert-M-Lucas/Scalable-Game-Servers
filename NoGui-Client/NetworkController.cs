@@ -60,16 +60,17 @@ public static class NetworkController{
     }
 
     public static void ConnectToMatch(string IP, int Port) {
+        Program.logger.LogImportant("Connecting to Game Server");
         int status = new GameServerClient().Run(IP, Port);
         if (status == 0) {
             MatchConnectFailed();
         }
-        else {
+        else if (status == 1) {
             ConnectToLoadBalancer();
         }
     }
 
-    public static void MatchConnectFailed() { 
+    public static void MatchConnectFailed() {
         Program.logger.LogError("Connecting to Game Server failed");
         int c = ConsoleInputUtil.ChooseOption(new string[] {"Reconnect to Matchmaker", "Reconnect to Load Balancer", "Quit"});
         if (c == 0) {ConnectToMatchmaker();}
