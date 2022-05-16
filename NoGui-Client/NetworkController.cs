@@ -49,9 +49,13 @@ public static class NetworkController{
         }
     }
 
-    public static void MatchmakerConnectFailed() {
-
+    public static void MatchmakerConnectFailed() { 
+        int c = ConsoleInputUtil.ChooseOption(new string[] {"Reconnect to Matchmaker", "Reconnect to Load Balancer", "Quit"});
+        if (c == 0) {ConnectToMatchmaker();}
+        else if (c == 1) {ConnectToLoadBalancer();}
     }
 
-    public static void ConnectToMatch(string IP, int Port) {}
+    public static void ConnectToMatch(string IP, int Port) {
+        
+    }
 }

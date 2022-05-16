@@ -5,15 +5,15 @@ using System.Net.Sockets;
 using System.Net;
 using System.Text;
 
-public class LobbyServerClient {
+public class GameServerClient {
     Socket? Handler;
 
-    public int Run(string IP, int Port){
+    public int Run(string IP, int Port) {
         return Connect(IP, Port);
         // NetworkController.ConnectToLobby()
     }
 
-    int Connect(string IP, int Port){
+    int Connect(string IP, int Port) {
         byte[] server_buffer = new byte[1024];
 
         IPAddress HostIpA = IPAddress.Parse(IP);
@@ -25,7 +25,7 @@ public class LobbyServerClient {
             Handler.Connect(RemoteEP);
         }
         catch (SocketException e){
-            Program.logger.LogError("Failed to connect to target Lobby Server " + IP + ":" + Port); 
+            Program.logger.LogError("Failed to connect to target Game Server " + IP + ":" + Port);
             Program.logger.LogError(e.ToString());
             return 0;
         }
@@ -47,7 +47,7 @@ public class LobbyServerClient {
             }
         }
         catch (SocketException se) {
-            Program.logger.LogError("Lobby Server disconnected client");
+            Program.logger.LogError("Game Server disconnected client");
             Program.logger.LogError(se.ToString());
             return 0;
         }
