@@ -41,7 +41,7 @@ public static class NetworkController{
     }
 
     public static void ConnectToMatchmaker() {
-        Program.logger.LogInfo("Connecting to Matchmaker");
+        Program.logger.LogImportant("Connecting to Matchmaker");
         ByteIP? ip = MatchmakerClient.Run();
         if (ip is not null) {
             // Transfer successful

@@ -39,7 +39,7 @@ public class LobbyServerClient {
 
         try {
             while (true) {
-                int c = ConsoleInputUtil.ChooseOption(new string[] {"Echo name", "Get counter", "Connect to matchmaker", "Quit"});
+                int c = ConsoleInputUtil.ChooseOption(new string[] {"Echo name", "Get counter", "Search for game", "Quit"});
                 if (c == 0) {EchoName(Handler);}
                 else if (c == 1) {GetCounter(Handler);}
                 else if (c == 2) {Handler.Shutdown(SocketShutdown.Both); return 1; }
@@ -54,22 +54,22 @@ public class LobbyServerClient {
     }
 
     void EchoName(Socket socket) {
-        Program.logger.LogInfo("Sending echo request");
+        Program.logger.LogDebug("Sending echo request");
         Timer t = new Timer();
         socket.Send(new byte[] {(byte) (uint) 3, (byte) (uint) 0, (byte) (uint) 1});
         byte[] buffer = new byte[13];
-        Program.logger.LogInfo("Waiting for echo response");
+        Program.logger.LogDebug("Waiting for echo response");
         socket.Receive(buffer, 0, 13, 0);
         string name = Encoding.ASCII.GetString(ArrayExtentions.Slice(buffer, 3, 13));
         Program.logger.LogImportant($"Recieved name [{name}] in {t.GetMs()}ms");
     }
 
     void GetCounter(Socket socket) {
-        Program.logger.LogInfo("Sending counter request");
+        Program.logger.LogDebug("Sending counter request");
         Timer t = new Timer();
         socket.Send(new byte[] {(byte) (uint) 3, (byte) (uint) 0, (byte) (uint) 2});
         byte[] buffer = new byte[4];
-        Program.logger.LogInfo("Waiting for response");
+        Program.logger.LogDebug("Waiting for response");
         socket.Receive(buffer, 0, 4, 0);
         uint counter = buffer[3];
         Program.logger.LogImportant($"Recieved [{counter}] in {t.GetMs()}ms");

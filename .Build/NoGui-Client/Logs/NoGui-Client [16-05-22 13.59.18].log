@@ -1,0 +1,17 @@
+[16/05/22 13:59:18:7895866] [INFO ]: Logging started
+[16/05/22 13:59:26:2337722] [INFO+]: Connecting to Load Balancer
+[16/05/22 13:59:26:2605905] [INFO+]: Connecting to Lobby Server
+[16/05/22 13:59:30:9097698] [INFO+]: Recieved name [Ned Is Gay] in 15ms
+[16/05/22 13:59:31:7056579] [INFO+]: Recieved name [Ned Is Gay] in 11ms
+[16/05/22 13:59:32:1021735] [INFO+]: Recieved name [Ned Is Gay] in 11ms
+[16/05/22 13:59:32:4814917] [INFO+]: Recieved name [Ned Is Gay] in 11ms
+[16/05/22 13:59:32:9981060] [INFO+]: Recieved [0] in 19ms
+[16/05/22 13:59:33:2341850] [INFO+]: Recieved [1] in 11ms
+[16/05/22 13:59:33:4346561] [INFO+]: Recieved [2] in 11ms
+[16/05/22 13:59:33:6316587] [INFO+]: Recieved [3] in 18ms
+[16/05/22 13:59:33:7984586] [INFO+]: Recieved [4] in 11ms
+[16/05/22 13:59:35:4245791] [INFO+]: Connecting to Matchmaker
+[16/05/22 13:59:35:4506641] [INFO+]: Connecting to Game Server
+[16/05/22 13:59:47:4985485] [INFO+]: Connecting to Load Balancer
+[16/05/22 13:59:47:5105602] [INFO+]: Connecting to Lobby Server
+[16/05/22 13:59:51:0828016] [WARN ]: Shutting down logging

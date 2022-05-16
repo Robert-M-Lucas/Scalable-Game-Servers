@@ -48,17 +48,17 @@ public static class MatchmakerClient {
                     case (byte) 0:
                         byte[] queue_pos_recv = new byte[2];
                         Handler.Receive(queue_pos_recv, 0, 2, 0);
-                        Program.logger.LogInfo($"Position in queue: {((uint) queue_pos_recv[0]) + ((uint) (queue_pos_recv[1]<<8))}");
+                        Program.logger.LogDebug($"Position in queue: {((uint) queue_pos_recv[0]) + ((uint) (queue_pos_recv[1]<<8))}");
                         continue;
                     case (byte) 1:
                         byte[] ip_and_port = new byte[6];
                         Handler.Receive(ip_and_port, 0, 6, 0);
                         ByteIP ip = ByteIP.BytesToIP(ip_and_port);
-                        Program.logger.LogInfo($"Being transfered to {ip.strIP}:{ip.iPort}");
+                        Program.logger.LogDebug($"Being transfered to {ip.strIP}:{ip.iPort}");
                         return ip;
                     case (byte) 3:
                         Handler.Shutdown(SocketShutdown.Both);
-                        Program.logger.LogInfo("Connection rejected - queue full");
+                        Program.logger.LogWarning("Connection rejected - queue full");
                         return null;
                 }
             }

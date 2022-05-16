@@ -70,7 +70,7 @@ public static class ServerStarter {
         startInfo.CreateNoWindow = false;
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Lobby-Server\\Lobby-Server.exe";
-        startInfo.WindowStyle = ProcessWindowStyle.Normal;
+        startInfo.WindowStyle = ProcessWindowStyle.Minimized;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {LobbyPortCounter} {Program.config.MaxLobbyFill} {LobbyUIDCounter}";
 
         Process? lobby_server = Process.Start(startInfo);
@@ -129,7 +129,7 @@ public static class ServerStarter {
         startInfo.CreateNoWindow = false;
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Game-Server\\Game-Server.exe";
-        startInfo.WindowStyle = ProcessWindowStyle.Normal;
+        startInfo.WindowStyle = ProcessWindowStyle.Minimized;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {GameServerPortCounter} {Program.config.MaxLobbyFill} {GameServerUIDCounter}";
 
         Process? game_server = Process.Start(startInfo);
