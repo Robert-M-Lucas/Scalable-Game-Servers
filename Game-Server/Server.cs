@@ -13,6 +13,8 @@ public class Server {
 
     public Thread AcceptClientThread;
 
+    public Game? game;
+
     public Server(){
         AcceptClientThread = new Thread(AcceptClients);
     }
@@ -41,6 +43,12 @@ public class Server {
         while (!Program.exit) {
             Program.logger.LogInfo("Waiting for client to connect");
             Socket temp_socket = listener.Accept();
+
+            if (Players.Count >= Program.MaxGameServerFill) {
+                temp_socket.Shutdown(SocketShutdown.Both);
+                Program.logger.LogWarning("Client accepted and immediately kicked because server full");
+            }
+
             Program.logger.LogInfo("Client accepted");
 
             // Start wait for connection data
@@ -82,8 +90,14 @@ public class Server {
         // Start recieving data from client
         socket.BeginReceive(player.buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), player);
         Program.fill_level = (uint) Players.Count();
-        Program.logger.LogInfo($"Player {player} connected. Player count: {Program.fill_level}/{Program.MaxGameServerFill}");
-        
+        Program.logger.LogImportant($"Player {player} connected. Player count: {Program.fill_level}/{Program.MaxGameServerFill}");
+        ClientFullyAccepted(player);
+    }
+
+    private void ClientFullyAccepted(GamePlayer player) {
+        if (game is null && Players.Count >= 2) {
+            game = new Game(Players[0].ID, Players[1].ID);
+        }
     }
 
     private void RemovePlayer(GamePlayer player) {
@@ -130,36 +144,31 @@ public class Server {
         player.socket.BeginReceive(player.buffer, player.buffer_cursor, 1024, 0, new AsyncCallback(ReadCallback), player);
     }
 
-    void OnRecieve(GamePlayer player, byte[] data) {
-        uint packet_type = (uint) data[2];
-
-        switch (packet_type) {
-            case 1:
-                Program.logger.LogInfo($"Player {player} requested name echo, replying");
-                byte[] name_buffer = new byte[13];
-                name_buffer[0] = (byte) (uint) 13;
-                name_buffer[1] = (byte) (uint) 0;
-                name_buffer[2] = (byte) (uint) 1;
-                ArrayExtentions.Merge(name_buffer, Encoding.ASCII.GetBytes(player.PlayerName), 3);
-                player.socket.Send(name_buffer);
-                break;
-            case 2:
-                Program.logger.LogInfo($"Player {player} requested counter, replying {player.player_counter_test}");
-                byte[] counter_buffer = new byte[4];
-                counter_buffer[0] = (byte) (uint) 4;
-                counter_buffer[1] = (byte) (uint) 0;
-                counter_buffer[2] = (byte) (uint) 2;
-                counter_buffer[3] = (byte) player.player_counter_test;
-                player.player_counter_test++;
-                player.socket.Send(counter_buffer);
-                break;
-            default:
-                Program.logger.LogError($"Player {player} requested requestID {packet_type} which doesn't exist");
-                break;
+    public void UpdateAllClient(byte[] data) {
+        foreach (GamePlayer player in Players) {
+            player.socket.Send(data);
         }
     }
 
+    void OnRecieve(GamePlayer player, byte[] data) {
+        uint packet_type = (uint) data[2];
+
+        if (game is null) {
+            // Send game hasn't started packet to client
+            return;
+        }
+
+        game.HandlePacket(packet_type, data);
+    }
+
+    public void ResetGame() {
+        while (Players.Count > 0) { RemovePlayer(Players[0]); }
+
+        game = null;
+    }
+
     ~Server(){Stop();}
+
     public void Stop(){
         Program.logger.LogWarning("Stopping Game Server");
         if (AcceptClientThread is not null) {try{AcceptClientThread.Interrupt();}catch(Exception e){Console.WriteLine(e);}}
