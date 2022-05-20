@@ -1,7 +1,7 @@
 {
     "Debug": false,
 
-    "Version": "1.1",
+    "Version": "1.2",
 
     "ServerSpoolerPort": 5105,
     "MatchmakerPort": 6106,
@@ -10,9 +10,9 @@
     "MaxQueueLen": 1000,
     "MaxLobbyFill": 2,
 
-    "MaxEmptyLobbies": 1,
-    "MinEmptyLobbies": 1,
+    "MaxEmptyLobbies": 20,
+    "MinEmptyLobbies": 20,
 
-    "MaxEmptyGameServers": 1,
-    "MinEmptyGameServers": 1
+    "MaxEmptyGameServers": 20,
+    "MinEmptyGameServers": 20
 }

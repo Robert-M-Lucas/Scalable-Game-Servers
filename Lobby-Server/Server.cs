@@ -82,14 +82,14 @@ public class Server {
         // Start recieving data from client
         socket.BeginReceive(player.buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), player);
         Program.fill_level = (uint) Players.Count();
-        Program.logger.LogInfo($"Client {player} connected. Player count: {Program.fill_level}/{Program.MaxLobbyFill}");
+        Program.logger.LogImportant($"Client {player} connected. Player count: {Program.fill_level}/{Program.MaxLobbyFill}");
         
     }
 
     private void RemovePlayer(LobbyPlayer player) {
         Players.Remove(player);
         Program.fill_level = (uint) Players.Count();
-        Program.logger.LogInfo($"Player {player} disconnected. Player count: {Program.fill_level}/{Program.MaxLobbyFill}");
+        Program.logger.LogImportant($"Player {player} disconnected. Player count: {Program.fill_level}/{Program.MaxLobbyFill}");
         try {
             player.socket.Shutdown(SocketShutdown.Both);
         }

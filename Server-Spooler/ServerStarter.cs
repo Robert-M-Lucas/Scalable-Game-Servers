@@ -51,16 +51,30 @@ public static class ServerStarter {
     public static List<LobbyData> LobbyServers = new List<LobbyData>();
     public static List<GameServerData> GameServers = new List<GameServerData>();
 
+    public static Process WrapedProcessStart(ProcessStartInfo startInfo) {
+        try {
+            Process? process = Process.Start(startInfo);
+            if (process is null) { throw new NullReferenceException(); }
+            return process;
+        }
+        catch (Exception e) {
+            Program.logger.LogError("Error starting process");
+            Program.logger.LogError(e);
+            Program.Exit();
+            throw new NullReferenceException();
+        }
+    }
+
     public static void StartLoadBalancer() {
         ProcessStartInfo startInfo = new ProcessStartInfo();
         startInfo.CreateNoWindow = false;
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Load-Balancer\\Load-Balancer.exe";
         Program.logger.LogDebug("Load Balancer start");
-        startInfo.WindowStyle = ProcessWindowStyle.Minimized;
+        startInfo.WindowStyle = ProcessWindowStyle.Normal;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {Program.config.LoadBalancerPort} {Program.config.MaxLobbyFill} {Program.config.MaxQueueLen}";
 
-        LoadBalancer = Process.Start(startInfo);
+        LoadBalancer = WrapedProcessStart(startInfo);
     }
 
     public static bool StartLobby() {
@@ -73,8 +87,7 @@ public static class ServerStarter {
         startInfo.WindowStyle = ProcessWindowStyle.Minimized;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {LobbyPortCounter} {Program.config.MaxLobbyFill} {LobbyUIDCounter}";
 
-        Process? lobby_server = Process.Start(startInfo);
-        if (lobby_server is null) { return false; }
+        Process lobby_server = WrapedProcessStart(startInfo);
         LobbyData new_lobby = new LobbyData(LobbyUIDCounter, ByteIP.StringToIP("127.0.0.1", (uint) LobbyPortCounter), lobby_server);
 
         Program.logger.LogDebug("Waiting for lobby response");
@@ -116,10 +129,10 @@ public static class ServerStarter {
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Matchmaker\\Matchmaker.exe";
         Program.logger.LogDebug("Matchmaker start");
-        startInfo.WindowStyle = ProcessWindowStyle.Minimized;
+        startInfo.WindowStyle = ProcessWindowStyle.Normal;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {Program.config.MatchmakerPort} {2} {Program.config.MaxQueueLen}";
 
-        Matchmaker = Process.Start(startInfo);
+        Matchmaker = WrapedProcessStart(startInfo);
     }
 
     public static bool StartGameServer() {
@@ -132,8 +145,7 @@ public static class ServerStarter {
         startInfo.WindowStyle = ProcessWindowStyle.Minimized;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {GameServerPortCounter} {Program.config.MaxLobbyFill} {GameServerUIDCounter}";
 
-        Process? game_server = Process.Start(startInfo);
-        if (game_server is null) { return false; }
+        Process? game_server = WrapedProcessStart(startInfo);
         GameServerData new_game_server = new GameServerData(GameServerUIDCounter, ByteIP.StringToIP("127.0.0.1", (uint) GameServerPortCounter), game_server);
 
         Program.logger.LogDebug("Waiting for game server response");

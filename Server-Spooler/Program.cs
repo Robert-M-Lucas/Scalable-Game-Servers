@@ -9,7 +9,7 @@ public static class Program {
     public const int MaxServerConnectTime = 20000;
     public const int GracefulShutdownTime = 1000;
     public const long ServerInfoInterval = 1000;
-    public const int interval = 50;
+    public const int UpdateInterval = 100;
     # endregion
 
     public static Logger logger = new Logger("Server-Spooler", true);
@@ -147,8 +147,9 @@ public static class Program {
                 }
 
                 long update_len = t_full.GetMs();
-                if (interval - update_len > 0) { Thread.Sleep(interval - (int) update_len); }
-                t_full.Reset();
+                if (UpdateInterval - update_len > 0) { Thread.Sleep(UpdateInterval - (int) update_len); }
+                else { logger.LogWarning($"Update [{update_len}ms] took longer than update interval [{UpdateInterval}ms]"); }
+                t_full.Restart();
             }
         }
         catch (Exception e) {
