@@ -4,6 +4,9 @@ using System.Net;
 using System.Net.Sockets;
 
 public class GamePlayer {
+    private static int player_id_counter = 0;
+
+    public int ID;
     public Socket socket;
 
     public string PlayerName;
@@ -19,6 +22,8 @@ public class GamePlayer {
     public GamePlayer(Socket _socket, string player_name) {
         socket = _socket;
         PlayerName = player_name;
+        ID = player_id_counter;
+        player_counter_test++;
     }
 
     public override string ToString()
