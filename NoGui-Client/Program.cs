@@ -47,7 +47,7 @@ public static class Program {
 
         bool good_name = false;
         while (!good_name) {
-            Console.Write("Enter name (1-10 characters): "); ClientName = StringExtentions.DeNullString(Console.ReadLine());
+            Console.Write("Enter name (1-10 characters): "); ClientName = StringExtentions.NullToEmptyString(Console.ReadLine());
 
             if (ClientName == "") {continue;}
             if (ClientName.Length > 10) {continue;}

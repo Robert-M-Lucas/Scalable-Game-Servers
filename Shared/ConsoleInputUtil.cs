@@ -14,7 +14,7 @@ public static class ConsoleInputUtil{
                 Console.WriteLine(i+1 + ". " + options[i]);
             }
             Console.Write("Input: ");
-            string _return = StringExtentions.DeNullString(Console.ReadLine());
+            string _return = StringExtentions.NullToEmptyString(Console.ReadLine());
 
             if (int.TryParse(_return, out ret)) {  
                 if (ret > 0 && ret <= options.Length) { ret -= 1; enforce = false; }
