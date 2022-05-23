@@ -101,7 +101,7 @@ public class Logger {
     }
 
     public void LogError(object log_text_obj) {
-        if (log_text_obj is null) {return;}
+        if (log_text_obj is null) { return; }
         string? log_text = log_text_obj.ToString();
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + ERROR_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
@@ -111,8 +111,8 @@ public class Logger {
     }
 
     public void LogDebug(object log_text_obj) {
-        if (!debug_logged) {return;}
-        if (log_text_obj is null) {return;}
+        if (!debug_logged) { return; }
+        if (log_text_obj is null) { return; }
         string? log_text = log_text_obj.ToString();
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + DEBUG_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
