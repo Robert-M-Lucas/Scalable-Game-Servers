@@ -110,7 +110,7 @@ public class Server {
         }
         
         Program.fill_level = (uint) Players.Count();
-        Program.logger.LogInfo($"Player {player} disconnected. Player count: {Program.fill_level}/{Program.MaxGameServerFill}");
+        Program.logger.LogImportant($"Player {player} disconnected. Player count: {Program.fill_level}/{Program.MaxGameServerFill}");
         try {
             player.socket.Shutdown(SocketShutdown.Both);
         }
@@ -134,7 +134,7 @@ public class Server {
         if (player.buffer_cursor >= 2) {
             uint packet_len = (uint) player.buffer[0] + (uint) (player.buffer[1]<<8);
 
-            Program.logger.LogInfo($"Recieving packet from player {player} of len {packet_len}");
+            Program.logger.LogDebug($"Recieving packet from player {player} of len {packet_len}");
 
             if (player.buffer_cursor >= packet_len){
                 OnRecieve(player, ArrayExtentions.Slice(player.buffer, 0, (int) packet_len));
@@ -145,7 +145,7 @@ public class Server {
                 player.buffer_cursor = player.buffer_cursor - (int) packet_len;
             }
             else {
-                Program.logger.LogInfo($"{player.buffer_cursor}/{packet_len} received from {player.PlayerName}");
+                Program.logger.LogDebug($"{player.buffer_cursor}/{packet_len} received from {player.PlayerName}");
             }
         }
         player.socket.BeginReceive(player.buffer, player.buffer_cursor, 1024, 0, new AsyncCallback(ReadCallback), player);
@@ -155,6 +155,7 @@ public class Server {
         uint packet_type = (uint) data[2];
 
         if (game is null) {
+            Program.logger.LogWarning($"Client {player} tried to send packet before game initialised");
             // Send game hasn't started packet to client
             return;
         }
@@ -169,6 +170,7 @@ public class Server {
     }
 
     public void ResetGame() {
+        Program.logger.LogImportant("Resetting game");
         while (Players.Count > 0) { RemovePlayer(Players[0]); }
 
         game = null;
