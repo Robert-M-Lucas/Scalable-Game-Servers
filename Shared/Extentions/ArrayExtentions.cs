@@ -1,14 +1,18 @@
 namespace Shared;
 
-using System;
-using System.Collections.Generic;
-using System.Collections;
 
-public static class ArrayExtentions
-{
-    public static byte[] Merge(byte[] BigArr, byte[] SmallArr, int index = 0)
+public static class ArrayExtentions {
+    public static int Index<T>(T[] arr, T to_find) {
+        for (int i = 0; i < arr.Length; i++) {
+            if (EqualityComparer<T>.Default.Equals(arr[i], to_find)) { return i; }
+        }
+
+        return -1;
+    }
+
+    public static T[] Merge<T>(T[] BigArr, T[] SmallArr, int index = 0)
     {
-        foreach (byte item in SmallArr)
+        foreach (T item in SmallArr)
         {
             BigArr[index] = item;
             index++;
@@ -17,9 +21,9 @@ public static class ArrayExtentions
         return BigArr;
     }
 
-    public static byte[] Slice(byte[] Arr, int start, int end)
+    public static T[] Slice<T>(T[] Arr, int start, int end)
     {
-        byte[] to_return = new byte[end - start];
+        T[] to_return = new T[end - start];
         var index = 0;
         for (int i = start; i < end; i++)
         {
@@ -29,19 +33,20 @@ public static class ArrayExtentions
         return to_return;
     }
 
-    public static Tuple<byte[], int> ClearEmpty(byte[] Arr)
+    // Returns new array and length
+    public static Tuple<T[], int> ClearEmpty<T>(T[] Arr, Func<T, bool> check_empty)
     {
         int index = 0;
         for (int i = 0; i < Arr.Length; i++)
         {
-            if (Arr[i] != 0)
+            if (check_empty(Arr[i]))
             {
                 index = i;
                 break;
             }
         }
-        return new Tuple<byte[], int>(
-            Merge(new byte[Arr.Length], Slice(Arr, index, Arr.Length)),
+        return new Tuple<T[], int>(
+            Merge(new T[Arr.Length], Slice(Arr, index, Arr.Length)),
             index
         );
     }

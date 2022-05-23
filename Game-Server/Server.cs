@@ -96,12 +96,19 @@ public class Server {
 
     private void ClientFullyAccepted(GamePlayer player) {
         if (game is null && Players.Count >= 2) {
-            game = new Game(Players[0].ID, Players[1].ID);
+            game = new Game(Players[0].ID, Players[1].ID, this);
+            game.UpdateAllClients();
         }
     }
 
     private void RemovePlayer(GamePlayer player) {
-        Players.Remove(player);
+        if (Players.Contains(player)) {
+            Players.Remove(player);
+        }
+        else {
+            return;
+        }
+        
         Program.fill_level = (uint) Players.Count();
         Program.logger.LogInfo($"Player {player} disconnected. Player count: {Program.fill_level}/{Program.MaxGameServerFill}");
         try {
@@ -144,12 +151,6 @@ public class Server {
         player.socket.BeginReceive(player.buffer, player.buffer_cursor, 1024, 0, new AsyncCallback(ReadCallback), player);
     }
 
-    public void UpdateAllClient(byte[] data) {
-        foreach (GamePlayer player in Players) {
-            player.socket.Send(data);
-        }
-    }
-
     void OnRecieve(GamePlayer player, byte[] data) {
         uint packet_type = (uint) data[2];
 
@@ -158,7 +159,13 @@ public class Server {
             return;
         }
 
-        game.HandlePacket(packet_type, data);
+        try {
+            game.HandlePacket(packet_type, data, player);
+        }
+        catch (Exception e) {
+            Program.logger.LogError("Error handling game packet");
+            Program.logger.LogError(e);
+        }
     }
 
     public void ResetGame() {

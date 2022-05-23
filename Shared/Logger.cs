@@ -6,7 +6,7 @@ using System;
 using System.IO;
 
 public class Logger {
-    public ConcurrentQueue<string> LogQueue = new ConcurrentQueue<string>();
+    private ConcurrentQueue<string> LogQueue = new ConcurrentQueue<string>();
     private string LogName = "";
     private Thread LogThread;
 
@@ -35,6 +35,7 @@ public class Logger {
     void LogLoop() {
         Directory.CreateDirectory("Logs");
         StreamWriter sw = File.AppendText(LogName);
+        sw.AutoFlush = true;
         try {
             while (true) { 
                 LogAll(sw);
@@ -57,7 +58,6 @@ public class Logger {
                 sw.WriteLine(log_line);
             }
             else {
-                // Console.WriteLine("Wait");
                 Thread.Sleep(10);
             }
         }

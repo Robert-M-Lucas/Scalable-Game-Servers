@@ -23,13 +23,13 @@ public class GamePlayer {
         socket = _socket;
         PlayerName = player_name;
         ID = player_id_counter;
-        player_counter_test++;
+        player_id_counter++;
     }
 
     public override string ToString()
     {
         if (socket.RemoteEndPoint is null) { return $"[{PlayerName}]:[Null]"; }
         IPEndPoint remoteEndPoint = (IPEndPoint) socket.RemoteEndPoint;
-        return $"[{PlayerName}]:[{remoteEndPoint.Address}:{remoteEndPoint.Port}]";
+        return $"[{PlayerName}]:[ID:{ID}]:[{remoteEndPoint.Address}:{remoteEndPoint.Port}]";
     }
 }

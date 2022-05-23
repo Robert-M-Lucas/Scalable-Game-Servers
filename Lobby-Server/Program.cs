@@ -57,8 +57,14 @@ public static class Program {
         }
 
         Console.WriteLine("Press Ctrl-C to exit");
-        server = new Server();
-        server.Start();
+        try {
+            server = new Server();
+            server.Start();
+        }
+        catch (Exception e) {
+            Program.logger.LogError(e);
+            Exit();
+        }
         // Console.ReadLine();
     }
 
