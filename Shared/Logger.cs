@@ -10,6 +10,7 @@ public class Logger {
     private string LogName = "";
     private Thread LogThread;
 
+    public bool debug_printed = false;
     public bool debug_logged = false;
 
     const ConsoleColor DEFAULT_COLOUR = ConsoleColor.White;
@@ -25,7 +26,7 @@ public class Logger {
     const ConsoleColor DEBUG_COLOUR = ConsoleColor.Green;
 
     public Logger(string log_name, bool debug = false) {
-        debug_logged = debug;
+        debug_printed = debug;
         LogName = "Logs\\" + log_name + DateTime.Now.ToString(" [dd-MM-yy HH.mm.ss]") + ".log";
         LogInfo("Logging started");
         LogThread = new Thread(LogLoop);
@@ -115,8 +116,10 @@ public class Logger {
         string? log_text = log_text_obj.ToString();
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + DEBUG_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
-        Console.ForegroundColor = DEBUG_COLOUR;
-        Console.WriteLine(text);
-        Console.ForegroundColor = DEFAULT_COLOUR;
+        if (debug_printed) {
+            Console.ForegroundColor = DEBUG_COLOUR;
+            Console.WriteLine(text);
+            Console.ForegroundColor = DEFAULT_COLOUR;
+        }
     }
 }

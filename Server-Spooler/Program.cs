@@ -48,7 +48,7 @@ public static class Program {
         
         try { 
             config = Config.GetConfig(config_path);
-            logger.debug_logged = config.Debug;
+            logger.debug_printed = config.Debug;
         }
         catch (BadConfigFormatException) { Program.logger.LogError("Incorrect formatting of config.json"); Exit(); }
         
