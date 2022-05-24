@@ -1,0 +1,9 @@
+[24/05/22 12:34:53:7011642] [INFO ]: Logging started
+[24/05/22 12:34:53:8671817] [INFO ]: Starting Spooler receive
+[24/05/22 12:34:53:8988987] [INFO ]: Load Balancer server start
+[24/05/22 12:34:53:8996491] [INFO ]: Load Balancer Client Accept Thread Start
+[24/05/22 12:34:53:9008565] [ERROR]: FATAL UNHANDLED EXCEPTION!
+[24/05/22 12:34:53:9026246] [INFO ]: Waiting for client to connect
+[24/05/22 12:34:54:1229245] [ERROR]: System.Exception: e
+   at LoadBalancer.Program.Main(String[] args) in C:\Users\rober\Documents\Projects\Scalable-Game-Servers\Load-Balancer\Program.cs:line 55
+[24/05/22 12:34:54:1307705] [WARN ]: Shutting down logging
