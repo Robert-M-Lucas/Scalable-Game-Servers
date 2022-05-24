@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "52plmmbJvuRxhPgbH+mp8QaqQKimI7+Tlj3R9AtMZOaebrIeyszl2E6QExlxrZV6RE+LWRJYm2PGwy5QSKJ4EQ==",
+  "dgSpecHash": "ndMUayEnDYuyLL1GxNRGX+aEMXdx08rQXOjiW1KqLFfOLQutAfXp+HbB/sA6WPZbiru6vERmf+uTVnYDVPRXSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Shared\\Shared.csproj",
+  "projectFilePath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable-Game-Servers\\Shared\\Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -12,7 +12,10 @@ public abstract class SpoolerInterface
 
     Logger logger;
 
-    public SpoolerInterface(string SpoolerIP, int SpoolerPort, Logger _logger){
+    Action<string> OnSpoolerDisconnect;
+
+    public SpoolerInterface(string SpoolerIP, int SpoolerPort, Logger _logger, Action<string> onSpoolerDisconnect) {
+        OnSpoolerDisconnect = onSpoolerDisconnect;
         logger = _logger;
 
         IPAddress HostIpA = IPAddress.Parse(SpoolerIP);
@@ -29,7 +32,12 @@ public abstract class SpoolerInterface
 
     private void ReadCallback(IAsyncResult ar)
     {
-        buffer_cursor += SpoolerSocket.EndReceive(ar);
+        try {
+            buffer_cursor += SpoolerSocket.EndReceive(ar);
+        }
+        catch (SocketException se) {
+            OnSpoolerDisconnect(se.Message);
+        }
 
         if (buffer_cursor >= 2) {
             uint packet_len = (uint) buffer[0] + (uint) (buffer[1]<<8);

@@ -10,7 +10,7 @@ public class GameServerClient {
 
     public int Run(string IP, int Port) {
         return Connect(IP, Port);
-        // NetworkController.ConnectToLobby()
+        // NetworkController.ConnectToLobby();
     }
 
     int Connect(string IP, int Port) {
@@ -24,13 +24,13 @@ public class GameServerClient {
         try {
             Handler.Connect(RemoteEP);
         }
-        catch (SocketException e){
+        catch (SocketException e) {
             Program.logger.LogError("Failed to connect to target Game Server " + IP + ":" + Port);
             Program.logger.LogError(e.ToString());
             return 0;
         }
 
-        if (Handler.RemoteEndPoint is null) {Program.logger.LogError("Remote end point is null"); return 0; }
+        if (Handler.RemoteEndPoint is null) { Program.logger.LogError("Remote end point is null"); return 0; }
 
         Program.logger.LogDebug("Socket connected to " + Handler.RemoteEndPoint.ToString());
 
