@@ -2060,6 +2060,2064 @@
                     "filename": "update_config.py"
                 }
             ]
+        },
+        {
+            "version": "0.2.7",
+            "counttime": "2022-05-23 21:22:40",
+            "filesum": 311,
+            "codesum": 5386,
+            "commentsum": 212,
+            "blanksum": 856,
+            "statistics": {
+                ".sln": {
+                    "code": 62,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".csproj": {
+                    "code": 77,
+                    "comment": 0,
+                    "blank": 20
+                },
+                ".py": {
+                    "code": 167,
+                    "comment": 40,
+                    "blank": 70
+                },
+                ".bat": {
+                    "code": 7,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".md": {
+                    "code": 69,
+                    "comment": 0,
+                    "blank": 25
+                },
+                ".cs": {
+                    "code": 2332,
+                    "comment": 172,
+                    "blank": 595
+                },
+                ".json": {
+                    "code": 2060,
+                    "comment": 0,
+                    "blank": 146
+                },
+                ".cache": {
+                    "code": 76,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".targets": {
+                    "code": 14,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".props": {
+                    "code": 91,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".txt": {
+                    "code": 361,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".editorconfig": {
+                    "code": 70,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".CopyComplete": {
+                    "code": 0,
+                    "comment": 0,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 5,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": ".Build\\Game-Server\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": ".Build\\Game-Server\\Game-Server.deps.json"
+                },
+                {
+                    "filename": ".Build\\Game-Server\\Game-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Game-Server\\Game-Server.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Game-Server\\Game-Server.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".Build\\Game-Server\\Game-Server.runtimeconfig.json"
+                },
+                {
+                    "filename": ".Build\\Game-Server\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Game-Server\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 5,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": ".Build\\Load-Balancer\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": ".Build\\Load-Balancer\\Load-Balancer.deps.json"
+                },
+                {
+                    "filename": ".Build\\Load-Balancer\\Load-Balancer.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Load-Balancer\\Load-Balancer.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Load-Balancer\\Load-Balancer.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".Build\\Load-Balancer\\Load-Balancer.runtimeconfig.json"
+                },
+                {
+                    "filename": ".Build\\Load-Balancer\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Load-Balancer\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 5,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": ".Build\\Lobby-Server\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": ".Build\\Lobby-Server\\Lobby-Server.deps.json"
+                },
+                {
+                    "filename": ".Build\\Lobby-Server\\Lobby-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Lobby-Server\\Lobby-Server.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Lobby-Server\\Lobby-Server.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".Build\\Lobby-Server\\Lobby-Server.runtimeconfig.json"
+                },
+                {
+                    "filename": ".Build\\Lobby-Server\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Lobby-Server\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 5,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": ".Build\\Matchmaker\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": ".Build\\Matchmaker\\Matchmaker.deps.json"
+                },
+                {
+                    "filename": ".Build\\Matchmaker\\Matchmaker.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Matchmaker\\Matchmaker.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Matchmaker\\Matchmaker.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".Build\\Matchmaker\\Matchmaker.runtimeconfig.json"
+                },
+                {
+                    "filename": ".Build\\Matchmaker\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Matchmaker\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 5,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": ".Build\\NoGui-Client\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": ".Build\\NoGui-Client\\NoGui-Client.deps.json"
+                },
+                {
+                    "filename": ".Build\\NoGui-Client\\NoGui-Client.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\NoGui-Client\\NoGui-Client.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\NoGui-Client\\NoGui-Client.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".Build\\NoGui-Client\\NoGui-Client.runtimeconfig.json"
+                },
+                {
+                    "filename": ".Build\\NoGui-Client\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\NoGui-Client\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 5,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": ".Build\\Server-Spooler\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": ".Build\\Server-Spooler\\Server-Spooler.deps.json"
+                },
+                {
+                    "filename": ".Build\\Server-Spooler\\Server-Spooler.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Server-Spooler\\Server-Spooler.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Server-Spooler\\Server-Spooler.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".Build\\Server-Spooler\\Server-Spooler.runtimeconfig.json"
+                },
+                {
+                    "filename": ".Build\\Server-Spooler\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Server-Spooler\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 5,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": ".Build\\Shared\\config.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": ".Build\\Shared\\Shared.deps.json"
+                },
+                {
+                    "filename": ".Build\\Shared\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".Build\\Shared\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 24,
+                    "code": 86,
+                    "comment": 0,
+                    "filename": ".Packet Generator\\AutoPacketGenerator.py"
+                },
+                {
+                    "filename": ".vs\\Scalable Game Servers\\DesignTimeBuild\\.dtbcache.v2",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".vs\\Scalable Game Servers\\v17\\.futdcache.v1",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".vs\\Scalable Game Servers\\v17\\.suo",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "Architecture\\GameServer.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "Architecture\\Protocols\\GameServer - Client.md"
+                },
+                {
+                    "blank": 4,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "Architecture\\Protocols\\LoadBalancer - Client.md"
+                },
+                {
+                    "blank": 10,
+                    "code": 30,
+                    "comment": 0,
+                    "filename": "Architecture\\Protocols\\LobbyServer - Client.md"
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Architecture\\Protocols\\ServerSpooler - LoadBalancer.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "Architecture\\Protocols\\ServerSpooler - LobbyServer.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Architecture\\TODO.md"
+                },
+                {
+                    "blank": 5,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "base_config.json"
+                },
+                {
+                    "blank": 12,
+                    "code": 20,
+                    "comment": 11,
+                    "filename": "build.py"
+                },
+                {
+                    "blank": 11,
+                    "code": 16,
+                    "comment": 16,
+                    "filename": "build_fast.py"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "clear_logs.bat"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Game-Server.deps.json"
+                },
+                {
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Game-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Game-Server.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Game-Server.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Game-Server.runtimeconfig.json"
+                },
+                {
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Game-Server\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "Game-Server\\Game-Server.csproj"
+                },
+                {
+                    "blank": 23,
+                    "code": 51,
+                    "comment": 3,
+                    "filename": "Game-Server\\Game.cs"
+                },
+                {
+                    "blank": 8,
+                    "code": 26,
+                    "comment": 1,
+                    "filename": "Game-Server\\GamePlayer.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.csproj.CopyComplete"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\Game-Server.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\ref\\Game-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Game-Server\\obj\\Debug\\net6.0\\refint\\Game-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 10,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Game-Server.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Game-Server.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\Game-Server.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 6,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Game-Server\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Game-Server\\Packets.txt"
+                },
+                {
+                    "blank": 20,
+                    "code": 60,
+                    "comment": 2,
+                    "filename": "Game-Server\\Program.cs"
+                },
+                {
+                    "blank": 40,
+                    "code": 142,
+                    "comment": 4,
+                    "filename": "Game-Server\\Server.cs"
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "Game-Server\\SpoolerInterfaceGameServer.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Load-Balancer.deps.json"
+                },
+                {
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Load-Balancer.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Load-Balancer.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Load-Balancer.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Load-Balancer.runtimeconfig.json"
+                },
+                {
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Load-Balancer\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\Load-Balancer.csproj"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.csproj.CopyComplete"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\Load-Balancer.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\ref\\Load-Balancer.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Load-Balancer\\obj\\Debug\\net6.0\\refint\\Load-Balancer.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 10,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Load-Balancer.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Load-Balancer.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\Load-Balancer.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 6,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Load-Balancer\\Packets.txt"
+                },
+                {
+                    "blank": 21,
+                    "code": 74,
+                    "comment": 2,
+                    "filename": "Load-Balancer\\Program.cs"
+                },
+                {
+                    "blank": 20,
+                    "code": 70,
+                    "comment": 6,
+                    "filename": "Load-Balancer\\Server.cs"
+                },
+                {
+                    "blank": 6,
+                    "code": 24,
+                    "comment": 1,
+                    "filename": "Load-Balancer\\SpoolerInterfaceLoadBalancer.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Lobby-Server.deps.json"
+                },
+                {
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Lobby-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Lobby-Server.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Lobby-Server.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Lobby-Server.runtimeconfig.json"
+                },
+                {
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Lobby-Server\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\Lobby-Server.csproj"
+                },
+                {
+                    "blank": 7,
+                    "code": 22,
+                    "comment": 1,
+                    "filename": "Lobby-Server\\LobbyPlayer.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.csproj.CopyComplete"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\Lobby-Server.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\ref\\Lobby-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Lobby-Server\\obj\\Debug\\net6.0\\refint\\Lobby-Server.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 10,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Lobby-Server.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Lobby-Server.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\Lobby-Server.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 6,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\Packets.txt"
+                },
+                {
+                    "blank": 20,
+                    "code": 66,
+                    "comment": 2,
+                    "filename": "Lobby-Server\\Program.cs"
+                },
+                {
+                    "blank": 32,
+                    "code": 133,
+                    "comment": 3,
+                    "filename": "Lobby-Server\\Server.cs"
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "Lobby-Server\\SpoolerInterfaceLobbyServer.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Matchmaker.deps.json"
+                },
+                {
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Matchmaker.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Matchmaker.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Matchmaker.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Matchmaker.runtimeconfig.json"
+                },
+                {
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Matchmaker\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "Matchmaker\\Matchmaker.csproj"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.csproj.CopyComplete"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\Matchmaker.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\ref\\Matchmaker.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Matchmaker\\obj\\Debug\\net6.0\\refint\\Matchmaker.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 10,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Matchmaker.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Matchmaker.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\Matchmaker.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 6,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Matchmaker\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Matchmaker\\Packets.txt"
+                },
+                {
+                    "blank": 20,
+                    "code": 72,
+                    "comment": 2,
+                    "filename": "Matchmaker\\Program.cs"
+                },
+                {
+                    "blank": 20,
+                    "code": 70,
+                    "comment": 6,
+                    "filename": "Matchmaker\\Server.cs"
+                },
+                {
+                    "blank": 5,
+                    "code": 21,
+                    "comment": 1,
+                    "filename": "Matchmaker\\SpoolerInterfaceMatchmaker.cs"
+                },
+                {
+                    "blank": 8,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "namespace_enforcer.py"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\NoGui-Client.deps.json"
+                },
+                {
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\NoGui-Client.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\NoGui-Client.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\NoGui-Client.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\NoGui-Client.runtimeconfig.json"
+                },
+                {
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "NoGui-Client\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 25,
+                    "code": 80,
+                    "comment": 9,
+                    "filename": "NoGui-Client\\GameServerClient.cs"
+                },
+                {
+                    "blank": 13,
+                    "code": 57,
+                    "comment": 2,
+                    "filename": "NoGui-Client\\LoadBalancerClient.cs"
+                },
+                {
+                    "blank": 13,
+                    "code": 62,
+                    "comment": 2,
+                    "filename": "NoGui-Client\\LobbyServerClient.cs"
+                },
+                {
+                    "blank": 13,
+                    "code": 57,
+                    "comment": 2,
+                    "filename": "NoGui-Client\\MatchmakerClient.cs"
+                },
+                {
+                    "blank": 10,
+                    "code": 67,
+                    "comment": 2,
+                    "filename": "NoGui-Client\\NetworkController.cs"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\NoGui-Client.csproj"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.csproj.CopyComplete"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\NoGui-Client.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\ref\\NoGui-Client.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "NoGui-Client\\obj\\Debug\\net6.0\\refint\\NoGui-Client.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 10,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\NoGui-Client.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\NoGui-Client.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\NoGui-Client.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 6,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "NoGui-Client\\Packets.txt"
+                },
+                {
+                    "blank": 15,
+                    "code": 46,
+                    "comment": 1,
+                    "filename": "NoGui-Client\\Program.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Readme.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 3,
+                    "comment": 2,
+                    "filename": "run.py"
+                },
+                {
+                    "blank": 1,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "run_client.py"
+                },
+                {
+                    "blank": 0,
+                    "code": 62,
+                    "comment": 0,
+                    "filename": "Scalable Game Servers.sln"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Server-Spooler.deps.json"
+                },
+                {
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Server-Spooler.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Server-Spooler.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Server-Spooler.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Server-Spooler.runtimeconfig.json"
+                },
+                {
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Server-Spooler\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 8,
+                    "code": 34,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\InfoManager.cs"
+                },
+                {
+                    "blank": 24,
+                    "code": 49,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\Listener.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\apphost.exe",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\ref\\Server-Spooler.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\refint\\Server-Spooler.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.csproj.CopyComplete"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.genruntimeconfig.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Server-Spooler\\obj\\Debug\\net6.0\\Server-Spooler.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 6,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 10,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Server-Spooler.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Server-Spooler.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\obj\\Server-Spooler.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 41,
+                    "code": 141,
+                    "comment": 4,
+                    "filename": "Server-Spooler\\Program.cs"
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "Server-Spooler\\Server-Spooler.csproj"
+                },
+                {
+                    "blank": 31,
+                    "code": 168,
+                    "comment": 2,
+                    "filename": "Server-Spooler\\ServerStarter.cs"
+                },
+                {
+                    "blank": 13,
+                    "code": 68,
+                    "comment": 8,
+                    "filename": "Server-Spooler\\Transciever.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": "Shared\\bin\\Debug\\net6.0\\Shared.deps.json"
+                },
+                {
+                    "filename": "Shared\\bin\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Shared\\bin\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 14,
+                    "code": 35,
+                    "comment": 0,
+                    "filename": "Shared\\ByteIP.cs"
+                },
+                {
+                    "blank": 11,
+                    "code": 70,
+                    "comment": 0,
+                    "filename": "Shared\\ConsoleInputUtil.cs"
+                },
+                {
+                    "blank": 7,
+                    "code": 45,
+                    "comment": 1,
+                    "filename": "Shared\\Extentions\\ArrayExtentions.cs"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "Shared\\Extentions\\StringExtentions.cs"
+                },
+                {
+                    "blank": 22,
+                    "code": 66,
+                    "comment": 15,
+                    "filename": "Shared\\GetConfig.cs"
+                },
+                {
+                    "blank": 13,
+                    "code": 110,
+                    "comment": 2,
+                    "filename": "Shared\\Logger.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs"
+                },
+                {
+                    "filename": "Shared\\obj\\Debug\\net6.0\\ref\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Shared\\obj\\Debug\\net6.0\\refint\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 9,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.csproj.AssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.GeneratedMSBuildEditorConfig.editorconfig"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.GlobalUsings.g.cs"
+                },
+                {
+                    "filename": "Shared\\obj\\Debug\\net6.0\\Shared.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 5,
+                    "code": 67,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\project.assets.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\project.nuget.cache"
+                },
+                {
+                    "blank": 5,
+                    "code": 61,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Shared.csproj.nuget.dgspec.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Shared.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "Shared\\obj\\Shared.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 22,
+                    "code": 89,
+                    "comment": 11,
+                    "filename": "Shared\\PacketManager.cs"
+                },
+                {
+                    "blank": 2,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "Shared\\Packets\\NoGui-Client\\0_ClientConnectRequestPacket.cs"
+                },
+                {
+                    "blank": 2,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "Shared\\Shared.csproj"
+                },
+                {
+                    "blank": 2,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "Shared\\SocketExtentions.cs"
+                },
+                {
+                    "blank": 14,
+                    "code": 39,
+                    "comment": 0,
+                    "filename": "Shared\\SpoolerInterface.cs"
+                },
+                {
+                    "blank": 5,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "Shared\\Timer.cs"
+                },
+                {
+                    "blank": 12,
+                    "code": 20,
+                    "comment": 11,
+                    "filename": "update_config.py"
+                }
+            ]
         }
     ]
 }
