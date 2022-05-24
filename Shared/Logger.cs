@@ -25,12 +25,20 @@ public class Logger {
     const string DEBUG_TEXT =   "DEBUG";
     const ConsoleColor DEBUG_COLOUR = ConsoleColor.Green;
 
+    bool shutdown = false;
+    static Logger? logger;
+
     public Logger(string log_name, bool debug = false) {
+        logger = this;
+
         debug_printed = debug;
         LogName = "Logs\\" + log_name + DateTime.Now.ToString(" [dd-MM-yy HH.mm.ss]") + ".log";
-        LogInfo("Logging started");
+        
+        AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(OnUnhandledException);
+
         LogThread = new Thread(LogLoop);
         LogThread.Start();
+        LogInfo("Logging started");
     }
 
     void LogLoop() {
@@ -65,9 +73,27 @@ public class Logger {
     }
 
     public void CleanUp() {
+        if (shutdown) {
+            Console.WriteLine("Logging already shutdown");
+        }
+        shutdown = true;
         LogWarning("Shutting down logging");
         LogThread.Interrupt();
         LogThread.Join();
+    }
+
+    static void OnUnhandledException(object sender, UnhandledExceptionEventArgs args)
+    {
+        if (logger is null) { return; }
+        if (args.IsTerminating) {
+            logger.LogError("FATAL UNHANDLED EXCEPTION!");
+        }
+        else {
+            logger.LogError("UNHANDLED EXCEPTION");
+        }
+        Exception e = (Exception) args.ExceptionObject;
+        logger.LogError(e);
+        logger.CleanUp();
     }
 
     public void LogInfo(object log_text_obj) {
