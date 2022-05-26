@@ -86,10 +86,10 @@ public class Logger {
     {
         if (logger is null) { return; }
         if (args.IsTerminating) {
-            logger.LogError("FATAL UNHANDLED EXCEPTION!");
+            logger.LogError("FATAL UNHANDLED EXCEPTION");
         }
         else {
-            logger.LogError("UNHANDLED EXCEPTION");
+            logger.LogError("UNHANDLED EXCEPTION (NON FATAL)");
         }
         Exception e = (Exception) args.ExceptionObject;
         logger.LogError(e);

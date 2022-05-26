@@ -5,12 +5,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-/*
-public class PacketDictionary: Dictionary<string, string>{
-    
-}
-*/
-
 public class PacketDecodeError : Exception
 {
     public PacketDecodeError() { }

@@ -124,6 +124,7 @@ public class Server {
     {
         if (ar.AsyncState is null) { throw new NullReferenceException(); }
         GamePlayer player = (GamePlayer) ar.AsyncState;
+        
         if (!SocketExtentions.SocketConnected(player.socket, 10000)) { 
             RemovePlayer(player);
             return;

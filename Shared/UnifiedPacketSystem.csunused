@@ -1,0 +1,14 @@
+namespace Shared;
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+
+public abstract class PacketDataParent {
+
+}
+
+public class PacketInt: PacketDataParent {
+    public byte[] 
+}
