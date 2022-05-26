@@ -2,14 +2,6 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build",
-            "command": "python",
-            "type": "process",
-            "args": [
-                "build.py"
-            ]
-        },
-        {
             "label": "Build Fast",
             "command": "python",
             "type": "process",
