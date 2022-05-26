@@ -1,0 +1,305 @@
+[24/05/22 12:41:00:9210509] [INFO ]: Logging started
+[24/05/22 12:41:01:0161007] [INFO ]: Starting Load Balancer
+[24/05/22 12:41:01:1834480] [INFO ]: Waiting for Load Balancer response
+[24/05/22 12:41:01:1928786] [INFO ]: Accepting client
+[24/05/22 12:41:01:2349292] [INFO ]: Accepting connection
+[24/05/22 12:41:01:4644946] [INFO ]: Connection established
+[24/05/22 12:41:01:4654035] [INFO ]: Connected in 274ms
+[24/05/22 12:41:01:4658760] [INFO ]: Starting Matchmaker
+[24/05/22 12:41:01:5431025] [INFO ]: Waiting for Matchmaker response
+[24/05/22 12:41:01:5602464] [INFO ]: Accepting client
+[24/05/22 12:41:01:5815298] [INFO ]: Accepting connection
+[24/05/22 12:41:01:9148795] [INFO ]: Connection established
+[24/05/22 12:41:01:9161426] [INFO ]: Connected in 355ms
+[24/05/22 12:41:01:9249893] [INFO ]: Starting lobby 0 on port 10123
+[24/05/22 12:41:01:9883222] [INFO ]: Accepting client
+[24/05/22 12:41:01:9894626] [INFO ]: Accepting connection
+[24/05/22 12:41:02:2019922] [INFO ]: Connection established
+[24/05/22 12:41:02:2035813] [INFO ]: Starting lobby 1 on port 10124
+[24/05/22 12:41:02:2282721] [INFO ]: Accepting client
+[24/05/22 12:41:02:2445226] [INFO ]: Accepting connection
+[24/05/22 12:41:02:4850781] [INFO ]: Connection established
+[24/05/22 12:41:02:4911514] [INFO ]: Starting game server 0 on port 20123
+[24/05/22 12:41:02:5520286] [INFO ]: Accepting client
+[24/05/22 12:41:02:5571665] [INFO ]: Accepting connection
+[24/05/22 12:41:02:7980216] [INFO ]: Connection established
+[24/05/22 12:41:02:8001129] [WARN ]: Update [883ms] took longer than update interval [100ms]
+[24/05/22 12:41:03:0269414] [INFO+]: ----------INFO START----------
+[24/05/22 12:41:03:0287072] [INFO ]: Full update / target update interval =  [3/100ms]
+[24/05/22 12:41:03:0295601] [INFO ]: Starting Lobby Servers took [0ms]
+[24/05/22 12:41:03:0302724] [INFO ]: Stopping Lobby Servers took [0ms]
+[24/05/22 12:41:03:0308853] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:03:0314124] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:03:0318790] [INFO ]: 
+[24/05/22 12:41:03:0324503] [INFO ]: Server Spooler:
+[24/05/22 12:41:03:0329794] [INFO ]:  | >IP: 127.0.0.1:5105
+[24/05/22 12:41:03:0334788] [INFO ]: Load Balancer [0ms]:
+[24/05/22 12:41:03:0340959] [INFO ]:  | >IP: 127.0.0.1:7107
+[24/05/22 12:41:03:0346188] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:03:0358644] [INFO ]: Lobby Servers [0ms]: 
+[24/05/22 12:41:03:0375508] [INFO ]:  | Lobby Server [0] [0ms]: 
+[24/05/22 12:41:03:0379607] [INFO ]:  | | >IP: 127.0.0.1:10123
+[24/05/22 12:41:03:0383246] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:03:0386788] [INFO ]:  | Lobby Server [1] [0ms]: 
+[24/05/22 12:41:03:0390515] [INFO ]:  | | >IP: 127.0.0.1:10124
+[24/05/22 12:41:03:0394204] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:03:0397657] [INFO ]: Matchmaker [0ms]:
+[24/05/22 12:41:03:0401108] [INFO ]:  | >IP: 127.0.0.1:6106
+[24/05/22 12:41:03:0404528] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:03:0407864] [INFO ]: Game Servers [1ms]: 
+[24/05/22 12:41:03:0411340] [INFO ]:  | Game Server [0] [1ms]: 
+[24/05/22 12:41:03:0415176] [INFO ]:  | | >IP: 127.0.0.1:20123
+[24/05/22 12:41:03:0418740] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:03:0422149] [INFO ]: ----------INFO ENDS----------
+[24/05/22 12:41:04:1250222] [INFO+]: ----------INFO START----------
+[24/05/22 12:41:04:1262513] [INFO ]: Full update / target update interval =  [1/100ms]
+[24/05/22 12:41:04:1271295] [INFO ]: Starting Lobby Servers took [0ms]
+[24/05/22 12:41:04:1277447] [INFO ]: Stopping Lobby Servers took [0ms]
+[24/05/22 12:41:04:1282579] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:04:1287154] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:04:1291432] [INFO ]: 
+[24/05/22 12:41:04:1295855] [INFO ]: Server Spooler:
+[24/05/22 12:41:04:1300511] [INFO ]:  | >IP: 127.0.0.1:5105
+[24/05/22 12:41:04:1305329] [INFO ]: Load Balancer [0ms]:
+[24/05/22 12:41:04:1309917] [INFO ]:  | >IP: 127.0.0.1:7107
+[24/05/22 12:41:04:1314445] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:04:1318837] [INFO ]: Lobby Servers [0ms]: 
+[24/05/22 12:41:04:1323175] [INFO ]:  | Lobby Server [0] [0ms]: 
+[24/05/22 12:41:04:1327844] [INFO ]:  | | >IP: 127.0.0.1:10123
+[24/05/22 12:41:04:1332394] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:04:1336398] [INFO ]:  | Lobby Server [1] [0ms]: 
+[24/05/22 12:41:04:1342204] [INFO ]:  | | >IP: 127.0.0.1:10124
+[24/05/22 12:41:04:1347553] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:04:1351184] [INFO ]: Matchmaker [0ms]:
+[24/05/22 12:41:04:1357623] [INFO ]:  | >IP: 127.0.0.1:6106
+[24/05/22 12:41:04:1362424] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:04:1367705] [INFO ]: Game Servers [0ms]: 
+[24/05/22 12:41:04:1375596] [INFO ]:  | Game Server [0] [0ms]: 
+[24/05/22 12:41:04:1382966] [INFO ]:  | | >IP: 127.0.0.1:20123
+[24/05/22 12:41:04:1386619] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:04:1391409] [INFO ]: ----------INFO ENDS----------
+[24/05/22 12:41:05:2204454] [INFO+]: ----------INFO START----------
+[24/05/22 12:41:05:2218487] [INFO ]: Full update / target update interval =  [1/100ms]
+[24/05/22 12:41:05:2227130] [INFO ]: Starting Lobby Servers took [0ms]
+[24/05/22 12:41:05:2235543] [INFO ]: Stopping Lobby Servers took [0ms]
+[24/05/22 12:41:05:2244488] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:05:2252290] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:05:2260165] [INFO ]: 
+[24/05/22 12:41:05:2267580] [INFO ]: Server Spooler:
+[24/05/22 12:41:05:2275672] [INFO ]:  | >IP: 127.0.0.1:5105
+[24/05/22 12:41:05:2283114] [INFO ]: Load Balancer [0ms]:
+[24/05/22 12:41:05:2290716] [INFO ]:  | >IP: 127.0.0.1:7107
+[24/05/22 12:41:05:2346806] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:05:2358445] [INFO ]: Lobby Servers [0ms]: 
+[24/05/22 12:41:05:2363293] [INFO ]:  | Lobby Server [0] [0ms]: 
+[24/05/22 12:41:05:2369543] [INFO ]:  | | >IP: 127.0.0.1:10123
+[24/05/22 12:41:05:2377388] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:05:2382413] [INFO ]:  | Lobby Server [1] [0ms]: 
+[24/05/22 12:41:05:2387202] [INFO ]:  | | >IP: 127.0.0.1:10124
+[24/05/22 12:41:05:2392239] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:05:2396992] [INFO ]: Matchmaker [0ms]:
+[24/05/22 12:41:05:2401633] [INFO ]:  | >IP: 127.0.0.1:6106
+[24/05/22 12:41:05:2406599] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:05:2410362] [INFO ]: Game Servers [0ms]: 
+[24/05/22 12:41:05:2413785] [INFO ]:  | Game Server [0] [0ms]: 
+[24/05/22 12:41:05:2417422] [INFO ]:  | | >IP: 127.0.0.1:20123
+[24/05/22 12:41:05:2421290] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:05:2424767] [INFO ]: ----------INFO ENDS----------
+[24/05/22 12:41:06:2870703] [INFO+]: ----------INFO START----------
+[24/05/22 12:41:06:2884055] [INFO ]: Full update / target update interval =  [1/100ms]
+[24/05/22 12:41:06:2890629] [INFO ]: Starting Lobby Servers took [0ms]
+[24/05/22 12:41:06:2896669] [INFO ]: Stopping Lobby Servers took [0ms]
+[24/05/22 12:41:06:2902350] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:06:2908559] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:06:2914347] [INFO ]: 
+[24/05/22 12:41:06:2920048] [INFO ]: Server Spooler:
+[24/05/22 12:41:06:2926116] [INFO ]:  | >IP: 127.0.0.1:5105
+[24/05/22 12:41:06:2932029] [INFO ]: Load Balancer [0ms]:
+[24/05/22 12:41:06:2937878] [INFO ]:  | >IP: 127.0.0.1:7107
+[24/05/22 12:41:06:2943884] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:06:2950154] [INFO ]: Lobby Servers [0ms]: 
+[24/05/22 12:41:06:2956150] [INFO ]:  | Lobby Server [0] [0ms]: 
+[24/05/22 12:41:06:2962479] [INFO ]:  | | >IP: 127.0.0.1:10123
+[24/05/22 12:41:06:2968366] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:06:2974689] [INFO ]:  | Lobby Server [1] [0ms]: 
+[24/05/22 12:41:06:2980703] [INFO ]:  | | >IP: 127.0.0.1:10124
+[24/05/22 12:41:06:2986856] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:06:2992508] [INFO ]: Matchmaker [0ms]:
+[24/05/22 12:41:06:2998025] [INFO ]:  | >IP: 127.0.0.1:6106
+[24/05/22 12:41:06:3004561] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:06:3010990] [INFO ]: Game Servers [0ms]: 
+[24/05/22 12:41:06:3020532] [INFO ]:  | Game Server [0] [0ms]: 
+[24/05/22 12:41:06:3024676] [INFO ]:  | | >IP: 127.0.0.1:20123
+[24/05/22 12:41:06:3028981] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:06:3033184] [INFO ]: ----------INFO ENDS----------
+[24/05/22 12:41:07:3680073] [INFO+]: ----------INFO START----------
+[24/05/22 12:41:07:3699561] [INFO ]: Full update / target update interval =  [1/100ms]
+[24/05/22 12:41:07:3708015] [INFO ]: Starting Lobby Servers took [0ms]
+[24/05/22 12:41:07:3715995] [INFO ]: Stopping Lobby Servers took [0ms]
+[24/05/22 12:41:07:3724540] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:07:3733607] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:07:3741943] [INFO ]: 
+[24/05/22 12:41:07:3751685] [INFO ]: Server Spooler:
+[24/05/22 12:41:07:3759479] [INFO ]:  | >IP: 127.0.0.1:5105
+[24/05/22 12:41:07:3767521] [INFO ]: Load Balancer [0ms]:
+[24/05/22 12:41:07:3775448] [INFO ]:  | >IP: 127.0.0.1:7107
+[24/05/22 12:41:07:3783115] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:07:3790801] [INFO ]: Lobby Servers [0ms]: 
+[24/05/22 12:41:07:3798507] [INFO ]:  | Lobby Server [0] [0ms]: 
+[24/05/22 12:41:07:3805932] [INFO ]:  | | >IP: 127.0.0.1:10123
+[24/05/22 12:41:07:3813821] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:07:3821445] [INFO ]:  | Lobby Server [1] [0ms]: 
+[24/05/22 12:41:07:3828843] [INFO ]:  | | >IP: 127.0.0.1:10124
+[24/05/22 12:41:07:3836355] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:07:3851708] [INFO ]: Matchmaker [0ms]:
+[24/05/22 12:41:07:3856561] [INFO ]:  | >IP: 127.0.0.1:6106
+[24/05/22 12:41:07:3861932] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:07:3867366] [INFO ]: Game Servers [0ms]: 
+[24/05/22 12:41:07:3874791] [INFO ]:  | Game Server [0] [0ms]: 
+[24/05/22 12:41:07:3879870] [INFO ]:  | | >IP: 127.0.0.1:20123
+[24/05/22 12:41:07:3885115] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:07:3890306] [INFO ]: ----------INFO ENDS----------
+[24/05/22 12:41:08:5012114] [INFO+]: ----------INFO START----------
+[24/05/22 12:41:08:5026352] [INFO ]: Full update / target update interval =  [1/100ms]
+[24/05/22 12:41:08:5035106] [INFO ]: Starting Lobby Servers took [0ms]
+[24/05/22 12:41:08:5042696] [INFO ]: Stopping Lobby Servers took [0ms]
+[24/05/22 12:41:08:5050784] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:08:5058796] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:08:5066610] [INFO ]: 
+[24/05/22 12:41:08:5073910] [INFO ]: Server Spooler:
+[24/05/22 12:41:08:5082162] [INFO ]:  | >IP: 127.0.0.1:5105
+[24/05/22 12:41:08:5089901] [INFO ]: Load Balancer [0ms]:
+[24/05/22 12:41:08:5095550] [INFO ]:  | >IP: 127.0.0.1:7107
+[24/05/22 12:41:08:5100301] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:08:5105325] [INFO ]: Lobby Servers [0ms]: 
+[24/05/22 12:41:08:5110121] [INFO ]:  | Lobby Server [0] [0ms]: 
+[24/05/22 12:41:08:5115094] [INFO ]:  | | >IP: 127.0.0.1:10123
+[24/05/22 12:41:08:5120003] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:08:5124853] [INFO ]:  | Lobby Server [1] [0ms]: 
+[24/05/22 12:41:08:5129773] [INFO ]:  | | >IP: 127.0.0.1:10124
+[24/05/22 12:41:08:5134930] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:08:5139804] [INFO ]: Matchmaker [0ms]:
+[24/05/22 12:41:08:5144507] [INFO ]:  | >IP: 127.0.0.1:6106
+[24/05/22 12:41:08:5149704] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:08:5153073] [INFO ]: Game Servers [0ms]: 
+[24/05/22 12:41:08:5156629] [INFO ]:  | Game Server [0] [0ms]: 
+[24/05/22 12:41:08:5160284] [INFO ]:  | | >IP: 127.0.0.1:20123
+[24/05/22 12:41:08:5164003] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:08:5167637] [INFO ]: ----------INFO ENDS----------
+[24/05/22 12:41:09:6004389] [INFO+]: ----------INFO START----------
+[24/05/22 12:41:09:6015493] [INFO ]: Full update / target update interval =  [0/100ms]
+[24/05/22 12:41:09:6019954] [INFO ]: Starting Lobby Servers took [0ms]
+[24/05/22 12:41:09:6023648] [INFO ]: Stopping Lobby Servers took [0ms]
+[24/05/22 12:41:09:6027438] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:09:6030985] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:09:6034661] [INFO ]: 
+[24/05/22 12:41:09:6038206] [INFO ]: Server Spooler:
+[24/05/22 12:41:09:6041694] [INFO ]:  | >IP: 127.0.0.1:5105
+[24/05/22 12:41:09:6045326] [INFO ]: Load Balancer [0ms]:
+[24/05/22 12:41:09:6048939] [INFO ]:  | >IP: 127.0.0.1:7107
+[24/05/22 12:41:09:6051724] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:09:6054508] [INFO ]: Lobby Servers [0ms]: 
+[24/05/22 12:41:09:6057521] [INFO ]:  | Lobby Server [0] [0ms]: 
+[24/05/22 12:41:09:6060457] [INFO ]:  | | >IP: 127.0.0.1:10123
+[24/05/22 12:41:09:6063207] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:09:6068210] [INFO ]:  | Lobby Server [1] [0ms]: 
+[24/05/22 12:41:09:6071332] [INFO ]:  | | >IP: 127.0.0.1:10124
+[24/05/22 12:41:09:6074371] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:09:6077179] [INFO ]: Matchmaker [0ms]:
+[24/05/22 12:41:09:6079909] [INFO ]:  | >IP: 127.0.0.1:6106
+[24/05/22 12:41:09:6082653] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:09:6085681] [INFO ]: Game Servers [0ms]: 
+[24/05/22 12:41:09:6088902] [INFO ]:  | Game Server [0] [0ms]: 
+[24/05/22 12:41:09:6091760] [INFO ]:  | | >IP: 127.0.0.1:20123
+[24/05/22 12:41:09:6094663] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:09:6097463] [INFO ]: ----------INFO ENDS----------
+[24/05/22 12:41:10:7024196] [INFO+]: ----------INFO START----------
+[24/05/22 12:41:10:7038715] [INFO ]: Full update / target update interval =  [1/100ms]
+[24/05/22 12:41:10:7046270] [INFO ]: Starting Lobby Servers took [0ms]
+[24/05/22 12:41:10:7054613] [INFO ]: Stopping Lobby Servers took [0ms]
+[24/05/22 12:41:10:7062548] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:10:7071405] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:10:7078686] [INFO ]: 
+[24/05/22 12:41:10:7086546] [INFO ]: Server Spooler:
+[24/05/22 12:41:10:7096322] [INFO ]:  | >IP: 127.0.0.1:5105
+[24/05/22 12:41:10:7104503] [INFO ]: Load Balancer [1ms]:
+[24/05/22 12:41:10:7112192] [INFO ]:  | >IP: 127.0.0.1:7107
+[24/05/22 12:41:10:7119887] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:10:7130850] [INFO ]: Lobby Servers [0ms]: 
+[24/05/22 12:41:10:7138700] [INFO ]:  | Lobby Server [0] [0ms]: 
+[24/05/22 12:41:10:7143897] [INFO ]:  | | >IP: 127.0.0.1:10123
+[24/05/22 12:41:10:7148993] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:10:7156480] [INFO ]:  | Lobby Server [1] [0ms]: 
+[24/05/22 12:41:10:7161956] [INFO ]:  | | >IP: 127.0.0.1:10124
+[24/05/22 12:41:10:7170407] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:10:7176670] [INFO ]: Matchmaker [0ms]:
+[24/05/22 12:41:10:7181631] [INFO ]:  | >IP: 127.0.0.1:6106
+[24/05/22 12:41:10:7186582] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:10:7190758] [INFO ]: Game Servers [0ms]: 
+[24/05/22 12:41:10:7195377] [INFO ]:  | Game Server [0] [0ms]: 
+[24/05/22 12:41:10:7198859] [INFO ]:  | | >IP: 127.0.0.1:20123
+[24/05/22 12:41:10:7202391] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:10:7205816] [INFO ]: ----------INFO ENDS----------
+[24/05/22 12:41:11:7841215] [INFO+]: ----------INFO START----------
+[24/05/22 12:41:11:7847084] [INFO ]: Full update / target update interval =  [0/100ms]
+[24/05/22 12:41:11:7850004] [INFO ]: Starting Lobby Servers took [0ms]
+[24/05/22 12:41:11:7855991] [INFO ]: Stopping Lobby Servers took [0ms]
+[24/05/22 12:41:11:7866439] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:11:7871045] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:11:7873729] [INFO ]: 
+[24/05/22 12:41:11:7876145] [INFO ]: Server Spooler:
+[24/05/22 12:41:11:7878948] [INFO ]:  | >IP: 127.0.0.1:5105
+[24/05/22 12:41:11:7881511] [INFO ]: Load Balancer [0ms]:
+[24/05/22 12:41:11:7884000] [INFO ]:  | >IP: 127.0.0.1:7107
+[24/05/22 12:41:11:7886568] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:11:7889249] [INFO ]: Lobby Servers [0ms]: 
+[24/05/22 12:41:11:7891543] [INFO ]:  | Lobby Server [0] [0ms]: 
+[24/05/22 12:41:11:7893968] [INFO ]:  | | >IP: 127.0.0.1:10123
+[24/05/22 12:41:11:7896346] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:11:7898856] [INFO ]:  | Lobby Server [1] [0ms]: 
+[24/05/22 12:41:11:7901339] [INFO ]:  | | >IP: 127.0.0.1:10124
+[24/05/22 12:41:11:7903956] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:11:7906375] [INFO ]: Matchmaker [0ms]:
+[24/05/22 12:41:11:7909207] [INFO ]:  | >IP: 127.0.0.1:6106
+[24/05/22 12:41:11:7911826] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:11:7914476] [INFO ]: Game Servers [0ms]: 
+[24/05/22 12:41:11:7917122] [INFO ]:  | Game Server [0] [0ms]: 
+[24/05/22 12:41:11:7919681] [INFO ]:  | | >IP: 127.0.0.1:20123
+[24/05/22 12:41:11:7922293] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:11:7925487] [INFO ]: ----------INFO ENDS----------
+[24/05/22 12:41:12:9008532] [INFO+]: ----------INFO START----------
+[24/05/22 12:41:12:9023693] [INFO ]: Full update / target update interval =  [1/100ms]
+[24/05/22 12:41:12:9032468] [INFO ]: Starting Lobby Servers took [0ms]
+[24/05/22 12:41:12:9040362] [INFO ]: Stopping Lobby Servers took [0ms]
+[24/05/22 12:41:12:9047262] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:12:9054905] [INFO ]: Starting Game Servers took [0ms]
+[24/05/22 12:41:12:9062919] [INFO ]: 
+[24/05/22 12:41:12:9071454] [INFO ]: Server Spooler:
+[24/05/22 12:41:12:9078750] [INFO ]:  | >IP: 127.0.0.1:5105
+[24/05/22 12:41:12:9086437] [INFO ]: Load Balancer [0ms]:
+[24/05/22 12:41:12:9094360] [INFO ]:  | >IP: 127.0.0.1:7107
+[24/05/22 12:41:12:9102337] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:12:9110605] [INFO ]: Lobby Servers [0ms]: 
+[24/05/22 12:41:12:9118209] [INFO ]:  | Lobby Server [0] [0ms]: 
+[24/05/22 12:41:12:9126047] [INFO ]:  | | >IP: 127.0.0.1:10123
+[24/05/22 12:41:12:9134016] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:12:9141672] [INFO ]:  | Lobby Server [1] [0ms]: 
+[24/05/22 12:41:12:9152280] [INFO ]:  | | >IP: 127.0.0.1:10124
+[24/05/22 12:41:12:9159663] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:12:9168478] [INFO ]: Matchmaker [0ms]:
+[24/05/22 12:41:12:9176296] [INFO ]:  | >IP: 127.0.0.1:6106
+[24/05/22 12:41:12:9184034] [INFO ]:  | >Queue Length: 0
+[24/05/22 12:41:12:9190950] [INFO ]: Game Servers [0ms]: 
+[24/05/22 12:41:12:9196105] [INFO ]:  | Game Server [0] [0ms]: 
+[24/05/22 12:41:12:9200936] [INFO ]:  | | >IP: 127.0.0.1:20123
+[24/05/22 12:41:12:9205023] [INFO ]:  | | >Fill Level: 0/2
+[24/05/22 12:41:12:9209566] [INFO ]: ----------INFO ENDS----------
+[24/05/22 12:41:13:4329144] [INFO ]: Escape key pressed
+[24/05/22 12:41:13:4349849] [INFO ]: Shutting down network
+[24/05/22 12:41:13:4362445] [INFO ]: Giving time for graceful shutdown
+[24/05/22 12:41:14:4496777] [INFO ]: Terminating processes
+[24/05/22 12:41:14:4518958] [INFO ]: Killing Load Balancer
+[24/05/22 12:41:14:4543014] [INFO ]: Killing Matchmaker
+[24/05/22 12:41:14:4549953] [INFO ]: Killing lobby servers
+[24/05/22 12:41:14:4554078] [INFO ]: Killing game servers
+[24/05/22 12:41:14:4561365] [WARN ]: Shutting down logging

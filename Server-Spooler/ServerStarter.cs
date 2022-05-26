@@ -72,7 +72,7 @@ public static class ServerStarter {
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Load-Balancer\\Load-Balancer.exe";
         Program.logger.LogDebug("Load Balancer start");
-        startInfo.WindowStyle = ProcessWindowStyle.Normal;
+        startInfo.WindowStyle = ProcessWindowStyle.Minimized;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {Program.config.LoadBalancerPort} {Program.config.MaxLobbyFill} {Program.config.MaxQueueLen}";
 
         LoadBalancer = WrapedProcessStart(startInfo);
@@ -130,7 +130,7 @@ public static class ServerStarter {
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Matchmaker\\Matchmaker.exe";
         Program.logger.LogDebug("Matchmaker start");
-        startInfo.WindowStyle = ProcessWindowStyle.Normal;
+        startInfo.WindowStyle = ProcessWindowStyle.Minimized;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {Program.config.MatchmakerPort} {2} {Program.config.MaxQueueLen}";
 
         Matchmaker = WrapedProcessStart(startInfo);

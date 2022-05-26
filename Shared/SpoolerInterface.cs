@@ -11,8 +11,14 @@ public abstract class SpoolerInterface
     int buffer_cursor = 0;
 
     Logger logger;
+    Action<string> OnSpoolerDisconnectAction;
 
-    public SpoolerInterface(string SpoolerIP, int SpoolerPort, Logger _logger){
+    public SpoolerInterface(string SpoolerIP, int SpoolerPort, Logger _logger, 
+        Action<string>? onSpoolerDisconnectAction = null) {
+        
+        if (onSpoolerDisconnectAction is null) { onSpoolerDisconnectAction = (msg) => {throw new Exception(msg); }; }
+
+        OnSpoolerDisconnectAction = onSpoolerDisconnectAction;
         logger = _logger;
 
         IPAddress HostIpA = IPAddress.Parse(SpoolerIP);
@@ -29,7 +35,13 @@ public abstract class SpoolerInterface
 
     private void ReadCallback(IAsyncResult ar)
     {
-        buffer_cursor += SpoolerSocket.EndReceive(ar);
+        try {
+            buffer_cursor += SpoolerSocket.EndReceive(ar);
+        }
+        catch (SocketException se) {
+            OnSpoolerDisconnectAction(se.Message);
+            return;
+        }
 
         if (buffer_cursor >= 2) {
             uint packet_len = (uint) buffer[0] + (uint) (buffer[1]<<8);
