@@ -86,8 +86,9 @@ public static class Logger {
         }
         shutdown = true;
         LogWarning("Shutting down logging");
-        LogThread.Interrupt();
-        LogThread.Join();
+
+        LogThread?.Interrupt();
+        LogThread?.Join();
     }
 
     static void OnUnhandledException(object sender, UnhandledExceptionEventArgs args)

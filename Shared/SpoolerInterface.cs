@@ -44,7 +44,7 @@ public abstract class SpoolerInterface
         if (buffer_cursor >= 2) {
             uint packet_len = (uint) buffer[0] + (uint) (buffer[1]<<8);
 
-            try {Logger.LogDebug($"Recieving packet from Spooler of len {packet_len}"); } catch (LoggerNotAvailableException e) {Console.WriteLine(e.ToString);}
+            try {Logger.LogDebug($"Recieving packet from Spooler of len {packet_len}"); } catch (LoggerNotAvailableException e) {Console.WriteLine(e.ToString());}
 
             if (buffer_cursor >= packet_len){
                 OnRecieve(ArrayExtentions.Slice(buffer, 0, (int) packet_len));
