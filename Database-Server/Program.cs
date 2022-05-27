@@ -1,36 +1,23 @@
 namespace DatabaseServer;
 
+using Shared;
+
 using Microsoft.Data.Sqlite;
 using System;
 
 public static class Program {
     public static void Main(string[] args) {
-        int id = 1;
-        using (var connection = new SqliteConnection("Data Source=hello.db"))
-        {
-            connection.Open();
+        Logger.InitialiseLogger("Database-Server", true);
 
-            var command = connection.CreateCommand();
-            command.CommandText =
+        Logger.LogInfo("Creating table");
+        DatabaseCommands.ExecuteNonQuery(
             @"
-                CREATE TABLE ExampleTable (
-                    fieldone INT,
-                    fieldtwo STRING
-                )
-            ";
-            command.Parameters.AddWithValue("$id", id);
+            CREATE TABLE IF NOT EXISTS Players (
+                PlayerID INT PRIMARY KEY
+            )
+            "
+        );
 
-            command.ExecuteNonQuery();
-
-            // using (var reader = command.ExecuteReader())
-            // {
-            //     while (reader.Read())
-            //     {
-            //         var name = reader.GetString(0);
-
-            //         Console.WriteLine($"Hello, {name}!");
-            //     }
-            // }
-        }
+        Logger.LogInfo("Done?");
     }
 }
