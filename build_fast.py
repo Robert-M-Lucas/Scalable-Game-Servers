@@ -10,7 +10,7 @@ start = time.time()
 
 config_only = False
 
-folders = ["Shared", "Server-Spooler", "Load-Balancer", "Game-Server", "Lobby-Server", "Matchmaker", "NoGui-Client", "Database-Server"]
+folders = ["Shared", "Server-Spooler", "Load-Balancer", "Game-Server", "Lobby-Server", "Matchmaker", "NoGui-Client"]
 
 # if not config_only:
 #     done = []

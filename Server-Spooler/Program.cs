@@ -8,7 +8,7 @@ public static class Program {
     # region Constants
     public const int MaxServerConnectTime = 20000;
     public const int GracefulShutdownTime = 1000;
-    public const long ServerInfoInterval = 1000;
+    public const long ServerInfoInterval = 2000;
     public const int UpdateInterval = 100;
     # endregion
 

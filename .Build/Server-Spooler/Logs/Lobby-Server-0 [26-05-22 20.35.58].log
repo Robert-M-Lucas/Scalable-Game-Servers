@@ -1,0 +1,19 @@
+[26/05/22 20:35:58:6809127] [INFO ]: Logging started
+[26/05/22 20:35:58:6905865] [INFO ]: Starting Spooler receive
+[26/05/22 20:35:58:6927927] [INFO ]: Lobby Server start
+[26/05/22 20:35:58:6931400] [INFO ]: Lobby Server Client Accept Thread start
+[26/05/22 20:35:58:6942944] [INFO ]: Waiting for client to connect
+[26/05/22 20:36:56:6141779] [ERROR]: FATAL UNHANDLED EXCEPTION
+[26/05/22 20:36:56:7192599] [ERROR]: System.Exception: An existing connection was forcibly closed by the remote host.
+   at Shared.SpoolerInterface.<>c.<.ctor>b__5_0(String msg) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Shared\SpoolerInterface.cs:line 19
+   at Shared.SpoolerInterface.ReadCallback(IAsyncResult ar) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Shared\SpoolerInterface.cs:line 42
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.<>c.<ThrowAsync>b__128_1(Object state)
+   at System.Threading.QueueUserWorkItemCallbackDefaultContext.Execute()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+[26/05/22 20:36:56:7198613] [WARN ]: Shutting down logging
