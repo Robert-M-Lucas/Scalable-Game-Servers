@@ -12,12 +12,12 @@ config_only = False
 
 folders = ["Shared", "Server-Spooler", "Load-Balancer", "Game-Server", "Lobby-Server", "Matchmaker", "NoGui-Client", "Database-Server"]
 
-# if not config_only:
-#     done = []
-#     for f in folders[:-1]:
-#         done.append(subprocess.call(["dotnet", "build", f]))
-# 
-#     subprocess.call(["dotnet", "build", f"{folders[-1]}"])
+if not config_only:
+    done = []
+    for f in folders[:-1]:
+        done.append(subprocess.call(["dotnet", "build", f]))
+
+    subprocess.call(["dotnet", "build", f"{folders[-1]}"])
 
 # cont = False
 # while not cont:
@@ -27,7 +27,7 @@ folders = ["Shared", "Server-Spooler", "Load-Balancer", "Game-Server", "Lobby-Se
 #             cont = False
 #             break
 
-subprocess.call(["dotnet", "build", "."])
+# subprocess.call(["dotnet", "build"])
 
 print("Copying files")
 for f in folders:

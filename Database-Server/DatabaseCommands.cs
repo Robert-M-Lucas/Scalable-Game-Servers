@@ -20,6 +20,8 @@ public static class DatabaseCommands {
     public static void ExecuteNonQuery (string commandText, params CommandArgsPair[] commandArgs) {
         using (var connection = new SqliteConnection($"Data Source={dbFileName}"))
         {
+            connection.Open();
+
             SqliteCommand command = connection.CreateCommand();
             command.CommandText = commandText;
 

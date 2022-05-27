@@ -84,9 +84,9 @@ public static class Logger {
         if (!initialised | shutdown) {
             Console.WriteLine("Logging already shutdown or not initialised");
         }
-        shutdown = true;
         LogWarning("Shutting down logging");
-
+        shutdown = true;
+        
         LogThread?.Interrupt();
         LogThread?.Join();
     }
