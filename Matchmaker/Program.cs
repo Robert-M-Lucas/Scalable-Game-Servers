@@ -2,7 +2,7 @@
 using System;
 using Shared;
 
-public static class Program{
+public static class Program {
     public static int Port = -1;
 
     public static string SpoolerIP = "";
@@ -36,7 +36,7 @@ public static class Program{
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
 
         try {
-            spoolerInterface = new SIMatchmaker(SpoolerIP, SpoolerPort, logger);
+            spoolerInterface = new SIMatchmaker(SpoolerIP, SpoolerPort, logger, Exit);
         }
         catch (Exception e) {
             logger.LogError("Error connecting to spooler");
@@ -84,7 +84,7 @@ public static class Program{
         Exit();
     }
 
-    public static void Exit() {
+    public static void Exit(string reason = "") {
         logger.LogInfo("Shutting down server");
         if (server is not null) {server.Stop();}
         logger.LogInfo("Shutting down logger and environment");

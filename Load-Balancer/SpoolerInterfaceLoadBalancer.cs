@@ -6,7 +6,8 @@ using System.Net.Sockets;
 
 public class SILoadBalancer: SpoolerInterface
 {
-    public SILoadBalancer(string SpoolerIP, int SpoolerPort, Logger _logger): base(SpoolerIP, SpoolerPort, _logger) {}
+    public SILoadBalancer(string SpoolerIP, int SpoolerPort, Logger _logger, Action<string>? _onSpoolerDisconnectAction): 
+    base(SpoolerIP, SpoolerPort, _logger) {}
 
     public override void OnRecieve(byte[] message) {
         // Console.WriteLine();

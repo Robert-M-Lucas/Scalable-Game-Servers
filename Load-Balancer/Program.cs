@@ -87,7 +87,7 @@ public static class Program {
         Exit();
     }
 
-    public static void Exit(string reasons) {
+    public static void Exit(string reason = "") {
         logger.LogInfo("Shutting down server");
         if (server is not null) {server.Stop();}
         logger.LogInfo("Shutting down logger and environment");
