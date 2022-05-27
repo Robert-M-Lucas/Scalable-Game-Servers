@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BXC/o4mpbfREUrVNs7vaiBFWieO2JAaHdo4DxSj6rv05VduNLshoC3UDUzZNo3pHv4vSF2TKQmUwoxrud4b+Pg==",
+  "dgSpecHash": "9DlMX7rYN75aQPmBz6fX5GAVsWMgGl/rT8QYlF/emA6a/PIKueK3/jdDGqoltZ1yUeAKcqOwiiDdSII1ovMlJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Load-Balancer\\Load-Balancer.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable-Game-Servers\\Load-Balancer\\Load-Balancer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rober\\.nuget\\packages\\shared\\1.0.0\\shared.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CdoH6XyuR+KAwOLIyXtCQPJ4+kDBMzOWaV0NMWLVhHVtS1yNIqnKbU4afZQv2hSyLKNV3nnrmSmbrdN9XJaVtA==",
+  "dgSpecHash": "wNl031DsG5x5gNG1ecVAO6kLZxn5bBF4tbDe1tpjBrXOmJCOp3igOf5WQfvQvOfYr6DNrIhSj/D8HPc5dfEZyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Lobby-Server\\Lobby-Server.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable-Game-Servers\\Lobby-Server\\Lobby-Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rober\\.nuget\\packages\\shared\\1.0.0\\shared.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

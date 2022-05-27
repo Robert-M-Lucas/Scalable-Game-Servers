@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9UMoYEMqtxOmkWUZ0Y+IAFlGCxmhdj6bxdgV22Z5KStWOpg+gwg4SpoSjQpYP/DdrcGx/nrnyyRwHDOzXX5uvQ==",
+  "dgSpecHash": "XS4u24pxZuZsxVEbH0qtWDTrP9udmKZd9Laf+4RARlcc363nJRM8kcd+jMYocZsvzvm3C5JUPD2WfQ8/33iVVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Server-Spooler\\Server-Spooler.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable-Game-Servers\\Server-Spooler\\Server-Spooler.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rober\\.nuget\\packages\\shared\\1.0.0\\shared.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

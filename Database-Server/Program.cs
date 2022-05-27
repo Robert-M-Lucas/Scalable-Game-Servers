@@ -18,6 +18,7 @@ public static class Program {
             "
         );
 
-        Logger.LogInfo("Done?");
+        Logger.LogInfo("Done");
+        Logger.CleanUp();
     }
 }

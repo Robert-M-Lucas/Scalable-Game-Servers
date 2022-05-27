@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sr6s6f5//c5Jo722Pg/tOo2L7iLsP399QbJvuFCo5w2txf/O5PfNWBOyEPjeKgTiNNdOMrQaqs3K1Nc6xDgk3Q==",
+  "dgSpecHash": "jITb1oXnj2yWDa3+vH4emdFZO/5C1LZNkBa7Ok2dA7afHShkBhmUIDnd58cCoTdmEXOMvupyd0SPDsRAa6nvzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\Database-Server\\Database-Server.csproj",
+  "projectFilePath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable-Game-Servers\\Database-Server\\Database-Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rober\\.nuget\\packages\\microsoft.data.sqlite\\6.0.5\\microsoft.data.sqlite.6.0.5.nupkg.sha512",
     "C:\\Users\\rober\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.5\\microsoft.data.sqlite.core.6.0.5.nupkg.sha512",
@@ -10,7 +10,8 @@
     "C:\\Users\\rober\\.nuget\\packages\\sqlitepclraw.core\\2.0.6\\sqlitepclraw.core.2.0.6.nupkg.sha512",
     "C:\\Users\\rober\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.6\\sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",
     "C:\\Users\\rober\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.6\\sqlitepclraw.provider.e_sqlite3.2.0.6.nupkg.sha512",
-    "C:\\Users\\rober\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+    "C:\\Users\\rober\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\rober\\.nuget\\packages\\shared\\1.0.0\\shared.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }
