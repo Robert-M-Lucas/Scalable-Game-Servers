@@ -48,7 +48,7 @@ public static class Program {
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
         
         try {
-            spoolerInterface = new SIGameServer(SpoolerIP, SpoolerPort, logger);
+            spoolerInterface = new SIGameServer(SpoolerIP, SpoolerPort, logger, Exit);
         }
         catch (Exception e) {
             logger.LogError("Error connecting to spooler");
@@ -69,7 +69,7 @@ public static class Program {
         Exit();
     }
 
-    public static void Exit() {
+    public static void Exit(string reason = "") {
         if (server is not null) {
             logger.LogInfo("Shutting down server");
             server.Stop();

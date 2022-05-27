@@ -39,7 +39,7 @@ public static class Program {
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
 
         try {
-            spoolerInterface = new SILoadBalancer(SpoolerIP, SpoolerPort, logger);
+            spoolerInterface = new SILoadBalancer(SpoolerIP, SpoolerPort, logger, Exit);
         }
         catch (Exception e) {
             logger.LogError("Error connecting to spooler");
@@ -87,7 +87,7 @@ public static class Program {
         Exit();
     }
 
-    public static void Exit() {
+    public static void Exit(string reasons) {
         logger.LogInfo("Shutting down server");
         if (server is not null) {server.Stop();}
         logger.LogInfo("Shutting down logger and environment");
