@@ -16,12 +16,12 @@ public class Server {
     }
 
     public void Start() {
-        Program.logger.LogInfo("Matchmaker server start");
+        Logger.LogInfo("Matchmaker server start");
         AcceptClientThread.Start();
     }
 
     public void AcceptClients(){
-        Program.logger.LogInfo("Matchmaker Client Accept Thread Start");
+        Logger.LogInfo("Matchmaker Client Accept Thread Start");
 
         IPAddress ipAddress = IPAddress.Any;
 
@@ -37,17 +37,17 @@ public class Server {
             listener.Listen(100);
 
         while (!Program.exit) {
-            Program.logger.LogInfo("Waiting for client to connect");
+            Logger.LogInfo("Waiting for client to connect");
             Socket TempSocket = listener.Accept();
             uint queue_len = (uint) Players.Count;
             if (queue_len >= Program.MaxQueueLen){
                 TempSocket.Send(new byte[] {(byte) 3}); // Connection reject
-                Program.logger.LogWarning("Connection rejected, queue full");
+                Logger.LogWarning("Connection rejected, queue full");
                 continue;
             }
             TempSocket.Send(new byte[] {(byte) 0, (byte) queue_len, (byte) (queue_len>>8)}); // Sending queue pos
             Players.Enqueue(TempSocket);
-            Program.logger.LogInfo($"Client connected, queue len: {Players.Count}");
+            Logger.LogInfo($"Client connected, queue len: {Players.Count}");
         }
     }
 
@@ -58,7 +58,7 @@ public class Server {
     public void TransferClient(ByteIP ip){
         Socket? socket;
 
-        if (!Players.TryDequeue(out socket)) { Program.logger.LogError("Failed to dequeue client"); return; }
+        if (!Players.TryDequeue(out socket)) { Logger.LogError("Failed to dequeue client"); return; }
 
         byte[] to_send = new byte[7];
         to_send[0] = (byte) (uint) 1;
@@ -68,27 +68,27 @@ public class Server {
         try {
             socket.Send(to_send);
         } catch (SocketException se) {
-            Program.logger.LogWarning("Failed to transfer client, probably due to client disconnect");
-            Program.logger.LogWarning(se);
+            Logger.LogWarning("Failed to transfer client, probably due to client disconnect");
+            Logger.LogWarning(se);
             socket.Shutdown(SocketShutdown.Both);
             return;
         }
 
-        Program.logger.LogImportant($"Player sent to {ip.strIP}:{ip.iPort}");
+        Logger.LogImportant($"Player sent to {ip.strIP}:{ip.iPort}");
 
         // Shutdown socket 1 second later
         Task.Delay(new TimeSpan(0, 0, 1)).ContinueWith(o => { 
-            Program.logger.LogDebug("Shutting down client socket");
+            Logger.LogDebug("Shutting down client socket");
             socket.Shutdown(SocketShutdown.Both); 
         });
 
-        Program.logger.LogDebug("Client transfer done");
+        Logger.LogDebug("Client transfer done");
     }
 
     ~Server(){Stop();}
     public void Stop(){
-        Program.logger.LogWarning("Stopping Matchmaker");
+        Logger.LogWarning("Stopping Matchmaker");
         if (AcceptClientThread is not null) {try{AcceptClientThread.Interrupt();} catch (Exception e) {Console.WriteLine(e);} }
-        Program.logger.LogInfo("Matchmaker stopped");
+        Logger.LogInfo("Matchmaker stopped");
     }
 }

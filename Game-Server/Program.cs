@@ -20,15 +20,7 @@ public static class Program {
 
     public static uint fill_level;
 
-    public static Logger? _logger = null;
-
     public static Server? server = null;
-
-    public static Logger logger {
-    get {
-        if (_logger is null) {throw new NullReferenceException();}
-        return _logger;
-    }}
 
     static int GameServerID = -1;
 
@@ -42,17 +34,17 @@ public static class Program {
         if (!int.TryParse(args[4], out MaxGameServerFill)) { Console.WriteLine("Max game fill incorrectly formatted"); return; }
         if (!int.TryParse(args[5], out GameServerID)) { Console.WriteLine("Game server ID incorrectly formatted"); return; }
 
-        _logger =  new Logger("Game-Server-" + GameServerID, false);
+        Logger.InitialiseLogger("Game-Server-" + GameServerID, false);
 
         Console.Title = $"Game Server [{GameServerID}]";
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
         
         try {
-            spoolerInterface = new SIGameServer(SpoolerIP, SpoolerPort, logger, Exit);
+            spoolerInterface = new SIGameServer(SpoolerIP, SpoolerPort, Exit);
         }
         catch (Exception e) {
-            logger.LogError("Error connecting to spooler");
-            logger.LogError(e);
+            Logger.LogError("Error connecting to spooler");
+            Logger.LogError(e);
             return;
         }
 
@@ -71,12 +63,12 @@ public static class Program {
 
     public static void Exit(string reason = "") {
         if (server is not null) {
-            logger.LogInfo("Shutting down server");
+            Logger.LogInfo("Shutting down server");
             server.Stop();
         }
         
-        logger.LogWarning("Shutting down environment and logger");
-        logger.CleanUp();
+        Logger.LogWarning("Shutting down environment and Logger");
+        Logger.CleanUp();
         Environment.Exit(0);
     }
 }

@@ -18,12 +18,12 @@ public class Server {
     }
 
     public void Start() {
-        Program.logger.LogInfo("Lobby Server start");
+        Logger.LogInfo("Lobby Server start");
         AcceptClientThread.Start();
     }
 
     public void AcceptClients(){
-        Program.logger.LogInfo("Lobby Server Client Accept Thread start");
+        Logger.LogInfo("Lobby Server Client Accept Thread start");
 
         IPAddress ipAddress = IPAddress.Any;
 
@@ -39,9 +39,9 @@ public class Server {
             listener.Listen(100);
 
         while (!Program.exit) {
-            Program.logger.LogInfo("Waiting for client to connect");
+            Logger.LogInfo("Waiting for client to connect");
             Socket temp_socket = listener.Accept();
-            Program.logger.LogInfo("Client accepted");
+            Logger.LogInfo("Client accepted");
 
             // Start wait for connection data
             new Thread(() => FullClientAcceptThread(temp_socket)).Start();
@@ -49,7 +49,7 @@ public class Server {
     }
 
     public void FullClientAcceptThread(Socket socket) {
-        Program.logger.LogInfo("Client connected, waiting for connection data");
+        Logger.LogInfo("Client connected, waiting for connection data");
 
         byte[] buffer = new byte[10];
 
@@ -69,7 +69,7 @@ public class Server {
         // Thread hasn't exited, client didn't send connection data in required time
         if (t.IsAlive) { 
             t.Interrupt();
-            Program.logger.LogWarning("Client failed to send connection data");
+            Logger.LogWarning("Client failed to send connection data");
             socket.Shutdown(SocketShutdown.Both);
             return;
         }
@@ -82,20 +82,20 @@ public class Server {
         // Start recieving data from client
         socket.BeginReceive(player.buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), player);
         Program.fill_level = (uint) Players.Count();
-        Program.logger.LogImportant($"Client {player} connected. Player count: {Program.fill_level}/{Program.MaxLobbyFill}");
+        Logger.LogImportant($"Client {player} connected. Player count: {Program.fill_level}/{Program.MaxLobbyFill}");
         
     }
 
     private void RemovePlayer(LobbyPlayer player) {
         Players.Remove(player);
         Program.fill_level = (uint) Players.Count();
-        Program.logger.LogImportant($"Player {player} disconnected. Player count: {Program.fill_level}/{Program.MaxLobbyFill}");
+        Logger.LogImportant($"Player {player} disconnected. Player count: {Program.fill_level}/{Program.MaxLobbyFill}");
         try {
             player.socket.Shutdown(SocketShutdown.Both);
         }
         catch (Exception e) {
-            Program.logger.LogDebug("Error shutting down socket");
-            Program.logger.LogDebug(e);
+            Logger.LogDebug("Error shutting down socket");
+            Logger.LogDebug(e);
         }
     }
 
@@ -113,7 +113,7 @@ public class Server {
         if (player.buffer_cursor >= 2) {
             uint packet_len = (uint) player.buffer[0] + (uint) (player.buffer[1]<<8);
 
-            Program.logger.LogInfo($"Recieving packet from player {player} of len {packet_len}");
+            Logger.LogInfo($"Recieving packet from player {player} of len {packet_len}");
 
             if (player.buffer_cursor >= packet_len){
                 OnRecieve(player, ArrayExtentions.Slice(player.buffer, 0, (int) packet_len));
@@ -124,7 +124,7 @@ public class Server {
                 player.buffer_cursor = player.buffer_cursor - (int) packet_len;
             }
             else {
-                Program.logger.LogInfo($"{player.buffer_cursor}/{packet_len} received from {player.PlayerName}");
+                Logger.LogInfo($"{player.buffer_cursor}/{packet_len} received from {player.PlayerName}");
             }
         }
         player.socket.BeginReceive(player.buffer, player.buffer_cursor, 1024, 0, new AsyncCallback(ReadCallback), player);
@@ -135,7 +135,7 @@ public class Server {
 
         switch (packet_type) {
             case 1:
-                Program.logger.LogInfo($"Player {player} requested name echo, replying");
+                Logger.LogInfo($"Player {player} requested name echo, replying");
                 byte[] name_buffer = new byte[13];
                 name_buffer[0] = (byte) (uint) 13;
                 name_buffer[1] = (byte) (uint) 0;
@@ -144,7 +144,7 @@ public class Server {
                 player.socket.Send(name_buffer);
                 break;
             case 2:
-                Program.logger.LogInfo($"Player {player} requested counter, replying {player.player_counter_test}");
+                Logger.LogInfo($"Player {player} requested counter, replying {player.player_counter_test}");
                 byte[] counter_buffer = new byte[4];
                 counter_buffer[0] = (byte) (uint) 4;
                 counter_buffer[1] = (byte) (uint) 0;
@@ -154,15 +154,15 @@ public class Server {
                 player.socket.Send(counter_buffer);
                 break;
             default:
-                Program.logger.LogError($"Player {player} requested requestID {packet_type} which doesn't exist");
+                Logger.LogError($"Player {player} requested requestID {packet_type} which doesn't exist");
                 break;
         }
     }
 
     ~Server(){Stop();}
     public void Stop(){
-        Program.logger.LogWarning("Stopping Lobby Server");
+        Logger.LogWarning("Stopping Lobby Server");
         if (AcceptClientThread is not null) {try{AcceptClientThread.Interrupt();}catch(Exception e){Console.WriteLine(e);}}
-        Program.logger.LogInfo("Lobby Server stopped");
+        Logger.LogInfo("Lobby Server stopped");
     }
 }

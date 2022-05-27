@@ -17,8 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server-Spooler", "Server-Sp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoGui-Client", "NoGui-Client\NoGui-Client.csproj", "{39D8BDA1-C860-47B3-9ABB-638D6F9BBA3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database-Server", "Database-Server\Database-Server.csproj", "{F45E36E3-4748-4EAC-BAD7-7B92889A3D7D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

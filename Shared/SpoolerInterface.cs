@@ -10,16 +10,14 @@ public abstract class SpoolerInterface
     byte[] buffer = new byte[1024];
     int buffer_cursor = 0;
 
-    Logger logger;
     Action<string> OnSpoolerDisconnectAction;
 
-    public SpoolerInterface(string SpoolerIP, int SpoolerPort, Logger _logger, 
+    public SpoolerInterface(string SpoolerIP, int SpoolerPort, 
         Action<string>? onSpoolerDisconnectAction = null) {
         
         if (onSpoolerDisconnectAction is null) { onSpoolerDisconnectAction = (msg) => { throw new Exception(msg); }; }
 
         OnSpoolerDisconnectAction = onSpoolerDisconnectAction;
-        logger = _logger;
 
         IPAddress HostIpA = IPAddress.Parse(SpoolerIP);
         IPEndPoint RemoteEP = new IPEndPoint(HostIpA, SpoolerPort);
@@ -27,7 +25,7 @@ public abstract class SpoolerInterface
         SpoolerSocket = new Socket(HostIpA.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
         SpoolerSocket.Connect(RemoteEP);
-        logger.LogInfo("Starting Spooler receive");
+        try { Logger.LogInfo("Starting Spooler receive"); } catch (LoggerNotAvailableException e) {Console.WriteLine(e.ToString());}
         SpoolerSocket.BeginReceive(buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), null);
     }
 
@@ -46,7 +44,7 @@ public abstract class SpoolerInterface
         if (buffer_cursor >= 2) {
             uint packet_len = (uint) buffer[0] + (uint) (buffer[1]<<8);
 
-            logger.LogDebug($"Recieving packet from Spooler of len {packet_len}");
+            try {Logger.LogDebug($"Recieving packet from Spooler of len {packet_len}"); } catch (LoggerNotAvailableException e) {Console.WriteLine(e.ToString);}
 
             if (buffer_cursor >= packet_len){
                 OnRecieve(ArrayExtentions.Slice(buffer, 0, (int) packet_len));
@@ -57,7 +55,7 @@ public abstract class SpoolerInterface
                 buffer_cursor = buffer_cursor - (int) packet_len;
             }
             else {
-                logger.LogDebug($"{buffer_cursor}/{packet_len} received");
+                try {Logger.LogDebug($"{buffer_cursor}/{packet_len} received"); } catch (LoggerNotAvailableException e) {Console.WriteLine(e.ToString());}
             }
         }
         SpoolerSocket.BeginReceive(buffer, buffer_cursor, 1024, 0, new AsyncCallback(ReadCallback), null);

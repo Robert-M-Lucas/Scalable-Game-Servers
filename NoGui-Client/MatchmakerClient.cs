@@ -24,48 +24,48 @@ public static class MatchmakerClient {
             Handler.Connect(RemoteEP);
         }
         catch (SocketException e){
-            Program.logger.LogError("Failed to connect to target Matchmaker " + Program.MatchmakerIP + ":" + Program.MatchmakerPort);
-            Program.logger.LogError(e.ToString());
+            Logger.LogError("Failed to connect to target Matchmaker " + Program.MatchmakerIP + ":" + Program.MatchmakerPort);
+            Logger.LogError(e.ToString());
             return null;
         }
 
-        if (Handler.RemoteEndPoint is null) {Program.logger.LogError("Remote end point is null"); return null; }
+        if (Handler.RemoteEndPoint is null) {Logger.LogError("Remote end point is null"); return null; }
 
-        Program.logger.LogDebug("Socket connected to " + Handler.RemoteEndPoint.ToString());
+        Logger.LogDebug("Socket connected to " + Handler.RemoteEndPoint.ToString());
 
         Handler.Send(ClientConnectRequestPacket.Build(0, Program.ClientName, Program.Version));
 
-        Program.logger.LogDebug("Waiting for response from Matchmaker");
+        Logger.LogDebug("Waiting for response from Matchmaker");
 
         try {
             while (true) {
-                Program.logger.LogDebug("Starting Matchmaker recieve");
+                Logger.LogDebug("Starting Matchmaker recieve");
                 byte[] packet_type = new byte[1];
                 Handler.Receive(packet_type, 0, 1, 0);
-                Program.logger.LogDebug("Recieved");
+                Logger.LogDebug("Recieved");
 
                 switch (packet_type[0]){
                     case (byte) 0:
                         byte[] queue_pos_recv = new byte[2];
                         Handler.Receive(queue_pos_recv, 0, 2, 0);
-                        Program.logger.LogDebug($"Position in queue: {((uint) queue_pos_recv[0]) + ((uint) (queue_pos_recv[1]<<8))}");
+                        Logger.LogDebug($"Position in queue: {((uint) queue_pos_recv[0]) + ((uint) (queue_pos_recv[1]<<8))}");
                         continue;
                     case (byte) 1:
                         byte[] ip_and_port = new byte[6];
                         Handler.Receive(ip_and_port, 0, 6, 0);
                         ByteIP ip = ByteIP.BytesToIP(ip_and_port);
-                        Program.logger.LogDebug($"Being transfered to {ip.strIP}:{ip.iPort}");
+                        Logger.LogDebug($"Being transfered to {ip.strIP}:{ip.iPort}");
                         return ip;
                     case (byte) 3:
                         Handler.Shutdown(SocketShutdown.Both);
-                        Program.logger.LogWarning("Connection rejected - queue full");
+                        Logger.LogWarning("Connection rejected - queue full");
                         return null;
                 }
             }
         }
         catch (SocketException se) {
-            Program.logger.LogError("Matchmaker disconnected client");
-            Program.logger.LogError(se.ToString());
+            Logger.LogError("Matchmaker disconnected client");
+            Logger.LogError(se.ToString());
             return null;
         }
     }

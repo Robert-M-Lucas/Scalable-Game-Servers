@@ -4,6 +4,8 @@ using System.Net;
 using System.Net.Sockets;
 using System.Diagnostics;
 
+using Shared;
+
 public class ServerConnectTimeoutException : Exception
 {
     public ServerConnectTimeoutException() { }
@@ -22,10 +24,10 @@ public static class Listener{
     public static Socket? ListenerSocket;
 
     public static Socket AcceptClient(){
-        Program.logger.LogInfo("Accepting client");
+        Logger.LogInfo("Accepting client");
 
         if (ListenerSocket is null) {
-            Program.logger.LogDebug("Listener socket does not exist, creating");
+            Logger.LogDebug("Listener socket does not exist, creating");
 
             IPAddress ipAddress = IPAddress.Any;
 
@@ -44,7 +46,7 @@ public static class Listener{
 
         Stopwatch s = new Stopwatch();
         s.Start();
-        Program.logger.LogInfo("Accepting connection");
+        Logger.LogInfo("Accepting connection");
 
         Thread t = new Thread(() => {
             TempSocket = ListenerSocket.Accept();
@@ -60,7 +62,7 @@ public static class Listener{
 
         t.Join();
 
-        Program.logger.LogInfo("Connection established");
+        Logger.LogInfo("Connection established");
 
         if (TempSocket is null) { throw new NullReferenceException(); }
 
