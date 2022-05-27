@@ -25,19 +25,19 @@ public class GameServerClient {
             Handler.Connect(RemoteEP);
         }
         catch (SocketException e) {
-            Program.logger.LogError("Failed to connect to target Game Server " + IP + ":" + Port);
-            Program.logger.LogError(e.ToString());
+            Logger.LogError("Failed to connect to target Game Server " + IP + ":" + Port);
+            Logger.LogError(e.ToString());
             return 0;
         }
 
-        if (Handler.RemoteEndPoint is null) { Program.logger.LogError("Remote end point is null"); return 0; }
+        if (Handler.RemoteEndPoint is null) { Logger.LogError("Remote end point is null"); return 0; }
 
-        Program.logger.LogDebug("Socket connected to " + Handler.RemoteEndPoint.ToString());
+        Logger.LogDebug("Socket connected to " + Handler.RemoteEndPoint.ToString());
 
         // Send connection data
         Handler.Send(ArrayExtentions.Merge(new byte[10], Encoding.ASCII.GetBytes(Program.ClientName)));
 
-        Program.logger.LogInfo("Waiting for second player to join");
+        Logger.LogInfo("Waiting for second player to join");
 
         try {
             while (true) {
@@ -55,20 +55,20 @@ public class GameServerClient {
                 int winner = recv[13];
 
                 RenderBoard(board);
-                Program.logger.LogInfo("");
+                Logger.LogInfo("");
 
-                if (player == 0) { Program.logger.LogInfo("You are O"); }
-                else { Program.logger.LogInfo("You are X"); }
+                if (player == 0) { Logger.LogInfo("You are O"); }
+                else { Logger.LogInfo("You are X"); }
 
                 if (winner != 255) { 
-                    if (winner == 0) { Program.logger.LogInfo("O wins"); }
-                    else { Program.logger.LogInfo("X wins"); }
+                    if (winner == 0) { Logger.LogInfo("O wins"); }
+                    else { Logger.LogInfo("X wins"); }
                     Handler.Shutdown(SocketShutdown.Both);
                     return 1;
                 }
 
-                if (turn == 0) { Program.logger.LogInfo("O's turn"); }
-                else { Program.logger.LogInfo("X's turn"); }
+                if (turn == 0) { Logger.LogInfo("O's turn"); }
+                else { Logger.LogInfo("X's turn"); }
 
                 if (player != turn) { continue; }
 
@@ -92,8 +92,8 @@ public class GameServerClient {
             }
         }
         catch (SocketException se) {
-            Program.logger.LogError("Game Server disconnected client");
-            Program.logger.LogError(se.ToString());
+            Logger.LogError("Game Server disconnected client");
+            Logger.LogError(se.ToString());
             return 0;
         }
     }
@@ -108,7 +108,7 @@ public class GameServerClient {
                 else if (piece == 1) { row += "X"; }
                 row += " ";
             }
-            Program.logger.LogInfo(row);
+            Logger.LogInfo(row);
         }
     }
 }

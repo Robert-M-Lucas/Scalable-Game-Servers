@@ -59,8 +59,8 @@ public static class ServerStarter {
             return process;
         }
         catch (Exception e) {
-            Program.logger.LogError("Error starting process");
-            Program.logger.LogError(e);
+            Logger.LogError("Error starting process");
+            Logger.LogError(e);
             Program.Exit();
             throw new NullReferenceException();
         }
@@ -71,7 +71,7 @@ public static class ServerStarter {
         startInfo.CreateNoWindow = false;
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Load-Balancer\\Load-Balancer.exe";
-        Program.logger.LogDebug("Load Balancer start");
+        Logger.LogDebug("Load Balancer start");
         startInfo.WindowStyle = ProcessWindowStyle.Minimized;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {Program.config.LoadBalancerPort} {Program.config.MaxLobbyFill} {Program.config.MaxQueueLen}";
 
@@ -79,7 +79,7 @@ public static class ServerStarter {
     }
 
     public static bool StartLobby() {
-        Program.logger.LogInfo($"Starting lobby {LobbyUIDCounter} on port {LobbyPortCounter}");
+        Logger.LogInfo($"Starting lobby {LobbyUIDCounter} on port {LobbyPortCounter}");
 
         ProcessStartInfo startInfo = new ProcessStartInfo();
         startInfo.CreateNoWindow = false;
@@ -91,12 +91,12 @@ public static class ServerStarter {
         Process lobby_server = WrapedProcessStart(startInfo);
         LobbyData new_lobby = new LobbyData(LobbyUIDCounter, ByteIP.StringToIP("127.0.0.1", (uint) LobbyPortCounter), lobby_server);
 
-        Program.logger.LogDebug("Waiting for lobby response");
+        Logger.LogDebug("Waiting for lobby response");
         try {
             new_lobby.socket = Listener.AcceptClient();
         }
         catch (ServerConnectTimeoutException) {
-            Program.logger.LogError("Lobby server failed to connect in time, killing...");
+            Logger.LogError("Lobby server failed to connect in time, killing...");
             if (lobby_server is not null) { lobby_server.Kill(); }
             LobbyUIDCounter ++;
             LobbyPortCounter ++;
@@ -129,7 +129,7 @@ public static class ServerStarter {
         startInfo.CreateNoWindow = false;
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Matchmaker\\Matchmaker.exe";
-        Program.logger.LogDebug("Matchmaker start");
+        Logger.LogDebug("Matchmaker start");
         startInfo.WindowStyle = ProcessWindowStyle.Minimized;
         startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {Program.config.MatchmakerPort} {2} {Program.config.MaxQueueLen}";
 
@@ -137,7 +137,7 @@ public static class ServerStarter {
     }
 
     public static bool StartGameServer() {
-        Program.logger.LogInfo($"Starting game server {GameServerUIDCounter} on port {GameServerPortCounter}");
+        Logger.LogInfo($"Starting game server {GameServerUIDCounter} on port {GameServerPortCounter}");
 
         ProcessStartInfo startInfo = new ProcessStartInfo();
         startInfo.CreateNoWindow = false;
@@ -149,12 +149,12 @@ public static class ServerStarter {
         Process? game_server = WrapedProcessStart(startInfo);
         GameServerData new_game_server = new GameServerData(GameServerUIDCounter, ByteIP.StringToIP("127.0.0.1", (uint) GameServerPortCounter), game_server);
 
-        Program.logger.LogDebug("Waiting for game server response");
+        Logger.LogDebug("Waiting for game server response");
         try {
             new_game_server.socket = Listener.AcceptClient();
         }
         catch (ServerConnectTimeoutException) {
-            Program.logger.LogError("Game server failed to connect in time, killing...");
+            Logger.LogError("Game server failed to connect in time, killing...");
             if (game_server is not null) { game_server.Kill(); }
             GameServerUIDCounter++;
             GameServerPortCounter++;
@@ -183,16 +183,16 @@ public static class ServerStarter {
     }
 
     public static void Exit() {
-        if (LoadBalancer is not null) { Program.logger.LogInfo("Killing Load Balancer"); LoadBalancer.Kill(); }
-        if (Matchmaker is not null) { Program.logger.LogInfo("Killing Matchmaker"); Matchmaker.Kill(); }
+        if (LoadBalancer is not null) { Logger.LogInfo("Killing Load Balancer"); LoadBalancer.Kill(); }
+        if (Matchmaker is not null) { Logger.LogInfo("Killing Matchmaker"); Matchmaker.Kill(); }
 
-        Program.logger.LogInfo("Killing lobby servers");
+        Logger.LogInfo("Killing lobby servers");
         foreach (LobbyData lb in LobbyServers) {
             if (lb.socket is not null) { lb.socket.Shutdown(SocketShutdown.Both); }
             lb.process.Kill();
         }
 
-        Program.logger.LogInfo("Killing game servers");
+        Logger.LogInfo("Killing game servers");
         foreach (GameServerData gs in GameServers) {
             if (gs.socket is not null) { gs.socket.Shutdown(SocketShutdown.Both); }
             gs.process.Kill();

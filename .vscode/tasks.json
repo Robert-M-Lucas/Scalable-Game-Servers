@@ -31,6 +31,14 @@
             ]
         },
         {
+            "label": "Run Database",
+            "command": "python",
+            "type": "process",
+            "args": [
+                "run_database.py"
+            ]
+        },
+        {
             "label": "Clear Logs",
             "command": "clear_logs.bat",
             "type": "process",

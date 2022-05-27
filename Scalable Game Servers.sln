@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server-Spooler", "Server-Sp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoGui-Client", "NoGui-Client\NoGui-Client.csproj", "{39D8BDA1-C860-47B3-9ABB-638D6F9BBA3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database-Server", "Database-Server\Database-Server.csproj", "{D314FCB9-7419-4727-8668-D81FD844C4DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,5 +64,9 @@ Global
 		{F45E36E3-4748-4EAC-BAD7-7B92889A3D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F45E36E3-4748-4EAC-BAD7-7B92889A3D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F45E36E3-4748-4EAC-BAD7-7B92889A3D7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D314FCB9-7419-4727-8668-D81FD844C4DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D314FCB9-7419-4727-8668-D81FD844C4DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D314FCB9-7419-4727-8668-D81FD844C4DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D314FCB9-7419-4727-8668-D81FD844C4DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

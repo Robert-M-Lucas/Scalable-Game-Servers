@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qAxAn+G35zCHUjmKL1iSCzvXiJm6IelMZxyYVcGFOXLKQO0W0aft3y1UPRdToqpoS1CbQpPioLJPnz4EpLXhsg==",
+  "dgSpecHash": "57BTFdMobg8/V0+7vODm1OfWhlIMXYL33f/iNlc+nFygxA1JUxEhOJg/IeLLSqnQ88S7c97G7CHewNn0BnlLUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rober\\Documents\\Mixed Code Projects\\Scalable-Game-Servers\\NoGui-Client\\NoGui-Client.csproj",
+  "projectFilePath": "C:\\Users\\rober\\Documents\\Projects\\Scalable-Game-Servers\\NoGui-Client\\NoGui-Client.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

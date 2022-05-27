@@ -13,19 +13,19 @@ public static class Program {
 
     public static string ClientName = "";
 
-    public static Logger logger = new Logger("NoGui-Client", false);
-
     public static ConfigObj config;
 
     public static void Main(string[] args) {
+        Logger.InitialiseLogger("NoGui-Client", false);
+
         try {
             ProtectedMain(args);
         }
         catch (Exception e) {
-            logger.LogError(e.ToString());
+            Logger.LogError(e.ToString());
         }
 
-        logger.CleanUp();
+        Logger.CleanUp();
     }
     
     public static void ProtectedMain(string[] args) {
@@ -40,7 +40,7 @@ public static class Program {
             LoadBalancerPort = config.LoadBalancerPort;
             MatchmakerPort = config.MatchmakerPort;
         }
-        catch (BadConfigFormatException) { logger.LogError("Incorrect formatting of config.json"); return; }
+        catch (BadConfigFormatException) { Logger.LogError("Incorrect formatting of config.json"); return; }
         
         int choice = ConsoleInputUtil.ChooseOption(new string[] {"Connect", "Quit"}, true);
         if (choice == 1) { return; }

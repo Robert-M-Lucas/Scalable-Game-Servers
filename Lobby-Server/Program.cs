@@ -20,15 +20,7 @@ public static class Program {
 
     public static uint fill_level;
 
-    public static Logger? _logger = null;
-
     public static Server? server = null;
-
-    public static Logger logger {
-    get {
-        if (_logger is null) {throw new NullReferenceException();}
-        return _logger;
-    }}
 
     static int LobbyServerID = -1;
 
@@ -42,17 +34,17 @@ public static class Program {
         if (!int.TryParse(args[4], out MaxLobbyFill)) { Console.WriteLine("Max lobby fill incorrectly formatted"); return; }
         if (!int.TryParse(args[5], out LobbyServerID)) { Console.WriteLine("Lobby server ID incorrectly formatted"); return; }
 
-        _logger =  new Logger("Lobby-Server-" + LobbyServerID, false);
+        Logger.InitialiseLogger("Lobby-Server-" + LobbyServerID, false);
 
         Console.Title = $"Lobby Server [{LobbyServerID}]";
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
         
         try {
-            spoolerInterface = new SILobbyServer(SpoolerIP, SpoolerPort, logger);
+            spoolerInterface = new SILobbyServer(SpoolerIP, SpoolerPort, Exit);
         }
         catch (Exception e) {
-            logger.LogError("Error connecting to spooler");
-            logger.LogError(e);
+            Logger.LogError("Error connecting to spooler");
+            Logger.LogError(e);
             return;
         }
 
@@ -62,7 +54,7 @@ public static class Program {
             server.Start();
         }
         catch (Exception e) {
-            Program.logger.LogError(e);
+            Logger.LogError(e);
             Exit();
         }
         // Console.ReadLine();
@@ -75,14 +67,14 @@ public static class Program {
         Exit();
     }
 
-    public static void Exit() {
+    public static void Exit(string reason = "") {
         if (server is not null) {
-            logger.LogInfo("Shutting down server");
+            Logger.LogInfo("Shutting down server");
             server.Stop();
         }
         
-        logger.LogWarning("Shutting down environment and logger");
-        logger.CleanUp();
+        Logger.LogWarning("Shutting down environment and Logger");
+        Logger.CleanUp();
         Environment.Exit(0);
     }
 }

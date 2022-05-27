@@ -1,42 +1,43 @@
 namespace ServerSpooler;
 
 using System;
+using Shared;
 
 public static class InfoManager {
     public static void ShowInfo(long full_time_taken) {
-        Program.logger.LogImportant($"----------INFO START----------");
-        Program.logger.LogInfo($"Full update / target update interval =  [{full_time_taken}/{Program.UpdateInterval}ms]");
-        Program.logger.LogInfo($"Starting Lobby Servers took [{Program.LobbyServerStartTime}ms]");
-        Program.logger.LogInfo($"Stopping Lobby Servers took [{Program.LobbyServerStopTime}ms]");
-        Program.logger.LogInfo($"Starting Game Servers took [{Program.GameServerStartTime}ms]");
-        Program.logger.LogInfo($"Starting Game Servers took [{Program.GameServerStopTime}ms]");
-        Program.logger.LogInfo($"");
+        Logger.LogImportant($"----------INFO START----------");
+        Logger.LogInfo($"Full update / target update interval =  [{full_time_taken}/{Program.UpdateInterval}ms]");
+        Logger.LogInfo($"Starting Lobby Servers took [{Program.LobbyServerStartTime}ms]");
+        Logger.LogInfo($"Stopping Lobby Servers took [{Program.LobbyServerStopTime}ms]");
+        Logger.LogInfo($"Starting Game Servers took [{Program.GameServerStartTime}ms]");
+        Logger.LogInfo($"Starting Game Servers took [{Program.GameServerStopTime}ms]");
+        Logger.LogInfo($"");
 
-        Program.logger.LogInfo($"Server Spooler:");
-        Program.logger.LogInfo($" | >IP: {"127.0.0.1"}:{Program.config.ServerSpoolerPort}");
+        Logger.LogInfo($"Server Spooler:");
+        Logger.LogInfo($" | >IP: {"127.0.0.1"}:{Program.config.ServerSpoolerPort}");
 
-        Program.logger.LogInfo($"Load Balancer [{Program.LoadBalancerResponseTime}ms]:");
-        Program.logger.LogInfo($" | >IP: {"127.0.0.1"}:{Program.config.LoadBalancerPort}");
-        Program.logger.LogInfo($" | >Queue Length: {Program.LoadBalancerQueueLen}");
+        Logger.LogInfo($"Load Balancer [{Program.LoadBalancerResponseTime}ms]:");
+        Logger.LogInfo($" | >IP: {"127.0.0.1"}:{Program.config.LoadBalancerPort}");
+        Logger.LogInfo($" | >Queue Length: {Program.LoadBalancerQueueLen}");
 
-        Program.logger.LogInfo($"Lobby Servers [{Program.AllLobbiesResponseTime}ms]: ");
+        Logger.LogInfo($"Lobby Servers [{Program.AllLobbiesResponseTime}ms]: ");
         foreach (LobbyData lobby in Program.LobbyServers) {
-            Program.logger.LogInfo($" | Lobby Server [{lobby.UID}] [{lobby.response_time}ms]: ");
-            Program.logger.LogInfo($" | | >IP: {"127.0.0.1"}:{lobby.ip.iPort}");
-            Program.logger.LogInfo($" | | >Fill Level: {lobby.FillLevel}/{Program.config.MaxLobbyFill}");
+            Logger.LogInfo($" | Lobby Server [{lobby.UID}] [{lobby.response_time}ms]: ");
+            Logger.LogInfo($" | | >IP: {"127.0.0.1"}:{lobby.ip.iPort}");
+            Logger.LogInfo($" | | >Fill Level: {lobby.FillLevel}/{Program.config.MaxLobbyFill}");
         }
 
-        Program.logger.LogInfo($"Matchmaker [{Program.MatchmakerResponseTime}ms]:");
-        Program.logger.LogInfo($" | >IP: {"127.0.0.1"}:{Program.config.MatchmakerPort}");
-        Program.logger.LogInfo($" | >Queue Length: {Program.MatchmakerQueueLen}");
+        Logger.LogInfo($"Matchmaker [{Program.MatchmakerResponseTime}ms]:");
+        Logger.LogInfo($" | >IP: {"127.0.0.1"}:{Program.config.MatchmakerPort}");
+        Logger.LogInfo($" | >Queue Length: {Program.MatchmakerQueueLen}");
 
-        Program.logger.LogInfo($"Game Servers [{Program.AllGameServersResponseTime}ms]: ");
+        Logger.LogInfo($"Game Servers [{Program.AllGameServersResponseTime}ms]: ");
         foreach (GameServerData gameServers in Program.GameServers) {
-            Program.logger.LogInfo($" | Game Server [{gameServers.UID}] [{gameServers.response_time}ms]: ");
-            Program.logger.LogInfo($" | | >IP: {"127.0.0.1"}:{gameServers.ip.iPort}");
-            Program.logger.LogInfo($" | | >Fill Level: {gameServers.FillLevel}/{2}");
+            Logger.LogInfo($" | Game Server [{gameServers.UID}] [{gameServers.response_time}ms]: ");
+            Logger.LogInfo($" | | >IP: {"127.0.0.1"}:{gameServers.ip.iPort}");
+            Logger.LogInfo($" | | >Fill Level: {gameServers.FillLevel}/{2}");
         }
 
-        Program.logger.LogInfo($"----------INFO ENDS----------");
+        Logger.LogInfo($"----------INFO ENDS----------");
     }
 }

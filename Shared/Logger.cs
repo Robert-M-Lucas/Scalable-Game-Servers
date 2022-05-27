@@ -5,13 +5,21 @@ using System.Threading;
 using System;
 using System.IO;
 
-public class Logger {
-    private ConcurrentQueue<string> LogQueue = new ConcurrentQueue<string>();
-    private string LogName = "";
-    private Thread LogThread;
+public class LoggerNotAvailableException: Exception {
+    public LoggerNotAvailableException() { }
 
-    public bool debug_printed = false;
-    public bool debug_logged = false;
+    public LoggerNotAvailableException(string message) : base(message) { }
+
+    public LoggerNotAvailableException(string message, Exception inner) : base(message, inner) { }
+}
+
+public static class Logger {
+    private static ConcurrentQueue<string> LogQueue = new ConcurrentQueue<string>();
+    private static string LogName = "";
+    private static Thread? LogThread;
+
+    public static bool debug_printed = false;
+    public static bool debug_logged = false;
 
     const ConsoleColor DEFAULT_COLOUR = ConsoleColor.White;
     const string INFO_TEXT =    "INFO ";
@@ -25,12 +33,12 @@ public class Logger {
     const string DEBUG_TEXT =   "DEBUG";
     const ConsoleColor DEBUG_COLOUR = ConsoleColor.Green;
 
-    bool shutdown = false;
-    static Logger? logger;
+    static bool shutdown = false;
+    static bool initialised = false;
 
-    public Logger(string log_name, bool debug = false) {
-        logger = this;
-
+    public static void InitialiseLogger(string log_name, bool debug = false) {
+        if (initialised) { return; }
+        initialised  = true;
         debug_printed = debug;
         LogName = "Logs\\" + log_name + DateTime.Now.ToString(" [dd-MM-yy HH.mm.ss]") + ".log";
         
@@ -41,7 +49,7 @@ public class Logger {
         LogInfo("Logging started");
     }
 
-    void LogLoop() {
+    static void LogLoop() {
         Directory.CreateDirectory("Logs");
         StreamWriter sw = File.AppendText(LogName);
         sw.AutoFlush = true;
@@ -60,7 +68,7 @@ public class Logger {
         }
     }
 
-    void LogAll(StreamWriter sw) {
+    static void LogAll(StreamWriter sw) {
         while (LogQueue.Count > 0) {
             string? log_line = "";
             if (LogQueue.TryDequeue(out log_line)) {
@@ -72,32 +80,33 @@ public class Logger {
         }
     }
 
-    public void CleanUp() {
-        if (shutdown) {
-            Console.WriteLine("Logging already shutdown");
+    public static void CleanUp() {
+        if (!initialised | shutdown) {
+            Console.WriteLine("Logging already shutdown or not initialised");
         }
         shutdown = true;
         LogWarning("Shutting down logging");
-        LogThread.Interrupt();
-        LogThread.Join();
+
+        LogThread?.Interrupt();
+        LogThread?.Join();
     }
 
     static void OnUnhandledException(object sender, UnhandledExceptionEventArgs args)
     {
-        if (logger is null) { return; }
         if (args.IsTerminating) {
-            logger.LogError("FATAL UNHANDLED EXCEPTION");
+            LogError("FATAL UNHANDLED EXCEPTION");
         }
         else {
-            logger.LogError("UNHANDLED EXCEPTION (NON FATAL)");
+            LogError("UNHANDLED EXCEPTION (NON FATAL)");
         }
         Exception e = (Exception) args.ExceptionObject;
-        logger.LogError(e);
-        logger.CleanUp();
+        LogError(e);
+        CleanUp();
     }
 
-    public void LogInfo(object log_text_obj) {
+    public static void LogInfo(object log_text_obj) {
         if (log_text_obj is null) {return;}
+        if (!initialised | shutdown) { throw new LoggerNotAvailableException("Logger shut down or not initialised"); }
         string? log_text = log_text_obj.ToString();
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + INFO_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
@@ -106,8 +115,9 @@ public class Logger {
         Console.ForegroundColor = DEFAULT_COLOUR;
     }
 
-    public void LogImportant(object log_text_obj) {
+    public static void LogImportant(object log_text_obj) {
         if (log_text_obj is null) {return;}
+        if (!initialised | shutdown) { throw new LoggerNotAvailableException("Logger shut down or not initialised"); }
         string? log_text = log_text_obj.ToString();
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + IMPORTANT_INFO_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
@@ -116,8 +126,9 @@ public class Logger {
         Console.ForegroundColor = DEFAULT_COLOUR;
     }
 
-    public void LogWarning(object log_text_obj) {
+    public static void LogWarning(object log_text_obj) {
         if (log_text_obj is null) {return;}
+        if (!initialised | shutdown) { throw new LoggerNotAvailableException("Logger shut down or not initialised"); }
         string? log_text = log_text_obj.ToString();
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + WARNING_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
@@ -126,8 +137,9 @@ public class Logger {
         Console.ForegroundColor = DEFAULT_COLOUR;
     }
 
-    public void LogError(object log_text_obj) {
+    public static void LogError(object log_text_obj) {
         if (log_text_obj is null) { return; }
+        if (!initialised | shutdown) { throw new LoggerNotAvailableException("Logger shut down or not initialised"); }
         string? log_text = log_text_obj.ToString();
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + ERROR_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
@@ -136,9 +148,10 @@ public class Logger {
         Console.ForegroundColor = DEFAULT_COLOUR;
     }
 
-    public void LogDebug(object log_text_obj) {
+    public static void LogDebug(object log_text_obj) {
         if (!debug_logged) { return; }
         if (log_text_obj is null) { return; }
+        if (!initialised | shutdown) { throw new LoggerNotAvailableException("Logger shut down or not initialised"); }
         string? log_text = log_text_obj.ToString();
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + DEBUG_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);

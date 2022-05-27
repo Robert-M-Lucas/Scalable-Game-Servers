@@ -25,14 +25,14 @@ public class LobbyServerClient {
             Handler.Connect(RemoteEP);
         }
         catch (SocketException e){
-            Program.logger.LogError("Failed to connect to target Lobby Server " + IP + ":" + Port); 
-            Program.logger.LogError(e.ToString());
+            Logger.LogError("Failed to connect to target Lobby Server " + IP + ":" + Port); 
+            Logger.LogError(e.ToString());
             return 0;
         }
 
-        if (Handler.RemoteEndPoint is null) {Program.logger.LogError("Remote end point is null"); return 0; }
+        if (Handler.RemoteEndPoint is null) {Logger.LogError("Remote end point is null"); return 0; }
 
-        Program.logger.LogDebug("Socket connected to " + Handler.RemoteEndPoint.ToString());
+        Logger.LogDebug("Socket connected to " + Handler.RemoteEndPoint.ToString());
 
         // Send connection data
         Handler.Send(ArrayExtentions.Merge(new byte[10], Encoding.ASCII.GetBytes(Program.ClientName)));
@@ -47,31 +47,31 @@ public class LobbyServerClient {
             }
         }
         catch (SocketException se) {
-            Program.logger.LogError("Lobby Server disconnected client");
-            Program.logger.LogError(se.ToString());
+            Logger.LogError("Lobby Server disconnected client");
+            Logger.LogError(se.ToString());
             return 0;
         }
     }
 
     void EchoName(Socket socket) {
-        Program.logger.LogDebug("Sending echo request");
+        Logger.LogDebug("Sending echo request");
         Timer t = new Timer();
         socket.Send(new byte[] {(byte) (uint) 3, (byte) (uint) 0, (byte) (uint) 1});
         byte[] buffer = new byte[13];
-        Program.logger.LogDebug("Waiting for echo response");
+        Logger.LogDebug("Waiting for echo response");
         socket.Receive(buffer, 0, 13, 0);
         string name = Encoding.ASCII.GetString(ArrayExtentions.Slice(buffer, 3, 13));
-        Program.logger.LogImportant($"Recieved name [{name}] in {t.GetMs()}ms");
+        Logger.LogImportant($"Recieved name [{name}] in {t.GetMs()}ms");
     }
 
     void GetCounter(Socket socket) {
-        Program.logger.LogDebug("Sending counter request");
+        Logger.LogDebug("Sending counter request");
         Timer t = new Timer();
         socket.Send(new byte[] {(byte) (uint) 3, (byte) (uint) 0, (byte) (uint) 2});
         byte[] buffer = new byte[4];
-        Program.logger.LogDebug("Waiting for response");
+        Logger.LogDebug("Waiting for response");
         socket.Receive(buffer, 0, 4, 0);
         uint counter = buffer[3];
-        Program.logger.LogImportant($"Recieved [{counter}] in {t.GetMs()}ms");
+        Logger.LogImportant($"Recieved [{counter}] in {t.GetMs()}ms");
     }
 }

@@ -23,27 +23,27 @@ public static class Program {
 
     public static List<Tuple<ByteIP, uint>> LobbyServers = new List<Tuple<ByteIP, uint>>();
 
-    public static Logger logger = new Logger("Load-Balancer", false);
-
     public static void Main(string[] args) {
-        if (args.Length < 6) { logger.LogError("Args must be: [Version] [Server Spooler IP] [Server Spooler Port] [Load Balancer Port] [Max lobby fill] [Max queue length]"); Exit(); return; }
+        Logger.InitialiseLogger("Load-Balancer", false);
+
+        if (args.Length < 6) { Logger.LogError("Args must be: [Version] [Server Spooler IP] [Server Spooler Port] [Load Balancer Port] [Max lobby fill] [Max queue length]"); Exit(); return; }
 
         version = args[0];
         SpoolerIP = args[1];
-        if (!int.TryParse(args[2], out SpoolerPort)) { logger.LogInfo("Spooler port incorrectly formatted"); Exit(); return; }
-        if (!int.TryParse(args[3], out Port)) { logger.LogInfo("Port incorrectly formatted"); Exit(); return; }
-        if (!int.TryParse(args[4], out MaxLobbyFill)) { logger.LogInfo("Max lobby fill incorrectly formatted"); Exit(); return; }
-        if (!int.TryParse(args[5], out MaxQueueLen)) { logger.LogInfo("Max queue fill incorrectly formatted"); Exit(); return; }
+        if (!int.TryParse(args[2], out SpoolerPort)) { Logger.LogInfo("Spooler port incorrectly formatted"); Exit(); return; }
+        if (!int.TryParse(args[3], out Port)) { Logger.LogInfo("Port incorrectly formatted"); Exit(); return; }
+        if (!int.TryParse(args[4], out MaxLobbyFill)) { Logger.LogInfo("Max lobby fill incorrectly formatted"); Exit(); return; }
+        if (!int.TryParse(args[5], out MaxQueueLen)) { Logger.LogInfo("Max queue fill incorrectly formatted"); Exit(); return; }
 
         Console.Title = "Load Balancer";
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
 
         try {
-            spoolerInterface = new SILoadBalancer(SpoolerIP, SpoolerPort, logger);
+            spoolerInterface = new SILoadBalancer(SpoolerIP, SpoolerPort, Exit);
         }
         catch (Exception e) {
-            logger.LogError("Error connecting to spooler");
-            logger.LogError(e.ToString());
+            Logger.LogError("Error connecting to spooler");
+            Logger.LogError(e.ToString());
             return;
         }
 
@@ -57,7 +57,7 @@ public static class Program {
                 // Temp server list to not have to worry about updates from spooler
                 Tuple<ByteIP, uint>[] LobbyServersCopy = new Tuple<ByteIP, uint>[LobbyServers.Count];
                 LobbyServers.CopyTo(LobbyServersCopy);
-                logger.LogInfo(LobbyServersCopy.Length);
+                Logger.LogInfo(LobbyServersCopy.Length);
 
                 int best_lobby_server = -1;
                 for (int i = 0; i < LobbyServersCopy.Length; i++){
@@ -68,7 +68,7 @@ public static class Program {
                 }
 
                 if (best_lobby_server == -1) { 
-                    logger.LogWarning("No available lobby servers to transfer client to");
+                    Logger.LogWarning("No available lobby servers to transfer client to");
                     Thread.Sleep(200);
                     continue;
                 }
@@ -81,17 +81,17 @@ public static class Program {
     }
 
     static void exitHandler(object? sender, ConsoleCancelEventArgs args) {
-        logger.LogInfo("Escape key pressed");
+        Logger.LogInfo("Escape key pressed");
         args.Cancel = true;
         exit = true;
         Exit();
     }
 
-    public static void Exit() {
-        logger.LogInfo("Shutting down server");
+    public static void Exit(string reason = "") {
+        Logger.LogInfo("Shutting down server");
         if (server is not null) {server.Stop();}
-        logger.LogInfo("Shutting down logger and environment");
-        logger.CleanUp();
+        Logger.LogInfo("Shutting down Logger and environment");
+        Logger.CleanUp();
         Environment.Exit(0);
     }
 }

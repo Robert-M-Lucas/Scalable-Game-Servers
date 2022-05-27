@@ -20,12 +20,12 @@ public class Server {
     }
 
     public void Start() {
-        Program.logger.LogInfo("Game Server start");
+        Logger.LogInfo("Game Server start");
         AcceptClientThread.Start();
     }
 
     public void AcceptClients(){
-        Program.logger.LogInfo("Lobby Server Client Accept Thread start");
+        Logger.LogInfo("Lobby Server Client Accept Thread start");
 
         IPAddress ipAddress = IPAddress.Any;
 
@@ -41,15 +41,15 @@ public class Server {
             listener.Listen(100);
 
         while (!Program.exit) {
-            Program.logger.LogInfo("Waiting for client to connect");
+            Logger.LogInfo("Waiting for client to connect");
             Socket temp_socket = listener.Accept();
 
             if (Players.Count >= Program.MaxGameServerFill) {
                 temp_socket.Shutdown(SocketShutdown.Both);
-                Program.logger.LogWarning("Client accepted and immediately kicked because server full");
+                Logger.LogWarning("Client accepted and immediately kicked because server full");
             }
 
-            Program.logger.LogInfo("Client accepted");
+            Logger.LogInfo("Client accepted");
 
             // Start wait for connection data
             new Thread(() => FullClientAcceptThread(temp_socket)).Start();
@@ -57,7 +57,7 @@ public class Server {
     }
 
     public void FullClientAcceptThread(Socket socket) {
-        Program.logger.LogInfo("Client connected, waiting for connection data");
+        Logger.LogInfo("Client connected, waiting for connection data");
 
         byte[] buffer = new byte[10];
 
@@ -77,7 +77,7 @@ public class Server {
         // Thread hasn't exited, client didn't send connection data in required time
         if (t.IsAlive) { 
             t.Interrupt();
-            Program.logger.LogWarning("Player failed to send connection data");
+            Logger.LogWarning("Player failed to send connection data");
             socket.Shutdown(SocketShutdown.Both);
             return;
         }
@@ -90,7 +90,7 @@ public class Server {
         // Start recieving data from client
         socket.BeginReceive(player.buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), player);
         Program.fill_level = (uint) Players.Count();
-        Program.logger.LogImportant($"Player {player} connected. Player count: {Program.fill_level}/{Program.MaxGameServerFill}");
+        Logger.LogImportant($"Player {player} connected. Player count: {Program.fill_level}/{Program.MaxGameServerFill}");
         ClientFullyAccepted(player);
     }
 
@@ -110,13 +110,13 @@ public class Server {
         }
         
         Program.fill_level = (uint) Players.Count();
-        Program.logger.LogImportant($"Player {player} disconnected. Player count: {Program.fill_level}/{Program.MaxGameServerFill}");
+        Logger.LogImportant($"Player {player} disconnected. Player count: {Program.fill_level}/{Program.MaxGameServerFill}");
         try {
             player.socket.Shutdown(SocketShutdown.Both);
         }
         catch (Exception e) {
-            Program.logger.LogDebug("Error shutting down socket");
-            Program.logger.LogDebug(e);
+            Logger.LogDebug("Error shutting down socket");
+            Logger.LogDebug(e);
         }
     }
 
@@ -135,7 +135,7 @@ public class Server {
         if (player.buffer_cursor >= 2) {
             uint packet_len = (uint) player.buffer[0] + (uint) (player.buffer[1]<<8);
 
-            Program.logger.LogDebug($"Recieving packet from player {player} of len {packet_len}");
+            Logger.LogDebug($"Recieving packet from player {player} of len {packet_len}");
 
             if (player.buffer_cursor >= packet_len){
                 OnRecieve(player, ArrayExtentions.Slice(player.buffer, 0, (int) packet_len));
@@ -146,7 +146,7 @@ public class Server {
                 player.buffer_cursor = player.buffer_cursor - (int) packet_len;
             }
             else {
-                Program.logger.LogDebug($"{player.buffer_cursor}/{packet_len} received from {player.PlayerName}");
+                Logger.LogDebug($"{player.buffer_cursor}/{packet_len} received from {player.PlayerName}");
             }
         }
         player.socket.BeginReceive(player.buffer, player.buffer_cursor, 1024, 0, new AsyncCallback(ReadCallback), player);
@@ -156,7 +156,7 @@ public class Server {
         uint packet_type = (uint) data[2];
 
         if (game is null) {
-            Program.logger.LogWarning($"Client {player} tried to send packet before game initialised");
+            Logger.LogWarning($"Client {player} tried to send packet before game initialised");
             // Send game hasn't started packet to client
             return;
         }
@@ -165,13 +165,13 @@ public class Server {
             game.HandlePacket(packet_type, data, player);
         }
         catch (Exception e) {
-            Program.logger.LogError("Error handling game packet");
-            Program.logger.LogError(e);
+            Logger.LogError("Error handling game packet");
+            Logger.LogError(e);
         }
     }
 
     public void ResetGame() {
-        Program.logger.LogImportant("Resetting game");
+        Logger.LogImportant("Resetting game");
         while (Players.Count > 0) { RemovePlayer(Players[0]); }
 
         game = null;
@@ -180,8 +180,8 @@ public class Server {
     ~Server(){Stop();}
 
     public void Stop(){
-        Program.logger.LogWarning("Stopping Game Server");
+        Logger.LogWarning("Stopping Game Server");
         if (AcceptClientThread is not null) {try{AcceptClientThread.Interrupt();}catch(Exception e){Console.WriteLine(e);}}
-        Program.logger.LogInfo("Lobby Game stopped");
+        Logger.LogInfo("Lobby Game stopped");
     }
 }
