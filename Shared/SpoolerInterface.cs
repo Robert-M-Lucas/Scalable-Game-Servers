@@ -16,7 +16,7 @@ public abstract class SpoolerInterface
     public SpoolerInterface(string SpoolerIP, int SpoolerPort, Logger _logger, 
         Action<string>? onSpoolerDisconnectAction = null) {
         
-        if (onSpoolerDisconnectAction is null) { onSpoolerDisconnectAction = (msg) => {throw new Exception(msg); }; }
+        if (onSpoolerDisconnectAction is null) { onSpoolerDisconnectAction = (msg) => { throw new Exception(msg); }; }
 
         OnSpoolerDisconnectAction = onSpoolerDisconnectAction;
         logger = _logger;
