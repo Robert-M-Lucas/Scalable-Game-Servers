@@ -16,6 +16,8 @@ public static class Program {
 
     public static SILobbyServer? spoolerInterface;
 
+    public static DatabaseInterface? databaseInterface;
+
     public static bool exit = false;
 
     public static uint fill_level;
@@ -47,6 +49,8 @@ public static class Program {
             Logger.LogError(e);
             return;
         }
+
+        databaseInterface = new DatabaseInterface("127.0.0.1", 11111);
 
         Console.WriteLine("Press Ctrl-C to exit");
         try {

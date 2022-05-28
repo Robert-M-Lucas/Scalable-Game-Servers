@@ -16,6 +16,8 @@ public class LobbyPlayer {
     // TODO: Remove this after testing
     public uint player_counter_test = 0;
 
+    public int currency_amount = 0;
+
     public LobbyPlayer(Socket _socket, string player_name) {
         socket = _socket;
         PlayerName = player_name;

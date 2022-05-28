@@ -51,13 +51,13 @@ public class Server {
     public void FullClientAcceptThread(Socket socket) {
         Logger.LogInfo("Client connected, waiting for connection data");
 
-        byte[] buffer = new byte[10];
+        byte[] buffer = new byte[32];
 
         Stopwatch s = new Stopwatch();
         s.Start();
 
         Thread t = new Thread(() => {
-            socket.Receive(buffer, 0, 10, 0);
+            socket.Receive(buffer, 0, 32, 0);
         });
         t.Start();
 
@@ -76,7 +76,28 @@ public class Server {
 
         t.Join();
 
-        LobbyPlayer player = new LobbyPlayer(socket, Encoding.ASCII.GetString(buffer));
+        string username = Encoding.ASCII.GetString(ArrayExtentions.Slice(buffer, 0, 16));
+        string password = Encoding.ASCII.GetString(ArrayExtentions.Slice(buffer, 16, 32));
+
+        DatabasePlayer? databasePlayer = Program.databaseInterface?.GetDatabasePlayer(username, password);
+
+        if (databasePlayer is null) { socket.Shutdown(SocketShutdown.Both); return; }
+
+        if (databasePlayer.PlayerID == -1) {
+            socket.Send(new byte[] {(byte) (uint) 0});
+            Thread.Sleep(10);
+            socket.Shutdown(SocketShutdown.Both);
+            return;
+        } 
+
+        byte[] to_reply = new byte[5];
+        to_reply[0] = (byte) (uint) 1;
+        to_reply = ArrayExtentions.Merge(to_reply, BitConverter.GetBytes(databasePlayer.PlayerCurrencyAmount), 1);
+
+        socket.Send(to_reply);
+
+        LobbyPlayer player = new LobbyPlayer(socket, username);
+        player.currency_amount = databasePlayer.PlayerCurrencyAmount;
         Players.Add(player);
 
         // Start recieving data from client
@@ -136,8 +157,8 @@ public class Server {
         switch (packet_type) {
             case 1:
                 Logger.LogInfo($"Player {player} requested name echo, replying");
-                byte[] name_buffer = new byte[13];
-                name_buffer[0] = (byte) (uint) 13;
+                byte[] name_buffer = new byte[19];
+                name_buffer[0] = (byte) (uint) 19;
                 name_buffer[1] = (byte) (uint) 0;
                 name_buffer[2] = (byte) (uint) 1;
                 ArrayExtentions.Merge(name_buffer, Encoding.ASCII.GetBytes(player.PlayerName), 3);

@@ -1,0 +1,537 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2022-05-28 19:08:58
+count workspace : c:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers
+total files : 506
+total code lines : 10816
+total comment lines : 221
+total blank lines : 1011
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |           .bat|              8|              0|              0|  0.074|
+   |            .py|            170|             40|             71|    1.6|
+   |          .json|           3007|              0|            174|     28|
+   |           .sln|             72|              0|              0|   0.67|
+   |            .md|             89|              0|             36|   0.82|
+   |            .cs|           2681|            181|            695|     25|
+   |        .csproj|             92|              0|             24|   0.85|
+   |      .csunused|             10|              0|              4|  0.092|
+   |           .txt|            435|              0|              0|    4.0|
+   |         .props|            104|              0|              0|   0.96|
+   |         .cache|            101|              0|              7|   0.93|
+   |       .targets|             16|              0|              0|   0.15|
+   |  .editorconfig|             80|              0|              0|   0.74|
+   |  .CopyComplete|              0|              0|              0|    0.0|
+   |           .log|           3951|              0|              0|     37|
+   -------------------------------------------------------------------------
+.Build\Database-Server\config.json, code is 13, comment is 0, blank is 5.
+.Build\Database-Server\Database-Server.deps.json, code is 218, comment is 0, blank is 0.
+.Build\Database-Server\Database-Server.dll, it is a binary file.
+.Build\Database-Server\Database-Server.exe, it is a binary file.
+.Build\Database-Server\Database-Server.pdb, it is a binary file.
+.Build\Database-Server\Database-Server.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 21.15.19].log, code is 13, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 21.16.10].log, code is 13, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 21.17.01].log, code is 2, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 21.18.52].log, code is 13, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 21.19.37].log, code is 2, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 21.20.34].log, code is 13, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 21.21.31].log, code is 3, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 21.24.05].log, code is 3, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 21.26.41].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 21.27.48].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 21.28.42].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 21.31.06].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 22.36.47].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 22.43.41].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 23.01.13].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 23.02.01].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 23.02.42].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 23.02.53].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 23.02.57].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 23.04.07].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 23.04.51].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 23.10.51].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 23.12.03].log, code is 7, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 23.12.54].log, code is 3, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [27-05-22 23.13.42].log, code is 4, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 16.34.59].log, code is 4, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 16.40.02].log, code is 4, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 17.11.51].log, code is 4, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 17.13.23].log, code is 8, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 17.16.46].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 17.17.29].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 17.21.08].log, code is 4, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 17.21.48].log, code is 4, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 17.21.54].log, code is 4, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 17.58.53].log, code is 15, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 17.59.38].log, code is 16, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 17.59.53].log, code is 6, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.00.20].log, code is 6, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.00.38].log, code is 6, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.36.12].log, code is 20, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.38.08].log, code is 20, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.38.22].log, code is 20, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.38.35].log, code is 20, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.40.30].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.41.33].log, code is 7, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.41.39].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.43.10].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.45.07].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.45.31].log, code is 10, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.45.45].log, code is 11, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.50.54].log, code is 33, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.56.05].log, code is 33, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.57.24].log, code is 33, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 18.59.11].log, code is 33, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 19.01.42].log, code is 33, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 19.04.32].log, code is 33, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 19.05.03].log, code is 33, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 19.05.50].log, code is 33, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 19.06.52].log, code is 33, comment is 0, blank is 0.
+.Build\Database-Server\Logs\Database-Server [28-05-22 19.07.09].log, code is 33, comment is 0, blank is 0.
+.Build\Database-Server\Microsoft.Data.Sqlite.dll, it is a binary file.
+.Build\Database-Server\runtimes\alpine-x64\native\libe_sqlite3.so, it is a binary file.
+.Build\Database-Server\runtimes\linux-arm64\native\libe_sqlite3.so, it is a binary file.
+.Build\Database-Server\runtimes\linux-arm\native\libe_sqlite3.so, it is a binary file.
+.Build\Database-Server\runtimes\linux-armel\native\libe_sqlite3.so, it is a binary file.
+.Build\Database-Server\runtimes\linux-mips64\native\libe_sqlite3.so, it is a binary file.
+.Build\Database-Server\runtimes\linux-musl-x64\native\libe_sqlite3.so, it is a binary file.
+.Build\Database-Server\runtimes\linux-s390x\native\libe_sqlite3.so, it is a binary file.
+.Build\Database-Server\runtimes\linux-x64\native\libe_sqlite3.so, it is a binary file.
+.Build\Database-Server\runtimes\linux-x86\native\libe_sqlite3.so, it is a binary file.
+.Build\Database-Server\runtimes\osx-arm64\native\libe_sqlite3.dylib, it is a binary file.
+.Build\Database-Server\runtimes\osx-x64\native\libe_sqlite3.dylib, it is a binary file.
+.Build\Database-Server\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll, it is a binary file.
+.Build\Database-Server\runtimes\win-arm64\native\e_sqlite3.dll, it is a binary file.
+.Build\Database-Server\runtimes\win-arm64\native\sni.dll, it is a binary file.
+.Build\Database-Server\runtimes\win-arm\native\e_sqlite3.dll, it is a binary file.
+.Build\Database-Server\runtimes\win-x64\native\e_sqlite3.dll, it is a binary file.
+.Build\Database-Server\runtimes\win-x64\native\sni.dll, it is a binary file.
+.Build\Database-Server\runtimes\win-x86\native\e_sqlite3.dll, it is a binary file.
+.Build\Database-Server\runtimes\win-x86\native\sni.dll, it is a binary file.
+.Build\Database-Server\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll, it is a binary file.
+.Build\Database-Server\Shared.dll, it is a binary file.
+.Build\Database-Server\Shared.pdb, it is a binary file.
+.Build\Database-Server\SQLitePCLRaw.batteries_v2.dll, it is a binary file.
+.Build\Database-Server\SQLitePCLRaw.core.dll, it is a binary file.
+.Build\Database-Server\SQLitePCLRaw.provider.e_sqlite3.dll, it is a binary file.
+.Build\Database-Server\System.Data.SqlClient.dll, it is a binary file.
+.Build\Game-Server\config.json, code is 13, comment is 0, blank is 5.
+.Build\Game-Server\Game-Server.deps.json, code is 36, comment is 0, blank is 0.
+.Build\Game-Server\Game-Server.dll, it is a binary file.
+.Build\Game-Server\Game-Server.exe, it is a binary file.
+.Build\Game-Server\Game-Server.pdb, it is a binary file.
+.Build\Game-Server\Game-Server.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+.Build\Game-Server\Shared.dll, it is a binary file.
+.Build\Game-Server\Shared.pdb, it is a binary file.
+.Build\Load-Balancer\config.json, code is 13, comment is 0, blank is 5.
+.Build\Load-Balancer\Load-Balancer.deps.json, code is 36, comment is 0, blank is 0.
+.Build\Load-Balancer\Load-Balancer.dll, it is a binary file.
+.Build\Load-Balancer\Load-Balancer.exe, it is a binary file.
+.Build\Load-Balancer\Load-Balancer.pdb, it is a binary file.
+.Build\Load-Balancer\Load-Balancer.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+.Build\Load-Balancer\Shared.dll, it is a binary file.
+.Build\Load-Balancer\Shared.pdb, it is a binary file.
+.Build\Lobby-Server\config.json, code is 13, comment is 0, blank is 5.
+.Build\Lobby-Server\Lobby-Server.deps.json, code is 36, comment is 0, blank is 0.
+.Build\Lobby-Server\Lobby-Server.dll, it is a binary file.
+.Build\Lobby-Server\Lobby-Server.exe, it is a binary file.
+.Build\Lobby-Server\Lobby-Server.pdb, it is a binary file.
+.Build\Lobby-Server\Lobby-Server.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+.Build\Lobby-Server\Shared.dll, it is a binary file.
+.Build\Lobby-Server\Shared.pdb, it is a binary file.
+.Build\Matchmaker\config.json, code is 13, comment is 0, blank is 5.
+.Build\Matchmaker\Matchmaker.deps.json, code is 36, comment is 0, blank is 0.
+.Build\Matchmaker\Matchmaker.dll, it is a binary file.
+.Build\Matchmaker\Matchmaker.exe, it is a binary file.
+.Build\Matchmaker\Matchmaker.pdb, it is a binary file.
+.Build\Matchmaker\Matchmaker.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+.Build\Matchmaker\Shared.dll, it is a binary file.
+.Build\Matchmaker\Shared.pdb, it is a binary file.
+.Build\NoGui-Client\config.json, code is 13, comment is 0, blank is 5.
+.Build\NoGui-Client\Logs\NoGui-Client [27-05-22 21.29.14].log, code is 1, comment is 0, blank is 0.
+.Build\NoGui-Client\NoGui-Client.deps.json, code is 36, comment is 0, blank is 0.
+.Build\NoGui-Client\NoGui-Client.dll, it is a binary file.
+.Build\NoGui-Client\NoGui-Client.exe, it is a binary file.
+.Build\NoGui-Client\NoGui-Client.pdb, it is a binary file.
+.Build\NoGui-Client\NoGui-Client.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+.Build\NoGui-Client\Shared.dll, it is a binary file.
+.Build\NoGui-Client\Shared.pdb, it is a binary file.
+.Build\Server-Spooler\config.json, code is 13, comment is 0, blank is 5.
+.Build\Server-Spooler\Logs\Game-Server-0 [26-05-22 20.35.58].log, code is 10, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Game-Server-0 [27-05-22 12.27.20].log, code is 9, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Game-Server-0 [27-05-22 14.01.19].log, code is 9, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Game-Server-0 [28-05-22 18.00.32].log, code is 10, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Load-Balancer [26-05-22 20.35.58].log, code is 5, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Load-Balancer [27-05-22 12.27.19].log, code is 5, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Load-Balancer [27-05-22 14.01.16].log, code is 5, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Load-Balancer [28-05-22 18.00.31].log, code is 5, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Lobby-Server-0 [26-05-22 20.35.58].log, code is 19, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Lobby-Server-0 [27-05-22 12.27.19].log, code is 18, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Lobby-Server-0 [27-05-22 14.01.18].log, code is 21, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Lobby-Server-0 [28-05-22 18.00.32].log, code is 22, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Lobby-Server-1 [26-05-22 20.35.58].log, code is 19, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Lobby-Server-1 [27-05-22 12.27.20].log, code is 18, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Lobby-Server-1 [27-05-22 14.01.19].log, code is 21, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Lobby-Server-1 [28-05-22 18.00.32].log, code is 22, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Matchmaker [26-05-22 20.35.58].log, code is 5, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Matchmaker [27-05-22 12.27.19].log, code is 5, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Matchmaker [27-05-22 14.01.18].log, code is 5, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Matchmaker [28-05-22 18.00.32].log, code is 5, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [26-05-22 20.35.57].log, code is 1439, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [27-05-22 12.27.19].log, code is 1168, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [27-05-22 14.01.15].log, code is 115, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.00.31].log, code is 35, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.36.17].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.38.11].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.38.23].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.38.37].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.40.32].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.41.41].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.43.11].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.45.08].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.45.32].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.45.46].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.50.55].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.56.06].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.57.25].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 18.59.12].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 19.01.43].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 19.04.33].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 19.05.04].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 19.05.51].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 19.06.53].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Logs\Server-Spooler [28-05-22 19.07.10].log, code is 8, comment is 0, blank is 0.
+.Build\Server-Spooler\Server-Spooler.deps.json, code is 36, comment is 0, blank is 0.
+.Build\Server-Spooler\Server-Spooler.dll, it is a binary file.
+.Build\Server-Spooler\Server-Spooler.exe, it is a binary file.
+.Build\Server-Spooler\Server-Spooler.pdb, it is a binary file.
+.Build\Server-Spooler\Server-Spooler.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+.Build\Server-Spooler\Shared.dll, it is a binary file.
+.Build\Server-Spooler\Shared.pdb, it is a binary file.
+.Build\Shared\config.json, code is 13, comment is 0, blank is 5.
+.Build\Shared\Shared.deps.json, code is 23, comment is 0, blank is 0.
+.Build\Shared\Shared.dll, it is a binary file.
+.Build\Shared\Shared.pdb, it is a binary file.
+.Packet Generator\AutoPacketGenerator.py, code is 86, comment is 0, blank is 24.
+.vs\Scalable Game Servers\DesignTimeBuild\.dtbcache.v2, it is a binary file.
+.vs\Scalable Game Servers\v17\.futdcache.v1, it is a binary file.
+.vs\Scalable Game Servers\v17\.suo, it is a binary file.
+Architecture\GameServer.md, code is 6, comment is 0, blank is 3.
+Architecture\Protocols\DatabaseServer - All.md, code is 19, comment is 0, blank is 11.
+Architecture\Protocols\GameServer - Client.md, code is 3, comment is 0, blank is 2.
+Architecture\Protocols\LoadBalancer - Client.md, code is 15, comment is 0, blank is 4.
+Architecture\Protocols\LobbyServer - Client.md, code is 30, comment is 0, blank is 10.
+Architecture\Protocols\ServerSpooler - LoadBalancer.md, code is 9, comment is 0, blank is 4.
+Architecture\Protocols\ServerSpooler - LobbyServer.md, code is 5, comment is 0, blank is 2.
+Architecture\TODO.md, code is 1, comment is 0, blank is 0.
+base_config.json, code is 13, comment is 0, blank is 5.
+build_fast.py, code is 16, comment is 16, blank is 11.
+build_slow.py, code is 20, comment is 11, blank is 12.
+clear_logs.bat, code is 7, comment is 0, blank is 0.
+Database-Server\bin\Debug\net6.0\Database-Server.deps.json, code is 218, comment is 0, blank is 0.
+Database-Server\bin\Debug\net6.0\Database-Server.dll, it is a binary file.
+Database-Server\bin\Debug\net6.0\Database-Server.exe, it is a binary file.
+Database-Server\bin\Debug\net6.0\Database-Server.pdb, it is a binary file.
+Database-Server\bin\Debug\net6.0\Database-Server.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+Database-Server\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\alpine-x64\native\libe_sqlite3.so, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\linux-arm64\native\libe_sqlite3.so, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\linux-arm\native\libe_sqlite3.so, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\linux-armel\native\libe_sqlite3.so, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\linux-mips64\native\libe_sqlite3.so, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\linux-musl-x64\native\libe_sqlite3.so, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\linux-s390x\native\libe_sqlite3.so, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\linux-x64\native\libe_sqlite3.so, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\linux-x86\native\libe_sqlite3.so, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\osx-arm64\native\libe_sqlite3.dylib, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\osx-x64\native\libe_sqlite3.dylib, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\win-arm\native\e_sqlite3.dll, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll, it is a binary file.
+Database-Server\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll, it is a binary file.
+Database-Server\bin\Debug\net6.0\Shared.dll, it is a binary file.
+Database-Server\bin\Debug\net6.0\Shared.pdb, it is a binary file.
+Database-Server\bin\Debug\net6.0\SQLitePCLRaw.batteries_v2.dll, it is a binary file.
+Database-Server\bin\Debug\net6.0\SQLitePCLRaw.core.dll, it is a binary file.
+Database-Server\bin\Debug\net6.0\SQLitePCLRaw.provider.e_sqlite3.dll, it is a binary file.
+Database-Server\Database-Server.csproj, code is 15, comment is 0, blank is 4.
+Database-Server\DatabaseCommands.cs, code is 98, comment is 2, blank is 32.
+Database-Server\obj\Database-Server.csproj.nuget.dgspec.json, code is 124, comment is 0, blank is 10.
+Database-Server\obj\Database-Server.csproj.nuget.g.props, code is 13, comment is 0, blank is 0.
+Database-Server\obj\Database-Server.csproj.nuget.g.targets, code is 2, comment is 0, blank is 0.
+Database-Server\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs, code is 3, comment is 1, blank is 0.
+Database-Server\obj\Debug\net6.0\apphost.exe, it is a binary file.
+Database-Server\obj\Debug\net6.0\Database-Server.AssemblyInfo.cs, code is 9, comment is 9, blank is 4.
+Database-Server\obj\Debug\net6.0\Database-Server.AssemblyInfoInputs.cache, code is 1, comment is 0, blank is 0.
+Database-Server\obj\Debug\net6.0\Database-Server.assets.cache, it is a binary file.
+Database-Server\obj\Debug\net6.0\Database-Server.csproj.AssemblyReference.cache, it is a binary file.
+Database-Server\obj\Debug\net6.0\Database-Server.csproj.CopyComplete, code is 0, comment is 0, blank is 0.
+Database-Server\obj\Debug\net6.0\Database-Server.csproj.CoreCompileInputs.cache, code is 1, comment is 0, blank is 0.
+Database-Server\obj\Debug\net6.0\Database-Server.csproj.FileListAbsolute.txt, code is 74, comment is 0, blank is 0.
+Database-Server\obj\Debug\net6.0\Database-Server.dll, it is a binary file.
+Database-Server\obj\Debug\net6.0\Database-Server.GeneratedMSBuildEditorConfig.editorconfig, code is 10, comment is 0, blank is 0.
+Database-Server\obj\Debug\net6.0\Database-Server.genruntimeconfig.cache, code is 1, comment is 0, blank is 0.
+Database-Server\obj\Debug\net6.0\Database-Server.GlobalUsings.g.cs, code is 7, comment is 1, blank is 0.
+Database-Server\obj\Debug\net6.0\Database-Server.pdb, it is a binary file.
+Database-Server\obj\Debug\net6.0\ref\Database-Server.dll, it is a binary file.
+Database-Server\obj\Debug\net6.0\refint\Database-Server.dll, it is a binary file.
+Database-Server\obj\project.assets.json, code is 356, comment is 0, blank is 13.
+Database-Server\obj\project.nuget.cache, code is 16, comment is 0, blank is 1.
+Database-Server\Program.cs, code is 20, comment is 0, blank is 10.
+Database-Server\Server.cs, code is 99, comment is 0, blank is 24.
+delete_db.bat, code is 1, comment is 0, blank is 0.
+Game-Server\bin\Debug\net6.0\Game-Server.deps.json, code is 36, comment is 0, blank is 0.
+Game-Server\bin\Debug\net6.0\Game-Server.dll, it is a binary file.
+Game-Server\bin\Debug\net6.0\Game-Server.exe, it is a binary file.
+Game-Server\bin\Debug\net6.0\Game-Server.pdb, it is a binary file.
+Game-Server\bin\Debug\net6.0\Game-Server.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+Game-Server\bin\Debug\net6.0\Shared.dll, it is a binary file.
+Game-Server\bin\Debug\net6.0\Shared.pdb, it is a binary file.
+Game-Server\Game-Server.csproj, code is 12, comment is 0, blank is 3.
+Game-Server\Game.cs, code is 51, comment is 3, blank is 23.
+Game-Server\GamePlayer.cs, code is 26, comment is 1, blank is 8.
+Game-Server\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs, code is 3, comment is 1, blank is 0.
+Game-Server\obj\Debug\net6.0\apphost.exe, it is a binary file.
+Game-Server\obj\Debug\net6.0\Game-Server.AssemblyInfo.cs, code is 9, comment is 9, blank is 4.
+Game-Server\obj\Debug\net6.0\Game-Server.AssemblyInfoInputs.cache, code is 1, comment is 0, blank is 0.
+Game-Server\obj\Debug\net6.0\Game-Server.assets.cache, it is a binary file.
+Game-Server\obj\Debug\net6.0\Game-Server.csproj.AssemblyReference.cache, it is a binary file.
+Game-Server\obj\Debug\net6.0\Game-Server.csproj.CopyComplete, code is 0, comment is 0, blank is 0.
+Game-Server\obj\Debug\net6.0\Game-Server.csproj.CoreCompileInputs.cache, code is 1, comment is 0, blank is 0.
+Game-Server\obj\Debug\net6.0\Game-Server.csproj.FileListAbsolute.txt, code is 54, comment is 0, blank is 0.
+Game-Server\obj\Debug\net6.0\Game-Server.dll, it is a binary file.
+Game-Server\obj\Debug\net6.0\Game-Server.GeneratedMSBuildEditorConfig.editorconfig, code is 10, comment is 0, blank is 0.
+Game-Server\obj\Debug\net6.0\Game-Server.genruntimeconfig.cache, code is 1, comment is 0, blank is 0.
+Game-Server\obj\Debug\net6.0\Game-Server.GlobalUsings.g.cs, code is 7, comment is 1, blank is 0.
+Game-Server\obj\Debug\net6.0\Game-Server.pdb, it is a binary file.
+Game-Server\obj\Debug\net6.0\ref\Game-Server.dll, it is a binary file.
+Game-Server\obj\Debug\net6.0\refint\Game-Server.dll, it is a binary file.
+Game-Server\obj\Game-Server.csproj.nuget.dgspec.json, code is 118, comment is 0, blank is 10.
+Game-Server\obj\Game-Server.csproj.nuget.g.props, code is 13, comment is 0, blank is 0.
+Game-Server\obj\Game-Server.csproj.nuget.g.targets, code is 2, comment is 0, blank is 0.
+Game-Server\obj\project.assets.json, code is 89, comment is 0, blank is 6.
+Game-Server\obj\project.nuget.cache, code is 9, comment is 0, blank is 1.
+Game-Server\Packets.txt, code is 0, comment is 0, blank is 0.
+Game-Server\Program.cs, code is 54, comment is 2, blank is 18.
+Game-Server\Server.cs, code is 142, comment is 4, blank is 41.
+Game-Server\SpoolerInterfaceGameServer.cs, code is 12, comment is 0, blank is 3.
+Load-Balancer\bin\Debug\net6.0\Load-Balancer.deps.json, code is 36, comment is 0, blank is 0.
+Load-Balancer\bin\Debug\net6.0\Load-Balancer.dll, it is a binary file.
+Load-Balancer\bin\Debug\net6.0\Load-Balancer.exe, it is a binary file.
+Load-Balancer\bin\Debug\net6.0\Load-Balancer.pdb, it is a binary file.
+Load-Balancer\bin\Debug\net6.0\Load-Balancer.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+Load-Balancer\bin\Debug\net6.0\Shared.dll, it is a binary file.
+Load-Balancer\bin\Debug\net6.0\Shared.pdb, it is a binary file.
+Load-Balancer\Load-Balancer.csproj, code is 12, comment is 0, blank is 3.
+Load-Balancer\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs, code is 3, comment is 1, blank is 0.
+Load-Balancer\obj\Debug\net6.0\apphost.exe, it is a binary file.
+Load-Balancer\obj\Debug\net6.0\Load-Balancer.AssemblyInfo.cs, code is 9, comment is 9, blank is 4.
+Load-Balancer\obj\Debug\net6.0\Load-Balancer.AssemblyInfoInputs.cache, code is 1, comment is 0, blank is 0.
+Load-Balancer\obj\Debug\net6.0\Load-Balancer.assets.cache, it is a binary file.
+Load-Balancer\obj\Debug\net6.0\Load-Balancer.csproj.AssemblyReference.cache, it is a binary file.
+Load-Balancer\obj\Debug\net6.0\Load-Balancer.csproj.CopyComplete, code is 0, comment is 0, blank is 0.
+Load-Balancer\obj\Debug\net6.0\Load-Balancer.csproj.CoreCompileInputs.cache, code is 1, comment is 0, blank is 0.
+Load-Balancer\obj\Debug\net6.0\Load-Balancer.csproj.FileListAbsolute.txt, code is 54, comment is 0, blank is 0.
+Load-Balancer\obj\Debug\net6.0\Load-Balancer.dll, it is a binary file.
+Load-Balancer\obj\Debug\net6.0\Load-Balancer.GeneratedMSBuildEditorConfig.editorconfig, code is 10, comment is 0, blank is 0.
+Load-Balancer\obj\Debug\net6.0\Load-Balancer.genruntimeconfig.cache, code is 1, comment is 0, blank is 0.
+Load-Balancer\obj\Debug\net6.0\Load-Balancer.GlobalUsings.g.cs, code is 7, comment is 1, blank is 0.
+Load-Balancer\obj\Debug\net6.0\Load-Balancer.pdb, it is a binary file.
+Load-Balancer\obj\Debug\net6.0\ref\Load-Balancer.dll, it is a binary file.
+Load-Balancer\obj\Debug\net6.0\refint\Load-Balancer.dll, it is a binary file.
+Load-Balancer\obj\Load-Balancer.csproj.nuget.dgspec.json, code is 118, comment is 0, blank is 10.
+Load-Balancer\obj\Load-Balancer.csproj.nuget.g.props, code is 13, comment is 0, blank is 0.
+Load-Balancer\obj\Load-Balancer.csproj.nuget.g.targets, code is 2, comment is 0, blank is 0.
+Load-Balancer\obj\project.assets.json, code is 89, comment is 0, blank is 6.
+Load-Balancer\obj\project.nuget.cache, code is 9, comment is 0, blank is 1.
+Load-Balancer\Packets.txt, code is 0, comment is 0, blank is 0.
+Load-Balancer\Program.cs, code is 74, comment is 2, blank is 21.
+Load-Balancer\Server.cs, code is 70, comment is 6, blank is 20.
+Load-Balancer\SpoolerInterfaceLoadBalancer.cs, code is 25, comment is 1, blank is 6.
+Lobby-Server\bin\Debug\net6.0\Lobby-Server.deps.json, code is 36, comment is 0, blank is 0.
+Lobby-Server\bin\Debug\net6.0\Lobby-Server.dll, it is a binary file.
+Lobby-Server\bin\Debug\net6.0\Lobby-Server.exe, it is a binary file.
+Lobby-Server\bin\Debug\net6.0\Lobby-Server.pdb, it is a binary file.
+Lobby-Server\bin\Debug\net6.0\Lobby-Server.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+Lobby-Server\bin\Debug\net6.0\Shared.dll, it is a binary file.
+Lobby-Server\bin\Debug\net6.0\Shared.pdb, it is a binary file.
+Lobby-Server\Lobby-Server.csproj, code is 12, comment is 0, blank is 3.
+Lobby-Server\LobbyPlayer.cs, code is 22, comment is 1, blank is 7.
+Lobby-Server\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs, code is 3, comment is 1, blank is 0.
+Lobby-Server\obj\Debug\net6.0\apphost.exe, it is a binary file.
+Lobby-Server\obj\Debug\net6.0\Lobby-Server.AssemblyInfo.cs, code is 9, comment is 9, blank is 4.
+Lobby-Server\obj\Debug\net6.0\Lobby-Server.AssemblyInfoInputs.cache, code is 1, comment is 0, blank is 0.
+Lobby-Server\obj\Debug\net6.0\Lobby-Server.assets.cache, it is a binary file.
+Lobby-Server\obj\Debug\net6.0\Lobby-Server.csproj.AssemblyReference.cache, it is a binary file.
+Lobby-Server\obj\Debug\net6.0\Lobby-Server.csproj.CopyComplete, code is 0, comment is 0, blank is 0.
+Lobby-Server\obj\Debug\net6.0\Lobby-Server.csproj.CoreCompileInputs.cache, code is 1, comment is 0, blank is 0.
+Lobby-Server\obj\Debug\net6.0\Lobby-Server.csproj.FileListAbsolute.txt, code is 54, comment is 0, blank is 0.
+Lobby-Server\obj\Debug\net6.0\Lobby-Server.dll, it is a binary file.
+Lobby-Server\obj\Debug\net6.0\Lobby-Server.GeneratedMSBuildEditorConfig.editorconfig, code is 10, comment is 0, blank is 0.
+Lobby-Server\obj\Debug\net6.0\Lobby-Server.genruntimeconfig.cache, code is 1, comment is 0, blank is 0.
+Lobby-Server\obj\Debug\net6.0\Lobby-Server.GlobalUsings.g.cs, code is 7, comment is 1, blank is 0.
+Lobby-Server\obj\Debug\net6.0\Lobby-Server.pdb, it is a binary file.
+Lobby-Server\obj\Debug\net6.0\ref\Lobby-Server.dll, it is a binary file.
+Lobby-Server\obj\Debug\net6.0\refint\Lobby-Server.dll, it is a binary file.
+Lobby-Server\obj\Lobby-Server.csproj.nuget.dgspec.json, code is 118, comment is 0, blank is 10.
+Lobby-Server\obj\Lobby-Server.csproj.nuget.g.props, code is 13, comment is 0, blank is 0.
+Lobby-Server\obj\Lobby-Server.csproj.nuget.g.targets, code is 2, comment is 0, blank is 0.
+Lobby-Server\obj\project.assets.json, code is 89, comment is 0, blank is 6.
+Lobby-Server\obj\project.nuget.cache, code is 9, comment is 0, blank is 1.
+Lobby-Server\Packets.txt, code is 0, comment is 0, blank is 0.
+Lobby-Server\Program.cs, code is 60, comment is 2, blank is 18.
+Lobby-Server\Server.cs, code is 136, comment is 3, blank is 32.
+Lobby-Server\SpoolerInterfaceLobbyServer.cs, code is 13, comment is 0, blank is 3.
+Matchmaker\bin\Debug\net6.0\Matchmaker.deps.json, code is 36, comment is 0, blank is 0.
+Matchmaker\bin\Debug\net6.0\Matchmaker.dll, it is a binary file.
+Matchmaker\bin\Debug\net6.0\Matchmaker.exe, it is a binary file.
+Matchmaker\bin\Debug\net6.0\Matchmaker.pdb, it is a binary file.
+Matchmaker\bin\Debug\net6.0\Matchmaker.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+Matchmaker\bin\Debug\net6.0\Shared.dll, it is a binary file.
+Matchmaker\bin\Debug\net6.0\Shared.pdb, it is a binary file.
+Matchmaker\Matchmaker.csproj, code is 11, comment is 0, blank is 3.
+Matchmaker\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs, code is 3, comment is 1, blank is 0.
+Matchmaker\obj\Debug\net6.0\apphost.exe, it is a binary file.
+Matchmaker\obj\Debug\net6.0\Matchmaker.AssemblyInfo.cs, code is 9, comment is 9, blank is 4.
+Matchmaker\obj\Debug\net6.0\Matchmaker.AssemblyInfoInputs.cache, code is 1, comment is 0, blank is 0.
+Matchmaker\obj\Debug\net6.0\Matchmaker.assets.cache, it is a binary file.
+Matchmaker\obj\Debug\net6.0\Matchmaker.csproj.AssemblyReference.cache, it is a binary file.
+Matchmaker\obj\Debug\net6.0\Matchmaker.csproj.CopyComplete, code is 0, comment is 0, blank is 0.
+Matchmaker\obj\Debug\net6.0\Matchmaker.csproj.CoreCompileInputs.cache, code is 1, comment is 0, blank is 0.
+Matchmaker\obj\Debug\net6.0\Matchmaker.csproj.FileListAbsolute.txt, code is 54, comment is 0, blank is 0.
+Matchmaker\obj\Debug\net6.0\Matchmaker.dll, it is a binary file.
+Matchmaker\obj\Debug\net6.0\Matchmaker.GeneratedMSBuildEditorConfig.editorconfig, code is 10, comment is 0, blank is 0.
+Matchmaker\obj\Debug\net6.0\Matchmaker.genruntimeconfig.cache, code is 1, comment is 0, blank is 0.
+Matchmaker\obj\Debug\net6.0\Matchmaker.GlobalUsings.g.cs, code is 7, comment is 1, blank is 0.
+Matchmaker\obj\Debug\net6.0\Matchmaker.pdb, it is a binary file.
+Matchmaker\obj\Debug\net6.0\ref\Matchmaker.dll, it is a binary file.
+Matchmaker\obj\Debug\net6.0\refint\Matchmaker.dll, it is a binary file.
+Matchmaker\obj\Matchmaker.csproj.nuget.dgspec.json, code is 118, comment is 0, blank is 10.
+Matchmaker\obj\Matchmaker.csproj.nuget.g.props, code is 13, comment is 0, blank is 0.
+Matchmaker\obj\Matchmaker.csproj.nuget.g.targets, code is 2, comment is 0, blank is 0.
+Matchmaker\obj\project.assets.json, code is 89, comment is 0, blank is 6.
+Matchmaker\obj\project.nuget.cache, code is 9, comment is 0, blank is 1.
+Matchmaker\Packets.txt, code is 0, comment is 0, blank is 0.
+Matchmaker\Program.cs, code is 72, comment is 2, blank is 20.
+Matchmaker\Server.cs, code is 70, comment is 6, blank is 20.
+Matchmaker\SpoolerInterfaceMatchmaker.cs, code is 22, comment is 1, blank is 5.
+namespace_enforcer.py, code is 19, comment is 0, blank is 8.
+NoGui-Client\bin\Debug\net6.0\NoGui-Client.deps.json, code is 36, comment is 0, blank is 0.
+NoGui-Client\bin\Debug\net6.0\NoGui-Client.dll, it is a binary file.
+NoGui-Client\bin\Debug\net6.0\NoGui-Client.exe, it is a binary file.
+NoGui-Client\bin\Debug\net6.0\NoGui-Client.pdb, it is a binary file.
+NoGui-Client\bin\Debug\net6.0\NoGui-Client.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+NoGui-Client\bin\Debug\net6.0\Shared.dll, it is a binary file.
+NoGui-Client\bin\Debug\net6.0\Shared.pdb, it is a binary file.
+NoGui-Client\GameServerClient.cs, code is 80, comment is 9, blank is 25.
+NoGui-Client\LoadBalancerClient.cs, code is 57, comment is 2, blank is 13.
+NoGui-Client\LobbyServerClient.cs, code is 62, comment is 2, blank is 13.
+NoGui-Client\MatchmakerClient.cs, code is 57, comment is 2, blank is 13.
+NoGui-Client\NetworkController.cs, code is 67, comment is 2, blank is 10.
+NoGui-Client\NoGui-Client.csproj, code is 11, comment is 0, blank is 3.
+NoGui-Client\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs, code is 3, comment is 1, blank is 0.
+NoGui-Client\obj\Debug\net6.0\apphost.exe, it is a binary file.
+NoGui-Client\obj\Debug\net6.0\NoGui-Client.AssemblyInfo.cs, code is 9, comment is 9, blank is 4.
+NoGui-Client\obj\Debug\net6.0\NoGui-Client.AssemblyInfoInputs.cache, code is 1, comment is 0, blank is 0.
+NoGui-Client\obj\Debug\net6.0\NoGui-Client.assets.cache, it is a binary file.
+NoGui-Client\obj\Debug\net6.0\NoGui-Client.csproj.AssemblyReference.cache, it is a binary file.
+NoGui-Client\obj\Debug\net6.0\NoGui-Client.csproj.CopyComplete, code is 0, comment is 0, blank is 0.
+NoGui-Client\obj\Debug\net6.0\NoGui-Client.csproj.CoreCompileInputs.cache, code is 1, comment is 0, blank is 0.
+NoGui-Client\obj\Debug\net6.0\NoGui-Client.csproj.FileListAbsolute.txt, code is 54, comment is 0, blank is 0.
+NoGui-Client\obj\Debug\net6.0\NoGui-Client.dll, it is a binary file.
+NoGui-Client\obj\Debug\net6.0\NoGui-Client.GeneratedMSBuildEditorConfig.editorconfig, code is 10, comment is 0, blank is 0.
+NoGui-Client\obj\Debug\net6.0\NoGui-Client.genruntimeconfig.cache, code is 1, comment is 0, blank is 0.
+NoGui-Client\obj\Debug\net6.0\NoGui-Client.GlobalUsings.g.cs, code is 7, comment is 1, blank is 0.
+NoGui-Client\obj\Debug\net6.0\NoGui-Client.pdb, it is a binary file.
+NoGui-Client\obj\Debug\net6.0\ref\NoGui-Client.dll, it is a binary file.
+NoGui-Client\obj\Debug\net6.0\refint\NoGui-Client.dll, it is a binary file.
+NoGui-Client\obj\NoGui-Client.csproj.nuget.dgspec.json, code is 118, comment is 0, blank is 10.
+NoGui-Client\obj\NoGui-Client.csproj.nuget.g.props, code is 13, comment is 0, blank is 0.
+NoGui-Client\obj\NoGui-Client.csproj.nuget.g.targets, code is 2, comment is 0, blank is 0.
+NoGui-Client\obj\project.assets.json, code is 89, comment is 0, blank is 6.
+NoGui-Client\obj\project.nuget.cache, code is 9, comment is 0, blank is 1.
+NoGui-Client\Packets.txt, code is 1, comment is 0, blank is 0.
+NoGui-Client\Program.cs, code is 46, comment is 1, blank is 15.
+Readme.md, code is 1, comment is 0, blank is 0.
+run.py, code is 3, comment is 2, blank is 2.
+run_client.py, code is 3, comment is 0, blank is 1.
+run_database.py, code is 3, comment is 0, blank is 1.
+Scalable Game Servers.sln, code is 72, comment is 0, blank is 0.
+Server-Spooler\bin\Debug\net6.0\Server-Spooler.deps.json, code is 36, comment is 0, blank is 0.
+Server-Spooler\bin\Debug\net6.0\Server-Spooler.dll, it is a binary file.
+Server-Spooler\bin\Debug\net6.0\Server-Spooler.exe, it is a binary file.
+Server-Spooler\bin\Debug\net6.0\Server-Spooler.pdb, it is a binary file.
+Server-Spooler\bin\Debug\net6.0\Server-Spooler.runtimeconfig.json, code is 9, comment is 0, blank is 0.
+Server-Spooler\bin\Debug\net6.0\Shared.dll, it is a binary file.
+Server-Spooler\bin\Debug\net6.0\Shared.pdb, it is a binary file.
+Server-Spooler\InfoManager.cs, code is 35, comment is 0, blank is 8.
+Server-Spooler\Listener.cs, code is 50, comment is 0, blank is 25.
+Server-Spooler\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs, code is 3, comment is 1, blank is 0.
+Server-Spooler\obj\Debug\net6.0\apphost.exe, it is a binary file.
+Server-Spooler\obj\Debug\net6.0\ref\Server-Spooler.dll, it is a binary file.
+Server-Spooler\obj\Debug\net6.0\refint\Server-Spooler.dll, it is a binary file.
+Server-Spooler\obj\Debug\net6.0\Server-Spooler.AssemblyInfo.cs, code is 9, comment is 9, blank is 4.
+Server-Spooler\obj\Debug\net6.0\Server-Spooler.AssemblyInfoInputs.cache, code is 1, comment is 0, blank is 0.
+Server-Spooler\obj\Debug\net6.0\Server-Spooler.assets.cache, it is a binary file.
+Server-Spooler\obj\Debug\net6.0\Server-Spooler.csproj.AssemblyReference.cache, it is a binary file.
+Server-Spooler\obj\Debug\net6.0\Server-Spooler.csproj.CopyComplete, code is 0, comment is 0, blank is 0.
+Server-Spooler\obj\Debug\net6.0\Server-Spooler.csproj.CoreCompileInputs.cache, code is 1, comment is 0, blank is 0.
+Server-Spooler\obj\Debug\net6.0\Server-Spooler.csproj.FileListAbsolute.txt, code is 54, comment is 0, blank is 0.
+Server-Spooler\obj\Debug\net6.0\Server-Spooler.dll, it is a binary file.
+Server-Spooler\obj\Debug\net6.0\Server-Spooler.GeneratedMSBuildEditorConfig.editorconfig, code is 10, comment is 0, blank is 0.
+Server-Spooler\obj\Debug\net6.0\Server-Spooler.genruntimeconfig.cache, code is 1, comment is 0, blank is 0.
+Server-Spooler\obj\Debug\net6.0\Server-Spooler.GlobalUsings.g.cs, code is 7, comment is 1, blank is 0.
+Server-Spooler\obj\Debug\net6.0\Server-Spooler.pdb, it is a binary file.
+Server-Spooler\obj\project.assets.json, code is 89, comment is 0, blank is 6.
+Server-Spooler\obj\project.nuget.cache, code is 9, comment is 0, blank is 1.
+Server-Spooler\obj\Server-Spooler.csproj.nuget.dgspec.json, code is 118, comment is 0, blank is 10.
+Server-Spooler\obj\Server-Spooler.csproj.nuget.g.props, code is 13, comment is 0, blank is 0.
+Server-Spooler\obj\Server-Spooler.csproj.nuget.g.targets, code is 2, comment is 0, blank is 0.
+Server-Spooler\Program.cs, code is 141, comment is 4, blank is 40.
+Server-Spooler\Server-Spooler.csproj, code is 12, comment is 0, blank is 3.
+Server-Spooler\ServerStarter.cs, code is 168, comment is 2, blank is 31.
+Server-Spooler\Transciever.cs, code is 68, comment is 8, blank is 13.
+Shared\bin\Debug\net6.0\Shared.deps.json, code is 23, comment is 0, blank is 0.
+Shared\bin\Debug\net6.0\Shared.dll, it is a binary file.
+Shared\bin\Debug\net6.0\Shared.pdb, it is a binary file.
+Shared\ByteIP.cs, code is 35, comment is 0, blank is 14.
+Shared\ConsoleInputUtil.cs, code is 70, comment is 0, blank is 11.
+Shared\DatabaseInterface.cs, code is 41, comment is 1, blank is 16.
+Shared\DatabasePlayer.cs, code is 23, comment is 0, blank is 6.
+Shared\Extentions\ArrayExtentions.cs, code is 59, comment is 1, blank is 9.
+Shared\Extentions\StringExtentions.cs, code is 7, comment is 0, blank is 1.
+Shared\GetConfig.cs, code is 66, comment is 15, blank is 22.
+Shared\Logger.cs, code is 141, comment is 2, blank is 21.
+Shared\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs, code is 3, comment is 1, blank is 0.
+Shared\obj\Debug\net6.0\ref\Shared.dll, it is a binary file.
+Shared\obj\Debug\net6.0\refint\Shared.dll, it is a binary file.
+Shared\obj\Debug\net6.0\Shared.AssemblyInfo.cs, code is 9, comment is 9, blank is 4.
+Shared\obj\Debug\net6.0\Shared.AssemblyInfoInputs.cache, code is 1, comment is 0, blank is 0.
+Shared\obj\Debug\net6.0\Shared.assets.cache, it is a binary file.
+Shared\obj\Debug\net6.0\Shared.csproj.AssemblyReference.cache, it is a binary file.
+Shared\obj\Debug\net6.0\Shared.csproj.CoreCompileInputs.cache, code is 1, comment is 0, blank is 0.
+Shared\obj\Debug\net6.0\Shared.csproj.FileListAbsolute.txt, code is 36, comment is 0, blank is 0.
+Shared\obj\Debug\net6.0\Shared.dll, it is a binary file.
+Shared\obj\Debug\net6.0\Shared.GeneratedMSBuildEditorConfig.editorconfig, code is 10, comment is 0, blank is 0.
+Shared\obj\Debug\net6.0\Shared.GlobalUsings.g.cs, code is 7, comment is 1, blank is 0.
+Shared\obj\Debug\net6.0\Shared.pdb, it is a binary file.
+Shared\obj\project.assets.json, code is 67, comment is 0, blank is 5.
+Shared\obj\project.nuget.cache, code is 8, comment is 0, blank is 0.
+Shared\obj\Shared.csproj.nuget.dgspec.json, code is 61, comment is 0, blank is 5.
+Shared\obj\Shared.csproj.nuget.g.props, code is 13, comment is 0, blank is 0.
+Shared\obj\Shared.csproj.nuget.g.targets, code is 2, comment is 0, blank is 0.
+Shared\PacketManager.cs, code is 89, comment is 6, blank is 21.
+Shared\Packets\NoGui-Client\0_ClientConnectRequestPacket.cs, code is 21, comment is 0, blank is 2.
+Shared\Shared.csproj, code is 7, comment is 0, blank is 2.
+Shared\SocketExtentions.cs, code is 16, comment is 0, blank is 2.
+Shared\SpoolerInterface.cs, code is 47, comment is 0, blank is 16.
+Shared\Timer.cs, code is 17, comment is 0, blank is 5.
+Shared\UnifiedPacketSystem.csunused, code is 10, comment is 0, blank is 4.
+update_config.py, code is 20, comment is 11, blank is 12.
+===============================================================================

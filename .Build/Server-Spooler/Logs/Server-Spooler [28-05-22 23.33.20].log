@@ -1,0 +1,66 @@
+[28/05/22 23:33:20:3482474] [INFO ]: Logging started
+[28/05/22 23:33:20:3710359] [INFO ]: Starting Load Balancer
+[28/05/22 23:33:20:4765495] [INFO ]: Waiting for Load Balancer response
+[28/05/22 23:33:20:4777894] [INFO ]: Accepting client
+[28/05/22 23:33:20:4816001] [INFO ]: Accepting connection
+[28/05/22 23:33:20:6050292] [INFO ]: Connection established
+[28/05/22 23:33:20:6057096] [INFO ]: Connected in 128ms
+[28/05/22 23:33:20:6059075] [INFO ]: Starting Matchmaker
+[28/05/22 23:33:20:6401596] [INFO ]: Waiting for Matchmaker response
+[28/05/22 23:33:20:6404983] [INFO ]: Accepting client
+[28/05/22 23:33:20:6406771] [INFO ]: Accepting connection
+[28/05/22 23:33:20:7596898] [INFO ]: Connection established
+[28/05/22 23:33:20:7601842] [INFO ]: Connected in 119ms
+[28/05/22 23:33:20:7766022] [INFO ]: Starting lobby 0 on port 10123
+[28/05/22 23:33:20:8109163] [INFO ]: Accepting client
+[28/05/22 23:33:20:8114288] [INFO ]: Accepting connection
+[28/05/22 23:33:20:9295651] [INFO ]: Connection established
+[28/05/22 23:33:20:9302078] [INFO ]: Starting lobby 1 on port 10124
+[28/05/22 23:33:20:9376484] [INFO ]: Accepting client
+[28/05/22 23:33:20:9378605] [INFO ]: Accepting connection
+[28/05/22 23:33:21:0224697] [INFO ]: Connection established
+[28/05/22 23:33:21:0231338] [INFO ]: Starting game server 0 on port 20123
+[28/05/22 23:33:21:0584332] [INFO ]: Accepting client
+[28/05/22 23:33:21:0587600] [INFO ]: Accepting connection
+[28/05/22 23:33:21:1929084] [INFO ]: Connection established
+[28/05/22 23:33:21:1935190] [WARN ]: Update [432ms] took longer than update interval [100ms]
+[28/05/22 23:33:22:8159335] [INFO+]: ----------INFO START----------
+[28/05/22 23:33:22:8163146] [INFO ]: Full update / target update interval =  [0/100ms]
+[28/05/22 23:33:22:8164868] [INFO ]: Starting Lobby Servers took [0ms]
+[28/05/22 23:33:22:8166506] [INFO ]: Stopping Lobby Servers took [0ms]
+[28/05/22 23:33:22:8168000] [INFO ]: Starting Game Servers took [0ms]
+[28/05/22 23:33:22:8169887] [INFO ]: Starting Game Servers took [0ms]
+[28/05/22 23:33:22:8171610] [INFO ]: 
+[28/05/22 23:33:22:8173274] [INFO ]: Server Spooler:
+[28/05/22 23:33:22:8174812] [INFO ]:  | >IP: 127.0.0.1:5105
+[28/05/22 23:33:22:8176721] [INFO ]: Load Balancer [0ms]:
+[28/05/22 23:33:22:8178446] [INFO ]:  | >IP: 127.0.0.1:7107
+[28/05/22 23:33:22:8179985] [INFO ]:  | >Queue Length: 0
+[28/05/22 23:33:22:8181518] [INFO ]: Lobby Servers [0ms]: 
+[28/05/22 23:33:22:8182991] [INFO ]:  | Lobby Server [0] [0ms]: 
+[28/05/22 23:33:22:8184368] [INFO ]:  | | >IP: 127.0.0.1:10123
+[28/05/22 23:33:22:8186042] [INFO ]:  | | >Fill Level: 0/2
+[28/05/22 23:33:22:8187450] [INFO ]:  | Lobby Server [1] [0ms]: 
+[28/05/22 23:33:22:8189102] [INFO ]:  | | >IP: 127.0.0.1:10124
+[28/05/22 23:33:22:8190681] [INFO ]:  | | >Fill Level: 0/2
+[28/05/22 23:33:22:8192219] [INFO ]: Matchmaker [0ms]:
+[28/05/22 23:33:22:8193689] [INFO ]:  | >IP: 127.0.0.1:6106
+[28/05/22 23:33:22:8195323] [INFO ]:  | >Queue Length: 0
+[28/05/22 23:33:22:8196974] [INFO ]: Game Servers [0ms]: 
+[28/05/22 23:33:22:8198592] [INFO ]:  | Game Server [0] [0ms]: 
+[28/05/22 23:33:22:8200252] [INFO ]:  | | >IP: 127.0.0.1:20123
+[28/05/22 23:33:22:8201879] [INFO ]:  | | >Fill Level: 0/2
+[28/05/22 23:33:22:8203550] [INFO ]: ----------INFO ENDS----------
+[28/05/22 23:33:24:8859364] [ERROR]: Error in main transcieve loop
+[28/05/22 23:33:24:8997534] [ERROR]: System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.Socket.Send(Byte[] buffer)
+   at ServerSpooler.Transciever.LobbyServersTranscieve() in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Server-Spooler\Transciever.cs:line 70
+   at ServerSpooler.Program.Main(String[] args) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Server-Spooler\Program.cs:line 93
+[28/05/22 23:33:24:9005899] [INFO ]: Shutting down network
+[28/05/22 23:33:24:9008031] [INFO ]: Giving time for graceful shutdown
+[28/05/22 23:33:25:9056025] [INFO ]: Terminating processes
+[28/05/22 23:33:25:9063320] [INFO ]: Killing Load Balancer
+[28/05/22 23:33:25:9070790] [INFO ]: Killing Matchmaker
+[28/05/22 23:33:25:9073712] [INFO ]: Killing lobby servers
+[28/05/22 23:33:25:9075543] [INFO ]: Killing game servers
+[28/05/22 23:33:25:9078343] [WARN ]: Shutting down logging

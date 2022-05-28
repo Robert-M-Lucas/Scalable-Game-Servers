@@ -2,8 +2,8 @@
 
 All strings will be ASCII
 
-Name length 16 characters (16 bytes)
-Password length 16 character (16 bytes)
+Name length 8 - 16 characters (16 bytes) (not case sensitive)
+Password length 8 - 16 character (16 bytes)
 
 ## Name and password requirements
 

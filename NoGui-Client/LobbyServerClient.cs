@@ -34,8 +34,31 @@ public class LobbyServerClient {
 
         Logger.LogDebug("Socket connected to " + Handler.RemoteEndPoint.ToString());
 
+        byte[] init_connect = new byte[32];
+
+        init_connect = ArrayExtentions.Merge(init_connect, Encoding.ASCII.GetBytes(Program.ClientName), 0);
+        init_connect = ArrayExtentions.Merge(init_connect, Encoding.ASCII.GetBytes(Program.ClientPassword), 16);
+
         // Send connection data
-        Handler.Send(ArrayExtentions.Merge(new byte[10], Encoding.ASCII.GetBytes(Program.ClientName)));
+        Handler.Send(init_connect);
+
+        byte[] response_type = new byte[1];
+
+        Handler.Receive(response_type, 0, 1, 0);
+
+        if ((uint) response_type[0] == (uint) 0) {
+            Logger.LogError("Incorrect password");
+            return 0;
+        }
+        else if ((uint) response_type[0] == (uint) 2) {
+            Logger.LogImportant("Account created");
+        }
+        Logger.LogInfo("Logged in");
+
+        byte[] currency_amount = new byte[4];
+        Handler.Receive(currency_amount);
+
+        Logger.LogInfo($"Currency: {BitConverter.ToInt32(currency_amount)}");
 
         try {
             while (true) {
@@ -57,10 +80,10 @@ public class LobbyServerClient {
         Logger.LogDebug("Sending echo request");
         Timer t = new Timer();
         socket.Send(new byte[] {(byte) (uint) 3, (byte) (uint) 0, (byte) (uint) 1});
-        byte[] buffer = new byte[13];
+        byte[] buffer = new byte[19];
         Logger.LogDebug("Waiting for echo response");
-        socket.Receive(buffer, 0, 13, 0);
-        string name = Encoding.ASCII.GetString(ArrayExtentions.Slice(buffer, 3, 13));
+        socket.Receive(buffer, 0, 19, 0);
+        string name = Encoding.ASCII.GetString(ArrayExtentions.Slice(buffer, 3, 19));
         Logger.LogImportant($"Recieved name [{name}] in {t.GetMs()}ms");
     }
 

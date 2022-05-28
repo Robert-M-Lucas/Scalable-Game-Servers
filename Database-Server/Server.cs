@@ -65,7 +65,16 @@ public class Server {
         if (ar.AsyncState is null) { throw new NullReferenceException(); }
         Client client = (Client) ar.AsyncState;
         
-        client.buffer_cursor += client.socket.EndReceive(ar);
+        try {
+            client.buffer_cursor += client.socket.EndReceive(ar);
+        }
+        catch (SocketException se) {
+            Logger.LogError("Client disconnected due to error:");
+            Logger.LogError(se);
+            Clients.Remove(client);
+            return;
+        }
+        
 
         if (client.buffer_cursor >= 2) {
             uint packet_len = (uint) client.buffer[0] + (uint) (client.buffer[1]<<8);
