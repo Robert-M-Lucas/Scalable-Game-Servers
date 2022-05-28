@@ -1,0 +1,1 @@
+del /S /F /Q .Build\Database-Server\Main.db

@@ -1,0 +1,6 @@
+[28/05/22 17:59:53:6908035] [INFO ]: Logging started
+[28/05/22 17:59:53:6931471] [INFO ]: Creating table
+[28/05/22 17:59:53:8457366] [INFO+]: Player [Name: playerOne, Password: password, ID: 1, CurrencyAmount: 0] created
+[28/05/22 17:59:53:8546882] [INFO+]: Player [Name: playerTwo, Password: password, ID: 2, CurrencyAmount: 0] created
+[28/05/22 17:59:53:8549116] [INFO ]: Done
+[28/05/22 17:59:53:8553425] [WARN ]: Shutting down logging

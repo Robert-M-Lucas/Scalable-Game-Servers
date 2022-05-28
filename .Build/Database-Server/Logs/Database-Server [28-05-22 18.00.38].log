@@ -1,0 +1,6 @@
+[28/05/22 18:00:38:0130972] [INFO ]: Logging started
+[28/05/22 18:00:38:0151351] [INFO ]: Creating table
+[28/05/22 18:00:38:1667059] [INFO ]: Player playerOne tried to log in with password password1 when actual password is password
+[28/05/22 18:00:38:1675713] [INFO ]: Player [Name: playerTwo, Password: password, ID: 2, CurrencyAmount: 0] retrieved from database
+[28/05/22 18:00:38:1677521] [INFO ]: Done
+[28/05/22 18:00:38:1681083] [WARN ]: Shutting down logging

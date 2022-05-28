@@ -43,6 +43,12 @@
             "command": "clear_logs.bat",
             "type": "process",
             "args": []
+        },
+        {
+            "label": "Delete Database",
+            "command": "delete_db.bat",
+            "type": "process",
+            "args": []
         }
     ]
 }

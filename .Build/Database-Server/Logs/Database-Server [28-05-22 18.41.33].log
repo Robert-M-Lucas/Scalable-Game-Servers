@@ -1,0 +1,7 @@
+[28/05/22 18:41:33:0403646] [INFO ]: Logging started
+[28/05/22 18:41:33:0424830] [INFO ]: Creating table
+[28/05/22 18:41:33:0870976] [INFO ]: Player [Name: playerOne, Password: password1, ID: 1, CurrencyAmount: 0] retrieved from database
+[28/05/22 18:41:33:0873660] [INFO ]: Player [Name: playerTwo, Password: password, ID: 2, CurrencyAmount: 0] retrieved from database
+[28/05/22 18:41:33:0877094] [INFO ]: Database Server start
+[28/05/22 18:41:33:0889276] [INFO ]: Database Server Client Accept Thread start
+[28/05/22 18:41:33:0923047] [INFO ]: Waiting for client to connect

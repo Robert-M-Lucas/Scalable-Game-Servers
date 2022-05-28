@@ -1,0 +1,20 @@
+[28/05/22 18:36:12:6817761] [INFO ]: Logging started
+[28/05/22 18:36:12:6841457] [INFO ]: Creating table
+[28/05/22 18:36:12:8740975] [INFO+]: Player [Name: playerOne, Password: password1, ID: 1, CurrencyAmount: 0] created
+[28/05/22 18:36:12:8836252] [INFO+]: Player [Name: playerTwo, Password: password, ID: 2, CurrencyAmount: 0] created
+[28/05/22 18:36:12:8841462] [INFO ]: Database Server start
+[28/05/22 18:36:12:8858919] [INFO ]: Database Server Client Accept Thread start
+[28/05/22 18:36:12:8893240] [INFO ]: Waiting for client to connect
+[28/05/22 18:36:17:7178262] [INFO ]: Client accepted
+[28/05/22 18:36:17:7201488] [INFO ]: Recieving packet from client DatabaseServer.Client of len 9216
+[28/05/22 18:36:17:7203304] [INFO ]: 36/9216 received from DatabaseServer.Client
+[28/05/22 18:36:17:7226717] [ERROR]: FATAL UNHANDLED EXCEPTION
+[28/05/22 18:36:17:7356263] [ERROR]: System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'size')
+   at System.Net.Sockets.Socket.ValidateBufferArguments(Byte[] buffer, Int32 offset, Int32 size)
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at DatabaseServer.Server.ReadCallback(IAsyncResult ar) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Database-Server\Server.cs:line 87
+   at System.Threading.Tasks.TaskToApm.TaskAsyncResult..ctor(Task task, Object state, AsyncCallback callback)
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at DatabaseServer.Server.AcceptClients() in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Database-Server\Server.cs:line 59
+   at System.Threading.Thread.StartCallback()
+[28/05/22 18:36:17:7365980] [WARN ]: Shutting down logging

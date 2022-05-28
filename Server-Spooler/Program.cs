@@ -45,7 +45,7 @@ public static class Program {
         // config_path = args[0];
         config_path = "config.json";
         
-        try { 
+        try {
             config = Config.GetConfig(config_path);
             Logger.debug_printed = config.Debug;
         }

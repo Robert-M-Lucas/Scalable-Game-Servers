@@ -1,0 +1,15 @@
+[28/05/22 17:58:53:2995520] [INFO ]: Logging started
+[28/05/22 17:58:53:3016975] [INFO ]: Creating table
+[28/05/22 17:58:53:4532945] [ERROR]: FATAL UNHANDLED EXCEPTION
+[28/05/22 17:58:53:4662051] [ERROR]: Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: PlayerIDCounter'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at DatabaseServer.DatabaseCommands.ExecuteNonQuery(String commandText, CommandArgsPair[] commandArgs) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Database-Server\DatabaseCommands.cs:line 48
+   at DatabaseServer.DatabaseCommands.CreateTables() in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Database-Server\DatabaseCommands.cs:line 105
+   at DatabaseServer.Program.Main(String[] args) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Database-Server\Program.cs:line 13
+[28/05/22 17:58:53:4680276] [WARN ]: Shutting down logging

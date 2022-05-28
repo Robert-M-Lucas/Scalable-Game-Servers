@@ -1,0 +1,8 @@
+[28/05/22 18:45:08:4405943] [INFO ]: Logging started
+[28/05/22 18:45:08:4689326] [INFO ]: Connected to Database
+[28/05/22 18:45:17:1002218] [ERROR]: FATAL UNHANDLED EXCEPTION
+[28/05/22 18:45:17:1189784] [ERROR]: System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at Shared.DatabaseInterface.GetDatabasePlayer(String username, String password) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Shared\DatabaseInterface.cs:line 43
+   at ServerSpooler.Program.Main(String[] args) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Server-Spooler\Program.cs:line 58
+[28/05/22 18:45:17:1198792] [WARN ]: Shutting down logging

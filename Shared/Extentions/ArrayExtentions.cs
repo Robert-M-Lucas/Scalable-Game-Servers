@@ -50,4 +50,20 @@ public static class ArrayExtentions {
             index
         );
     }
+
+    public static uint ByteArrToUint(byte[] arr) {
+        uint i = 0;
+        for (int x = 0; x < arr.Length; x++) {
+            i += (uint) (arr[x] << (8*x));
+        }
+        return i;
+    }
+
+    public static void PrintByteArr (byte[] arr) {
+        string s = "";
+        foreach (byte b in arr) {
+            s += (uint) b + ", ";
+        }
+        Console.WriteLine(s);
+    }
 }

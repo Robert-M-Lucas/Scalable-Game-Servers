@@ -124,7 +124,7 @@ public class Server {
                 player.buffer_cursor = player.buffer_cursor - (int) packet_len;
             }
             else {
-                Logger.LogInfo($"{player.buffer_cursor}/{packet_len} received from {player.PlayerName}");
+                Logger.LogInfo($"{player.buffer_cursor}/{packet_len} received from {player}");
             }
         }
         player.socket.BeginReceive(player.buffer, player.buffer_cursor, 1024, 0, new AsyncCallback(ReadCallback), player);
@@ -163,6 +163,9 @@ public class Server {
     public void Stop(){
         Logger.LogWarning("Stopping Lobby Server");
         if (AcceptClientThread is not null) {try{AcceptClientThread.Interrupt();}catch(Exception e){Console.WriteLine(e);}}
+        foreach (LobbyPlayer player in Players) {
+            player.socket.Shutdown(SocketShutdown.Both);
+        }
         Logger.LogInfo("Lobby Server stopped");
     }
 }

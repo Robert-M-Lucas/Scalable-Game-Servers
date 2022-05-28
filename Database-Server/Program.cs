@@ -10,13 +10,19 @@ public static class Program {
         Logger.InitialiseLogger("Database-Server", true);
 
         Logger.LogInfo("Creating table");
-        DatabaseCommands.ExecuteNonQuery(
-            @"
-            CREATE TABLE IF NOT EXISTS Players (
-                PlayerID INT PRIMARY KEY
-            )
-            "
-        );
+        DatabaseCommands.CreateTables();
+
+        Console.WriteLine(DatabaseCommands.GetValueFromDictionary("PlayerIDCounter"));
+
+        DatabaseCommands.GetOrAddPlayer("playerOne", "password1");
+        DatabaseCommands.GetOrAddPlayer("playerTwo", "password");
+
+        Server server = new Server("127.0.0.1", 11111);
+        server.Start();
+
+        Console.ReadLine();
+
+        server.Stop();
 
         Logger.LogInfo("Done");
         Logger.CleanUp();

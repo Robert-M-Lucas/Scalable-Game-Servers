@@ -1,0 +1,35 @@
+[28/05/22 18:00:31:6735797] [INFO ]: Logging started
+[28/05/22 18:00:31:7682303] [INFO ]: Starting Load Balancer
+[28/05/22 18:00:31:8501142] [INFO ]: Waiting for Load Balancer response
+[28/05/22 18:00:31:8510888] [INFO ]: Accepting client
+[28/05/22 18:00:31:8764973] [INFO ]: Accepting connection
+[28/05/22 18:00:31:9822112] [INFO ]: Connection established
+[28/05/22 18:00:31:9827843] [INFO ]: Connected in 132ms
+[28/05/22 18:00:31:9829815] [INFO ]: Starting Matchmaker
+[28/05/22 18:00:32:0204511] [INFO ]: Waiting for Matchmaker response
+[28/05/22 18:00:32:0208876] [INFO ]: Accepting client
+[28/05/22 18:00:32:0210537] [INFO ]: Accepting connection
+[28/05/22 18:00:32:1525167] [INFO ]: Connection established
+[28/05/22 18:00:32:1530205] [INFO ]: Connected in 132ms
+[28/05/22 18:00:32:1694298] [INFO ]: Starting lobby 0 on port 10123
+[28/05/22 18:00:32:2059033] [INFO ]: Accepting client
+[28/05/22 18:00:32:2062630] [INFO ]: Accepting connection
+[28/05/22 18:00:32:3228598] [INFO ]: Connection established
+[28/05/22 18:00:32:3233175] [INFO ]: Starting lobby 1 on port 10124
+[28/05/22 18:00:32:3312071] [INFO ]: Accepting client
+[28/05/22 18:00:32:3314129] [INFO ]: Accepting connection
+[28/05/22 18:00:32:4154918] [INFO ]: Connection established
+[28/05/22 18:00:32:4162428] [INFO ]: Starting game server 0 on port 20123
+[28/05/22 18:00:32:4527880] [INFO ]: Accepting client
+[28/05/22 18:00:32:4531433] [INFO ]: Accepting connection
+[28/05/22 18:00:32:5854216] [INFO ]: Connection established
+[28/05/22 18:00:32:5860171] [WARN ]: Update [432ms] took longer than update interval [100ms]
+[28/05/22 18:00:34:0913580] [INFO ]: Escape key pressed
+[28/05/22 18:00:34:0916997] [INFO ]: Shutting down network
+[28/05/22 18:00:34:0918777] [INFO ]: Giving time for graceful shutdown
+[28/05/22 18:00:35:1002569] [INFO ]: Terminating processes
+[28/05/22 18:00:35:1010347] [INFO ]: Killing Load Balancer
+[28/05/22 18:00:35:1016981] [INFO ]: Killing Matchmaker
+[28/05/22 18:00:35:1019598] [INFO ]: Killing lobby servers
+[28/05/22 18:00:35:1021175] [INFO ]: Killing game servers
+[28/05/22 18:00:35:1024036] [WARN ]: Shutting down logging
