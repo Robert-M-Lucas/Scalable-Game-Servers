@@ -3,6 +3,8 @@
 
     "Version": "1.2",
 
+    "DatabaseServerPort": 11111,
+
     "ServerSpoolerPort": 5105,
     "MatchmakerPort": 6106,
     "LoadBalancerPort": 7107,

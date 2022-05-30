@@ -86,7 +86,7 @@ public static class ServerStarter {
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Lobby-Server\\Lobby-Server.exe";
         startInfo.WindowStyle = ProcessWindowStyle.Minimized;
-        startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {LobbyPortCounter} {Program.config.MaxLobbyFill} {LobbyUIDCounter}";
+        startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {LobbyPortCounter} {Program.config.MaxLobbyFill} {LobbyUIDCounter} {Program.config.DatabaseServerPort}";
 
         Process lobby_server = WrapedProcessStart(startInfo);
         LobbyData new_lobby = new LobbyData(LobbyUIDCounter, ByteIP.StringToIP("127.0.0.1", (uint) LobbyPortCounter), lobby_server);

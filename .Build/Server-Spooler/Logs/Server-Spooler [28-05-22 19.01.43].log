@@ -1,8 +1,0 @@
-[28/05/22 19:01:43:6058113] [INFO ]: Logging started
-[28/05/22 19:01:43:6335428] [INFO ]: Connected to Database
-[28/05/22 19:01:43:6386863] [INFO ]: Shutting down network
-[28/05/22 19:01:43:6388969] [INFO ]: Giving time for graceful shutdown
-[28/05/22 19:01:44:6392469] [INFO ]: Terminating processes
-[28/05/22 19:01:44:6407973] [INFO ]: Killing lobby servers
-[28/05/22 19:01:44:6409490] [INFO ]: Killing game servers
-[28/05/22 19:01:44:6413420] [WARN ]: Shutting down logging

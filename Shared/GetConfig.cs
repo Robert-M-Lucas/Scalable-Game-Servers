@@ -24,6 +24,8 @@ public class NullableConfigObj{
     public bool? Debug { get; set; }
     public string? Version { get; set; }
 
+    public int? DatabaseServerPort { get; set; }
+
     public int? ServerSpoolerPort { get; set; }
     public int? MatchmakerPort { get; set; }
     public int? LoadBalancerPort { get; set; }
@@ -42,6 +44,8 @@ public class NullableConfigObj{
 public struct ConfigObj {
     public bool Debug;
     public string Version;
+
+    public int DatabaseServerPort;
 
     public int ServerSpoolerPort;
     public int MatchmakerPort;
@@ -78,6 +82,7 @@ public static class Config{
         }
 
         if (null_config?.Version is null) {throw new BadConfigFormatException("Version");}
+        if (null_config.DatabaseServerPort is null) {throw new BadConfigFormatException("DatabaseServerPort");}
         if (null_config.ServerSpoolerPort is null) {throw new BadConfigFormatException("ServerSpoolerPort");}
         if (null_config.MatchmakerPort is null) {throw new BadConfigFormatException("MatchmakerPort");}
         if (null_config.LoadBalancerPort is null) {throw new BadConfigFormatException("LoadBalancerProt");}
@@ -90,7 +95,7 @@ public static class Config{
         if (null_config.Debug is null) {throw new BadConfigFormatException("Debug");}
 
         ConfigObj config = new ConfigObj();
-        config.Version = null_config.Version; config.ServerSpoolerPort = (int) null_config.ServerSpoolerPort; config.MatchmakerPort = (int) null_config.MatchmakerPort;
+        config.Version = null_config.Version; config.DatabaseServerPort = (int) null_config.DatabaseServerPort; config.ServerSpoolerPort = (int) null_config.ServerSpoolerPort; config.MatchmakerPort = (int) null_config.MatchmakerPort;
         config.LoadBalancerPort = (int) null_config.LoadBalancerPort; config.MaxEmptyGameServers = (int) null_config.MaxEmptyGameServers; config.MinEmptyGameServers = (int) null_config.MinEmptyGameServers;
         config.MaxEmptyLobbies = (int) null_config.MaxEmptyLobbies; config.MinEmptyLobbies = (int) null_config.MinEmptyLobbies;
         config.MaxLobbyFill = (int) null_config.MaxLobbyFill; config.MaxQueueLen = (int) null_config.MaxQueueLen; config.Debug = (bool) null_config.Debug;

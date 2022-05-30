@@ -26,15 +26,18 @@ public static class Program {
 
     static int LobbyServerID = -1;
 
+    static int DatabaseServerPort = -1;
+
     public static void Main(string[] args) {
         // [version] [spooler ip] [spooler port] [lobby port] [max lobby fill] [lobby id]
-        if (args.Length < 6) { Console.WriteLine("Not enough arguments"); return; }
+        if (args.Length < 7) { Console.WriteLine("Not enough arguments"); return; }
         version = args[0];
         SpoolerIP = args[1];
         if (!int.TryParse(args[2], out SpoolerPort)) { Console.WriteLine("Spooler port incorrectly formatted"); return; }
         if (!int.TryParse(args[3], out Port)) { Console.WriteLine("Port incorrectly formatted"); return; }
         if (!int.TryParse(args[4], out MaxLobbyFill)) { Console.WriteLine("Max lobby fill incorrectly formatted"); return; }
         if (!int.TryParse(args[5], out LobbyServerID)) { Console.WriteLine("Lobby server ID incorrectly formatted"); return; }
+        if (!int.TryParse(args[6], out DatabaseServerPort)) { Console.WriteLine("Database server port incorrectly formatted"); return; }
 
         Logger.InitialiseLogger("Lobby-Server-" + LobbyServerID, false);
 
@@ -50,7 +53,7 @@ public static class Program {
             return;
         }
 
-        databaseInterface = new DatabaseInterface("127.0.0.1", 11111);
+        databaseInterface = new DatabaseInterface("127.0.0.1", DatabaseServerPort);
 
         Console.WriteLine("Press Ctrl-C to exit");
         try {
