@@ -12,9 +12,9 @@
     "MaxQueueLen": 1000,
     "MaxLobbyFill": 2,
 
-    "MaxEmptyLobbies": 2,
-    "MinEmptyLobbies": 2,
+    "MaxEmptyLobbies": 10,
+    "MinEmptyLobbies": 5,
 
-    "MaxEmptyGameServers": 2,
-    "MinEmptyGameServers": 1
+    "MaxEmptyGameServers": 10,
+    "MinEmptyGameServers": 5
 }

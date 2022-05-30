@@ -1,0 +1,10 @@
+[30/05/22 20:55:05:1201519] [INFO ]: Logging started
+[30/05/22 20:55:40:6516726] [INFO+]: Connecting to Load Balancer
+[30/05/22 20:55:40:6728289] [INFO+]: Connecting to Lobby Server
+[30/05/22 20:55:40:7049018] [ERROR]: Incorrect password
+[30/05/22 20:55:40:7053848] [ERROR]: Lobby Server connection failed
+[30/05/22 20:55:44:3930901] [INFO+]: Connecting to Load Balancer
+[30/05/22 20:55:44:4080595] [INFO+]: Connecting to Lobby Server
+[30/05/22 20:55:44:4403446] [ERROR]: Incorrect password
+[30/05/22 20:55:44:4406905] [ERROR]: Lobby Server connection failed
+[30/05/22 20:55:45:6152400] [WARN ]: Shutting down logging

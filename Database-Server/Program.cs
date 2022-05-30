@@ -17,6 +17,7 @@ public static class Program {
         
         try {
             config = Config.GetConfig(config_path);
+            Logger.debug_logged = config.Debug;
         }
         catch (BadConfigFormatException) { Logger.LogError("Incorrect formatting of config.json"); Exit(); }
 

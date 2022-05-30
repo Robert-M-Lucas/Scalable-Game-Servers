@@ -1,0 +1,19 @@
+[30/05/22 20:53:38:7367691] [INFO ]: Logging started
+[30/05/22 20:53:38:7513164] [INFO ]: Starting Spooler receive
+[30/05/22 20:53:38:7543741] [INFO ]: Connected to Database
+[30/05/22 20:53:38:7550753] [INFO ]: Lobby Server start
+[30/05/22 20:53:38:7556346] [INFO ]: Lobby Server Client Accept Thread start
+[30/05/22 20:53:38:7575191] [INFO ]: Waiting for client to connect
+[30/05/22 20:59:19:1863648] [ERROR]: Exitting due to Server Spooler. Reason: Server Spooler connection broken
+[30/05/22 20:59:19:1928649] [ERROR]: Precise error: System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at Shared.SpoolerInterface.ReadCallback(IAsyncResult ar) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Shared\SpoolerInterface.cs:line 37
+[30/05/22 20:59:19:1938645] [INFO ]: Shutting down server
+[30/05/22 20:59:19:1959350] [WARN ]: Stopping Lobby Server
+[30/05/22 20:59:19:1986910] [INFO ]: Lobby Server stopped
+[30/05/22 20:59:19:2043260] [WARN ]: Shutting down environment and Logger
+[30/05/22 20:59:19:2048596] [WARN ]: Shutting down logging

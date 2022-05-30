@@ -1,0 +1,17 @@
+[30/05/22 20:52:43:2579779] [INFO ]: Logging started
+[30/05/22 20:52:43:5936445] [DATA ]: Creating tables
+[30/05/22 20:52:44:0453740] [INFO ]: Database Server start
+[30/05/22 20:52:44:0983187] [INFO ]: Database Server Client Accept Thread start
+[30/05/22 20:52:44:1394192] [INFO ]: Waiting for client to connect
+[30/05/22 20:52:48:6425110] [INFO+]: Client accepted: [127.0.0.1:54482 -> 127.0.0.1:11111]
+[30/05/22 20:52:48:6618434] [ERROR]: Client: [127.0.0.1:54482 -> 127.0.0.1:11111] disconnected due to not responding to poll
+[30/05/22 20:52:48:6622353] [INFO ]: Waiting for client to connect
+[30/05/22 20:52:49:6388436] [INFO+]: Client accepted: [127.0.0.1:54487 -> 127.0.0.1:11111]
+[30/05/22 20:52:49:6397978] [INFO ]: Waiting for client to connect
+[30/05/22 20:52:49:7769719] [INFO+]: Client accepted: [127.0.0.1:54489 -> 127.0.0.1:11111]
+[30/05/22 20:52:49:7775365] [INFO ]: Waiting for client to connect
+[30/05/22 20:52:59:9708240] [INFO ]: Escape key pressed
+[30/05/22 20:52:59:9715855] [WARN ]: Database shutting down
+[30/05/22 20:52:59:9720162] [WARN ]: Stopping Database Server
+[30/05/22 20:52:59:9727150] [INFO ]: Database Server stopped
+[30/05/22 20:52:59:9729932] [WARN ]: Shutting down logging
