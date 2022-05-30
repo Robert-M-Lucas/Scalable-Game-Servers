@@ -90,11 +90,9 @@ public static class Program {
     }
 
     public static void Exit(string reason = "") {
-        if (server is not null) {
-            Logger.LogInfo("Shutting down server");
-            server.Stop();
-        }
-        
+        Logger.LogInfo("Shutting down server");
+        server?.Stop();
+        databaseInterface?.Shutdown();
         Logger.LogWarning("Shutting down environment and Logger");
         Logger.CleanUp();
         Environment.Exit(0);

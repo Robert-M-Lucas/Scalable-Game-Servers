@@ -77,8 +77,8 @@ public class Server {
             client.buffer_cursor += client.socket.EndReceive(ar);
         }
         catch (SocketException se) {
-            Logger.LogError($"Client: {client} disconnected due to error:");
-            Logger.LogError(se);
+            Logger.LogError($"Client: {client} disconnected due to error (turn on debug logging to see error)");
+            Logger.LogDebug(se);
             client.socket.Shutdown(SocketShutdown.Both);
             Clients.Remove(client);
             return;

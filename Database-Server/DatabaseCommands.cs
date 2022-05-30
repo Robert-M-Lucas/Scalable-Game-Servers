@@ -45,6 +45,8 @@ public static class DatabaseCommands {
                 command.Parameters.AddWithValue(argsPair.toReplace, argsPair.replaceWith);
             }
 
+            Logger.LogDebug($"Excecuting non query: {command.CommandText}");
+
             command.ExecuteNonQuery();
             connection.Close();
             connection.Dispose();
@@ -65,12 +67,15 @@ public static class DatabaseCommands {
             command.Parameters.AddWithValue(argsPair.toReplace, argsPair.replaceWith);
         }
 
+        Logger.LogData($"Excecuting query: {command.CommandText}");
+
         reader = command.ExecuteReader();
 
         return new ConnectionReader(connection, reader);
     }
 
     public static string GetValueFromDictionary (string key) {
+        Logger.LogDebug($"Getting value of {key} from database dictionary");
         ConnectionReader conn_reader = ExecuteQuery(@"SELECT Value FROM Dictionary WHERE Key = $key",
             new CommandArgsPair("$key", key));
         
@@ -81,6 +86,7 @@ public static class DatabaseCommands {
     }
 
     public static void UpdateValueFromDictionary (string key, string new_val) {
+        Logger.LogDebug($"Updating value of {key} in database dictionary to {new_val}");
         ExecuteNonQuery(@"UPDATE Dictionary SET Value = $value WHERE Key = $key",
             new CommandArgsPair("$key", key), new CommandArgsPair("$value", new_val));
     }

@@ -1,0 +1,10 @@
+[30/05/22 19:47:48:5675467] [INFO ]: Logging started
+[30/05/22 19:47:48:5779275] [INFO ]: Starting Spooler receive
+[30/05/22 19:47:48:5801958] [INFO ]: Game Server start
+[30/05/22 19:47:48:5806860] [INFO ]: Lobby Server Client Accept Thread start
+[30/05/22 19:47:48:5819467] [INFO ]: Waiting for client to connect
+[30/05/22 19:47:49:7291754] [INFO ]: Shutting down server
+[30/05/22 19:47:49:7295111] [WARN ]: Stopping Game Server
+[30/05/22 19:47:49:7296188] [INFO ]: Lobby Game stopped
+[30/05/22 19:47:49:7297023] [WARN ]: Shutting down environment and Logger
+[30/05/22 19:47:49:7298512] [WARN ]: Shutting down logging

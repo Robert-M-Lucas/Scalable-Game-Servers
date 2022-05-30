@@ -1,0 +1,9 @@
+[30/05/22 19:46:51:4584793] [INFO ]: Logging started
+[30/05/22 19:46:51:4681291] [INFO ]: Starting Spooler receive
+[30/05/22 19:46:51:4702781] [INFO ]: Matchmaker server start
+[30/05/22 19:46:51:4707610] [INFO ]: Matchmaker Client Accept Thread Start
+[30/05/22 19:46:51:4720626] [INFO ]: Waiting for client to connect
+[30/05/22 19:47:48:2304340] [INFO ]: Client connected, queue len: 1
+[30/05/22 19:47:48:2306040] [INFO ]: Waiting for client to connect
+[30/05/22 19:47:48:2448930] [INFO ]: 1
+[30/05/22 19:47:48:2456581] [INFO+]: Player sent to 127.0.0.1:20123

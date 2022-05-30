@@ -28,10 +28,7 @@ public static class Program {
         server = new Server("127.0.0.1", config.DatabaseServerPort);
         server.Start();
 
-        Console.WriteLine("Press Enter or Ctrl+C to exit");
-        Console.ReadLine();
-
-        Exit();
+        Console.WriteLine("Press Ctrl+C to exit");
     }
 
     static void exitHandler(object? sender, ConsoleCancelEventArgs args) {
