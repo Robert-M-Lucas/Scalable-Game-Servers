@@ -131,7 +131,7 @@ public static class ServerStarter {
         startInfo.FileName = "..\\Matchmaker\\Matchmaker.exe";
         Logger.LogDebug("Matchmaker start");
         startInfo.WindowStyle = ProcessWindowStyle.Minimized;
-        startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {Program.config.MatchmakerPort} {2} {Program.config.MaxQueueLen}";
+        startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {Program.config.MatchmakerPort} {2} {Program.config.MaxQueueLen} {Program.config.DatabaseServerPort}";
 
         Matchmaker = WrapedProcessStart(startInfo);
     }
@@ -144,7 +144,7 @@ public static class ServerStarter {
         startInfo.UseShellExecute = true;
         startInfo.FileName = "..\\Game-Server\\Game-Server.exe";
         startInfo.WindowStyle = ProcessWindowStyle.Minimized;
-        startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {GameServerPortCounter} {Program.config.MaxLobbyFill} {GameServerUIDCounter}";
+        startInfo.Arguments = $"\"{Program.config.Version}\" {"127.0.0.1"} {Program.config.ServerSpoolerPort} {GameServerPortCounter} {Program.config.MaxLobbyFill} {GameServerUIDCounter} {Program.config.DatabaseServerPort}";
 
         Process? game_server = WrapedProcessStart(startInfo);
         GameServerData new_game_server = new GameServerData(GameServerUIDCounter, ByteIP.StringToIP("127.0.0.1", (uint) GameServerPortCounter), game_server);

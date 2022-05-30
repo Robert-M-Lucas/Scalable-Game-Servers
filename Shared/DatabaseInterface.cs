@@ -4,6 +4,15 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
+public class DatabaseDisconnectException : Exception
+{
+    public DatabaseDisconnectException() { }
+
+    public DatabaseDisconnectException(string message) : base(message) { }
+
+    public DatabaseDisconnectException(string message, Exception inner) : base(message, inner) { }
+}
+
 public class DatabaseInterface {
     Socket DatabaseSocket;
 
@@ -25,6 +34,11 @@ public class DatabaseInterface {
         Logger.LogInfo("Connected to Database");
     }
 
+    public void Shutdown(bool callOnDisconnect = false) {
+        DatabaseSocket.Shutdown(SocketShutdown.Both);
+        if (callOnDisconnect) { OnDatabaseDisconnect(""); }
+    }
+
     public DatabasePlayer GetDatabasePlayer(string username, string password) {
         byte[] username_bytes = ArrayExtentions.Merge(new byte[16], Encoding.ASCII.GetBytes(username)); 
         byte[] password_bytes = ArrayExtentions.Merge(new byte[16], Encoding.ASCII.GetBytes(password));
@@ -37,10 +51,15 @@ public class DatabaseInterface {
         full_packet = ArrayExtentions.Merge(full_packet, username_bytes, 4);
         full_packet = ArrayExtentions.Merge(full_packet, password_bytes, 20);
 
-        DatabaseSocket.Send(full_packet);
-
         byte[] response_type = new byte[2];
-        DatabaseSocket.Receive(response_type, 0, 2, 0);
+        try {
+            DatabaseSocket.Send(full_packet);
+            DatabaseSocket.Receive(response_type, 0, 2, 0);
+        }
+        catch (SocketException se) {
+            OnDatabaseDisconnect(se.ToString());
+            throw new DatabaseDisconnectException(se.ToString());
+        }
 
         if ((uint) response_type[0] == 0) {
             byte[] full_response = new byte[8];

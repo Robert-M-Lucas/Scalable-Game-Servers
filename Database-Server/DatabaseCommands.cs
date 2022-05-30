@@ -86,6 +86,8 @@ public static class DatabaseCommands {
     }
 
     public static void CreateTables() {
+        Logger.LogData("Creating tables");
+
         DatabaseCommands.ExecuteNonQuery(@"
             CREATE TABLE IF NOT EXISTS Players (
                 PlayerID INT PRIMARY KEY,

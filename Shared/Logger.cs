@@ -33,6 +33,9 @@ public static class Logger {
     const string DEBUG_TEXT =   "DEBUG";
     const ConsoleColor DEBUG_COLOUR = ConsoleColor.Green;
 
+    const string DATA_TEXT =   "DATA ";
+    const ConsoleColor DATA_COLOUR = ConsoleColor.DarkBlue;
+
     static bool shutdown = false;
     static bool initialised = false;
 
@@ -144,6 +147,17 @@ public static class Logger {
         string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + ERROR_TEXT + "]: " + log_text;
         LogQueue.Enqueue(text);
         Console.ForegroundColor = ERROR_COLOUR;
+        Console.WriteLine(text);
+        Console.ForegroundColor = DEFAULT_COLOUR;
+    }
+
+    public static void LogData(object log_text_obj) {
+        if (log_text_obj is null) { return; }
+        if (!initialised | shutdown) { throw new LoggerNotAvailableException("Logger shut down or not initialised"); }
+        string? log_text = log_text_obj.ToString();
+        string text = "[" + DateTime.Now.ToString("dd/MM/yy HH:mm:ss:fffffff") + "] [" + DATA_TEXT + "]: " + log_text;
+        LogQueue.Enqueue(text);
+        Console.ForegroundColor = DATA_COLOUR;
         Console.WriteLine(text);
         Console.ForegroundColor = DEFAULT_COLOUR;
     }

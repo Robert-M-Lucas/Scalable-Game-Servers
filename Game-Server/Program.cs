@@ -40,7 +40,7 @@ public static class Program {
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
         
         try {
-            spoolerInterface = new SIGameServer(SpoolerIP, SpoolerPort, Exit);
+            spoolerInterface = new SIGameServer(SpoolerIP, SpoolerPort, ServerSpoolerExit);
         }
         catch (Exception e) {
             Logger.LogError("Error connecting to spooler");
@@ -61,7 +61,15 @@ public static class Program {
         Exit();
     }
 
-    public static void Exit(string reason = "") {
+    public static void ServerSpoolerExit(string reason, string? error = null) {
+        Logger.LogError($"Exitting due to Server Spooler. Reason: {reason}");
+        if (error is not null) {
+            Logger.LogError($"Precise error: {error}");
+        }
+        Exit();
+    }
+
+    public static void Exit() {
         if (server is not null) {
             Logger.LogInfo("Shutting down server");
             server.Stop();

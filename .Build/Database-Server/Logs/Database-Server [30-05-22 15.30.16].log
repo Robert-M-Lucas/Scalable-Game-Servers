@@ -1,0 +1,14 @@
+[30/05/22 15:30:16:6420640] [INFO ]: Logging started
+[30/05/22 15:30:16:6651086] [DATA ]: Creating tables
+[30/05/22 15:30:16:8013690] [INFO ]: Database Server start
+[30/05/22 15:30:16:8026217] [INFO ]: Database Server Client Accept Thread start
+[30/05/22 15:30:16:8057509] [INFO ]: Waiting for client to connect
+[30/05/22 15:30:22:3856436] [WARN ]: Database shutting down
+[30/05/22 15:30:22:3859069] [INFO ]: Escape key pressed
+[30/05/22 15:30:22:3860182] [WARN ]: Database shutting down
+[30/05/22 15:30:22:3860753] [WARN ]: Stopping Database Server
+[30/05/22 15:30:22:3861471] [WARN ]: Stopping Database Server
+[30/05/22 15:30:22:3862101] [INFO ]: Database Server stopped
+[30/05/22 15:30:22:3864974] [INFO ]: Database Server stopped
+[30/05/22 15:30:22:3865474] [WARN ]: Shutting down logging
+[30/05/22 15:30:22:3866960] [WARN ]: Shutting down logging

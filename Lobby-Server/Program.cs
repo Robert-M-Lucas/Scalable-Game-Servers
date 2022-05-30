@@ -45,7 +45,7 @@ public static class Program {
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
         
         try {
-            spoolerInterface = new SILobbyServer(SpoolerIP, SpoolerPort, Exit);
+            spoolerInterface = new SILobbyServer(SpoolerIP, SpoolerPort, ServerSpoolerExit);
         }
         catch (Exception e) {
             Logger.LogError("Error connecting to spooler");
@@ -53,7 +53,14 @@ public static class Program {
             return;
         }
 
-        databaseInterface = new DatabaseInterface("127.0.0.1", DatabaseServerPort);
+        try {
+            databaseInterface = new DatabaseInterface("127.0.0.1", DatabaseServerPort);
+        }
+        catch (Exception e) {
+            Logger.LogError("Error connecting to database");
+            Logger.LogError(e);
+            return;
+        }
 
         Console.WriteLine("Press Ctrl-C to exit");
         try {
@@ -71,6 +78,14 @@ public static class Program {
         Console.WriteLine("Escape key pressed");
         args.Cancel = true;
         exit = true;
+        Exit();
+    }
+
+    public static void ServerSpoolerExit(string reason, string? error = null) {
+        Logger.LogError($"Exitting due to Server Spooler. Reason: {reason}");
+        if (error is not null) {
+            Logger.LogError($"Precise error: {error}");
+        }
         Exit();
     }
 

@@ -3,7 +3,7 @@ namespace Matchmaker;
 using Shared;
 
 public class SIMatchmaker: SpoolerInterface {
-    public SIMatchmaker(string SpoolerIP, int SpoolerPort, Action<string>? _onSpoolerDisconnectAction): 
+    public SIMatchmaker(string SpoolerIP, int SpoolerPort, Action<string, string>? _onSpoolerDisconnectAction): 
     base(SpoolerIP, SpoolerPort, _onSpoolerDisconnectAction) {}
 
     public override void OnRecieve(byte[] message) {

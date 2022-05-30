@@ -1,7 +1,0 @@
-[27/05/22 23:12:03:4710484] [INFO ]: Logging started
-[27/05/22 23:12:03:4730824] [INFO ]: Creating table
-[27/05/22 23:12:03:6037842] [ERROR]: FATAL UNHANDLED EXCEPTION
-[27/05/22 23:12:03:7160929] [ERROR]: System.InvalidOperationException: ExecuteNonQuery can only be called when the connection is open.
-   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
-   at DatabaseServer.DatabaseCommands.ExecuteNonQuery(String commandText, CommandArgsPair[] commandArgs) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Database-Server\DatabaseCommands.cs:line 30
-   at DatabaseServer.Program.Main(String[] args) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Database-Server\Program.cs:line 13

@@ -14,6 +14,14 @@ public class Client {
     public Client(Socket _socket) {
         socket = _socket;
     }
+
+    public override string ToString()
+    {
+        if (socket.RemoteEndPoint is null || socket.LocalEndPoint is null) { return "null socket"; }
+
+        return $"[{IPAddress.Parse(((IPEndPoint)socket.RemoteEndPoint).Address.ToString())}:{((IPEndPoint)socket.RemoteEndPoint).Port.ToString()} -> " +
+        $"{IPAddress.Parse(((IPEndPoint)socket.LocalEndPoint).Address.ToString())}:{((IPEndPoint)socket.LocalEndPoint).Port.ToString()}]";
+    }
 }
 
 public class Server {
@@ -54,8 +62,8 @@ public class Server {
         while (true) {
             Logger.LogInfo("Waiting for client to connect");
             Socket socket = listener.Accept();
-            Logger.LogInfo("Client accepted");
             Client client = new Client(socket);
+            Logger.LogImportant($"Client accepted: {client}");
             socket.BeginReceive(client.buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), client);
         }
     }
@@ -69,12 +77,19 @@ public class Server {
             client.buffer_cursor += client.socket.EndReceive(ar);
         }
         catch (SocketException se) {
-            Logger.LogError("Client disconnected due to error:");
+            Logger.LogError($"Client: {client} disconnected due to error:");
             Logger.LogError(se);
+            client.socket.Shutdown(SocketShutdown.Both);
             Clients.Remove(client);
             return;
         }
         
+        if (!SocketExtentions.SocketConnected(client.socket, 10000)) {
+            Logger.LogError($"Client: {client} disconnected due to not responding to poll");
+            client.socket.Shutdown(SocketShutdown.Both);
+            Clients.Remove(client);
+            return;
+        }
 
         if (client.buffer_cursor >= 2) {
             uint packet_len = (uint) client.buffer[0] + (uint) (client.buffer[1]<<8);
@@ -93,7 +108,7 @@ public class Server {
                 Logger.LogInfo($"{client.buffer_cursor}/{packet_len} received from {client}");
             }
         }
-        client.socket.BeginReceive(client.buffer, client.buffer_cursor, 1024, 0, new AsyncCallback(ReadCallback), client);
+        client.socket.BeginReceive(client.buffer, 0, 1024, 0, new AsyncCallback(ReadCallback), client);
     }
 
     void OnRecieve(Client client, byte[] data) {

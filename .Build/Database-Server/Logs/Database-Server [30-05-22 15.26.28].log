@@ -1,0 +1,30 @@
+[30/05/22 15:26:28:6066643] [INFO ]: Logging started
+[30/05/22 15:26:28:6300882] [INFO ]: Creating table
+[30/05/22 15:26:28:7672885] [INFO ]: Database Server start
+[30/05/22 15:26:28:7689705] [INFO ]: Database Server Client Accept Thread start
+[30/05/22 15:26:28:7721305] [INFO ]: Waiting for client to connect
+[30/05/22 15:26:29:6461256] [INFO ]: Client accepted: [127.0.0.1:60174 -> 127.0.0.1:11111]
+[30/05/22 15:26:29:6492172] [ERROR]: Client: [127.0.0.1:60174 -> 127.0.0.1:11111] disconnected due to not responding to poll
+[30/05/22 15:26:29:6495137] [INFO ]: Waiting for client to connect
+[30/05/22 15:26:30:1710921] [INFO ]: Client accepted: [127.0.0.1:60178 -> 127.0.0.1:11111]
+[30/05/22 15:26:30:1719458] [INFO ]: Waiting for client to connect
+[30/05/22 15:26:30:2655119] [INFO ]: Client accepted: [127.0.0.1:60180 -> 127.0.0.1:11111]
+[30/05/22 15:26:30:2659849] [INFO ]: Waiting for client to connect
+[30/05/22 15:30:09:2978388] [ERROR]: Client: [127.0.0.1:60178 -> 127.0.0.1:11111] disconnected due to error:
+[30/05/22 15:30:09:2978388] [ERROR]: Client: [127.0.0.1:60180 -> 127.0.0.1:11111] disconnected due to error:
+[30/05/22 15:30:09:3135545] [ERROR]: System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at DatabaseServer.Server.ReadCallback(IAsyncResult ar) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Database-Server\Server.cs:line 77
+[30/05/22 15:30:09:3135602] [ERROR]: System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at DatabaseServer.Server.ReadCallback(IAsyncResult ar) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Database-Server\Server.cs:line 77

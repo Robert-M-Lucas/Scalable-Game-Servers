@@ -36,7 +36,7 @@ public static class Program {
         Console.CancelKeyPress += new ConsoleCancelEventHandler(exitHandler);
 
         try {
-            spoolerInterface = new SIMatchmaker(SpoolerIP, SpoolerPort, Exit);
+            spoolerInterface = new SIMatchmaker(SpoolerIP, SpoolerPort, ServerSpoolerExit);
         }
         catch (Exception e) {
             Logger.LogError("Error connecting to spooler");
@@ -81,6 +81,14 @@ public static class Program {
         Logger.LogInfo("Escape key pressed");
         args.Cancel = true;
         exit = true;
+        Exit();
+    }
+
+    public static void ServerSpoolerExit(string reason, string? error = null) {
+        Logger.LogError($"Exitting due to Server Spooler. Reason: {reason}");
+        if (error is not null) {
+            Logger.LogError($"Precise error: {error}");
+        }
         Exit();
     }
 

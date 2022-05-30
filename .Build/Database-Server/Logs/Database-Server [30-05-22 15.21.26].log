@@ -1,0 +1,6 @@
+[30/05/22 15:21:26:0853243] [INFO ]: Logging started
+[30/05/22 15:21:26:1082559] [INFO ]: Creating table
+[30/05/22 15:21:26:2521781] [INFO ]: Database Server start
+[30/05/22 15:21:26:2537608] [INFO ]: Database Server Client Accept Thread start
+[30/05/22 15:21:26:2572220] [INFO ]: Waiting for client to connect
+[30/05/22 15:21:27:2318536] [INFO ]: Client accepted: [127.0.0.1:60083 -> 127.0.0.1:11111]

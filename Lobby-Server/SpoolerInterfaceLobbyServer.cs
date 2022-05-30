@@ -6,8 +6,8 @@ using System.Net.Sockets;
 
 public class SILobbyServer: SpoolerInterface
 {
-    public SILobbyServer(string SpoolerIP, int SpoolerPort, Action<string>? _onSpoolerDisconnectAction): 
-    base(SpoolerIP, SpoolerPort) {}
+    public SILobbyServer(string SpoolerIP, int SpoolerPort, Action<string, string>? _onSpoolerDisconnectAction): 
+    base(SpoolerIP, SpoolerPort, _onSpoolerDisconnectAction) {}
 
     public override void OnRecieve(byte[] message) {
         Logger.LogDebug($"Spooler requested update, sending {Program.fill_level}");

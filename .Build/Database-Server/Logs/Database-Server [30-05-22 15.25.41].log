@@ -1,0 +1,40 @@
+[30/05/22 15:25:41:5271172] [INFO ]: Logging started
+[30/05/22 15:25:41:5500943] [INFO ]: Creating table
+[30/05/22 15:25:41:6883282] [INFO ]: Database Server start
+[30/05/22 15:25:41:6898256] [INFO ]: Database Server Client Accept Thread start
+[30/05/22 15:25:41:6930726] [INFO ]: Waiting for client to connect
+[30/05/22 15:25:43:4370917] [INFO ]: Client accepted: [127.0.0.1:60156 -> 127.0.0.1:11111]
+[30/05/22 15:25:43:4394607] [INFO ]: Waiting for client to connect
+[30/05/22 15:25:43:5257403] [INFO ]: Client accepted: [127.0.0.1:60158 -> 127.0.0.1:11111]
+[30/05/22 15:25:43:5261901] [INFO ]: Waiting for client to connect
+[30/05/22 15:25:49:0299557] [ERROR]: Client: [127.0.0.1:60156 -> 127.0.0.1:11111] disconnected due to error:
+[30/05/22 15:25:49:0299515] [ERROR]: Client: [127.0.0.1:60158 -> 127.0.0.1:11111] disconnected due to error:
+[30/05/22 15:25:49:0460511] [ERROR]: System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at DatabaseServer.Server.ReadCallback(IAsyncResult ar) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Database-Server\Server.cs:line 77
+[30/05/22 15:25:49:0460512] [ERROR]: System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at DatabaseServer.Server.ReadCallback(IAsyncResult ar) in C:\Users\rober\Documents\Mixed Code Projects\Scalable-Game-Servers\Database-Server\Server.cs:line 77
+[30/05/22 15:26:00:5642374] [INFO ]: Client accepted: [127.0.0.1:60166 -> 127.0.0.1:11111]
+[30/05/22 15:26:00:5646642] [INFO ]: Waiting for client to connect
+[30/05/22 15:26:00:6655456] [INFO ]: Client accepted: [127.0.0.1:60168 -> 127.0.0.1:11111]
+[30/05/22 15:26:00:6659924] [INFO ]: Waiting for client to connect
+[30/05/22 15:26:04:7717574] [WARN ]: Database shutting down
+[30/05/22 15:26:04:7720296] [INFO ]: Escape key pressed
+[30/05/22 15:26:04:7722351] [WARN ]: Database shutting down
+[30/05/22 15:26:04:7723035] [WARN ]: Stopping Database Server
+[30/05/22 15:26:04:7724839] [WARN ]: Stopping Database Server
+[30/05/22 15:26:04:7726386] [INFO ]: Database Server stopped
+[30/05/22 15:26:04:7726749] [INFO ]: Database Server stopped
+[30/05/22 15:26:04:7730160] [WARN ]: Shutting down logging
+[30/05/22 15:26:04:7730202] [WARN ]: Shutting down logging

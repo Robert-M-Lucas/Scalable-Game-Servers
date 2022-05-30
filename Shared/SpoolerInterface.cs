@@ -10,12 +10,12 @@ public abstract class SpoolerInterface
     byte[] buffer = new byte[1024];
     int buffer_cursor = 0;
 
-    Action<string> OnSpoolerDisconnectAction;
+    Action<string, string> OnSpoolerDisconnectAction;
 
     public SpoolerInterface(string SpoolerIP, int SpoolerPort, 
-        Action<string>? onSpoolerDisconnectAction = null) {
+        Action<string, string>? onSpoolerDisconnectAction = null) {
         
-        if (onSpoolerDisconnectAction is null) { onSpoolerDisconnectAction = (msg) => { throw new Exception(msg); }; }
+        if (onSpoolerDisconnectAction is null) { onSpoolerDisconnectAction = (msg, exceptionString) => { throw new Exception(exceptionString); }; }
 
         OnSpoolerDisconnectAction = onSpoolerDisconnectAction;
 
@@ -37,7 +37,7 @@ public abstract class SpoolerInterface
             buffer_cursor += SpoolerSocket.EndReceive(ar);
         }
         catch (SocketException se) {
-            OnSpoolerDisconnectAction(se.Message);
+            OnSpoolerDisconnectAction("Server Spooler connection broken" ,se.ToString());
             return;
         }
 

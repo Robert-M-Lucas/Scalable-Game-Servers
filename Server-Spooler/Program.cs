@@ -38,11 +38,7 @@ public static class Program {
 
     public static void Main(string[] args) {
         Logger.InitialiseLogger("Server-Spooler", true);
-        // Example lobby server
-        // LobbyServers.Add(new LobbyData(0, ByteIP.StringToIP("127.0.0.1", 123), new Process()));
 
-        // if (args.Length < 1) { Logger.LogInfo("No config.json path, exitting"); return; }
-        // config_path = args[0];
         config_path = "config.json";
         
         try {
@@ -56,6 +52,22 @@ public static class Program {
 
         Timer t = new Timer();
 
+        // Database Server
+        Logger.LogInfo("Attempting connection to Database Server");
+        try {
+            DatabaseInterface databaseInterface = new DatabaseInterface("127.0.0.1", config.DatabaseServerPort);
+            Logger.LogInfo("Shutting down test Database connection");
+            databaseInterface.Shutdown();
+        }
+        catch (Exception e) {
+            Logger.LogError("Error testing connection to Database Server");
+            Logger.LogError(e);
+            Exit();
+            return;
+        }
+
+
+        // Load Balancer
         Logger.LogInfo("Starting Load Balancer");
         ServerStarter.StartLoadBalancer();
         Logger.LogInfo("Waiting for Load Balancer response");
@@ -64,6 +76,7 @@ public static class Program {
         catch (ServerConnectTimeoutException) { Logger.LogError("Load Balancer didn't connect in required time, exitting"); Exit(); return; }
         Logger.LogInfo($"Connected in {t.GetMsAndRestart()}ms");
         
+        // Matchmaker
         Logger.LogInfo("Starting Matchmaker");
         ServerStarter.StartMatchmaker();
         Logger.LogInfo("Waiting for Matchmaker response");
@@ -169,7 +182,7 @@ public static class Program {
         Logger.LogInfo("Shutting down network");
         Listener.Exit();
 
-        Logger.LogInfo("Giving time for graceful shutdown");
+        Logger.LogInfo("Giving time for graceful subprocess shutdown");
         Thread.Sleep(GracefulShutdownTime);
 
         Logger.LogInfo("Terminating processes");
