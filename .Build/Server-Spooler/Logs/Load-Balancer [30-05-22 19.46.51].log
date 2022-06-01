@@ -1,9 +1,0 @@
-[30/05/22 19:46:51:2783648] [INFO ]: Logging started
-[30/05/22 19:46:51:2882541] [INFO ]: Starting Spooler receive
-[30/05/22 19:46:51:2903543] [INFO ]: Load Balancer server start
-[30/05/22 19:46:51:2907828] [INFO ]: Load Balancer Client Accept Thread Start
-[30/05/22 19:46:51:2919556] [INFO ]: Waiting for client to connect
-[30/05/22 19:47:38:1604652] [INFO ]: Client connected, queue len: 1
-[30/05/22 19:47:38:1606806] [INFO ]: Waiting for client to connect
-[30/05/22 19:47:38:1609304] [INFO ]: 2
-[30/05/22 19:47:38:1616463] [INFO+]: Player sent to 127.0.0.1:10123
